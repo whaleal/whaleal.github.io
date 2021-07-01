@@ -1,1 +1,1 @@
-# whaleal.github.io
+# docs.whaleal.com

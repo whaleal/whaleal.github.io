@@ -15,3 +15,13 @@ https://docs.whaleal.com/licensing/MIT_LICENSE
 https://docs.whaleal.com/licensing/Server_Side_Public_License_VERSION_1  
 
 https://docs.whaleal.com/licensing/
+
+
+##  相关logo 资料  
+
+预览图 及地址  
+![](https://docs.whaleal.com/images/logo1.png)  
+![](https://docs.whaleal.com/images/logo2.png)  
+![](https://docs.whaleal.com/images/logo3.png)  
+
+

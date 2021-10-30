@@ -25,3 +25,5 @@ https://docs.whaleal.com/licensing/
 ![](https://docs.whaleal.com/images/logo3.png)  
 
 
+相关项目文档 
+[project](https://docs.whaleal.com/project)

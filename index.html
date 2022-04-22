@@ -1,122 +1,131 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>鲸云社区文档专栏</title>
- <meta name="description" content="上海锦木信息技术有限公司特设文档专栏,主要用于分享MongoDB专业知识,服务社会,为技术爱好者提供一个平台">
- <meta name="keywords" content="MongoDB中文网,手册,MongoDB笔记,MongoDB翻译,MongoDB面试,MongoDB中文手册,MongoDB中文文档,MongoDB汉化文档">
- <!-- Favicons
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>鲸云社区文档专栏</title>
+    <meta name="description" content="上海锦木信息技术有限公司特设文档专栏,主要用于分享MongoDB专业知识,服务社会,为技术爱好者提供一个平台">
+    <meta name="keywords" content="MongoDB中文网,手册,MongoDB笔记,MongoDB翻译,MongoDB面试,MongoDB中文手册,MongoDB中文文档,MongoDB汉化文档">
+    <!-- Favicons
  ================================================== -->
-<link rel="shortcut icon" href="picture/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="picture/favicon.ico">
-<link rel="apple-touch-icon" sizes="72x72" href="picture/favicon.ico">
-<link rel="apple-touch-icon" sizes="114x114" href="picture/favicon.ico">
+    <link rel="shortcut icon" href="picture/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="picture/favicon.ico">
+    <link rel="apple-touch-icon" sizes="72x72" href="picture/favicon.ico">
+    <link rel="apple-touch-icon" sizes="114x114" href="picture/favicon.ico">
 
-<!-- Bootstrap -->
-<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 
-<!-- Stylesheet
+    <!-- Stylesheet
     ================================================== -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/nivo-lightbox.css">
-<link rel="stylesheet" type="text/css" href="css/default.css">
-<!-- <link href="css/417b0dc823444be780a706fcb8df04df.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+
+    <!-- <link href="css/417b0dc823444be780a706fcb8df04df.css" rel="stylesheet">
 <link href="css/7c61db7f327c4c53bfa3b084044b6212.css" rel="stylesheet">
 <link href="css/703bd6fdd0f149bbb5fa76f7e858ddaf.css" rel="stylesheet"> -->
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <style>
-    #portfolio .fa {
-    font-size: 60px;
-    color: #5e92fc;
-}
+        #portfolio .fa {
+            font-size: 60px;
+            color: #5e92fc;
+        }
     </style>
 </head>
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<!-- Navigation
+    <!-- Navigation
     ==========================================-->
-<nav id="menu" class="navbar navbar-default navbar-fixed-top">
-  <div class="container"> 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand page-scroll" href="#page-top"></a> </div>
-    
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a class="page-scroll" href="#page-top">首页</a></li>
-        <li><a href="#features" class="page-scroll">优势</a></li>
-        <li><a href="#about" class="page-scroll">服务</a></li>
-        <li><a href="#services" class="page-scroll">产品</a></li>
-        <li><a href="#testimonials" class="page-scroll">社区交流</a></li>
-          <li><a href="#mongodb" class="page-scroll">MongoDB中文专栏</a></li>
-        <li><a href="#develop" class="page-scroll">产品列表</a></li>
-          <li><a href="#devops" class="page-scroll">运维文档</a></li>
-        <!-- 
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand page-scroll" href="#page-top"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="#page-top">首页</a></li>
+                    <li><a href="#features" class="page-scroll">优势</a></li>
+                    <li><a href="#about" class="page-scroll">服务</a></li>
+                    <li><a href="#services" class="page-scroll">产品</a></li>
+                    <li><a href="#testimonials" class="page-scroll">开源项目</a></li>
+                    <li><a href="#develop" class="page-scroll">鲸云社区</a></li>
+
+                    <!-- <li><a href="#testimonials" class="page-scroll">社区交流</a></li> -->
+                    <!-- <li><a href="#mongodb" class="page-scroll">MongoDB中文专栏</a></li> -->
+                    <!-- <li><a href="#develop" class="page-scroll">产品列表</a></li> -->
+                    <!-- <li><a href="#devops" class="page-scroll">运维文档</a></li> -->
+                    <!-- 
         <li><a href="#team" class="page-scroll">团队</a></li> -->
-        <li><a href="#contact" class="page-scroll">联系</a></li>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse --> 
-  </div>
-</nav>
-<!-- Header -->
-<header id="header">
-  <div class="intro">
-    <div class="overlay">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2 intro-text">
-            <h1>锦木信息为您提供<span></span></h1>
-            <p>IT数据咨询与大数据解决方案</p>
-            <p>MongoDB北亚区核心合作伙伴和Akamai中国区核心合作伙伴</p>
-            <a href="#features" class="btn btn-custom btn-lg page-scroll">更多</a> </div>
+                    <li><a href="#contact" class="page-scroll">联系</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-      </div>
+    </nav>
+    <!-- Header -->
+    <header id="header">
+        <div class="intro">
+            <div class="overlay">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 intro-text">
+                            <h1>锦木信息为您提供<span></span></h1>
+                            <p>IT数据咨询与大数据解决方案</p>
+                            <p>MongoDB北亚区核心合作伙伴和Akamai中国区核心合作伙伴</p>
+                            <a href="#features" class="btn btn-custom btn-lg page-scroll">更多</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Features Section -->
+    <div id="features" class="text-center">
+        <div class="container">
+            <div class="col-md-10 col-md-offset-1 section-title">
+                <h2>优势</h2>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-4"> <i class="fa fa-check"></i>
+                    <h3>MongoDB</h3>
+                    <p>MongoDB是为现代应用程序开发人员和云时代构建的基于文档的通用分布式数据库。</p>
+                </div>
+                <div class="col-xs-12 col-md-4"> <i class="fa fa-thumbs-o-up"></i>
+                    <h3>Akamai</h3>
+                    <p>在网络边缘获得快速、智能且安全的体验 Akamai 让数字化体验更贴近用户，帮助用户远离攻击和威胁。</p>
+                </div>
+                <div class="col-xs-12 col-md-4"> <i class="fa fa-hand-o-up"></i>
+                    <h3>Vonage</h3>
+                    <p>助力您企业在数字时候誉满全球</p>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</header>
-<!-- Features Section -->
-<div id="features" class="text-center">
-  <div class="container">
-    <div class="col-md-10 col-md-offset-1 section-title">
-      <h2>优势</h2>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-md-4"> <i class="fa fa-check"></i>
-        <h3>MongoDB</h3>
-        <p>MongoDB是为现代应用程序开发人员和云时代构建的基于文档的通用分布式数据库。</p>
-      </div>
-      <div class="col-xs-12 col-md-4"> <i class="fa fa-thumbs-o-up"></i>
-        <h3>Akamai</h3>
-        <p>在网络边缘获得快速、智能且安全的体验 Akamai 让数字化体验更贴近用户，帮助用户远离攻击和威胁。</p>
-      </div>
-      <div class="col-xs-12 col-md-4"> <i class="fa fa-hand-o-up"></i>
-        <h3>Vonage</h3>
-        <p>助力您企业在数字时候誉满全球</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- About Section -->
-<div id="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-6"> <img src="picture/about.jpg" class="img-responsive" alt=""> </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="about-text">
-            <h2>服务</h2>
-            <p>我们提供从需求讨论到上线部署的全生命周期的数据服务，不仅仅是数据本身。</p>
-          
-          <!-- <h3>Why Choose Us?</h3>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6"> <img src="picture/about.jpg" class="img-responsive" alt=""> </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="about-text">
+                        <h2>服务</h2>
+                        <p>我们提供从需求讨论到上线部署的全生命周期的数据服务，不仅仅是数据本身。</p>
+
+                        <!-- <h3>Why Choose Us?</h3>
           <div class="list-style">
             <div class="col-lg-6 col-sm-6 col-xs-12">
               <ul>
@@ -135,249 +144,339 @@
               </ul>
             </div>
           </div> -->
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-</div>
-<!-- Services Section -->
-<div id="services" class="text-center">
-    <div class="container">
-        <div class="section-title">
-            <h2>产品</h2>
+
+    <!-- Services Section -->
+    <div id="services" class="text-center">
+        <div class="container">
+            <div class="section-title">
+                <h2>产品</h2>
+                <div class="row">
+                    <div class="col-4 col-sm-6 col-xs-6">
+                        <div class="row">
+                            <div class="col-2 col-xs-12"><img src="/template/img/index-about-1.png" alt="" /></div>
+                            <div class="col-10 col-xs-12">
+                                <p class="index-about-nav"><span>产品可靠</span><br>锦木信息是Akamai、MongoDB、Vonage代理商，为客户提供专业技术服务、咨询、应用开发。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-6 col-xs-6">
+                        <div class="row">
+                            <div class="col-2 col-xs-12"><img src="/template/img/index-about-2.png" alt="" /></div>
+                            <div class="col-10 col-xs-12">
+                                <p class="index-about-nav"><span>团队赋能</span><br>拥有专业的技术团队，可为客户提供技术服务、咨询和应用开发</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-6 col-xs-6">
+                        <div class="row">
+                            <div class="col-2 col-xs-12"><img src="/template/img/index-about-3.png" alt="" /></div>
+                            <div class="col-10 col-xs-12">
+                                <p class="index-about-nav"><span>标准规范</span><br>锦木信息于2020 年开发自有产品，并进行企业对外技术培训</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-6 col-xs-6">
+                        <div class="row">
+                            <div class="col-2 col-xs-12"><img src="/template/img/index-about-4.png" alt="" /></div>
+                            <div class="col-10 col-xs-12">
+                                <p class="index-about-nav"><span>支持到位</span><br>将管理思想、商业模式与IT技术手段相结合，提供IT咨询与服务</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-6 col-xs-6">
+                        <div class="row">
+                            <div class="col-2 col-xs-12"><img src="/template/img/index-about-5.png" alt="" /></div>
+                            <div class="col-10 col-xs-12">
+                                <p class="index-about-nav"><span>50+行业头部客户</span><br>锦木信息服务50+金融、保险、券商、游戏、电商等行业头部客户</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="testimonials">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>开源项目</h2>
+            </div>
+            <!-- <div class="row"> -->
+            <!-- <div class="col-xs-12 col-md-6"> -->
+            <!-- <a href=" https://docs.whaleal.com/mars/"><img src="picture/jijian.webp" class="img-responsive" alt=""></a> -->
+            <div class="item">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="" alt="">
+                            <div class="caption">
+                                <h3>mars</h3>
+                                <p>mars是一款 关系映射框架和我们经常接触的JPA ,反射技术息息相关，本项目主要针对非关系型数据库，NoSql 大类</p>
+                                <p><a href="https://github.com/whaleal/mars" class="btn " role="button">mars-></a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="" alt="">
+                            <div class="caption">
+                                <h3>icefrog</h3>
+                                <p>icefrog是一个小而全的Java工具类库，通过静态方法封装，降低相关API的学习成本，提高工作效率，使Java拥有函数式语言般的优雅，让Java语言也可以“甜甜的”</p>
+                                <p><a href="https://github.com/whaleal/icefrog" class="btn " role="button">icefrog-></a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="" alt="">
+                            <div class="caption">
+                                <h3>event</h3>
+                                <p>这是一个 Java 基础类库，用于促进事件驱动编程。 该框架的目的是提供一种简单的方法来生成和处理事件。 鼓励仅使用事件作为应用程序进程和第三方系统之间的通信方式
+                                </p>
+                                <p><a href="https://github.com/whaleal/event" class="btn " role="button">event-></a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="" alt="">
+                            <div class="caption">
+                                <h3>tuple</h3>
+                                <p>java tuple implementation </p>
+
+                                <p><a href="https://github.com/whaleal/tuple" class="btn " role="button">tuple-></a> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="col-xs-12 col-md-6">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>mars ，是上海锦木信息技术有限公司与相关方合作方共同研发的一款ODM/ORM框架，纪念中国火星探测任务“天问一号”的火星车祝融号成功登陆火星的乌托邦平原【2021年5月15日】，故起名为 mars。</p>
+                        </div>
+                    </div>
+
+                </div> -->
+            <!-- </div> -->
+
+        </div>
+    </div>
+    <div id="develop" class="text-center">
+        <div class="container">
+            <div class="section-title">
+                <h2>鲸云社区</h2>
+                <p>提供知识交流</p>
+            </div>
             <div class="row">
-                <div class="col-4 col-sm-6 col-xs-6">
-                    <div class="row">
-                        <div class="col-2 col-xs-12"><img src="/template/img/index-about-1.png" alt="" /></div>
-                        <div class="col-10 col-xs-12"><p class="index-about-nav"><span>产品可靠</span><br>锦木信息是Akamai、MongoDB、Vonage代理商，为客户提供专业技术服务、咨询、应用开发。</p></div>
-                    </div>
+                <div class="col-xs-12 col-md-6">
+                    <a href="https://www.whaleal.com"><img src="picture/jianyue.webp" alt="" width="100%" height="300px" class="transform"> </a>
                 </div>
-                <div class="col-4 col-sm-6 col-xs-6">
-                    <div class="row">
-                        <div class="col-2 col-xs-12"><img src="/template/img/index-about-2.png" alt="" /></div>
-                        <div class="col-10 col-xs-12"><p class="index-about-nav"><span>团队赋能</span><br>拥有专业的技术团队，可为客户提供技术服务、咨询和应用开发</p></div>
-                    </div>
-                </div>
-                <div class="col-4 col-sm-6 col-xs-6">
-                    <div class="row">
-                        <div class="col-2 col-xs-12"><img src="/template/img/index-about-3.png" alt="" /></div>
-                        <div class="col-10 col-xs-12"><p class="index-about-nav"><span>标准规范</span><br>锦木信息于2020 年开发自有产品，并进行企业对外技术培训</p></div>
-                    </div>
-                </div>
-                <div class="col-4 col-sm-6 col-xs-6">
-                    <div class="row">
-                        <div class="col-2 col-xs-12"><img src="/template/img/index-about-4.png" alt="" /></div>
-                        <div class="col-10 col-xs-12"><p class="index-about-nav"><span>支持到位</span><br>将管理思想、商业模式与IT技术手段相结合，提供IT咨询与服务</p></div>
-                    </div>
-                </div>
-                <div class="col-4 col-sm-6 col-xs-6">
-                    <div class="row">
-                        <div class="col-2 col-xs-12"><img src="/template/img/index-about-5.png" alt="" /></div>
-                        <div class="col-10 col-xs-12"><p class="index-about-nav"><span>50+行业头部客户</span><br>锦木信息服务50+金融、保险、券商、游戏、电商等行业头部客户</p></div>
-                    </div>
-                </div>
+                <div class="col-xs-12 col-md-6">
 
-        </div>
-      </div>
-    </div>
-</div>
+                    <div class="community"> <span style="vertical-align:middle;"><img src=" images/logo3.png " alt=" "></span> 鲸云社区</div>
+                    <span class="content">为用户提供一个信息交流的社区平台</span>
+                    <a href="https://www.whaleal.com" class="develop-img">
+                        <!-- <img src=" images/logo2.png " alt=" "> -->
+                        <span class="text ">了解更多</span>
+                        <span class="icon"></span>
+                    </a>
 
-<div id="testimonials">
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>社区交流</h2>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <div class="testimonial">
-            <div class="testimonial-content">
-              <p>MongoDB 真题分享</p>
-              <div class="testimonial-meta">提供历年来的真题分享专区，为MongoDB认证考试护航，定期安排线下培训</div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-xs-12 col-md-6">
-          <div class="testimonial">
-            <div class="testimonial-content">
-              <p>提供MongoDB 最新资讯</p>
-              <div class="testimonial-meta">以平台的方式，让大家互帮互助，积累经验教训</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </div>
-  </div>
+    <!-- <div id="testimonials ">
+        <div class="container ">
+            <div class="section-title text-center ">
+                <h2>社区交流</h2>
+            </div>
+            <div class="row ">
+                <div class="col-xs-12 col-md-6 ">
+                    <div class="testimonial ">
+                        <div class="testimonial-content ">
+                            <p>MongoDB 真题分享</p>
+                            <div class="testimonial-meta ">提供历年来的真题分享专区，为MongoDB认证考试护航，定期安排线下培训</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 ">
+                    <div class="testimonial ">
+                        <div class="testimonial-content ">
+                            <p>提供MongoDB 最新资讯</p>
+                            <div class="testimonial-meta ">以平台的方式，让大家互帮互助，积累经验教训</div>
+                        </div>
+                    </div>
+                </div>
 
-
-<div id="mongodb" class="text-center">
-    <div class="container">
-        <div class="section-title">
-            <h2>MongoDB文档专栏</h2>
-            <p>分享MongoDB专业知识</p>
+            </div>
         </div>
+    </div> -->
 
-        <div class="row">
-            <!-- <div class="col-xs-12 col-md-4">
-                 <a href="https://docs.whaleal.com/MongoDB-Manual-zh/">
 
-                     <img src="picture/timg.jpg" class="img-responsive" alt="88x88" href="https://docs.whaleal.com/MongoDB-Manual-zh/"
-                          style="width: 220px; height: 220px;">
+    <!-- <div id="mongodb " class="text-center ">
+        <div class="container ">
+            <div class="section-title ">
+                <h2>MongoDB文档专栏</h2>
+                <p>分享MongoDB专业知识</p>
+            </div>
 
-                 <div class="service-desc">
-                     <h3>MongoDB中文手册</h3>
-                 </div>
-                 </a>
-             </div>-->
-            <div class="col-xs-12 col-md-4">
-                <a href="https://docs.whaleal.com/MongoDB-Manual-zh/">
-                    <img src="picture/timg.jpg" class="img-responsive" alt="" width="auto"
-                         height="100%">
+            <div class="row ">
+             <div class="col-xs-12 col-md-4 ">
+                    <a href="https://docs.whaleal.com/MongoDB-Manual-zh/ ">
+
+                        <img src="picture/timg.jpg " class="img-responsive " alt="88x88 " href="https://docs.whaleal.com/MongoDB-Manual-zh/ " style="width: 220px; height: 220px; ">
+
+                        <div class="service-desc ">
+                            <h3>MongoDB中文手册</h3>
+                        </div>
+                    </a>
+            </div>
+            <div class="col-xs-12 col-md-4 ">
+                <a href="https://docs.whaleal.com/MongoDB-Manual-zh/ ">
+                    <img src="picture/timg.jpg " class="img-responsive " alt=" " width="auto " height="100% ">
 
                     <h3>MongoDB中文手册 </h3>
                 </a>
             </div>
 
-            <div class="col-xs-12 col-md-4">
-                <a href="https://docs.jinmu.info/the-little-mongodb-book/">
-                    <img src="picture/thelittlemongodbbook.jpg" class="img-responsive" alt="" width="auto"
-                         height="100%">
+            <div class="col-xs-12 col-md-4 ">
+                <a href="https://docs.jinmu.info/the-little-mongodb-book/ ">
+                    <img src="picture/thelittlemongodbbook.jpg " class="img-responsive " alt=" " width="auto " height="100% ">
 
                     <h3>the little mongodb book </h3>
                 </a>
             </div>
 
 
-            <div class="col-xs-12 col-md-4">
-                <a href="https://docs.jinmu.info/quick-learn-mongo/">
-                    <img src="picture/disscussion.jpeg" class="img-responsive" alt="" width="auto"
-                         height="100%">
+            <div class="col-xs-12 col-md-4 ">
+                <a href="https://docs.jinmu.info/quick-learn-mongo/ ">
+                    <img src="picture/disscussion.jpeg " class="img-responsive " alt=" " width="auto " height="100% ">
 
                     <h3>快学MongoDB</h3>
                 </a>
             </div>
-            <div class="col-xs-12 col-md-4">
-                <a href="https://github.com/JinMuInfo/Mongo-Driver-Usage/">
-                    <img src="picture/driver.jpeg" class="img-responsive" alt="" width="auto"
-                         height="100%">
+            <div class="col-xs-12 col-md-4 ">
+                <a href="https://github.com/JinMuInfo/Mongo-Driver-Usage/ ">
+                    <img src="picture/driver.jpeg " class="img-responsive " alt=" " width="auto " height="100% ">
 
                     <h3>MongoDB 驱动使用</h3>
                 </a>
             </div>
 
-            <div class="col-xs-12 col-md-4">
-                <a href="https://docs.jinmu.info/discussion-for-mongo/">
-                    <img src="picture/driver.jpeg" class="img-responsive" alt="" width="auto"
-                         height="100%">
+            <div class="col-xs-12 col-md-4 ">
+                <a href="https://docs.jinmu.info/discussion-for-mongo/ ">
+                    <img src="picture/driver.jpeg " class="img-responsive " alt=" " width="auto " height="100% ">
                     <h3>MongoDB常见问题讨论区</h3>
                 </a>
             </div>
         </div>
     </div>
-</div>
+    </div> -->
 
-
-<div id="develop" class="text-center">
-    <div class="container">
-        <div class="section-title">
-            <h2>产品列表</h2>
-            <p>分享专业知识</p>
-        </div>
-
-        <div class="row">
-
-            <div class="col-xs-12 col-md-4">
-                <a href="https://docs.jinmu.info/python/">
-                    <img src="picture/python.jpeg" class="img-responsive" alt="" width="auto"
-                         height="100%">
-
-                    <h3>Python 基础</h3>
-                </a>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <a href="https://docs.jinmu.info/java/">
-                    <img src="picture/java_logo.jpg" class="img-responsive" alt="" width="auto"
-                         height="100%">
-
-                    <h3>Java 基础</h3>
-                </a>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <a href="https://docs.jinmu.info/leetcode/">
-                    <img src="picture/leetcode_logo.jpeg" class="img-responsive" alt="" width="auto"
-                         height="100%">
-
-                    <h3>没事LeetCode</h3>
-                </a>
+    <!-- <div id="develop " class="text-center ">
+        <div class="container ">
+            <div class="section-title ">
+                <h2>产品列表</h2>
+                <p>分享专业知识</p>
             </div>
 
+            <div class="row ">
 
-        </div>
-        
-      </div>
-</div>
+                <div class="col-xs-12 col-md-4 ">
+                    <a href="https://docs.jinmu.info/python/ ">
+                        <img src="picture/python.jpeg " class="img-responsive " alt=" " width="auto " height="100% ">
+
+                        <h3>Python 基础</h3>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-4 ">
+                    <a href="https://docs.jinmu.info/java/ ">
+                        <img src="picture/java_logo.jpg " class="img-responsive " alt=" " width="auto " height="100% ">
+
+                        <h3>Java 基础</h3>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-4 ">
+                    <a href="https://docs.jinmu.info/leetcode/ ">
+                        <img src="picture/leetcode_logo.jpeg " class="img-responsive " alt=" " width="auto " height="100% ">
+
+                        <h3>没事LeetCode</h3>
+                    </a>
+                </div>
 
 
-<div id="devops" class="text-center">
-    <div class="container">
-        <div class="section-title">
-            <h2>运维文档</h2>
-            <p>分享专业知识</p>
-        </div>
-
-        <div class="row">
-
-
-            <div class="col-xs-12 col-md-4">
-                <a href="https://docs.jinmu.info/linux/">
-                    <img src="picture/linux.jpg" class="img-responsive" alt="" width="auto"
-                         height="100%">
-
-                    <h3>linux 中文材料</h3>
-                </a>
             </div>
 
+        </div>
+    </div> -->
 
+
+    <!-- <div id="devops " class="text-center ">
+        <div class="container ">
+            <div class="section-title ">
+                <h2>运维文档</h2>
+                <p>分享专业知识</p>
+            </div>
+
+            <div class="row ">
+
+
+                <div class="col-xs-12 col-md-4 ">
+                    <a href="https://docs.jinmu.info/linux/ ">
+                        <img src="picture/linux.jpg " class="img-responsive " alt=" " width="auto " height="100% ">
+
+                        <h3>linux 中文材料</h3>
+                    </a>
+                </div>
+
+
+
+            </div>
 
         </div>
+    </div> -->
 
-    </div>
-</div>
-
-<!-- <div id="team" class="text-center">
-  <div class="container">
-    <div class="col-md-8 col-md-offset-2 section-title">
+    <!-- <div id="team " class="text-center ">
+  <div class="container ">
+    <div class="col-md-8 col-md-offset-2 section-title ">
       <h2>Meet the Team</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
     </div>
-    <div id="row">
-      <div class="col-md-3 col-sm-6 team">
-        <div class="thumbnail"> <img src="picture/01.jpg" alt="..." class="team-img">
-          <div class="caption">
+    <div id="row ">
+      <div class="col-md-3 col-sm-6 team ">
+        <div class="thumbnail "> <img src="picture/01.jpg " alt="... " class="team-img ">
+          <div class="caption ">
             <h4>John Doe</h4>
             <p>Director</p>
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6 team">
-        <div class="thumbnail"> <img src="picture/02.jpg" alt="..." class="team-img">
-          <div class="caption">
+      <div class="col-md-3 col-sm-6 team ">
+        <div class="thumbnail "> <img src="picture/02.jpg " alt="... " class="team-img ">
+          <div class="caption ">
             <h4>Mike Doe</h4>
             <p>Senior Designer</p>
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6 team">
-        <div class="thumbnail"> <img src="picture/03.jpg" alt="..." class="team-img">
-          <div class="caption">
+      <div class="col-md-3 col-sm-6 team ">
+        <div class="thumbnail "> <img src="picture/03.jpg " alt="... " class="team-img ">
+          <div class="caption ">
             <h4>Jane Doe</h4>
             <p>Senior Designer</p>
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6 team">
-        <div class="thumbnail"> <img src="picture/04.jpg" alt="..." class="team-img">
-          <div class="caption">
+      <div class="col-md-3 col-sm-6 team ">
+        <div class="thumbnail "> <img src="picture/04.jpg " alt="... " class="team-img ">
+          <div class="caption ">
             <h4>Karen Doe</h4>
             <p>Project Manager</p>
           </div>
@@ -386,64 +485,69 @@
     </div>
   </div>
 </div> -->
-<!-- Contact Section -->
-<div id="contact">
-  <div class="container">
-      <div class="section-title">
-          <h2>联系</h2>
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container ">
+            <div class="section-title ">
+                <h2>联系</h2>
+            </div>
+            <div class="container footer-contact ">
+                <div class="row ">
+                    <div class="col-5 col-xs-12 text-right text-center-xs ">
+                        <p>想要了解更多产品和服务信息？</p>
+                        <a href="http://www.jinmuinfo.com/about/contact/ " class="banner-more contact-more ">联系我们 --></a>
+                    </div>
+                    <!-- <div class="col-2 col-xs-12 text-center "><img src="/template/img/index_92.jpg " alt=" " /></div> -->
+                    <div class="col-5 col-xs-12 text-left text-center-xs ">
+                        <p class="text-sm ">全国热线：021-58870038 / 021-66696778<br /> 咨询邮箱：support@jinmuinfo.com
+                            <br /> 上海市静安区江场路1228弄10号
+                            <br /> 中环协信天地12A06--07室
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      <div class="container footer-contact">
-          <div class="row">
-              <div class="col-5 col-xs-12 text-right text-center-xs">
-                  <p>想要了解更多产品和服务信息？</p>
-                  <a href="http://www.jinmuinfo.com/about/contact/" class="banner-more contact-more">联系我们 --></a>
-              </div>
-              <div class="col-2 col-xs-12 text-center"><img src="/template/img/index_92.jpg" alt="" /></div>
-              <div class="col-5 col-xs-12 text-left text-center-xs">
-                  <p class="text-sm">全国热线：021-58870038 / 021-66696778<br />
-                      咨询邮箱：support@jinmuinfo.com<br />
-                      上海市静安区江场路1228弄10号<br />
-                      中环协信天地12A06--07室</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div id="footer">
-  <div class="container text-center">
-    <p>Copyright &copy; 上海锦木信息技术有限公司 All rights reserved.</p>
-  </div>
-</div>
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
-<script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/smoothscroll.js"></script> 
-<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
-<script type="text/javascript" src="js/main.js"></script>
-<script>
-    (function(){
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        }
-        else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-<script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?be45b1d7857fe784feb39634ff071d08";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
+    </div>
+    <div id="footer ">
+        <div class="container text-center ">
+            <p>Copyright &copy; 上海锦木信息技术有限公司 All rights reserved.</p>
+        </div>
+    </div>
+    <script type="text/javascript " src="js/jquery.1.11.1.js "></script>
+    <script type="text/javascript " src="js/bootstrap.js "></script>
+    <script type="text/javascript " src="js/smoothscroll.js "></script>
+    <script type="text/javascript " src="js/nivo-lightbox.js "></script>
+    <script type="text/javascript " src="js/main.js "></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        (function() {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            } else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script ")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script ");
+            hm.src = "https://hm.baidu.com/hm.js?be45b1d7857fe784feb39634ff071d08 ";
+            var s = document.getElementsByTagName("script ")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
 
-<div style="display:none;">
-</div>
+        var mySwiper = new Swiper('.swiper', {
+
+        })
+    </script>
+
+    <div style="display:none; ">
+    </div>
 </body>
+
 </html>

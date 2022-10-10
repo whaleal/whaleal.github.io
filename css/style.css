@@ -576,7 +576,8 @@ header .intro-text {
 }
 
 #develop {
-    height: 500px;
+    padding: 80px 0;
+    /* height: 500px; */
     /* background-image: url(../picture/jianyue.webp); */
 }
 
@@ -644,6 +645,11 @@ header .intro-text {
 #team .thumbnail .caption {
     padding: 10px 0 0 0;
     color: #888;
+}
+
+#documents{
+    padding-top:80px ;
+    background-color: #ccc;
 }
 
 

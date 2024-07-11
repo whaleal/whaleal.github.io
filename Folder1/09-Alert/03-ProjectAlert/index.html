@@ -1,5 +1,3 @@
-<!-- Elements added to "home.html" will only be displayed on the home page -->
-
 <!-- Elements added to "main.html" will be displayed on all pages -->
 
 
@@ -15,23 +13,25 @@
       
       
       
+        <link rel="prev" href="../02-MongoDBAlert/">
       
-        <link rel="next" href="Folder1/">
+      
+        <link rel="next" href="../../10-Diagnose/01-ClusterInfo/">
       
       
-      <link rel="icon" href="images/logo.png">
+      <link rel="icon" href="../../../images/logo.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
     
     
       
-        <title>Home - MkDocs docs</title>
+        <title>Project Alert - MkDocs docs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,7 +50,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,6 +78,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#project-alert" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -90,9 +95,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="MkDocs docs" class="md-header__button md-logo" aria-label="MkDocs docs" data-md-component="logo">
+    <a href="../../.." title="MkDocs docs" class="md-header__button md-logo" aria-label="MkDocs docs" data-md-component="logo">
       
-  <img src="images/logo1.svg" alt="logo">
+  <img src="../../../images/logo1.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -109,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Project Alert
             
           </span>
         </div>
@@ -215,11 +220,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -234,11 +237,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="Folder1/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
     
@@ -258,7 +263,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="Folder2/" class="md-tabs__link">
+        <a href="../../../Folder2/" class="md-tabs__link">
           
   
     
@@ -278,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="Folder3/" class="md-tabs__link">
+        <a href="../../../Folder3/" class="md-tabs__link">
           
   
     
@@ -301,311 +306,8 @@
     <div class="md-container" data-md-component="container">
       
       
-
         
       
-
-
-<!-- Stole this styling from the "up42-py" project (link: https://sdk.up42.com/) -->
-<!-- .tx-container Original Green Gradient: hsla(160deg,47%,55%,1) -->
-<style>
-
-    .md-main {
-        flex-grow: 0
-    }
-
-    .md-main__inner {
-        display: flex;
-        height: 100%;
-    }
-
-    .tx-container {
-        padding-top: .0rem;
-        background: linear-gradient(to bottom, var(--md-primary-fg-color), hsla(0deg,47%,55%,1) 99%,#fff 99%)
-    }
-
-    .tx-hero {
-        margin: 32px 2.8rem;
-        color: var(--md-primary-bg-color);
-        justify-content: center;
-    }
-
-    .tx-hero h1 {
-        margin-bottom: 1rem;
-        color: currentColor;
-        font-weight: 700
-    }
-
-    .tx-hero__content {
-        padding-bottom: 1rem;
-        margin: 0 auto;
-    }
-
-    .tx-hero__image{
-        width:17rem;
-        height:17rem;
-        order:1;
-        padding-right: 2.5rem;
-    }
-
-    .tx-hero .md-button {
-        margin-top: .5rem;
-        margin-right: .5rem;
-        color: var(--md-primary-bg-color)
-    }
-
-    .tx-hero .md-button--primary {
-        background-color: var(--md-primary-bg-color);
-        color: hsla(280deg, 37%, 48%, 1);
-        border-color: var(--md-primary-bg-color)
-    }
-
-    .tx-hero .md-button:focus,
-    .tx-hero .md-button:hover {
-        background-color: var(--md-accent-fg-color);
-        color: var(--md-default-bg-color);
-        border-color: var(--md-accent-fg-color)
-    }
-
-    .feature-item h2 svg {
-        height: 30px;
-        float: left;
-        margin-right: 10px;
-        transform: translateY(10%);
-    }
-
-    .top-hr {
-        margin-top: 42px;
-    }
-
-    .feature-item {
-	border-radius: 20px;
-	margin-top: .5rem;
-        margin-right: .5rem;
-	background-color: var(--md-primary-bg-color);
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-        box-sizing: border-box;
-        padding: 0 15px;
-        word-break: break-word
-    }
-
-    .feature-item h2 {
-        color: #333;
-        font-weight: 300;
-        font-size: 25px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        line-height: normal;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        font-family: inherit;
-    }
-
-    .feature-item p {
-        font-size: 16px;
-        line-height: 1.8em;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        color: #111;
-        margin: 0 0 10px;
-        display: block;
-    }
-
-    @media screen and (max-width:30em) {
-        .tx-hero h1 {
-            font-size: 1.4rem
-        }
-    }
-
-    @media screen and (min-width:60em) {
-        .md-sidebar--secondary {
-            display: none
-        }
-
-        .tx-hero {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .tx-hero__content {
-            max-width: 22rem;
-            margin-top: 3.5rem;
-            margin-bottom: 3.5rem;
-            margin-left: 1.0rem;
-            margin-right: 4.0rem;
-            align-items: center;
-        }
-    }
-
-    @media screen and (min-width:76.25em) {
-        .md-sidebar--primary {
-            display: none
-        }
-
-        .top-hr {
-            width: 100%;
-            display: flex;
-            max-width: 61rem;
-            margin-right: auto;
-            margin-left: auto;
-            padding: 0 .2rem;
-        }
-
-        .bottom-hr {
-            margin-top: 10px;
-            width: 100%;
-            display: flex;
-            max-width: 61rem;
-            margin-right: auto;
-            margin-left: auto;
-            padding: 0 .2rem;
-        }
-
-        .feature-item {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .feature-item:hover {
-            background-color: #526cfe47;
-            border-radius: 3px;
-        }
-    }
-
-    .hr {
-        border-bottom: 1px solid #eee;
-        width: 100%;
-        margin: 20px 0;
-    }
-
-    .text-center {
-        text-align: center;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 15px;
-        font-family: 'Lato', sans-serif;
-        font-size: 23px;
-        font-weight: 300;
-        padding-bottom: 10px;
-    }
-
-    .logos {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-flow: row wrap;
-        margin: 0 auto;
-    }
-
-    .logos img {
-        flex: 1 1 auto;
-        padding: 25px;
-        max-height: 130px;
-        vertical-align: middle;
-    }
-
-    .hr-logos {
-        margin-top: 0;
-        margin-bottom: 30px;
-    }
-
-    .md-footer-meta__inner {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 1.0rem;
-    }
-
-    .md-footer-social {
-        padding-top: 20px;
-    }
-</style>
-
-
-<!-- Main site entry button descriptions -->
-<section class="tx-container">
-    <div class="md-grid md-typeset">
-      <div class="tx-hero">
-      
-        <!-- Custom Image -->
-        <div class="tx-hero__image">
-	  <img src="attachments/wizard-posting.png" draggable="false">
-        </div>
-	
-	<!-- Main Tagline -->
-        <div class="tx-hero__content">
-          <h1>Whaleal</h1>
-          <p>Welcome to the Whaleal Product Documentation website, which provides comprehensive documentation to help you understand and use our products.
-</p>
-	  
-	  <!-- Added Buttons (up to 3) --><a href="Folder1/" title="Material | MkDocs" class="md-button md-button--primary">
-            Main Clicky
-          </a><a href="Folder2/" title="Material | MkDocs" class="md-button">
-            Clicky 2
-          </a><a href="Folder3/" title="Material | MkDocs" class="md-button">
-            Clicky 3
-          </a></div>
-      </div>
-    </div>
-</section>
-
-
-<!-- Main site box descriptions -->
-<div class="top-hr">
-
-    <!-- Start Outer Condition --><div class="feature-item">
-        <h2>
-	    <!-- People Icon --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                    d="M16 17v2H2v-2s0-4 7-4 7 4 7 4m-3.5-9.5A3.5 3.5 0 109 11a3.5 3.5 0 003.5-3.5m3.44 5.5A5.32 5.32 0 0118 17v2h4v-2s0-3.63-6.06-4M15 4a3.39 3.39 0 00-1.93.59 5 5 0 010 5.82A3.39 3.39 0 0015 11a3.5 3.5 0 000-7z" />
-            </svg><!-- Gear Icon --><!-- Image Icon --><!-- Button Description -->
-            Main Clicky
-        </h2>
-        <p>This joker navigates to the shadow wizard armory located in "/Folder1/index.md"
-</p>
-    </div><!-- End Outer Condition -->
-    
-    <!-- Start Outer Condition --><div class="feature-item">
-        <h2>
-	    <!-- People Icon --><!-- Gear Icon --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                    d="M15 17v-3h3v-2l4 3.5-4 3.5v-2h-3m2 1v3h-3v2l-4-3.5 4-3.5v2h3M12 8c-2.21 0-4 1.8-4 4 0 1.91 1.35 3.54 3.21 3.92L16 11.86A3.997 3.997 0 0012 8m0 6c-1.1 0-2-.89-2-2s.9-2 2-2 2 .9 2 2-.89 2-2 2m9.66-5.27l-2-3.46c-.12-.22-.38-.31-.61-.22l-2.49 1c-.51-.41-1.06-.74-1.69-1l-.37-2.63A.506.506 0 0014 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.26-1.17.59-1.69 1L5 5.05c-.23-.09-.5 0-.61.22l-2 3.46c-.13.21-.08.49.11.64L4.57 11l-.07 1 .07 1-2.11 1.63c-.2.15-.25.43-.12.64l2 3.46c.11.27.4.38.66.27l2.5-1c.24.19.5.37.76.53l1.65-1.4c-.77-.33-1.45-.82-2-1.45l-2.41 1-.77-1.3L6.8 13.8a5.55 5.55 0 010-3.6L4.69 8.65l.75-1.3 2.41 1c.78-.9 1.83-1.53 3-1.78l.4-2.57h1.5l.37 2.62c1.17.24 2.22.88 3 1.77l2.41-1 .75 1.3-2.08 1.51c.09.26.16.53.2.8h2l2.1-1.63a.48.48 0 00.16-.64M12 8c-2.21 0-4 1.8-4 4 0 1.91 1.35 3.54 3.21 3.92L16 11.86A3.997 3.997 0 0012 8m0 6c-1.1 0-2-.89-2-2s.9-2 2-2 2 .9 2 2-.89 2-2 2m0-6c-2.21 0-4 1.8-4 4 0 1.91 1.35 3.54 3.21 3.92L16 11.86A3.997 3.997 0 0012 8m0 6c-1.1 0-2-.89-2-2s.9-2 2-2 2 .9 2 2-.89 2-2 2z" />
-            </svg><!-- Image Icon --><!-- Button Description -->
-	    Clicky 2
-        </h2>
-        <p>This goober navigates to some important thingies located in "/Folder2/index.md"
-</p>
-    </div><!-- End Outer Condition -->
-    
-    <!-- Start Outer Condition --><div class="feature-item">
-        <h2>
-	    <!-- People Icon --><!-- Gear Icon --><!-- Image Icon --><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M20.4 14.5L16 10 4 20"/>
-	    </svg><!-- Button Description -->
-            Clicky 3
-        </h2>
-        <p>This psycho navigates to an interesting table of stuff located in "/Folder3/index.md"
-</p>
-    </div><!-- End Outer Condition -->
-</div>
-
-<div class="top-hr">
-    <div class="hr">
-    </div>
-</div>
-
-
-<!-- Toggleable JavaScript execution --><script>
-document$.subscribe(function() {
-  console.log("'home_execute_js' is enabled:");
-  console.log("This is an example!");
-
-}).unsubscribe();
-</script>
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
@@ -622,9 +324,9 @@ document$.subscribe(function() {
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="MkDocs docs" class="md-nav__button md-logo" aria-label="MkDocs docs" data-md-component="logo">
+    <a href="../../.." title="MkDocs docs" class="md-nav__button md-logo" aria-label="MkDocs docs" data-md-component="logo">
       
-  <img src="images/logo1.svg" alt="logo">
+  <img src="../../../images/logo1.svg" alt="logo">
 
     </a>
     MkDocs docs
@@ -648,17 +350,10 @@ document$.subscribe(function() {
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -667,7 +362,6 @@ document$.subscribe(function() {
   
 
       </a>
-      
     </li>
   
 
@@ -676,6 +370,8 @@ document$.subscribe(function() {
       
   
   
+    
+  
   
   
     
@@ -726,19 +422,22 @@ document$.subscribe(function() {
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="Folder1/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -749,13 +448,13 @@ document$.subscribe(function() {
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Folder1
@@ -771,7 +470,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/03-Projects/" class="md-nav__link">
+      <a href="../../03-Projects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -838,7 +537,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/01-WhalealOverview/01-WhalealArchitecture/" class="md-nav__link">
+      <a href="../../01-WhalealOverview/01-WhalealArchitecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -859,7 +558,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/01-WhalealOverview/02-ExampleDeployment/" class="md-nav__link">
+      <a href="../../01-WhalealOverview/02-ExampleDeployment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -880,7 +579,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/01-WhalealOverview/03-QuickStart/" class="md-nav__link">
+      <a href="../../01-WhalealOverview/03-QuickStart/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -955,7 +654,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/02-InstallWhaleal/01-InstallationChecklist/" class="md-nav__link">
+      <a href="../../02-InstallWhaleal/01-InstallationChecklist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -976,7 +675,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/02-InstallWhaleal/02-HardwareAndSoftwareRequirements/" class="md-nav__link">
+      <a href="../../02-InstallWhaleal/02-HardwareAndSoftwareRequirements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1043,7 +742,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/02-InstallWhaleal/03-InstallWhaleal/01-InstallWhalealInAWSMarketPlace/" class="md-nav__link">
+      <a href="../../02-InstallWhaleal/03-InstallWhaleal/01-InstallWhalealInAWSMarketPlace/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1064,7 +763,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/02-InstallWhaleal/03-InstallWhaleal/02-InstallWhalealinDocker/" class="md-nav__link">
+      <a href="../../02-InstallWhaleal/03-InstallWhaleal/02-InstallWhalealinDocker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1085,7 +784,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/02-InstallWhaleal/03-InstallWhaleal/03-OnPremiseInstallWhaleal/" class="md-nav__link">
+      <a href="../../02-InstallWhaleal/03-InstallWhaleal/03-OnPremiseInstallWhaleal/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1164,7 +863,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/03-Projects/01-Projects/" class="md-nav__link">
+      <a href="../../03-Projects/01-Projects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1247,7 +946,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/04-CreateDeployment/01-DeploymentPrerequisites/" class="md-nav__link">
+      <a href="../../04-CreateDeployment/01-DeploymentPrerequisites/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1268,7 +967,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/04-CreateDeployment/03-AddK8SCluster/" class="md-nav__link">
+      <a href="../../04-CreateDeployment/03-AddK8SCluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1289,7 +988,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/04-CreateDeployment/04-DeployStandalone/" class="md-nav__link">
+      <a href="../../04-CreateDeployment/04-DeployStandalone/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1310,7 +1009,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/04-CreateDeployment/05-DeployReplicaSet/" class="md-nav__link">
+      <a href="../../04-CreateDeployment/05-DeployReplicaSet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1331,7 +1030,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/04-CreateDeployment/06-DeployShardedCluster/" class="md-nav__link">
+      <a href="../../04-CreateDeployment/06-DeployShardedCluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1352,7 +1051,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/04-CreateDeployment/07-DeployExistingCluster/" class="md-nav__link">
+      <a href="../../04-CreateDeployment/07-DeployExistingCluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1419,7 +1118,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/04-CreateDeployment/02-AddEC2/01-ResourceQuota/" class="md-nav__link">
+      <a href="../../04-CreateDeployment/02-AddEC2/01-ResourceQuota/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1440,7 +1139,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/04-CreateDeployment/02-AddEC2/02-SubscribeAgent/" class="md-nav__link">
+      <a href="../../04-CreateDeployment/02-AddEC2/02-SubscribeAgent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1461,7 +1160,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/04-CreateDeployment/02-AddEC2/03-ManuallyAddAgent/" class="md-nav__link">
+      <a href="../../04-CreateDeployment/02-AddEC2/03-ManuallyAddAgent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1550,7 +1249,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/05-ManageDeployments/01-ViewAllClusters/" class="md-nav__link">
+      <a href="../../05-ManageDeployments/01-ViewAllClusters/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1571,7 +1270,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/05-ManageDeployments/02-EditDeploymentConfiguration/" class="md-nav__link">
+      <a href="../../05-ManageDeployments/02-EditDeploymentConfiguration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1592,7 +1291,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/05-ManageDeployments/03-EditsReplicaSets/" class="md-nav__link">
+      <a href="../../05-ManageDeployments/03-EditsReplicaSets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1613,7 +1312,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/05-ManageDeployments/04-ShardedClusterOperations/" class="md-nav__link">
+      <a href="../../05-ManageDeployments/04-ShardedClusterOperations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1634,7 +1333,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/05-ManageDeployments/05-StopManagingandorMonitoringOneDeployment/" class="md-nav__link">
+      <a href="../../05-ManageDeployments/05-StopManagingandorMonitoringOneDeployment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1655,7 +1354,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/05-ManageDeployments/06-MongoDBOperation/" class="md-nav__link">
+      <a href="../../05-ManageDeployments/06-MongoDBOperation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1730,7 +1429,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/06-Monitor/01-MonitoringInstructions/" class="md-nav__link">
+      <a href="../../06-Monitor/01-MonitoringInstructions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1751,7 +1450,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/06-Monitor/02-UsageMonitoring/" class="md-nav__link">
+      <a href="../../06-Monitor/02-UsageMonitoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1772,7 +1471,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/06-Monitor/03-MonitoringIndicatorDetails/" class="md-nav__link">
+      <a href="../../06-Monitor/03-MonitoringIndicatorDetails/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1845,7 +1544,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/07-BackupAndRestore/02-Restore/" class="md-nav__link">
+      <a href="../../07-BackupAndRestore/02-Restore/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1910,7 +1609,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/07-BackupAndRestore/01-Backup/01-CreateRepository/" class="md-nav__link">
+      <a href="../../07-BackupAndRestore/01-Backup/01-CreateRepository/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1931,7 +1630,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/07-BackupAndRestore/01-Backup/02-Operations/" class="md-nav__link">
+      <a href="../../07-BackupAndRestore/01-Backup/02-Operations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2012,7 +1711,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/08-Security/01-ConfigureFirewalltoAccessWhaleal/" class="md-nav__link">
+      <a href="../../08-Security/01-ConfigureFirewalltoAccessWhaleal/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2083,7 +1782,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/08-Security/03-SecureMongoDBDeploymentswithAuthentication/01-MongoDBAccessControl/" class="md-nav__link">
+      <a href="../../08-Security/03-SecureMongoDBDeploymentswithAuthentication/01-MongoDBAccessControl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2104,7 +1803,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/08-Security/03-SecureMongoDBDeploymentswithAuthentication/02-EnableUsernamePasswordAuthentication/" class="md-nav__link">
+      <a href="../../08-Security/03-SecureMongoDBDeploymentswithAuthentication/02-EnableUsernamePasswordAuthentication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2125,7 +1824,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/08-Security/03-SecureMongoDBDeploymentswithAuthentication/03-EnableX509Authentication/" class="md-nav__link">
+      <a href="../../08-Security/03-SecureMongoDBDeploymentswithAuthentication/03-EnableX509Authentication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2146,7 +1845,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/08-Security/03-SecureMongoDBDeploymentswithAuthentication/04-ManageMongoDBUsersandRoles/" class="md-nav__link">
+      <a href="../../08-Security/03-SecureMongoDBDeploymentswithAuthentication/04-ManageMongoDBUsersandRoles/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2167,7 +1866,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/08-Security/03-SecureMongoDBDeploymentswithAuthentication/05-ConfigureandDeployAuditing/" class="md-nav__link">
+      <a href="../../08-Security/03-SecureMongoDBDeploymentswithAuthentication/05-ConfigureandDeployAuditing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2201,8 +1900,10 @@ document$.subscribe(function() {
                 
   
   
+    
   
   
+  
     
     
       
@@ -2218,11 +1919,11 @@ document$.subscribe(function() {
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11" checked>
         
           
           <label class="md-nav__link" for="__nav_2_11" id="__nav_2_11_label" tabindex="0">
@@ -2236,7 +1937,7 @@ document$.subscribe(function() {
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_11">
             <span class="md-nav__icon md-icon"></span>
             09 Alert
@@ -2250,7 +1951,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/09-Alert/01-HostAlert/" class="md-nav__link">
+      <a href="../01-HostAlert/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2271,7 +1972,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/09-Alert/02-MongoDBAlert/" class="md-nav__link">
+      <a href="../02-MongoDBAlert/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2289,10 +1990,30 @@ document$.subscribe(function() {
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="Folder1/09-Alert/03-ProjectAlert/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Project Alert
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -2301,6 +2022,62 @@ document$.subscribe(function() {
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lark" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lark
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dingtalk" class="md-nav__link">
+    <span class="md-ellipsis">
+      DingTalk
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#webhook" class="md-nav__link">
+    <span class="md-ellipsis">
+      WebHook
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2371,7 +2148,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/10-Diagnose/01-ClusterInfo/" class="md-nav__link">
+      <a href="../../10-Diagnose/01-ClusterInfo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2392,7 +2169,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/10-Diagnose/02-ClusterHealth/" class="md-nav__link">
+      <a href="../../10-Diagnose/02-ClusterHealth/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2413,7 +2190,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/10-Diagnose/03-Performance/" class="md-nav__link">
+      <a href="../../10-Diagnose/03-Performance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2434,7 +2211,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/10-Diagnose/04-LogVis/" class="md-nav__link">
+      <a href="../../10-Diagnose/04-LogVis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2455,7 +2232,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/10-Diagnose/05-ExploreData/" class="md-nav__link">
+      <a href="../../10-Diagnose/05-ExploreData/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2526,7 +2303,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/11-Audit/01-Audit/" class="md-nav__link">
+      <a href="../../11-Audit/01-Audit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2601,7 +2378,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/12-Account/01-PersonalCenter/" class="md-nav__link">
+      <a href="../../12-Account/01-PersonalCenter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2622,7 +2399,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/12-Account/02-UserManagement/" class="md-nav__link">
+      <a href="../../12-Account/02-UserManagement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2643,7 +2420,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/12-Account/03-AccountConfiguration/" class="md-nav__link">
+      <a href="../../12-Account/03-AccountConfiguration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2722,7 +2499,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/13-Setting/01-MongoDBPackge/" class="md-nav__link">
+      <a href="../../13-Setting/01-MongoDBPackge/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2743,7 +2520,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/13-Setting/02-SMTP/" class="md-nav__link">
+      <a href="../../13-Setting/02-SMTP/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2764,7 +2541,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/13-Setting/03-CollectionGranularity/" class="md-nav__link">
+      <a href="../../13-Setting/03-CollectionGranularity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2785,7 +2562,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/13-Setting/04-Kubernetes/" class="md-nav__link">
+      <a href="../../13-Setting/04-Kubernetes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2806,7 +2583,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/13-Setting/05-S3/" class="md-nav__link">
+      <a href="../../13-Setting/05-S3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2879,7 +2656,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/14-Support/01-ClusterInspection/" class="md-nav__link">
+      <a href="../../14-Support/01-ClusterInspection/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2900,7 +2677,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/14-Support/02-Case/" class="md-nav__link">
+      <a href="../../14-Support/02-Case/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2971,7 +2748,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/15-AdministerWhaleal/01-StartAndStopWhalealApplication/" class="md-nav__link">
+      <a href="../../15-AdministerWhaleal/01-StartAndStopWhalealApplication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3048,7 +2825,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/16-Troubleshooting/01-EC2andK8S/" class="md-nav__link">
+      <a href="../../16-Troubleshooting/01-EC2andK8S/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3069,7 +2846,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/16-Troubleshooting/02-MongoDBMonitoring/" class="md-nav__link">
+      <a href="../../16-Troubleshooting/02-MongoDBMonitoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3090,7 +2867,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/16-Troubleshooting/03-MongoDBUpgradeDowngrade/" class="md-nav__link">
+      <a href="../../16-Troubleshooting/03-MongoDBUpgradeDowngrade/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3111,7 +2888,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/16-Troubleshooting/04-BackupandRestore/" class="md-nav__link">
+      <a href="../../16-Troubleshooting/04-BackupandRestore/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3182,7 +2959,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/17-FrequentlyAskedQuestions/01-FrequentlyAskedQuestions/" class="md-nav__link">
+      <a href="../../17-FrequentlyAskedQuestions/01-FrequentlyAskedQuestions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3253,7 +3030,7 @@ document$.subscribe(function() {
   
   
     <li class="md-nav__item">
-      <a href="Folder1/18-ReleaseNotes/01-WhalealChangelog/" class="md-nav__link">
+      <a href="../../18-ReleaseNotes/01-WhalealChangelog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3310,7 +3087,7 @@ document$.subscribe(function() {
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="Folder2/" class="md-nav__link ">
+            <a href="../../../Folder2/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3366,7 +3143,7 @@ document$.subscribe(function() {
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="Folder3/" class="md-nav__link ">
+            <a href="../../../Folder3/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3411,6 +3188,52 @@ document$.subscribe(function() {
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lark" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lark
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dingtalk" class="md-nav__link">
+    <span class="md-ellipsis">
+      DingTalk
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#webhook" class="md-nav__link">
+    <span class="md-ellipsis">
+      WebHook
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -3422,6 +3245,117 @@ document$.subscribe(function() {
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
+                  
+
+  
+  
+
+
+<h1 id="project-alert">Project Alert</h1>
+<p>When using Whaleal to manage a MongoDB cluster, you can configure cluster alerts based on specific metrics. Alerts can be sent to DingTalk, Lark, or to a custom alert platform via Webhook.</p>
+<h2 id="configuration-steps">Configuration steps</h2>
+<ol>
+<li>Click <strong>Project</strong> in the left navigation bar of the Whaleal platform</li>
+<li>Click on the target item</li>
+<li>There are three types of police alert icons in Group. <strong>DingTalk</strong> and <strong>Lark</strong> configurations require the use of built-in tokens and salts，and <strong>Webhook</strong>.</li>
+</ol>
+<h2 id="lark">Lark</h2>
+<ol>
+<li>
+<p>Enter a Lark group.</p>
+</li>
+<li>
+<p>Click the three dots in the upper right corner of the group.</p>
+</li>
+</ol>
+<p><img alt="image-20240628171055358" src="../../images/09-Alert/larkSetting.png" /></p>
+<ol>
+<li>
+<p>Add a bot</p>
+</li>
+<li>
+<p>Click Bots</p>
+<p><img alt="image-20240628171055358" src="../../images/09-Alert/Bots.png" /></p>
+</li>
+<li>
+<p>Click Add Bot</p>
+<p><img alt="image-20240628171055358" src="../../images/09-Alert/AddBots.png" /></p>
+</li>
+<li>
+<p>Click Custom Bot</p>
+<p><img alt="image-20240628171055358" src="../../images/09-Alert/CustomBot.png" /></p>
+</li>
+<li>
+<p>Edit Bot Name and Description</p>
+<p><img alt="image-20240628171055358" src="../../images/09-Alert/BotName.png" /></p>
+</li>
+<li>
+<p>Configure the key to use "_" to connect</p>
+<p><img alt="image-20240628171055358" src="../../images/09-Alert/Config.png" /></p>
+</li>
+<li>
+<p>Configure the key spliced in step 5 in the Project.</p>
+<p><img alt="image-20240628171055358" src="../../images/09-Alert/LarkKey.png" /></p>
+</li>
+</ol>
+<p>After the configuration is complete, click Alert Setting in the left navigation bar to configure the alarm trigger values and trigger methods of different indicators according to Host Alert, MongoDB Alert or Project.</p>
+<p><img alt="image-20240628171055358" src="../../images/09-Alert/AlartConfig.png" /></p>
+<h2 id="dingtalk">DingTalk</h2>
+<ol>
+<li>
+<p>Enter a DingTalk group.</p>
+</li>
+<li>
+<p>Click the three dots in the upper right corner of the group.</p>
+</li>
+</ol>
+<p><img alt="image-20240628171055358" src="../../images/09-Alert/DingSetting.png" /></p>
+<ol>
+<li>
+<p>Add a bot</p>
+</li>
+<li>
+<p>Click Bots</p>
+<p><img alt="Ding" src="../../images/09-Alert/DingBot.png" /></p>
+</li>
+<li>
+<p>Click Add Bot</p>
+<p><img alt="image-20240628171055358" src="../../images/09-Alert/DingAddBots.png" /></p>
+</li>
+<li>
+<p>Select Custom Bot</p>
+<p><img alt="image-20240628171055358" src="../../images/09-Alert/DingCustom.png" /></p>
+</li>
+<li>
+<p>Edit Bot Name and Security Setting.</p>
+<p><img alt="image-20240628171055358" src="../../images/09-Alert/Dingname.png" /></p>
+</li>
+<li>
+<p>Check the Bot you just created, then copy the access_token after the Webhook link and concatenate it with the value of Additional Signature in Security Setting using "_".</p>
+<p><img alt="image-20240628171055358" src="../../images/09-Alert/DingKey.png" /></p>
+</li>
+<li>
+<p>Configure the key spliced in step 5 in the Project.</p>
+<p><img alt="image-20240628171055358" src="../../images/09-Alert/DingConfig.png" /></p>
+</li>
+</ol>
+<p>After the configuration is complete, click Alert Setting in the left navigation bar to configure the alarm trigger values and trigger methods of different indicators according to Host Alert, MongoDB Alert or Project.</p>
+<p><img alt="image-20240628171055358" src="../../images/09-Alert/AlartConfig.png" /></p>
+<h2 id="webhook">WebHook</h2>
+<p>Webhook configuration configures an alarm Post Url, Webhook sends the alarm to this Url</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -3431,6 +3365,68 @@ document$.subscribe(function() {
         
       </main>
       
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../02-MongoDBAlert/" class="md-footer__link md-footer__link--prev" aria-label="Previous: MongoDB Alert">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                MongoDB Alert
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../10-Diagnose/01-ClusterInfo/" class="md-footer__link md-footer__link--next" aria-label="Next: Cluster Info">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Cluster Info
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2024 | @whaleal
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
@@ -3439,10 +3435,10 @@ document$.subscribe(function() {
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>

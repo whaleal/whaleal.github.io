@@ -517,6 +517,8 @@
       
         
       
+        
+      
     
     
       
@@ -597,11 +599,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01-WhalealOverview/03-QuickStart.md" class="md-nav__link">
+      <a href="../../01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -5837,21 +5860,21 @@
 <p>This page contains answers to frequently asked questions about WAP.</p>
 <h4 id="1-use-the-latest-version-of-prometheus-to-collect-datagram-errors-whether-it-is-related-to-the-version-relationship-ts2024-04-08t035134306z-callerrefreshgo90-levelerror-component-discovery-manager-scrape-discoveryhttp-configwap-monitor-msg-unable-to-refresh-target-groups-err-invalid-character-wlooking-for-beginning-of-value">1. Use the latest version of prometheus to collect Datagram errors. Whether it is related to the version relationship ts=2024-04-08T03:51:34.306Z caller=refresh.go:90 level=error component= "" discovery manager scrape "" discovery=http config=wap-monitor msg= "" Unable to refresh target groups "" err= "" invalid character 'W'looking for beginning of value ""</h4>
 <p>The prometheus configuration file tries this approach.</p>
-<pre><code>job_name: wap-monitor
+<div class="highlight"><pre><span></span><code>job_name: wap-monitor
 scrape_interval: 10s
-metrics_path: '/api/server/mongo/getMongoDBForPrometheus'
+metrics_path: &#39;/api/server/mongo/getMongoDBForPrometheus&#39;
 params:
   id: [&quot;public&quot;]
   type: [&quot;project&quot;]
 basic_auth:
-  username: 'admin'
+  username: &#39;admin&#39;
   password: xxxxx
 static_configs:
 
-  - targets: ['172.xx.xx.xx:8080']
+  - targets: [&#39;172.xx.xx.xx:8080&#39;]
     labels:
       instance: wap
-</code></pre>
+</code></pre></div>
 <h4 id="2-the-whaleal-mongodb-log-file-is-so-large-that-the-disk-is-full-and-the-mongo-service-cannot-be-started-wont-he-clean-it-up-himself-do-you-have-to-clean-it-manually-every-time">2. The whaleal-mongodb-log file is so large that the disk is full and the mongo service cannot be started. Won't he clean it up himself? Do you have to clean it manually every time?</h4>
 <p>What is saved in whaleal-mongodb-log can be cleared from the logs of mongoDB nodes. By default, save for one month. Configure the saving time of mongodb logs in the setting page.</p>
 <h4 id="3-prometheus-configures-multiple-project-gathering-to-report-an-error">3. Prometheus configures multiple project gathering to report an error.</h4>
@@ -5997,7 +6020,7 @@ static_configs:
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

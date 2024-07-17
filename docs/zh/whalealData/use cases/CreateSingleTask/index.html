@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creating-one-time-tasks" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -529,6 +529,8 @@
       
         
       
+        
+      
     
     
       
@@ -609,11 +611,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStart/" class="md-nav__link">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -2330,7 +2353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/12-Account/01-usercenter.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/12-Account/01-usercenter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2700,7 +2723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/15-AdministratorWhaleal/02-IntegrationwithPrometheus.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/15-AdministratorWhaleal/02-IntegrationwithPrometheus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2919,7 +2942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/01-WAP.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/01-WAP/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2940,7 +2963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/02-Monitor.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/02-Monitor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2961,7 +2984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/03-Backup.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/03-Backup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2982,7 +3005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/04-Service.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/04-Service/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3003,7 +3026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/05-Agent.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/05-Agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4672,9 +4695,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-one-time-tasks" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating One-Time Tasks
+      创建单次任务
     </span>
   </a>
   
@@ -5460,9 +5483,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-one-time-tasks" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating One-Time Tasks
+      创建单次任务
     </span>
   </a>
   
@@ -5488,20 +5511,8 @@
 
   <h1>CreateSingleTask</h1>
 
-<h4 id="creating-one-time-tasks">Creating One-Time Tasks</h4>
-<p>To create a one-time task, follow these steps:</p>
-<ol>
-<li>Navigate to the "Task Configuration" menu and select "Task Configuration."</li>
-<li>Click the blue "New" button to open the task creation form.</li>
-<li>In the task creation form (second image), select the task mode as "One-Time."</li>
-<li>Choose a specific execution time using a Cron expression. Cron expressions allow you to define the exact date and time when the task should be executed.</li>
-<li>Configure other settings as needed, such as execution mode, task timeout, and retry attempts.</li>
-<li>Optionally, set up a notification strategy by adding email addresses for alerts. Notifications will be sent based on the chosen strategy after the task completes.</li>
-<li>Click the "Add Job" button to attach a job (table job) to the task. In the job configuration form (third image), select the desired job(s) to be associated with this task.</li>
-<li>Click "OK" or "Confirm" to save the task configuration.</li>
-</ol>
-<p>Please note that one-time tasks need to be reviewed and approved by an administrator before they can be executed. Once the task is approved, it will be scheduled for execution based on the specified time using the Cron expression.</p>
-<p>One-time tasks are suitable for tasks that need to be executed at a specific point in time, such as data synchronization or archiving activities that are scheduled to happen once.</p>
+<h4 id="_1">创建单次任务</h4>
+<p>​   点击任务配置菜单下的任务配置，此页面展示了所有任务点击蓝色新增按钮弹出第二张图片所示表单。任务模式选择单词任务，之后选择Cron表达式选择执行时间。若此任务表作业很多时可根据自身需求设置执行模式、任务超时时间、失败重试次数。提醒策略选择后添加报警邮箱地址，任务完成后将根据提醒策略发送邮件。点击添加作业弹出第三张图片所示数据配置，勾选作业后点击确定即可将此作业绑定至新建任务中，最后此任务需管理用户进行审核后才可以执行。</p>
 <p><img alt="image-20230621142941634" src="../../../images/whalealDataImages/image-20230621142941634.png" /></p>
 <p><img alt="image-20230621143119669" src="../../../images/whalealDataImages/image-20230621143119669.png" /></p>
 <p><img alt="image-20230621143532776" src="../../../images/whalealDataImages/image-20230621143532776.png" /></p>
@@ -5597,7 +5608,7 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

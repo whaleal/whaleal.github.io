@@ -517,6 +517,8 @@
       
         
       
+        
+      
     
     
       
@@ -597,11 +599,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01-WhalealOverview/03-QuickStart.md" class="md-nav__link">
+      <a href="../../01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -5926,7 +5949,8 @@
 <ul>
 <li>Have full networking access to each other through their FQDN. Each host must be able to reach every other host through the FQDN. To find the FQDN for each host, run the following command in the shell:</li>
 </ul>
-<p><code>hostname -f</code></p>
+<div class="highlight"><pre><span></span><code>hostname -f
+</code></pre></div>
 <ul>
 <li>Set the Common Name or Subject Alternative Name value of any SSL certificates to the MongoDB host’s FQDN.</li>
 </ul>
@@ -5960,54 +5984,54 @@
 <h3 id="installing-mongodb-enterprise-dependencies">Installing MongoDB Enterprise Dependencies</h3>
 <h4 id="ubuntu">Ubuntu</h4>
 <h5 id="ubuntu-1804">Ubuntu 18.04</h5>
-<pre><code>sudo apt-get install \
+<div class="highlight"><pre><span></span><code>sudo apt-get install \
      libcurl4 libgssapi-krb5-2 libldap-2.4-2 liblzma5 \
      libsasl2-2 libsasl2-modules \
      libsasl2-modules-gssapi-mit libwrap0 openssl snmp
-</code></pre>
+</code></pre></div>
 <h5 id="ubuntu-2004">Ubuntu 20.04</h5>
-<pre><code>sudo apt-get install \
+<div class="highlight"><pre><span></span><code>sudo apt-get install \
      libcurl4 libgssapi-krb5-2 libldap-2.4-2 liblzma5 \
      libsasl2-2 libsasl2-modules \
      libsasl2-modules-gssapi-mit libwrap0 openssl snmp
-</code></pre>
+</code></pre></div>
 <h5 id="ubuntu-2204">Ubuntu 22.04</h5>
-<pre><code>sudo apt-get install \
+<div class="highlight"><pre><span></span><code>sudo apt-get install \
      libcurl4 libgssapi-krb5-2 libldap-2.4-2 liblzma5 \
      libsasl2-2 libsasl2-modules \
      libsasl2-modules-gssapi-mit libwrap0 openssl snmp
-</code></pre>
+</code></pre></div>
 <h4 id="rhelcentos">RHEL/CentOS</h4>
 <h5 id="rhelcentos-6x">RHEL/CentOS 6.x</h5>
-<pre><code>sudo yum install cyrus-sasl cyrus-sasl-gssapi \
+<div class="highlight"><pre><span></span><code>sudo yum install cyrus-sasl cyrus-sasl-gssapi \
      cyrus-sasl-plain krb5-libs libcurl net-snmp \
      net-snmp-libs openldap openssl xz-libs
-</code></pre>
+</code></pre></div>
 <h5 id="rhelcentos-7x">RHEL/CentOS 7.x</h5>
-<pre><code>sudo yum install cyrus-sasl cyrus-sasl-gssapi \
+<div class="highlight"><pre><span></span><code>sudo yum install cyrus-sasl cyrus-sasl-gssapi \
      cyrus-sasl-plain krb5-libs libcurl \
      lm_sensors-libs net-snmp net-snmp-agent-libs \
      openldap openssl tcp_wrappers-libs xz-libs
-</code></pre>
+</code></pre></div>
 <h5 id="rhelcentos-8x">RHEL/CentOS 8.x</h5>
-<pre><code>sudo yum install cyrus-sasl cyrus-sasl-gssapi \
+<div class="highlight"><pre><span></span><code>sudo yum install cyrus-sasl cyrus-sasl-gssapi \
      cyrus-sasl-plain krb5-libs libcurl \
      lm_sensors-libs net-snmp net-snmp-agent-libs \
      openldap openssl xz-libs
-</code></pre>
+</code></pre></div>
 <h4 id="suse">SUSE</h4>
 <h5 id="suse-12x">SUSE 12.x</h5>
-<pre><code>sudo zypper install cyrus-sasl cyrus-sasl-plain \
+<div class="highlight"><pre><span></span><code>sudo zypper install cyrus-sasl cyrus-sasl-plain \
      cyrus-sasl-gssapi krb5 libcurl4 libldap-2_4-2 \
      libopenssl1_0_0 libsensors4 libsnmp30 libwrap0 \
      liblzma5
-</code></pre>
+</code></pre></div>
 <h5 id="suse-15x">SUSE 15.x</h5>
-<pre><code>sudo zypper install cyrus-sasl cyrus-sasl-plain \
+<div class="highlight"><pre><span></span><code>sudo zypper install cyrus-sasl cyrus-sasl-plain \
      cyrus-sasl-gssapi krb5 libcurl4 libldap-2_4-2 \
      libopenssl1_1 libsensors4 libsnmp30 libwrap0 \
      liblzma5
-</code></pre>
+</code></pre></div>
 <h4 id="installing-to-a-host-before-installing-mongodb">Installing to a Host Before Installing MongoDB</h4>
 <p>If you deploy the MongoDB Agent to a host onto which you want to have Automation install MongoDB, ensure the system user that owns the MongoDB Agent has <code>Read</code> and <code>Write</code> permissions on the MongoDB data and log directories you plan to use.</p>
 <h4 id="installing-to-a-host-that-already-runs-mongodb">Installing to a Host that Already Runs MongoDB</h4>
@@ -6108,7 +6132,7 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

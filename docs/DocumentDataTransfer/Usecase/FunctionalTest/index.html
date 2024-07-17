@@ -512,6 +512,8 @@
       
         
       
+        
+      
     
     
       
@@ -592,11 +594,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStart.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -5511,12 +5534,12 @@
 
 <h1 id="full-data-transfer">Full Data Transfer</h1>
 <h4 id="1-start-preparation">1. Start Preparation</h4>
-<pre><code>use photon
+<div class="highlight"><pre><span></span><code>use photon
 Create ten tables. Each table has no indexes other than _id.
 Insert approximately 50 million records into each table.
-</code></pre>
+</code></pre></div>
 <h4 id="2-source-side-data-insertion">2. Source-side Data Insertion</h4>
-<pre><code>Single record:
+<div class="highlight"><pre><span></span><code>Single record:
 {
     &quot;_id&quot;: ObjectId(&quot;61bad4f68a27d20b123ed7e8&quot;),
     &quot;BsonTimestamp1&quot;: Timestamp(1639634166, 78),
@@ -5551,9 +5574,9 @@ Insert approximately 50 million records into each table.
     &quot;Max key&quot;: { &quot;$maxKey&quot;: 1 },
     &quot;BsonTimestamp&quot;: Timestamp(1639634166, 457)
 }
-</code></pre>
+</code></pre></div>
 <h4 id="3-source-side-data-volume-calculation">3. Source-side Data Volume Calculation</h4>
-<pre><code>show dbs;
+<div class="highlight"><pre><span></span><code>show dbs;
 Disk usage on source: photon 35.885GB
 db.stats()
 {
@@ -5583,12 +5606,11 @@ db.stats()
     },
     &quot;operationTime&quot;: Timestamp(1640065750, 1)
 }
-</code></pre>
+</code></pre></div>
 <h4 id="4-start-ddt">4. Start DDT</h4>
 <p>Refer to <a href="../../Install/QuickStart/">QuickStart</a></p>
 <p>Test environment using the following parameters:</p>
-<pre><code>
-# DDT.properties Configuration File
+<div class="highlight"><pre><span></span><code># DDT.properties Configuration File
 # Task name. If not specified, defaults to workNameDefault.
 workName = mongoTask
 # Source-side MongoDB URL, required. Can be a URL for a single node, replica set, or sharded cluster.
@@ -5607,7 +5629,7 @@ fullType = reactive
 dbTableWhite = .+
 # Number of threads for reading source data during full data transfer, minimum is 2, maximum is 100. Default is system-calculated value.
 sourceThreadNum = 10
-# Number of threads for writing data to the target during full data transfer, minimum is 4, maximum is 100. Default is system-calculated value. It's recommended that targetThreadNum is three times sourceThreadNum.
+# Number of threads for writing data to the target during full data transfer, minimum is 4, maximum is 100. Default is system-calculated value. It&#39;s recommended that targetThreadNum is three times sourceThreadNum.
 targetThreadNum = 20
 # Number of threads for concurrent index creation during full data transfer, minimum is 1, maximum is 100. Default is system-calculated value.
 createIndexThreadNum = 15
@@ -5634,13 +5656,12 @@ ddlWait = 1200
 clusterInfoSet = 0,1,2,3,4,5,6,7
 # When monitor is enabled, configure the IP address of the local machine.
 bind_ip = 192.168.12.190
-
-</code></pre>
+</code></pre></div>
 <h1 id="real-time">Real-time</h1>
 <h4 id="1-start-ddt">1. Start DDT</h4>
 <p>Refer to <a href="../../Install/QuickStart/">QuickStart</a></p>
 <p>Test environment using the following parameters:</p>
-<pre><code># DDT.properties Configuration File
+<div class="highlight"><pre><span></span><code># DDT.properties Configuration File
 # Task name. If not specified, defaults to workNameDefault.
 workName = mongoTask
 # Source-side MongoDB URL, required. Can be a URL for a single node, replica set, or sharded cluster.
@@ -5655,7 +5676,7 @@ targetDsUrl = mongodb://
 syncMode = realTime
 # Choose between oplog and changestream for real-time or incremental tasks.
 # Choose oplog for advantages such as faster synchronization speed when the source is a replica set and support for DDL operations.
-# Choose changestream for sources that are replica sets or mongos, but it doesn't support DDL operations and is generally slower.
+# Choose changestream for sources that are replica sets or mongos, but it doesn&#39;t support DDL operations and is generally slower.
 realTimeType = changestream
 # Tables to be synchronized, using regular expressions. Default is to synchronize all tables: .+
 dbTableWhite = .+
@@ -5683,10 +5704,9 @@ writeThreadNum = 15
 ddlWait = 1200
 # When monitor is enabled, configure the IP address of the local machine.
 bind_ip = 192.168.12.190
-
-</code></pre>
+</code></pre></div>
 <h4 id="2-source-side-data-insertion_1">2. Source-side Data Insertion</h4>
-<pre><code>Use the source-side script for CRUD operations.
+<div class="highlight"><pre><span></span><code>Use the source-side script for CRUD operations.
 The script performs CRUD operations on 10 tables.
 Single insert data model:
 {
@@ -5724,8 +5744,7 @@ Single insert data model:
     &quot;BsonTimestamp&quot;: Timestamp(1639634166, 457)
 }
 Source-side CRUD concurrency is 100,000/s.
-
-</code></pre>
+</code></pre></div>
 <h4 id="3-conclusion">3. Conclusion</h4>
 <p>During real-time synchronization, the source-side CRUD concurrency is 100,000/s.</p>
 <p>The target-side executes an average of 58,000 data records per second.</p>
@@ -5822,7 +5841,7 @@ Source-side CRUD concurrency is 100,000/s.
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

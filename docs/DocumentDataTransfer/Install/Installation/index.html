@@ -512,6 +512,8 @@
       
         
       
+        
+      
     
     
       
@@ -592,11 +594,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStart.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -5619,37 +5642,37 @@
 <ol>
 <li>Download JDK 11 tgz package:</li>
 </ol>
-<pre><code class="language-bash">wget https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.9_linux-x64_bin.tar.gz
-</code></pre>
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.9_linux-x64_bin.tar.gz
+</code></pre></div>
 <ol>
 <li>Extract the downloaded tar package:</li>
 </ol>
-<pre><code class="language-bash">tar -zxvf openjdk-11.0.9_linux-x64_bin.tar.gz
-</code></pre>
+<div class="highlight"><pre><span></span><code>tar<span class="w"> </span>-zxvf<span class="w"> </span>openjdk-11.0.9_linux-x64_bin.tar.gz
+</code></pre></div>
 <ol>
 <li>Move the extracted directory:</li>
 </ol>
-<pre><code class="language-bash">mv jdk-11.0.9 /usr/local/jdk11
-</code></pre>
+<div class="highlight"><pre><span></span><code>mv<span class="w"> </span>jdk-11.0.9<span class="w"> </span>/usr/local/jdk11
+</code></pre></div>
 <ol>
 <li>Configure environment variables:</li>
 </ol>
-<pre><code class="language-bash">vi /etc/profile
-export JAVA_HOME=/usr/local/jdk11
-export JRE_HOME=${JAVA_HOME}/jre
-export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
-export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
-</code></pre>
+<div class="highlight"><pre><span></span><code>vi<span class="w"> </span>/etc/profile
+<span class="nb">export</span><span class="w"> </span><span class="nv">JAVA_HOME</span><span class="o">=</span>/usr/local/jdk11
+<span class="nb">export</span><span class="w"> </span><span class="nv">JRE_HOME</span><span class="o">=</span><span class="si">${</span><span class="nv">JAVA_HOME</span><span class="si">}</span>/jre
+<span class="nb">export</span><span class="w"> </span><span class="nv">CLASSPATH</span><span class="o">=</span>.:<span class="nv">$JAVA_HOME</span>/lib/dt.jar:<span class="nv">$JAVA_HOME</span>/lib/tools.jar:<span class="nv">$JRE_HOME</span>/lib
+<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$JAVA_HOME</span>/bin:<span class="nv">$JRE_HOME</span>/bin
+</code></pre></div>
 <ol>
 <li>Refresh the environment:</li>
 </ol>
-<pre><code class="language-bash">source /etc/profile
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>/etc/profile
+</code></pre></div>
 <ol>
 <li>Verify the installation:</li>
 </ol>
-<pre><code class="language-bash">java --version
-</code></pre>
+<div class="highlight"><pre><span></span><code>java<span class="w"> </span>--version
+</code></pre></div>
 <h4 id="running-ddt">Running DDT</h4>
 <h5 id="prerequisites">Prerequisites</h5>
 <p>Ensure that the installation and configuration files are in place and the Java environment is correctly set up before starting the DDT process.</p>
@@ -5764,7 +5787,7 @@ export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

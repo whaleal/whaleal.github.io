@@ -534,6 +534,8 @@
       
         
       
+        
+      
     
     
       
@@ -614,11 +616,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01-WhalealOverview/03-QuickStart/" class="md-nav__link">
+      <a href="../../01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -1229,15 +1252,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#important" class="md-nav__link">
-    <span class="md-ellipsis">
-      IMPORTANT
-    </span>
-  </a>
   
 </li>
       
@@ -2497,7 +2511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../12-Account/01-usercenter.md" class="md-nav__link">
+      <a href="../../12-Account/01-usercenter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2867,7 +2881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../15-AdministratorWhaleal/02-IntegrationwithPrometheus.md" class="md-nav__link">
+      <a href="../../15-AdministratorWhaleal/02-IntegrationwithPrometheus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3086,7 +3100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../17-FrequentlyAskedQuestions/01-WAP.md" class="md-nav__link">
+      <a href="../../17-FrequentlyAskedQuestions/01-WAP/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3107,7 +3121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../17-FrequentlyAskedQuestions/02-Monitor.md" class="md-nav__link">
+      <a href="../../17-FrequentlyAskedQuestions/02-Monitor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3128,7 +3142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../17-FrequentlyAskedQuestions/03-Backup.md" class="md-nav__link">
+      <a href="../../17-FrequentlyAskedQuestions/03-Backup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3149,7 +3163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../17-FrequentlyAskedQuestions/04-Service.md" class="md-nav__link">
+      <a href="../../17-FrequentlyAskedQuestions/04-Service/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3170,7 +3184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../17-FrequentlyAskedQuestions/05-Agent.md" class="md-nav__link">
+      <a href="../../17-FrequentlyAskedQuestions/05-Agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5601,15 +5615,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#important" class="md-nav__link">
-    <span class="md-ellipsis">
-      IMPORTANT
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#procedure" class="md-nav__link">
     <span class="md-ellipsis">
       Procedure
@@ -5718,13 +5723,11 @@
 <p>Whaleal provides a wizard for adding your existing MongoDB deployments to monitoring and management. The wizard prompts you to:</p>
 <ul>
 <li>Install the Agent if you don't have it installed</li>
-<li>Identify the sharded cluster, the replica set, or the standalone to add. You can choose to add the deployment to Monitoring or to both Monitoring and Automation.</li>
+<li>Identify the sharded cluster, the replica set, or the standalone to add. </li>
 </ul>
 <h2 id="considerations">Considerations</h2>
 <h3 id="unique-names-for-replica-set">Unique Names for Replica Set</h3>
 <p>Use a unique name for the replica set.</p>
-<h2 id="important">IMPORTANT</h2>
-<p>Replica set, sharded cluster, and shard names within the same project must be unique. Failure to have unique names for the deployments will result in broken backup snapshots.</p>
 <h2 id="procedure">Procedure</h2>
 <h3 id="navigate-to-the-deployment-page-for-your-project">Navigate to the <strong>Deployment</strong> page for your project.</h3>
 <ol>
@@ -5749,24 +5752,20 @@
 <td style="text-align: left;">Select the Project name of your replica set deployment. You cannot change this once set.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Replica Set Settings</strong></td>
-<td style="text-align: left;">Displays an table of each process associated with the replica set. You can configure the MongoDB server version, data directory of each process.</td>
+<td style="text-align: left;"><strong>Cluster Name</strong></td>
+<td style="text-align: left;">The name of the replica set. It must be a unique name.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Process Name</strong></td>
-<td style="text-align: left;">Hostname and port of a <code>mongod</code> process. This hostname can be a hostname, or an IPv4 address. Whaleal initially groups each process under the replica set name. Click the replica name to display all <code>mongod</code> processes in the replica set.Whaleal applies any settings configured for the replica set to all of its associated processes.</td>
+<td style="text-align: left;"><strong>BindIp</strong></td>
+<td style="text-align: left;">The <code>BindIp</code> setting in MongoDB specifies the IP addresses that the MongoDB server will listen on for incoming connections.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
 <td style="text-align: left;">Select the MongoDB server version of the <code>mongod</code> process.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Data Directory</strong></td>
-<td style="text-align: left;">Specify the directory where the <code>mongod</code> process stores data files. This setting corresponds to the <code>storage.dbPath</code> <code>mongod</code> configuration file option. The Whaleal Automation must have file system permission to read, write, and execute all files and folders in the specified directory.Each <code>mongod</code> process must have its own database directory. If deploying multiple <code>mongod</code> processes on the same host, ensure each process has its own distinct directory.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Log File</strong></td>
-<td style="text-align: left;">The log file and data file are in the same directory, and the directory cannot be customized.</td>
+<td style="text-align: left;"><strong>AuthLevel</strong></td>
+<td style="text-align: left;">Select authentication method</td>
 </tr>
 </tbody>
 </table>
@@ -5805,8 +5804,12 @@
 <td style="text-align: left;">Specify the number of seconds "behind" the primary member this member should "lag". This setting corresponds to the <code>secondaryDelaySecs</code> <code>mongod</code>replica set configuration option.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Add a Mongod</strong></td>
-<td style="text-align: left;">Adds an additional <code>mongod</code> process as a replica set member.Adding a new <code>mongod</code> process also updates the list of processes in the <strong>Replica Set Configuration</strong> section. You must configure the <strong>Version</strong> and <strong>Data Directory</strong> of the new process.</td>
+<td style="text-align: left;"><strong>Data Directory</strong></td>
+<td style="text-align: left;">Specify the directory where the <code>mongod</code> process stores data files. This setting corresponds to the <code>storage.dbPath</code> <code>mongod</code> configuration file option. The Whaleal Automation must have file system permission to read, write, and execute all files and folders in the specified directory.Each <code>mongod</code> process must have its own database directory. If deploying multiple <code>mongod</code> processes on the same host, ensure each process has its own distinct directory.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Log File</strong></td>
+<td style="text-align: left;">The log file and data file are in the same directory, and the directory cannot be customized.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Build Indexes</strong></td>
@@ -5857,12 +5860,6 @@
 <h3 id="set-the-default-read-and-write-concerns-for-your-mongodb-replica-set">Set the default read and write concerns for your MongoDB replica set.</h3>
 <p>In the <strong>Default Read Concerns/Write Concerns</strong> card, you configure the default level of acknowledgement requested from MongoDB for read and write operations for this cluster. Setting the default read and write concern can help with MongoDB 5.0 and later deployments using arbiters.</p>
 <p>From the <strong>Default Read Concerns</strong> section, you can set consistency and isolation properties for the data read from the cluster.</p>
-<p>Select the default read concern from the <strong>Level</strong> dropdown menu. You can choose from the following values:</p>
-<ul>
-<li>local, the MongoDB 5.0 and later default value,</li>
-<li>available, the MongoDB 4.4 default value, or</li>
-<li>majority.</li>
-</ul>
 <h3 id="set-any-advanced-configuration-options-for-your-mongodb-replica-set">Set any advanced configuration options for your MongoDB replica set.</h3>
 <p>The <strong>Advanced Configuration Options</strong> section allows you to set MongoDB runtime options for each MongoDB process in your deployment.</p>
 <p>To add an option:</p>
@@ -5975,7 +5972,7 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

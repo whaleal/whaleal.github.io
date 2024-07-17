@@ -517,6 +517,8 @@
       
         
       
+        
+      
     
     
       
@@ -597,11 +599,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../01-WhalealOverview/03-QuickStart.md" class="md-nav__link">
+      <a href="../../../01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -5675,8 +5698,8 @@
 <h3 id="optional-verify-whaleal-package-integrity">Optional: Verify Whaleal package integrity.</h3>
 <h3 id="install-the-whaleal-package-on-each-server-being-used-for-whaleal">Install the Whaleal package on each server being used for Whaleal.</h3>
 <p>Navigate to the directory to which to install Whaleal. Extract the archive to that directory:</p>
-<pre><code>tar -zxf WAP.tar.gz
-</code></pre>
+<div class="highlight"><pre><span></span><code>tar -zxf WAP.tar.gz
+</code></pre></div>
 <p>When complete,W is installed.</p>
 <h3 id="configure-the-whaleal-connection-to-the-whaleal-application-database">Configure the Whaleal connection to the Whaleal Application Database.</h3>
 <p>On a server that is to run Whaleal, open <code>WAP/start.sh</code> with root privileges and configure the settings described here, as appropriate.</p>
@@ -5690,13 +5713,14 @@
 </ul>
 <h3 id="start-whaleal">Start Whaleal.</h3>
 <p>Issue the following command:</p>
-<pre><code>sh WAP/start.sh
-</code></pre>
+<div class="highlight"><pre><span></span><code>sh WAP/start.sh
+</code></pre></div>
 <h3 id="open-the-whaleal-home-page-and-register-the-first-user">Open the Whaleal home page and register the first user.</h3>
 <ol>
 <li>Enter the following URL in a browser, where <code>&lt;host&gt;</code> is the fully qualified domain name of the server:</li>
 </ol>
-<p><code>http://&lt;bind_ip&gt;:8080</code></p>
+<div class="highlight"><pre><span></span><code>http://&lt;bind_ip&gt;:8080
+</code></pre></div>
 <ol>
 <li>Use the default username and password for the first login. The default username is: <strong>admin</strong>, the default password is: <strong>password</strong></li>
 </ol>
@@ -5811,7 +5835,7 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

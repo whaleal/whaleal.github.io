@@ -517,6 +517,8 @@
       
         
       
+        
+      
     
     
       
@@ -597,11 +599,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01-WhalealOverview/03-QuickStart.md" class="md-nav__link">
+      <a href="../../01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -5499,7 +5522,7 @@
 <h2 id="check-whether-the-agent-is-started-normally">Check whether the agent is started normally</h2>
 <p>Make sure the agent process is running</p>
 <p>Run the following command to view the agent status:</p>
-<pre><code>&gt; systemctl status whaleal_agent
+<div class="highlight"><pre><span></span><code>&gt; systemctl status whaleal_agent
 
 ● whaleal_agent.service - Start Whaleal Platform Agent Service
    Loaded: loaded (/etc/systemd/system/whaleal_agent.service; enabled; vendor preset: disabled)
@@ -5507,7 +5530,7 @@
  Main PID: 7879 (java)
    CGroup: /system.slice/whaleal_agent.service
            ├─ 7879 java -jar /opt/agent/agent-collection-1.0.0.jar --foreign.url=http://xx.xx.xx.xx:8080 --agentId=system --podType=
-</code></pre>
+</code></pre></div>
 <h2 id="check-whether-the-agent-and-server-are-connected">Check whether the agent and server are connected</h2>
 <p>Please check whether the WAP service is running normally and confirm that the server connection is normal. Verify whether the Agent can connect to the WAP server through TCP port 9619.</p>
 
@@ -5602,7 +5625,7 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adding-a-warm-data-incremental-load-job" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -529,6 +529,8 @@
       
         
       
+        
+      
     
     
       
@@ -609,11 +611,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStart/" class="md-nav__link">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -2330,7 +2353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/12-Account/01-usercenter.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/12-Account/01-usercenter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2700,7 +2723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/15-AdministratorWhaleal/02-IntegrationwithPrometheus.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/15-AdministratorWhaleal/02-IntegrationwithPrometheus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2919,7 +2942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/01-WAP.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/01-WAP/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2940,7 +2963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/02-Monitor.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/02-Monitor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2961,7 +2984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/03-Backup.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/03-Backup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2982,7 +3005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/04-Service.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/04-Service/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3003,7 +3026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/05-Agent.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/05-Agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4609,9 +4632,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#adding-a-warm-data-incremental-load-job" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Adding a Warm Data Incremental Load Job
+      添加温数据增量作业
     </span>
   </a>
   
@@ -5460,9 +5483,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#adding-a-warm-data-incremental-load-job" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Adding a Warm Data Incremental Load Job
+      添加温数据增量作业
     </span>
   </a>
   
@@ -5488,20 +5511,10 @@
 
   <h1>AddWarmDataIncrementalJob</h1>
 
-<h4 id="adding-a-warm-data-incremental-load-job">Adding a Warm Data Incremental Load Job</h4>
-<p>To add a new warm data incremental load job to the platform, follow these steps:</p>
-<ol>
-<li>Click on the "Configuration Management" menu and select "Table Job Configuration".</li>
-<li>In the Warm Data Table Job page, click the blue "Add" button to open the form.</li>
-<li>Choose the data source database table and the target destination database table that you want to synchronize.</li>
-<li>Select "Incremental Load" as the archive mode.</li>
-<li>If you choose the incremental load mode, you need to fill in the SQL configuration. Click the blue "Custom SQL" button to open the form where you can select the completion conditions for the SQL. Click "Save" to generate the SQL.</li>
-<li>The warm data table job also includes data consistency verification. If you choose to enable it, you can set the required verification percentage. After the synchronization, the platform will perform data consistency checks on the synchronized data.</li>
-<li>For MySQL-related jobs, you can choose the isolation level for synchronization. For MongoDB to MongoDB synchronization, you can choose whether to sync Gridfs. If you choose "No," the platform will only synchronize regular documents.</li>
-<li>Choose a data processing method, either manual deletion or automatic deletion, after synchronization. The data source table will be deleted according to your choice after synchronization is completed.</li>
-</ol>
-<p><img alt="Adding a Warm Data Incremental Load Job" src="../../../images/whalealDataImages/image-20230621135720717.png" /></p>
-<p>By following these steps, you can create a warm data incremental load job that synchronizes data from a data source database table to a target destination database table using incremental load mode. This allows for continuous synchronization of data within the Whaleal Data platform.</p>
+<h4 id="_1">添加温数据增量作业</h4>
+<p>​   点击配置管理菜单下的表作业配置，在温数据表作业页面点击蓝色新增按钮弹出以下表单，自行选择需同步的数据源库表与目标源库表，归档模式选择增量更新，当归档模式为增量更新时需填写sql配置，可点击蓝色自定义sql按钮弹出第二张图所示表格选择完成条件后点击保存即可生成sql。表作业具有一致性校验功能，选择是后可填写所需校验的百分比，同步后平台将对同步的数据进行一致性校验。其中MYSQL相关的作业可选隔离级别，MongoDB同步至MongoDB时可选择是否同步Gridfs，若选择否平台将只同步普通文档。数据处理方式可选人工删除或系统删除，此功能在同步完成后将源表进行按后方批次进行删除。</p>
+<p><img alt="image-20230621135720717" src="../../../images/whalealDataImages/image-20230621135720717.png" /></p>
+<p><img alt="image-20230621135643906" src="../../../images/whalealDataImages/image-20230621135643906.png" /></p>
 
 
 
@@ -5594,7 +5607,7 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

@@ -517,6 +517,8 @@
       
         
       
+        
+      
     
     
       
@@ -597,11 +599,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01-WhalealOverview/03-QuickStart.md" class="md-nav__link">
+      <a href="../../01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -5714,8 +5737,8 @@ Can be used on the target side: use the exact count to view the number of librar
 <p>DDT startup script needs to be modified. It is not supported by default.
 The second DDT must be in a new directory
 Then you can start run: </p>
-<pre><code>nohup java-Xmx$max_heap_size-jar ../execute-1.0-SNAPSHOT.jar ../config/DDT.properties &gt; /dev/null 2 &gt; &amp;1 &amp; 
-</code></pre>
+<div class="highlight"><pre><span></span><code>nohup java-Xmx$max_heap_size-jar ../execute-1.0-SNAPSHOT.jar ../config/DDT.properties &gt; /dev/null 2 &gt; &amp;1 &amp; 
+</code></pre></div>
 <h4 id="12-help-me-confirm-that-ddt-is-synchronizing-data-in-real-time-if-we-want-to-switch-the-connection-to-a-new-cluster-can-we-replace-it-directly-or-do-we-have-to-disconnect-ddt-synchronization-first-stop-business-stop-ddt-and-finally-replace-the-connection-url">12. Help me confirm that DDT is synchronizing data in real time. If we want to switch the connection to a new cluster, can we replace it directly, or do we have to disconnect DDT synchronization first, stop business, stop DDT, and finally replace the connection URL?</h4>
 <p>Stop the business first, then stop the DDT service, and then replace the connection URL. This is the recommended action step and needs to be operated within the shutdown maintenance window.</p>
 <h4 id="13-if-both-the-source-and-target-sides-of-ddt-synchronization-have-write-operations-will-ddt-synchronization-have-an-impact">13. If both the source and target sides of DDT synchronization have write operations, will DDT synchronization have an impact?</h4>
@@ -5812,7 +5835,7 @@ Then you can start run: </p>
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

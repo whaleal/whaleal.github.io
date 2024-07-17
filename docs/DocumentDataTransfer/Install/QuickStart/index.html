@@ -512,6 +512,8 @@
       
         
       
+        
+      
     
     
       
@@ -592,11 +594,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStart.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -5595,18 +5618,18 @@
 <p>Visit https://github.com/whaleal/DocumentDataTransfer/releases</p>
 <p>Download the latest version of DDT.tar.gz.</p>
 <h4 id="2-extract">2. Extract</h4>
-<pre><code class="language-bash">mkdir DDT
-tar -zxvf DDT.tar.gz -C DDT
-</code></pre>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>DDT
+tar<span class="w"> </span>-zxvf<span class="w"> </span>DDT.tar.gz<span class="w"> </span>-C<span class="w"> </span>DDT
+</code></pre></div>
 <h4 id="3-modify-configuration-files">3. Modify Configuration Files</h4>
 <p><a href="../Configuring/">Introduction to Configuration</a></p>
-<pre><code class="language-bash">cd DDT/config
-vi DDT.properties
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>DDT/config
+vi<span class="w"> </span>DDT.properties
+</code></pre></div>
 <h4 id="4-prepare-to-start">4. Prepare to Start</h4>
-<pre><code class="language-bash">cd bin
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>bin
 ./start-all.sh
-</code></pre>
+</code></pre></div>
 <h4 id="5-check-the-running-status">5. Check the Running Status</h4>
 <p>Access the web monitoring page:
 http://bind_ip:58000/DDT_WEB/#/home</p>
@@ -5614,14 +5637,14 @@ http://bind_ip:58000/DDT_WEB/#/home</p>
 <ol>
 <li>Use the built-in validation tool of MongoDB (may lock the database):</li>
 </ol>
-<pre><code class="language-javascript">use xxx
-db.runCommand({ dbHash: 1 })
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nx">use</span><span class="w"> </span><span class="nx">xxx</span>
+<span class="nx">db</span><span class="p">.</span><span class="nx">runCommand</span><span class="p">({</span><span class="w"> </span><span class="nx">dbHash</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">})</span>
+</code></pre></div>
 <ol>
 <li>Manually validate the data:</li>
 </ol>
-<pre><code class="language-bash">java -jar checkData.jar /path/to/configuration/DDT.properties
-</code></pre>
+<div class="highlight"><pre><span></span><code>java<span class="w"> </span>-jar<span class="w"> </span>checkData.jar<span class="w"> </span>/path/to/configuration/DDT.properties
+</code></pre></div>
 <p>Please replace <code>/path/to/configuration/DDT.properties</code> with the actual path to your DDT configuration file.</p>
 
 
@@ -5715,7 +5738,7 @@ db.runCommand({ dbHash: 1 })
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

@@ -24,7 +24,7 @@
     
     
       
-        <title>Whaleal-data Introduction - Whaleal docs</title>
+        <title>Whaleal-data简介 - Whaleal docs</title>
       
     
     
@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#whaleal-data-introduction" class="md-skip">
+        <a href="#whaleal-data" class="md-skip">
           跳转至
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Whaleal-data Introduction
+              Whaleal-data简介
             
           </span>
         </div>
@@ -529,6 +529,8 @@
       
         
       
+        
+      
     
     
       
@@ -609,11 +611,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../WhalealPlatform/01-WhalealOverview/03-QuickStart/" class="md-nav__link">
+      <a href="../WhalealPlatform/01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WhalealPlatform/01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -2330,7 +2353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../WhalealPlatform/12-Account/01-usercenter.md" class="md-nav__link">
+      <a href="../WhalealPlatform/12-Account/01-usercenter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2700,7 +2723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../WhalealPlatform/15-AdministratorWhaleal/02-IntegrationwithPrometheus.md" class="md-nav__link">
+      <a href="../WhalealPlatform/15-AdministratorWhaleal/02-IntegrationwithPrometheus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2919,7 +2942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../WhalealPlatform/17-FrequentlyAskedQuestions/01-WAP.md" class="md-nav__link">
+      <a href="../WhalealPlatform/17-FrequentlyAskedQuestions/01-WAP/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2940,7 +2963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../WhalealPlatform/17-FrequentlyAskedQuestions/02-Monitor.md" class="md-nav__link">
+      <a href="../WhalealPlatform/17-FrequentlyAskedQuestions/02-Monitor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2961,7 +2984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../WhalealPlatform/17-FrequentlyAskedQuestions/03-Backup.md" class="md-nav__link">
+      <a href="../WhalealPlatform/17-FrequentlyAskedQuestions/03-Backup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2982,7 +3005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../WhalealPlatform/17-FrequentlyAskedQuestions/04-Service.md" class="md-nav__link">
+      <a href="../WhalealPlatform/17-FrequentlyAskedQuestions/04-Service/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3003,7 +3026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../WhalealPlatform/17-FrequentlyAskedQuestions/05-Agent.md" class="md-nav__link">
+      <a href="../WhalealPlatform/17-FrequentlyAskedQuestions/05-Agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5415,18 +5438,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#platform-architecture-diagram" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Platform Architecture Diagram
+      平台架构图
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#software-structure-diagram" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Software Structure Diagram
+      软件结构图
     </span>
   </a>
   
@@ -5450,12 +5473,12 @@
   
 
 
-<h1 id="whaleal-data-introduction">Whaleal-data Introduction</h1>
-<p>Whaleal-data is an archiving platform designed for data archiving. It supports three types of archiving: cold, warm, and S3. For warm data archiving, it supports synchronizing data from MYSQL, Oracle, DB2, and MongoDB to MongoDB. It also supports synchronizing data from MYSQL to MYSQL. Cold data archiving allows archiving MongoDB data to disk files. S3 archiving supports uploading MongoDB Gridfs data to target S3 storage. The platform's homepage displays task execution statistics, archive capacity statistics, table job statistics, business connections, total archive capacity, and user operations. The platform enables independent configuration of data sources and target sources. Users can choose a source to sync data from and a target to sync data to within a table job. After configuring table jobs, multiple table jobs can be configured within a single task configuration. Once tasks are created, they can be managed in the task scheduling section by enabling, disabling, immediately executing, or taking tasks offline. After immediate execution, the corresponding task execution details can be viewed in the task monitoring section. Administrator users have access to various operational details.</p>
-<h3 id="platform-architecture-diagram">Platform Architecture Diagram</h3>
-<p><img alt="Platform Architecture Diagram.png" src="../images/whalealDataImages/%E5%B9%B3%E5%8F%B0%E6%9E%B6%E6%9E%84%E5%9B%BE.png" /></p>
-<h3 id="software-structure-diagram">Software Structure Diagram</h3>
-<p><img alt="Software Structure Diagram.png" src="../images/whalealDataImages/%E8%BD%AF%E4%BB%B6%E7%BB%93%E6%9E%84%E5%9B%BE.png" /></p>
+<h1 id="whaleal-data">Whaleal-data简介</h1>
+<p>归档平台是一款针对数据的归档软件，归档类型分为冷、热、S3，其中热数据归档支持MYSQL、Oracle、DB2、MongoDB同步数据到MongoDB，MYSQL数据同步到MYSQL。冷数据归档支持MongoDB归档至磁盘文件。S3归档支持MongoDB Gridfs类型上传至目标S3。首页显示任务执行统计、归档容量统计、表作业统计、业务接入数、归档总容量及用户操作。平台可自主配置数据源及目标源在表作业中选择某源端同步至某目标端。表作业配置完成后可在任务配置处配置多个表作业在一个任务中。任务创建完成后在任务调度处可开启作业、禁用作业、立即执行、下线作业，立即执行后可在任务监控处查看对应的任务执行情况。管理员用户可查看各种操作详情等。</p>
+<h3 id="_1">平台架构图</h3>
+<p><img alt="平台架构图.png" src="../images/whalealDataImages/%E5%B9%B3%E5%8F%B0%E6%9E%B6%E6%9E%84%E5%9B%BE.png" /></p>
+<h3 id="_2">软件结构图</h3>
+<p><img alt="软件结构图.png" src="../images/whalealDataImages/%E8%BD%AF%E4%BB%B6%E7%BB%93%E6%9E%84%E5%9B%BE.png" /></p>
 
 
 
@@ -5548,7 +5571,7 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

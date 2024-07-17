@@ -517,6 +517,8 @@
       
         
       
+        
+      
     
     
       
@@ -597,11 +599,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01-WhalealOverview/03-QuickStart.md" class="md-nav__link">
+      <a href="../../01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -5508,21 +5531,20 @@
 <h2 id="configuration-examples">Configuration Examples</h2>
 <h3 id="prometheus-configuration">prometheus configuration</h3>
 <p>1.Modify the prometheus configuration file prometheus.yml</p>
-<pre><code>  - job_name: wap-monitor
+<div class="highlight"><pre><span></span><code>  - job_name: wap-monitor
     scrape_interval: 10s
-    metrics_path: '/api/server/mongo/getMongoDBForPrometheus'
+    metrics_path: &#39;/api/server/mongo/getMongoDBForPrometheus&#39;
     params:
       id: [&quot;public&quot;]
       type: [&quot;project&quot;]
     basic_auth:
-      username: 'admin'
+      username: &#39;admin&#39;
       password: xxxxx
     static_configs:
-      - targets: ['172.xx.xx.xx:8080']
+      - targets: [&#39;172.xx.xx.xx:8080&#39;]
         labels:
           instance: wap
-
-</code></pre>
+</code></pre></div>
 <p><strong>Request parameters:</strong></p>
 <table>
 <thead>
@@ -5657,7 +5679,7 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

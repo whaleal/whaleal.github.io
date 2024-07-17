@@ -512,6 +512,8 @@
       
         
       
+        
+      
     
     
       
@@ -592,11 +594,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStart.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -5610,7 +5633,7 @@
 </ol>
 <p>... (Continues with the rest of the parameter explanations)</p>
 <h4 id="2-parameter-usage-scope">2. Parameter Usage Scope</h4>
-<pre><code>| Parameter           | Real-Time Task | Full Task | Full + Increment Task | Full + Real-Time Task |
+<div class="highlight"><pre><span></span><code>| Parameter           | Real-Time Task | Full Task | Full + Increment Task | Full + Real-Time Task |
 |--------------------|--------------|----------|----------------------|-----------------------|
 | workName           | ✔️           | ✔️       | ✔️                   | ✔️                    |
 | sourceDsUrl        | ✔️           | ✔️       | ✔️                   | ✔️                    |
@@ -5631,9 +5654,9 @@
 | ddlWait            | ✔️           | ✔️       | ✔️                   | ✔️                    |
 | clusterInfoSet     | ✔️           | ✔️       | ✔️                   | ✔️                    |
 | bind_ip            | ✔️           | ✔️       | ✔️                   | ✔️                    |
-</code></pre>
+</code></pre></div>
 <h4 id="3-data-validation">3. Data Validation</h4>
-<pre><code># Data validation script
+<div class="highlight"><pre><span></span><code># Data validation script
 # 0: Multi-threaded validation: Configure 1-8 validation methods after 0, which can be processed concurrently
 # 1: Estimate count validation for libraries and tables (may be inaccurate)
 # 2: Accurate count validation for libraries and tables
@@ -5646,7 +5669,7 @@
 # 9: Output detailed validation log information. When not specified, the log only records abnormal validation information
 # Can be used in combination, e.g., 123456 123457 1237. If not specified, the default is combination 16
 checkData=12456
-</code></pre>
+</code></pre></div>
 
 
 
@@ -5739,7 +5762,7 @@ checkData=12456
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

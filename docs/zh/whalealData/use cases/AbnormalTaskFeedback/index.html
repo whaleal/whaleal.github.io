@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#handling-exceptional-tasks" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -529,6 +529,8 @@
       
         
       
+        
+      
     
     
       
@@ -609,11 +611,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStart/" class="md-nav__link">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -2330,7 +2353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/12-Account/01-usercenter.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/12-Account/01-usercenter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2700,7 +2723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/15-AdministratorWhaleal/02-IntegrationwithPrometheus.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/15-AdministratorWhaleal/02-IntegrationwithPrometheus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2919,7 +2942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/01-WAP.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/01-WAP/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2940,7 +2963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/02-Monitor.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/02-Monitor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2961,7 +2984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/03-Backup.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/03-Backup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2982,7 +3005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/04-Service.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/04-Service/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3003,7 +3026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/05-Agent.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/05-Agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4777,9 +4800,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#handling-exceptional-tasks" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Handling Exceptional Tasks
+      异常任务回写
     </span>
   </a>
   
@@ -5460,9 +5483,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#handling-exceptional-tasks" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Handling Exceptional Tasks
+      异常任务回写
     </span>
   </a>
   
@@ -5488,14 +5511,9 @@
 
   <h1>AbnormalTaskFeedback</h1>
 
-<h4 id="handling-exceptional-tasks">Handling Exceptional Tasks</h4>
-<p>When encountering exceptions during cold data archiving, you can follow these steps to address the issue:</p>
-<ol>
-<li>Navigate to the "Archive Management (Cold Data)" menu and select "Log Query (Cold)".</li>
-<li>This page will display the archived cold data tasks. Click on "File Rewriting" to perform a rollback of the archived files into the database.</li>
-</ol>
-<p><img alt="File Rewriting" src="../../../images/whalealDataImages/image-20230621150804299.png" /></p>
-<p>This process allows you to manage and recover from any anomalies that might occur during the cold data archiving process.</p>
+<h4 id="_1">异常任务回写</h4>
+<p>​   冷数据归档异常时点击归档管理（冷数据）菜单下的日志查询（冷），在此页面展示了归档冷数据任务，点击文件回写可将已归档的文件回写到数据库中。</p>
+<p><img alt="image-20230621150804299" src="../../../images/whalealDataImages/image-20230621150804299.png" /></p>
 
 
 
@@ -5588,7 +5606,7 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

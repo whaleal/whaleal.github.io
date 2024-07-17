@@ -534,6 +534,8 @@
       
         
       
+        
+      
     
     
       
@@ -614,11 +616,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01-WhalealOverview/03-QuickStart/" class="md-nav__link">
+      <a href="../../01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -2614,7 +2637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../12-Account/01-usercenter.md" class="md-nav__link">
+      <a href="../../12-Account/01-usercenter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2984,7 +3007,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../15-AdministratorWhaleal/02-IntegrationwithPrometheus.md" class="md-nav__link">
+      <a href="../../15-AdministratorWhaleal/02-IntegrationwithPrometheus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3203,7 +3226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../17-FrequentlyAskedQuestions/01-WAP.md" class="md-nav__link">
+      <a href="../../17-FrequentlyAskedQuestions/01-WAP/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3224,7 +3247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../17-FrequentlyAskedQuestions/02-Monitor.md" class="md-nav__link">
+      <a href="../../17-FrequentlyAskedQuestions/02-Monitor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3245,7 +3268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../17-FrequentlyAskedQuestions/03-Backup.md" class="md-nav__link">
+      <a href="../../17-FrequentlyAskedQuestions/03-Backup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3266,7 +3289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../17-FrequentlyAskedQuestions/04-Service.md" class="md-nav__link">
+      <a href="../../17-FrequentlyAskedQuestions/04-Service/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3287,7 +3310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../17-FrequentlyAskedQuestions/05-Agent.md" class="md-nav__link">
+      <a href="../../17-FrequentlyAskedQuestions/05-Agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5961,7 +5984,7 @@
 <h4 id="server-networking-access">Server Networking Access</h4>
 <p>The hosts that serve the MongoDB deployments must:</p>
 <ul>
-<li>Have full networking access to each other through their FQDNs. Each host must be able to reach every other host through the FQDN. To find the FQDN for each host, run the following command in the shell:</li>
+<li>Have full networking access to each other through their FQDN. Each host must be able to reach every other host through the FQDN. To find the FQDN for each host, run the following command in the shell:</li>
 </ul>
 <p><code>hostname -f</code></p>
 <ul>
@@ -5970,6 +5993,8 @@
 <p>The network configuration must allow each MongoDB Agent to make a direct connection to every MongoDB deployment listed on the <strong>Deployment</strong> page. Whaleal does not support port forwarding.</p>
 <h3 id="backup-and-monitoring">Backup and Monitoring</h3>
 <p>Whaleal supports backup and monitoring only for MongoDB version 5.0 and later.</p>
+<p>For more information about backup, refer to <a href="./07-BackupAndRestore/01-Backup/01-CreateRepository.md">BackupAndRestore</a></p>
+<p>For more information about backup, refer to <a href="./06-Monitor/01-MonitoringInstructions.md">Monitor</a></p>
 <h4 id="mongodb-backup-support">MongoDB  Backup Support</h4>
 <ul>
 <li>Increased disk usage, disk I/O, and network I/O on each MongoDB host with backup enabled while a snapshot is being taken.</li>
@@ -5990,7 +6015,7 @@
 </li>
 </ul>
 <p>## EXAMPLE</p>
-<p>If your MongoDB Agent runs as the <code>mongod</code>system user in the <code>mongod</code>system group, the MongoDB process must also run as the <code>mongod</code> system user in the <code>mongod</code> system group.</p>
+<p>If your MongoDB Agent runs as the <code>mongod</code> root user in the <code>mongod</code> root group, the MongoDB process must also run as the <code>mongod</code> root user in the <code>mongod</code> root group.</p>
 <h2 id="installation-options">Installation Options</h2>
 <h3 id="installing-mongodb-enterprise-dependencies">Installing MongoDB Enterprise Dependencies</h3>
 <h4 id="ubuntu">Ubuntu</h4>
@@ -6143,7 +6168,7 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

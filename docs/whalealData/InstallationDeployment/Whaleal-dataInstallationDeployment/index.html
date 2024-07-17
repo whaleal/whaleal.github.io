@@ -512,6 +512,8 @@
       
         
       
+        
+      
     
     
       
@@ -592,11 +594,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStart.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -5666,8 +5689,8 @@
 <li>Path: The installation path configured in the Nginx configuration.</li>
 </ol>
 <h4 id="restart-nginx">Restart Nginx</h4>
-<pre><code class="language-bash">/usr/local/nginx/sbin/nginx -s reload -t
-</code></pre>
+<div class="highlight"><pre><span></span><code>/usr/local/nginx/sbin/nginx<span class="w"> </span>-s<span class="w"> </span>reload<span class="w"> </span>-t
+</code></pre></div>
 <h4 id="backend-service-startup">Backend Service Startup</h4>
 <ol>
 <li>After compiling the source code, generate the "filing-system-0.0.1-SNAPSHOT.jar" distribution package.</li>
@@ -5675,18 +5698,18 @@
 <li>Edit the configuration file "application.yml".</li>
 </ol>
 <h4 id="configuration-file-content">Configuration File Content</h4>
-<pre><code class="language-yaml"># Application server port
-server:
-  port: 8000
+<div class="highlight"><pre><span></span><code><span class="c1"># Application server port</span>
+<span class="nt">server</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8000</span>
 
-# Database and other configurations...
-</code></pre>
+<span class="c1"># Database and other configurations...</span>
+</code></pre></div>
 <h4 id="start-the-service">Start the Service</h4>
-<pre><code class="language-bash">nohup java -jar -Xms2048M -Xmx20000M -XX:PermSize=768M -XX:MaxPermSize=1536M -server -jar filing-system-0.0.1-SNAPSHOT.jar --spring.config.location=application.yml --jasypt.encryptor.password=SfXlqZmK4P257 &amp;
-</code></pre>
+<div class="highlight"><pre><span></span><code>nohup<span class="w"> </span>java<span class="w"> </span>-jar<span class="w"> </span>-Xms2048M<span class="w"> </span>-Xmx20000M<span class="w"> </span>-XX:PermSize<span class="o">=</span>768M<span class="w"> </span>-XX:MaxPermSize<span class="o">=</span>1536M<span class="w"> </span>-server<span class="w"> </span>-jar<span class="w"> </span>filing-system-0.0.1-SNAPSHOT.jar<span class="w"> </span>--spring.config.location<span class="o">=</span>application.yml<span class="w"> </span>--jasypt.encryptor.password<span class="o">=</span>SfXlqZmK4P257<span class="w"> </span><span class="p">&amp;</span>
+</code></pre></div>
 <h4 id="check-logs-for-successful-startup">Check Logs for Successful Startup</h4>
-<pre><code class="language-bash">tail -f nohup.out
-</code></pre>
+<div class="highlight"><pre><span></span><code>tail<span class="w"> </span>-f<span class="w"> </span>nohup.out
+</code></pre></div>
 <h3 id="docker-container-deployment">Docker Container Deployment</h3>
 <ol>
 <li>Navigate to the directory containing the <code>docker-compose.yml</code> file.</li>
@@ -5801,7 +5824,7 @@ The default path for cold data archiving is <code>/whalealdb</code>. For Docker,
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#redis-installation-and-deployment" class="md-skip">
+        <a href="#redis" class="md-skip">
           跳转至
         </a>
       
@@ -529,6 +529,8 @@
       
         
       
+        
+      
     
     
       
@@ -609,11 +611,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStart/" class="md-nav__link">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -2330,7 +2353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/12-Account/01-usercenter.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/12-Account/01-usercenter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2700,7 +2723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/15-AdministratorWhaleal/02-IntegrationwithPrometheus.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/15-AdministratorWhaleal/02-IntegrationwithPrometheus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2919,7 +2942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/01-WAP.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/01-WAP/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2940,7 +2963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/02-Monitor.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/02-Monitor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2961,7 +2984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/03-Backup.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/03-Backup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2982,7 +3005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/04-Service.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/04-Service/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3003,7 +3026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/05-Agent.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/17-FrequentlyAskedQuestions/05-Agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3357,48 +3380,192 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#redis-installation-and-deployment" class="md-nav__link">
+  <a href="#redis" class="md-nav__link">
     <span class="md-ellipsis">
-      Redis Installation and Deployment
+      Redis 安装部署
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Redis Installation and Deployment">
+    <nav class="md-nav" aria-label="Redis 安装部署">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#opening-specified-ports-or-disabling-firewall" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Opening Specified Ports or Disabling Firewall
+      开放指定端口或关闭防火墙
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="开放指定端口或关闭防火墙">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1． 查看已经开放的端口
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#installation-and-deployment" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation and Deployment
+      2.开放指定端口
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#edit-configuration-file" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
-      Edit Configuration File
+      3.重新加载防火墙配置
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#start-redis" class="md-nav__link">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
-      Start Redis
+      4.确认端口开放
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.关闭防火墙
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.确认防火墙状态
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装部署
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="安装部署">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 解压安装包
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 重命名
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 安装依赖
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 编译文件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      编辑配置文件
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="编辑配置文件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 设置密码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 后台启动
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 远程访问
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 启动
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 校验
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -5502,48 +5669,192 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#redis-installation-and-deployment" class="md-nav__link">
+  <a href="#redis" class="md-nav__link">
     <span class="md-ellipsis">
-      Redis Installation and Deployment
+      Redis 安装部署
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Redis Installation and Deployment">
+    <nav class="md-nav" aria-label="Redis 安装部署">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#opening-specified-ports-or-disabling-firewall" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Opening Specified Ports or Disabling Firewall
+      开放指定端口或关闭防火墙
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="开放指定端口或关闭防火墙">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1． 查看已经开放的端口
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#installation-and-deployment" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation and Deployment
+      2.开放指定端口
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#edit-configuration-file" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
-      Edit Configuration File
+      3.重新加载防火墙配置
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#start-redis" class="md-nav__link">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
-      Start Redis
+      4.确认端口开放
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.关闭防火墙
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.确认防火墙状态
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装部署
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="安装部署">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 解压安装包
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 重命名
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 安装依赖
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 编译文件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      编辑配置文件
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="编辑配置文件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 设置密码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 后台启动
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 远程访问
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 启动
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 校验
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -5572,116 +5883,60 @@
 
   <h1>RedisInstallationDeployment</h1>
 
-<h2 id="redis-installation-and-deployment">Redis Installation and Deployment</h2>
-<h3 id="opening-specified-ports-or-disabling-firewall">Opening Specified Ports or Disabling Firewall</h3>
-<ol>
-<li>
-<p>View the ports that are already open:
-   <code>bash
-   firewall-cmd --list-ports</code></p>
-</li>
-<li>
-<p>Open a specified port (e.g., port 6379 for Redis):
-   <code>bash
-   firewall-cmd --zone=public --add-port=6379/tcp --permanent</code></p>
-</li>
-<li>
-<p>Reload the firewall configuration:
-   <code>bash
-   firewall-cmd --reload</code></p>
-</li>
-<li>
-<p>Confirm the opened ports:
-   <code>bash
-   firewall-cmd --list-ports</code></p>
-</li>
-<li>
-<p>If needed, you can stop the firewall:
-   <code>bash
-   systemctl stop firewalld</code></p>
-</li>
-<li>
-<p>Check the firewall status:
-   <code>bash
-   systemctl status firewalld</code></p>
-</li>
-</ol>
-<h3 id="installation-and-deployment">Installation and Deployment</h3>
-<ol>
-<li>
-<p>Extract the Redis installation package:
-   <code>bash
-   tar -zxvf redis-4.0.9.tar.gz -C /usr/local/</code></p>
-</li>
-<li>
-<p>Rename the extracted folder:
-   <code>bash
-   mv redis-4.0.9 redis</code></p>
-</li>
-<li>
-<p>Install the required dependencies (e.g., GCC):
-   <code>bash
-   yum install gcc -y</code></p>
-</li>
-<li>
-<p>Compile the Redis files:
-   <code>bash
-   cd /usr/local/redis
-   make &amp;&amp; make install</code></p>
-</li>
-</ol>
-<h3 id="edit-configuration-file">Edit Configuration File</h3>
-<ol>
-<li>
-<p>Edit the Redis configuration file:
-   <code>bash
-   vi redis.conf</code></p>
-</li>
-<li>
-<p>Set a password (e.g., "123456"):
-   ```conf
-   # Before
-   # requirepass foobared</p>
-</li>
-</ol>
-<p># After
-   requirepass 123456
-   ```</p>
-<ol>
-<li>Enable background daemon mode:
-   ```conf
-   # Before
-   # daemonize no</li>
-</ol>
-<p># After
-   daemonize yes
-   ```</p>
-<ol>
-<li>Allow remote access:
-   ```conf
-   # Before
-   # bind 127.0.0.1</li>
-</ol>
-<p># After
-   bind 0.0.0.0
-   ```</p>
-<ol>
-<li>Save the configuration file and exit the editor.</li>
-</ol>
-<h3 id="start-redis">Start Redis</h3>
-<ol>
-<li>
-<p>Start Redis using the modified configuration file:
-   <code>bash
-   redis-server /usr/local/redis/redis.conf</code></p>
-</li>
-<li>
-<p>Validate the Redis server is running:
-   <code>bash
-   redis-cli</code></p>
-</li>
-</ol>
-<p>Make sure to adjust paths, passwords, and other configurations as needed for your specific environment.</p>
+<h2 id="redis">Redis 安装部署</h2>
+<h3 id="_1">开放指定端口或关闭防火墙</h3>
+<h4 id="1">1． 查看已经开放的端口</h4>
+<pre><code>firewall-cmd --list-ports
+</code></pre>
+<h4 id="2">2.开放指定端口</h4>
+<pre><code>firewall-cmd --zone=public --add-port=6379/tcp --permanent
+</code></pre>
+<h4 id="3">3.重新加载防火墙配置</h4>
+<pre><code>firewall-cmd --reload
+</code></pre>
+<h4 id="4">4.确认端口开放</h4>
+<pre><code>firewall-cmd --list-ports
+</code></pre>
+<h4 id="5">5.关闭防火墙</h4>
+<pre><code>systemctl stop firewalld
+</code></pre>
+<h4 id="6">6.确认防火墙状态</h4>
+<pre><code>systemctl status firewalld
+</code></pre>
+<h3 id="_2">安装部署</h3>
+<h4 id="1_1">1. 解压安装包</h4>
+<pre><code>tar -zxvf redis-4.0.9.tar.gz -C /usr/local/
+</code></pre>
+<h4 id="2_1">2. 重命名</h4>
+<pre><code>mv redis-4.0.9 redis
+</code></pre>
+<h4 id="3_1">3. 安装依赖</h4>
+<pre><code>yum install gcc -y
+</code></pre>
+<h4 id="4_1">4. 编译文件</h4>
+<pre><code>make &amp;&amp; make install
+</code></pre>
+<h3 id="_3">编辑配置文件</h3>
+<pre><code>vi redis.conf
+</code></pre>
+<h4 id="1_2">1. 设置密码</h4>
+<pre><code>requirepass foobared 修改
+requirepass 123456（设置密码为 123456）
+</code></pre>
+<h4 id="2_2">2. 后台启动</h4>
+<pre><code>daemonize no 修改
+daemonize yes（设置为后台启动）
+</code></pre>
+<h4 id="3_2">3. 远程访问</h4>
+<pre><code>bind 127.0.0.1 修改
+bind 0.0.0.0（设置为远程访问）
+</code></pre>
+<h4 id="4_2">4. 启动</h4>
+<pre><code>redis-server /usr/local/redis/redis.conf
+</code></pre>
+<h4 id="5_1">5. 校验</h4>
+<pre><code>redis-cli
+</code></pre>
 
 
 
@@ -5774,7 +6029,7 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

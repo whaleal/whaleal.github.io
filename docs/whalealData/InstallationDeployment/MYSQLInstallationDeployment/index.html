@@ -512,6 +512,8 @@
       
         
       
+        
+      
     
     
       
@@ -592,11 +594,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStart.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -5559,200 +5582,198 @@
 <ol>
 <li>
 <p>View the ports that are already open:
-   <code>bash
-   firewall-cmd --list-ports</code></p>
+   <div class="highlight"><pre><span></span><code>firewall-cmd<span class="w"> </span>--list-ports
+</code></pre></div></p>
 </li>
 <li>
 <p>Open a specified port (e.g., port 3306 for MySQL):
-   <code>bash
-   firewall-cmd --zone=public --add-port=3306/tcp --permanent</code></p>
+   <div class="highlight"><pre><span></span><code>firewall-cmd<span class="w"> </span>--zone<span class="o">=</span>public<span class="w"> </span>--add-port<span class="o">=</span><span class="m">3306</span>/tcp<span class="w"> </span>--permanent
+</code></pre></div></p>
 </li>
 <li>
 <p>Reload the firewall configuration:
-   <code>bash
-   firewall-cmd --reload</code></p>
+   <div class="highlight"><pre><span></span><code>firewall-cmd<span class="w"> </span>--reload
+</code></pre></div></p>
 </li>
 <li>
 <p>Confirm the opened ports:
-   <code>bash
-   firewall-cmd --list-ports</code></p>
+   <div class="highlight"><pre><span></span><code>firewall-cmd<span class="w"> </span>--list-ports
+</code></pre></div></p>
 </li>
 <li>
 <p>If needed, you can stop the firewall:
-   <code>bash
-   systemctl stop firewalld</code></p>
+   <div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>stop<span class="w"> </span>firewalld
+</code></pre></div></p>
 </li>
 <li>
 <p>Check the firewall status:
-   <code>bash
-   systemctl status firewalld</code></p>
+   <div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>status<span class="w"> </span>firewalld
+</code></pre></div></p>
 </li>
 </ol>
 <h3 id="basic-environment-preparation">Basic Environment Preparation</h3>
 <ol>
 <li>
 <p>Create a user and group for MySQL:
-   <code>bash
-   groupadd mysql
-   useradd -r -g mysql -s /sbin/nologin mysql</code></p>
+   <div class="highlight"><pre><span></span><code>groupadd<span class="w"> </span>mysql
+useradd<span class="w"> </span>-r<span class="w"> </span>-g<span class="w"> </span>mysql<span class="w"> </span>-s<span class="w"> </span>/sbin/nologin<span class="w"> </span>mysql
+</code></pre></div></p>
 </li>
 <li>
 <p>Install dependencies for MySQL:
-   <code>bash
-   yum install -y libncurses* libaio* lrzsz*</code></p>
+   <div class="highlight"><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>libncurses*<span class="w"> </span>libaio*<span class="w"> </span>lrzsz*
+</code></pre></div></p>
 </li>
 <li>
 <p>Extract the MySQL installation package:
-   <code>bash
-   tar -xvf mysql-8.0.28-linux-glibc2.12-x86_64.tar -C /usr/local/</code></p>
+   <div class="highlight"><pre><span></span><code>tar<span class="w"> </span>-xvf<span class="w"> </span>mysql-8.0.28-linux-glibc2.12-x86_64.tar<span class="w"> </span>-C<span class="w"> </span>/usr/local/
+</code></pre></div></p>
 </li>
 <li>
 <p>Rename the extracted directory:
-   <code>bash
-   mv mysql-8.0.28-linux-glibc2.12-x86_64/ mysql</code></p>
+   <div class="highlight"><pre><span></span><code>mv<span class="w"> </span>mysql-8.0.28-linux-glibc2.12-x86_64/<span class="w"> </span>mysql
+</code></pre></div></p>
 </li>
 <li>
 <p>Create required directories:
-   <code>bash
-   cd /usr/local/mysql/
-   mkdir data</code></p>
+   <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/usr/local/mysql/
+mkdir<span class="w"> </span>data
+</code></pre></div></p>
 </li>
 <li>
 <p>Change directory ownership:
-   <code>bash
-   chown -R mysql:mysql /usr/local/mysql/</code></p>
+   <div class="highlight"><pre><span></span><code>chown<span class="w"> </span>-R<span class="w"> </span>mysql:mysql<span class="w"> </span>/usr/local/mysql/
+</code></pre></div></p>
 </li>
 </ol>
 <h3 id="deploy-mysql-service">Deploy MySQL Service</h3>
 <ol>
 <li>
 <p>Initialize the database:
-   <code>bash
-   /usr/local/mysql/bin/mysqld --user=mysql --basedir=/usr/local/mysql/ --datadir=/usr/local/mysql/data/ --initialize</code></p>
+   <div class="highlight"><pre><span></span><code>/usr/local/mysql/bin/mysqld<span class="w"> </span>--user<span class="o">=</span>mysql<span class="w"> </span>--basedir<span class="o">=</span>/usr/local/mysql/<span class="w"> </span>--datadir<span class="o">=</span>/usr/local/mysql/data/<span class="w"> </span>--initialize
+</code></pre></div></p>
 </li>
 <li>
 <p>Edit <code>my.cnf</code> configuration:
    Create/Edit the configuration file <code>/etc/my.cnf</code> and add the following content:
-   ```
-   [mysqld]
-   basedir=/usr/local/mysql
-   datadir=/usr/local/mysql/data
-   socket=/usr/local/mysql/data/mysql.sock
-   bind-address = 0.0.0.0
-   user=root
-   port=3306
-   log-bin=mysql-bin
-   server-id=1
-   max_connections=2048
-   character-set-server=utf8
-   default-storage-engine=INNODB</p>
+   <div class="highlight"><pre><span></span><code>[mysqld]
+basedir=/usr/local/mysql
+datadir=/usr/local/mysql/data
+socket=/usr/local/mysql/data/mysql.sock
+bind-address = 0.0.0.0
+user=root
+port=3306
+log-bin=mysql-bin
+server-id=1
+max_connections=2048
+character-set-server=utf8
+default-storage-engine=INNODB
+
+[client]
+socket=/usr/local/mysql/data/mysql.sock
+</code></pre></div></p>
 </li>
-</ol>
-<p>[client]
-   socket=/usr/local/mysql/data/mysql.sock
-   ```</p>
-<ol>
 <li>
 <p>Configure environment variables:
-   <code>bash
-   echo "export PATH=$PATH:/usr/local/mysql/bin" &gt;&gt; /etc/profile
-   source /etc/profile</code></p>
+   <div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;export PATH=</span><span class="nv">$PATH</span><span class="s2">:/usr/local/mysql/bin&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/profile
+<span class="nb">source</span><span class="w"> </span>/etc/profile
+</code></pre></div></p>
 </li>
 <li>
 <p>Configure startup script:
-   ```bash
-   cp /usr/local/mysql/support-files/mysql.server /etc/rc.d/init.d/mysqld
-   chmod +x /etc/rc.d/init.d/mysqld</p>
+   <div class="highlight"><pre><span></span><code>cp<span class="w"> </span>/usr/local/mysql/support-files/mysql.server<span class="w"> </span>/etc/rc.d/init.d/mysqld
+chmod<span class="w"> </span>+x<span class="w"> </span>/etc/rc.d/init.d/mysqld
+
+cat<span class="w"> </span>&gt;<span class="w"> </span>/lib/systemd/system/mysqld.service<span class="w"> </span><span class="s">&lt;&lt;EOF</span>
+<span class="s">[Unit]</span>
+<span class="s">Description=mysqld</span>
+<span class="s">After=network.target</span>
+
+<span class="s">[Service]</span>
+<span class="s">Type=forking</span>
+<span class="s">ExecStart=/etc/rc.d/init.d/mysqld start</span>
+<span class="s">ExecReload=/etc/rc.d/init.d/mysqld restart</span>
+<span class="s">ExecStop=/etc/rc.d/init.d/mysqld stop</span>
+<span class="s">PrivateTmp=true</span>
+
+<span class="s">[Install]</span>
+<span class="s">WantedBy=multi-user.target</span>
+<span class="s">EOF</span>
+</code></pre></div></p>
 </li>
-</ol>
-<p>cat &gt; /lib/systemd/system/mysqld.service &lt;&lt;EOF
-   [Unit]
-   Description=mysqld
-   After=network.target</p>
-<p>[Service]
-   Type=forking
-   ExecStart=/etc/rc.d/init.d/mysqld start
-   ExecReload=/etc/rc.d/init.d/mysqld restart
-   ExecStop=/etc/rc.d/init.d/mysqld stop
-   PrivateTmp=true</p>
-<p>[Install]
-   WantedBy=multi-user.target
-   EOF
-   ```</p>
-<ol>
 <li>
 <p>Reload systemd configuration:
-   <code>bash
-   systemctl daemon-reload</code></p>
+   <div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>daemon-reload
+</code></pre></div></p>
 </li>
 <li>
 <p>Set MySQL to start on boot:
-   <code>bash
-   systemctl enable mysqld</code></p>
+   <div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>mysqld
+</code></pre></div></p>
 </li>
 <li>
 <p>Start MySQL:
-   <code>bash
-   systemctl start mysqld</code></p>
+   <div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>start<span class="w"> </span>mysqld
+</code></pre></div></p>
 </li>
 <li>
 <p>Check if MySQL port is active:
-   <code>bash
-   netstat -tunlp | grep 3306</code></p>
+   <div class="highlight"><pre><span></span><code>netstat<span class="w"> </span>-tunlp<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="m">3306</span>
+</code></pre></div></p>
 </li>
 </ol>
 <h3 id="configure-password-for-remote-connection">Configure Password for Remote Connection</h3>
 <ol>
 <li>
 <p>Enter the printed password to log in to MySQL:
-   <code>bash
-   mysql -u root -p</code></p>
+   <div class="highlight"><pre><span></span><code>mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-p
+</code></pre></div></p>
 </li>
 <li>
 <p>After logging in, change the root password:
-   <code>sql
-   ALTER USER 'root'@'localhost' IDENTIFIED BY '123456';</code></p>
+   <div class="highlight"><pre><span></span><code><span class="k">ALTER</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="s1">&#39;root&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span><span class="w"> </span><span class="n">IDENTIFIED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="s1">&#39;123456&#39;</span><span class="p">;</span>
+</code></pre></div></p>
 </li>
 <li>
 <p>Check user information:
-   <code>sql
-   select user, host, ssl_type from mysql.user;
-   use mysql;</code></p>
+   <div class="highlight"><pre><span></span><code><span class="k">select</span><span class="w"> </span><span class="k">user</span><span class="p">,</span><span class="w"> </span><span class="k">host</span><span class="p">,</span><span class="w"> </span><span class="n">ssl_type</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">mysql</span><span class="p">.</span><span class="k">user</span><span class="p">;</span>
+<span class="n">use</span><span class="w"> </span><span class="n">mysql</span><span class="p">;</span>
+</code></pre></div></p>
 </li>
 <li>
 <p>Update the host field to <code>%</code> to allow remote connections:
-   <code>sql
-   update user set host = '%' where user = 'root';</code></p>
+   <div class="highlight"><pre><span></span><code><span class="k">update</span><span class="w"> </span><span class="k">user</span><span class="w"> </span><span class="k">set</span><span class="w"> </span><span class="k">host</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;%&#39;</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="k">user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;root&#39;</span><span class="p">;</span>
+</code></pre></div></p>
 </li>
 <li>
 <p>Refresh privileges:
-   <code>sql
-   flush privileges;</code></p>
+   <div class="highlight"><pre><span></span><code><span class="n">flush</span><span class="w"> </span><span class="k">privileges</span><span class="p">;</span>
+</code></pre></div></p>
 </li>
 </ol>
 <h3 id="adding-archive-platform-fields">Adding Archive Platform Fields</h3>
 <ol>
 <li>
 <p>Log in to MySQL:
-   <code>bash
-   mysql -u root -p</code></p>
+   <div class="highlight"><pre><span></span><code>mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-p
+</code></pre></div></p>
 </li>
 <li>
 <p>Create a database:
-   <code>sql
-   create database filing;</code></p>
+   <div class="highlight"><pre><span></span><code><span class="k">create</span><span class="w"> </span><span class="k">database</span><span class="w"> </span><span class="n">filing</span><span class="p">;</span>
+</code></pre></div></p>
 </li>
 <li>
 <p>Add data from the provided SQL file:
-   <code>sql
-   use filing;
-   source /usr/local/filing.sql;</code></p>
+   <div class="highlight"><pre><span></span><code><span class="n">use</span><span class="w"> </span><span class="n">filing</span><span class="p">;</span>
+<span class="k">source</span><span class="w"> </span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="k">local</span><span class="o">/</span><span class="n">filing</span><span class="p">.</span><span class="k">sql</span><span class="p">;</span>
+</code></pre></div></p>
 </li>
 <li>
 <p>Check the added tables:
-   <code>sql
-   use filing;
-   show tables;</code></p>
+   <div class="highlight"><pre><span></span><code><span class="n">use</span><span class="w"> </span><span class="n">filing</span><span class="p">;</span>
+<span class="k">show</span><span class="w"> </span><span class="n">tables</span><span class="p">;</span>
+</code></pre></div></p>
 </li>
 </ol>
 <p>As always, ensure that you adapt paths, filenames, and other specifics to match your system's configuration.</p>
@@ -5848,7 +5869,7 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

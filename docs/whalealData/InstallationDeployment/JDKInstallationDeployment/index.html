@@ -512,6 +512,8 @@
       
         
       
+        
+      
     
     
       
@@ -592,11 +594,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStart.md" class="md-nav__link">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../WhalealPlatform/01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -5538,30 +5561,30 @@
 <h2 id="jdk-installation-and-deployment">JDK Installation and Deployment</h2>
 <p>It is recommended to install JDK 11.</p>
 <h3 id="1-dependency-environment">1. Dependency Environment</h3>
-<p>For open-source JDK, font library support is required. If it is already present on the Linux system, there's no need to install it.</p>
-<pre><code class="language-bash">yum install fontconfig
-fc-cache --force
-fc-cache -f
-</code></pre>
+<p>For open-source JDK, font library support is required. If it is already present on the Linux system, there's no need to install it.
+<div class="highlight"><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>fontconfig
+fc-cache<span class="w"> </span>--force
+fc-cache<span class="w"> </span>-f
+</code></pre></div></p>
 <h3 id="2-extract-jdk-installation-package">2. Extract JDK Installation Package</h3>
-<pre><code class="language-bash">tar -zxvf jdk-11.0.9_linux-x64_bin.tar.gz -C /usr/local/
-</code></pre>
+<div class="highlight"><pre><span></span><code>tar<span class="w"> </span>-zxvf<span class="w"> </span>jdk-11.0.9_linux-x64_bin.tar.gz<span class="w"> </span>-C<span class="w"> </span>/usr/local/
+</code></pre></div>
 <h3 id="3-configure-environment-variables">3. Configure Environment Variables</h3>
-<p>Open the profile configuration file:</p>
-<pre><code class="language-bash">vi /etc/profile
-</code></pre>
-<p>Add the following configurations at the end of the file:</p>
-<pre><code class="language-bash">export JAVA_HOME=/usr/local/jdk-11.0.9
-export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
-export PATH=$PATH:$JAVA_HOME/bin
-</code></pre>
-<p>Refresh the configuration to make it effective:</p>
-<pre><code class="language-bash">source /etc/profile
-</code></pre>
+<p>Open the profile configuration file:
+<div class="highlight"><pre><span></span><code>vi<span class="w"> </span>/etc/profile
+</code></pre></div>
+Add the following configurations at the end of the file:
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">JAVA_HOME</span><span class="o">=</span>/usr/local/jdk-11.0.9
+<span class="nb">export</span><span class="w"> </span><span class="nv">CLASSPATH</span><span class="o">=</span>.:<span class="nv">$JAVA_HOME</span>/lib/dt.jar:<span class="nv">$JAVA_HOME</span>/lib/tools.jar
+<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$JAVA_HOME</span>/bin
+</code></pre></div>
+Refresh the configuration to make it effective:
+<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>/etc/profile
+</code></pre></div></p>
 <h3 id="4-verification">4. Verification</h3>
-<p>Check the installed Java version:</p>
-<pre><code class="language-bash">java -version
-</code></pre>
+<p>Check the installed Java version:
+<div class="highlight"><pre><span></span><code>java<span class="w"> </span>-version
+</code></pre></div></p>
 <p>Please note that when copying and pasting these commands, ensure that the formatting remains consistent, and adjust paths and filenames as needed for your system.</p>
 
 
@@ -5655,7 +5678,7 @@ export PATH=$PATH:$JAVA_HOME/bin
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>

@@ -2,11 +2,11 @@
 
 __登录JMC平台`用户管理 -> WebhookUrl对内`__
 
-![wehhookUrlInside.png](../../../images/wehhookUrlInside.png)
+![wehhookUrlInside.png](../../images/wehhookUrlInside.png)
 
 __新增配置__
 
-![configureWebhookUrl.png](../../../images/configureWebhookUrl.png)
+![configureWebhookUrl.png](../../images/configureWebhookUrl.png)
 
 __注意点__
 
@@ -22,4 +22,4 @@ __Vonage配置WebhookUrl__
 
 JMC平台中配置完成后,还需在Vonage中配置, `登录Vonage -> API设置 -> 传递回执配置` ,注意选择webhook格式 `POST-JSON`
 
-![vonageWebhookUrl.png](../../../images/vonageWebhookUrl.png)
+![vonageWebhookUrl.png](../../images/vonageWebhookUrl.png)

@@ -154,8 +154,8 @@ QPS is obtained from the data platform's log output, which counts the number of 
     <td>14025MB</td>
   </tr>
 </table>
-![img_17.png](../../../images/documentDataTransferImages/img_17.png)
-![img_18.png](../../../images/documentDataTransferImages/img_18.png)
+![img_17.png](../../images/documentDataTransferImages/img_17.png)
+![img_18.png](../../images/documentDataTransferImages/img_18.png)
 
 Summary: When cacheBucketSize=16, cacheBucketNum=16, dataBatchSize=128, it can be observed that increasing the number of threads does not increase QPS, due to the limitation of the cache area size.
 
@@ -299,8 +299,8 @@ Summary: When cacheBucketSize=16, cacheBucketNum=16, dataBatchSize=128, it can b
   </tr>
 </table>
 
-![img_19.png](../../../images/documentDataTransferImages/img_19.png)
-![img_20.png](../../../images/documentDataTransferImages/img_20.png)
+![img_19.png](../../images/documentDataTransferImages/img_19.png)
+![img_20.png](../../images/documentDataTransferImages/img_20.png)
 
 Summary: When cacheBucketSize=32, cacheBucketNum=32, dataBatchSize=128, it can be observed that increasing the number of threads increases QPS, due to the limitation of the Oplog read rate.
 
@@ -308,10 +308,10 @@ Summary: When cacheBucketSize=32, cacheBucketNum=32, dataBatchSize=128, it can b
 
 (1) CPU vs. QPS:
 
-![img_23.png](../../../images/documentDataTransferImages/img_23.png)
+![img_23.png](../../images/documentDataTransferImages/img_23.png)
 
 (2) Memory Usage vs. QPS:
 
-![img_24.png](../../../images/documentDataTransferImages/img_24.png)
+![img_24.png](../../images/documentDataTransferImages/img_24.png)
 
 Make the necessary translation adjustments and ensure that the formatting and image paths are not modified.

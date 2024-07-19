@@ -2,7 +2,7 @@
 
 Clicking on "Task Scheduling" under the "Task Management" menu will display a page that shows tasks that have been approved. The search button with associated search criteria boxes can be used to filter and display tasks based on the specified criteria. For individual tasks, you can modify their status, such as enabling, disabling, taking them offline, or executing them immediately.
 
-![image-20230620133351561](../../../../images/whalealDataImages/image-20230620133351561.png)
+![image-20230620133351561](../../../images/whalealDataImages/image-20230620133351561.png)
 
 ##### Enable Task
 

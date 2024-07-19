@@ -16,8 +16,8 @@ Please note that one-time tasks need to be reviewed and approved by an administr
 One-time tasks are suitable for tasks that need to be executed at a specific point in time, such as data synchronization or archiving activities that are scheduled to happen once.
 
 
-![image-20230621142941634](../../../images/whalealDataImages/image-20230621142941634.png)
+![image-20230621142941634](../../images/whalealDataImages/image-20230621142941634.png)
 
-![image-20230621143119669](../../../images/whalealDataImages/image-20230621143119669.png)
+![image-20230621143119669](../../images/whalealDataImages/image-20230621143119669.png)
 
-![image-20230621143532776](../../../images/whalealDataImages/image-20230621143532776.png)
+![image-20230621143532776](../../images/whalealDataImages/image-20230621143532776.png)

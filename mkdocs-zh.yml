@@ -64,7 +64,7 @@ theme:
     - search.share                # Search Query can be copied to Clipboard
     - search.suggest              # Display likeliest completion for the last queried word
     - content.code.copy
-    
+
   palette:
     # Light Mode
     - media: "(prefers-color-scheme: light)"
@@ -92,7 +92,7 @@ nav:
   - Home: index.md
   - Whaleal Platform:
     - WhalealPlatform/index.md
-    - Whaleal Overview: 
+    - Whaleal Overview:
       - Whaleal Architecture: WhalealPlatform/01-WhalealOverview/01-WhalealArchitecture.md
       - Example Deployment: WhalealPlatform/01-WhalealOverview/02-ExampleDeployment.md
       - QuickStart On Premise: WhalealPlatform/01-WhalealOverview/03-QuickStartOnPremise.md
@@ -117,7 +117,7 @@ nav:
       - Deploy ReplicaSet: WhalealPlatform/04-CreateDeployment/05-DeployReplicaSet.md
       - Deploy Sharded Cluster: WhalealPlatform/04-CreateDeployment/06-DeployShardedCluster.md
       - Deploy Existing Cluster: WhalealPlatform/04-CreateDeployment/07-DeployExistingCluster.md
-    - Manage Deployments: 
+    - Manage Deployments:
       - View All Clusters: WhalealPlatform/05-ManageDeployments/01-ViewAllClusters.md
       - Edit Deployment Configuration: WhalealPlatform/05-ManageDeployments/02-EditDeploymentConfiguration.md
       - Edit ReplicaSet: WhalealPlatform/05-ManageDeployments/03-EditsReplicaSets.md
@@ -141,7 +141,7 @@ nav:
         - Enable X509 Authentication: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/03-EnableX509Authentication.md
         - Manage MongoDB Users and Roles: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/04-ManageMongoDBUsersandRoles.md
         - Configure and Deploy Auditing: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/05-ConfigureandDeployAuditing.md
-    - Alert: 
+    - Alert:
       - Host Alert: WhalealPlatform/09-Alert/01-HostAlert.md
       - MongoDB Alert: WhalealPlatform/09-Alert/02-MongoDBAlert.md
       - Project Alert: WhalealPlatform/09-Alert/03-ProjectAlert.md
@@ -183,8 +183,8 @@ nav:
       - Agent: WhalealPlatform/17-FrequentlyAskedQuestions/05-Agent.md
     - Release Notes:
       - Whaleal Changelog: WhalealPlatform/18-ReleaseNotes/01-WhalealChangelog.md
-  
-  - Whaleal Data:   # whaleal data 
+
+  - Whaleal Data:   # whaleal data
     - whalealData/index.md
     - 安装部署:
       - 安装要求: whalealData/InstallationDeployment/InstallationRequirements.md
@@ -267,7 +267,7 @@ nav:
       - 功能测试: DocumentDataTransfer/Usecase/FunctionalTest.md
       - 全量测试: DocumentDataTransfer/Usecase/FullTesting.md
       - 实时测试: DocumentDataTransfer/Usecase/RealTimeTest.md
-  - whaleal JMC: 
+  - whaleal JMC:
     - whalealJMC/index.md
     - 快速使用指南: whalealJMC/4.QuickStart.md
     - 平台概述: whalealJMC/2.PlatformOverview.md
@@ -278,7 +278,7 @@ nav:
     - 基础概念介绍: whalealJMC/module/4.3.JMCInfomation.md
     - 常见问题: whalealJMC/9.QA.md
     - 文档更新记录: whalealJMC/1.HomePage.md
-  - Support: 
+  - Support:
     - whalealSupport/index.md
     - 登录: whalealSupport/UserManual/login.md
     - 根据SLA创建工单: whalealSupport/UserManual/createCaseAccordingToSLA.md
@@ -287,6 +287,8 @@ nav:
     - 产品与文档: whalealSupport/UserManual/productionAndDocument.md
     - 站内信: whalealSupport/UserManual/notification.md
     - 通讯录: whalealSupport/UserManual/addressList.md
+  - CW:
+      - CWUsage/README.md
 
 extra:
   alternate:

@@ -161,12 +161,17 @@ nav:
       - Collection Granularity: WhalealPlatform/13-Setting/03-CollectionGranularity.md
       - Kubernetes: WhalealPlatform/13-Setting/04-Kubernetes.md
       - S3: WhalealPlatform/13-Setting/05-S3.md
+      - Version: WhalealPlatform/13-Setting/06-Version.md
     - Support:
       - Cluster Inspection: WhalealPlatform/14-Support/01-ClusterInspection.md
     - Administrator Whaleal:
-      - Start And Stop Whaleal Application: WhalealPlatform/15-AdministerWhaleal/01-StartAndStopWhalealApplication.md
+      - Start And Stop Whaleal Application: WhalealPlatform/15-AdministratorWhaleal/01-StartAndStopWhalealApplication.md
       - IntegrationwithPrometheus: WhalealPlatform/15-AdministratorWhaleal/02-IntegrationwithPrometheus.md
+<<<<<<< HEAD
       - UpgradeVersion: WhalealPlatform/15-AdministratorWhaleal/03-UpgradeVersion.md
+=======
+      - Upgrade Version: WhalealPlatform/15-AdministratorWhaleal/03-UpgradeVersion.md
+>>>>>>> e5972d7aa02b4c17fe480bd408c1582e128edd62
     - Troubleshooting:
       - EC2 and K8S: WhalealPlatform/16-Troubleshooting/01-EC2andK8S.md
       - MongoDB Monitoring: WhalealPlatform/16-Troubleshooting/02-MongoDBMonitoring.md
@@ -265,7 +270,7 @@ nav:
       - FullTesting: DocumentDataTransfer/Usecase/FullTesting.md
       - RealTimeTest: DocumentDataTransfer/Usecase/RealTimeTest.md
 
-  - Support: Support/index.md
+  - Support: whalealSupport/index.md
 
 extra:
   alternate:

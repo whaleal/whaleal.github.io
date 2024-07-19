@@ -6226,11 +6226,12 @@
 <h2 id="take-a-snapshot">Take a Snapshot</h2>
 <p>Restart the new snapshot task and generate a new snapshot. Specific details can be viewed in Backup Records.</p>
 <h2 id="stop">Stop</h2>
-<p>Stop the backup task.</p>
+<p>Stop backup tasks, but keep the status quo for previously completed and incomplete backup tasks and will not be deleted.</p>
 <h2 id="delete">Delete</h2>
-<p>Delete backup policies and clarify all backup data files.</p>
+<p>Delete all backup data for this backup task, including the 47019 and 57019 MongoDB services used for backup. However, backup data that has been backed up and uploaded to S3 will not be deleted.</p>
 <h2 id="rebuild">Rebuild</h2>
-<p>Rebuild backup tasks and recreate backup snapshots.</p>
+<p>Used to reset and initialize specific backup policies to ensure they are in a reliable state when restarting the backup process or fixing problems. Prepare the policy for the process of resuming backup tasks by stopping operations, cleaning up relevant data and processes, and reinitializing the backup policy.</p>
+<p>This feature is critical to managing the stability and reliability of backup policies, especially when it is necessary to restore the backup process or fix configuration issues, to effectively rebuild policies and prepare for new backup operations.</p>
 <h2 id="edit">Edit</h2>
 <p>Modify the backup policy.</p>
 

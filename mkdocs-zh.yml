@@ -1,0 +1,300 @@
+# Site Settings
+site_name: Whaleal docs
+site_author: whaleal
+docs_dir: zh-docs  # Obsidian Vault
+site_dir: site/zh/
+
+repo_name: whaleal/guide
+repo_url: https://github.com/whaleal/guide
+copyright: © 2024 | @whaleal
+
+
+# Custom Homepage Elements
+home_cover_image: images/wizard-posting.png # This path starts at your root mkdocs directory.
+home_tagline: Whaleal
+home_description: |
+  欢迎来到Whaleal产品文档网站,这里提供了全面的文档,帮助您了解和使用我们的产品。
+
+# Gradient Color
+home_gradient_hsla: hsla(0deg,47%,55%,1) # Default Green: hsla(160deg,47%,55%,1)
+
+# Custom Homepage Button(s)
+home_button1_name: Whaleal Platform                  # Comment this parameter out to remove the button.
+home_button1_url: WhalealPlatform/                       # This path starts at your root mkdocs directory.
+home_button1_theme: md-button md-button--primary # Options: "md-button", "md-button md-button--primary"
+home_button1_icon: people                        # Options: "people", "gear", "image"
+home_button1_blurb: |                            # Short description of this button / section.
+  Whaleal Platform (WAP) 是一个智能运维和托管平台，为您的 MongoDB 服务提供 7*24 小时的实时监控和管理。
+
+home_button2_name: Whaleal Data   # Comment this parameter out to remove the button.
+home_button2_url: whalealData/    # This path starts at your root mkdocs directory.
+home_button2_theme: md-button # Options: "md-button", "md-button md-button--primary"
+home_button2_icon: gear       # Options: "people", "gear", "image"
+home_button2_blurb: |         # Short description of this button / section.
+  Whaleal Data 是专为数据归档设计的归档平台，支持三种类型的归档:冷归档、温归档和S3归档。
+
+home_button3_name: Document Data Transfer   # Comment this parameter out to remove the button.
+home_button3_url: DocumentDataTransfer/    # This path starts at your root mkdocs directory.
+home_button3_theme: md-button # Options: "md-button", "md-button md-button--primary"
+home_button3_icon: image      # Options: "people", "gear", "image"
+home_button3_blurb: |         # Short description of this button / section.
+  Document Data Transfer (DDT) 是一个 MongoDB 数据库迁移和同步工具，支持不同 MongoDB 架构之间的数据传输。
+
+# Homepage Code Execution
+home_execute_js: | # Javascript to execute when accessing the homepage
+  console.log("This is an example!");
+
+
+# Material Configuration
+theme:
+  name: material
+  favicon: 'images/logo.png'
+  logo: 'images/logo1.svg'
+  custom_dir: assets # Contains custom 'home.html' coverpage (and 'main.html')
+  language: zh
+
+  features:
+    - navigation.indexes          # Implied section 'index.md' files
+    - navigation.tabs             # Static upper section tabs (exist)
+    # - navigation.tabs.sticky      # Static upper section tabs (stay)
+    - navigation.footer           # Add 'previous' and 'next' buttons in the footer
+    - navigation.instant          # Keep navigation from reloading
+    - navigation.instant.progress # Display page loading progress-bar ( > 400ms)
+    - search.highlight            # Highlight all occurrences of queried string
+    - search.share                # Search Query can be copied to Clipboard
+    - search.suggest              # Display likeliest completion for the last queried word
+    - content.code.copy
+    
+  palette:
+    # Light Mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple # deep orange
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to Dark Mode
+
+    # Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: HSLA
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to Light Mode
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Whaleal Platform:
+    - WhalealPlatform/index.md
+    - Whaleal Overview: 
+      - Whaleal Architecture: WhalealPlatform/01-WhalealOverview/01-WhalealArchitecture.md
+      - Example Deployment: WhalealPlatform/01-WhalealOverview/02-ExampleDeployment.md
+      - QuickStart On Premise: WhalealPlatform/01-WhalealOverview/03-QuickStartOnPremise.md
+      - QuickStart On Marketplace: WhalealPlatform/01-WhalealOverview/04-QuickStartOnMarketplace.md
+    - Install Whaleal:
+      - Installation Checklist: WhalealPlatform/02-InstallWhaleal/01-InstallationChecklist.md
+      - Hardware And Software Requirements: WhalealPlatform/02-InstallWhaleal/02-HardwareAndSoftwareRequirements.md
+      - InstallWhaleal:
+        - Install Whaleal In AWS MarketPlace: WhalealPlatform/02-InstallWhaleal/03-InstallWhaleal/01-InstallWhalealInAWSMarketPlace.md
+        - Install Whaleal In Docker: WhalealPlatform/02-InstallWhaleal/03-InstallWhaleal/02-InstallWhalealinDocker.md
+        - On Premise Install Whaleal: WhalealPlatform/02-InstallWhaleal/03-InstallWhaleal/03-OnPremiseInstallWhaleal.md
+    - Projects:
+      - Projects: WhalealPlatform/03-Projects/01-Projects.md
+    - Create Deployment:
+      - Deployment Prerequisites: WhalealPlatform/04-CreateDeployment/01-DeploymentPrerequisites.md
+      - Add EC2:
+        - Resource Quota: WhalealPlatform/04-CreateDeployment/02-AddEC2/01-ResourceQuota.md
+        - Subscribe Agent: WhalealPlatform/04-CreateDeployment/02-AddEC2/02-SubscribeAgent.md
+        - Manually Add Agent: WhalealPlatform/04-CreateDeployment/02-AddEC2/03-ManuallyAddAgent.md
+      - Add K8S Cluster: WhalealPlatform/04-CreateDeployment/03-AddK8SCluster.md
+      - Deploy Standalone: WhalealPlatform/04-CreateDeployment/04-DeployStandalone.md
+      - Deploy ReplicaSet: WhalealPlatform/04-CreateDeployment/05-DeployReplicaSet.md
+      - Deploy Sharded Cluster: WhalealPlatform/04-CreateDeployment/06-DeployShardedCluster.md
+      - Deploy Existing Cluster: WhalealPlatform/04-CreateDeployment/07-DeployExistingCluster.md
+    - Manage Deployments: 
+      - View All Clusters: WhalealPlatform/05-ManageDeployments/01-ViewAllClusters.md
+      - Edit Deployment Configuration: WhalealPlatform/05-ManageDeployments/02-EditDeploymentConfiguration.md
+      - Edit ReplicaSet: WhalealPlatform/05-ManageDeployments/03-EditsReplicaSets.md
+      - Sharded Cluster Operations: WhalealPlatform/05-ManageDeployments/04-ShardedClusterOperations.md
+      - Stop Managingandor Monitoring One Deployment: WhalealPlatform/05-ManageDeployments/05-StopManagingandorMonitoringOneDeployment.md
+      - MongoDB Operation: WhalealPlatform/05-ManageDeployments/06-MongoDBOperation.md
+    - Monitor:
+      - Monitoring Instructions: WhalealPlatform/06-Monitor/01-MonitoringInstructions.md
+      - Usage Monitoring: WhalealPlatform/06-Monitor/02-UsageMonitoring.md
+      - Monitoring indicator details: WhalealPlatform/06-Monitor/03-MonitoringIndicatorDetails.md
+    - Backup And Restore:
+      - Backup:
+        - Create Repository: WhalealPlatform/07-BackupAndRestore/01-Backup/01-CreateRepository.md
+        - Operations: WhalealPlatform/07-BackupAndRestore/01-Backup/02-Operations.md
+      - Restore: WhalealPlatform/07-BackupAndRestore/02-Restore.md
+    - Security:
+      - Configure Firewall to Access Whaleal: WhalealPlatform/08-Security/01-ConfigureFirewalltoAccessWhaleal.md
+      - Secure MongoDB Deployment swith Authentication:
+        - MongoDB Access Control: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/01-MongoDBAccessControl.md
+        - Enable Username Password Authentication: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/02-EnableUsernamePasswordAuthentication.md
+        - Enable X509 Authentication: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/03-EnableX509Authentication.md
+        - Manage MongoDB Users and Roles: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/04-ManageMongoDBUsersandRoles.md
+        - Configure and Deploy Auditing: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/05-ConfigureandDeployAuditing.md
+    - Alert: 
+      - Host Alert: WhalealPlatform/09-Alert/01-HostAlert.md
+      - MongoDB Alert: WhalealPlatform/09-Alert/02-MongoDBAlert.md
+      - Project Alert: WhalealPlatform/09-Alert/03-ProjectAlert.md
+    - Diagnose:
+      - ClusterInfo: WhalealPlatform/10-Diagnose/01-ClusterInfo.md
+      - Cluster Health: WhalealPlatform/10-Diagnose/02-ClusterHealth.md
+      - Performance: WhalealPlatform/10-Diagnose/03-Performance.md
+      - LogVis: WhalealPlatform/10-Diagnose/04-LogVis.md
+      - ExploreData: WhalealPlatform/10-Diagnose/05-ExploreData.md
+    - Audit:
+      - Audit: WhalealPlatform/11-Audit/01-Audit.md
+    - Account:
+      - user Center: WhalealPlatform/12-Account/01-usercenter.md
+      - User Management: WhalealPlatform/12-Account/02-UserManagement.md
+      - Account Configuration: WhalealPlatform/12-Account/03-AccountConfiguration.md
+    - Setting:
+      - MongoDB Packge: WhalealPlatform/13-Setting/01-MongoDBPackge.md
+      - SMTP: WhalealPlatform/13-Setting/02-SMTP.md
+      - Collection Granularity: WhalealPlatform/13-Setting/03-CollectionGranularity.md
+      - Kubernetes: WhalealPlatform/13-Setting/04-Kubernetes.md
+      - S3: WhalealPlatform/13-Setting/05-S3.md
+    - Support:
+      - Cluster Inspection: WhalealPlatform/14-Support/01-ClusterInspection.md
+    - Administrator Whaleal:
+      - Start And Stop Whaleal Application: WhalealPlatform/15-AdministerWhaleal/01-StartAndStopWhalealApplication.md
+      - IntegrationwithPrometheus: WhalealPlatform/15-AdministratorWhaleal/02-IntegrationwithPrometheus.md
+    - Troubleshooting:
+      - EC2 and K8S: WhalealPlatform/16-Troubleshooting/01-EC2andK8S.md
+      - MongoDB Monitoring: WhalealPlatform/16-Troubleshooting/02-MongoDBMonitoring.md
+      - MongoDB Upgrade Downgrade: WhalealPlatform/16-Troubleshooting/03-MongoDBUpgradeDowngrade.md
+      - Backup and Restore: WhalealPlatform/16-Troubleshooting/04-BackupandRestore.md
+    - Frequently Asked Questions:
+      - WAP: WhalealPlatform/17-FrequentlyAskedQuestions/01-WAP.md
+      - Monitor: WhalealPlatform/17-FrequentlyAskedQuestions/02-Monitor.md
+      - Backup: WhalealPlatform/17-FrequentlyAskedQuestions/03-Backup.md
+      - Service: WhalealPlatform/17-FrequentlyAskedQuestions/04-Service.md
+      - Agent: WhalealPlatform/17-FrequentlyAskedQuestions/05-Agent.md
+    - Release Notes:
+      - Whaleal Changelog: WhalealPlatform/18-ReleaseNotes/01-WhalealChangelog.md
+  
+  - Whaleal Data:   # whaleal data 
+    - whalealData/index.md
+    - 安装部署:
+      - 安装要求: whalealData/InstallationDeployment/InstallationRequirements.md
+      - JDK安装部署: whalealData/InstallationDeployment/JDKInstallationDeployment.md
+      - MYSQL安装部署: whalealData/InstallationDeployment/MYSQLInstallationDeployment.md
+      - Nginx安装部署: whalealData/InstallationDeployment/NginxInstallationDeployment.md
+      - Redis 安装部署: whalealData/InstallationDeployment/RedisInstallationDeployment.md
+      - Zookeeper安装部署: whalealData/InstallationDeployment/ZookeeperInstallationDeployment.md
+      - Whaleal Data安装部署: whalealData/InstallationDeployment/Whaleal-dataInstallationDeployment.md
+    - Whaleal Data使用手册:
+      - 登录页面:
+        - 用户首次登录: whalealData/UserManual/LoginPage/UserFirstLogin.md
+        - 用户注册: whalealData/UserManual/LoginPage/UserRegistration.md
+      - 首页展示: whalealData/UserManual/HomepageDisplay/HomepageDisplay.md
+      - 配置管理:
+        - 数据源管理: whalealData/UserManual/ConfigurationManagement/DataSourceManagement.md
+        - 目标源管理: whalealData/UserManual/ConfigurationManagement/DestinationSourceManagement.md
+        - 表作业配置: whalealData/UserManual/ConfigurationManagement/TableJobConfiguration.md
+        - 任务配置: whalealData/UserManual/ConfigurationManagement/TaskConfiguration.md
+      - 任务管理:
+        - 任务调度: whalealData/UserManual/TaskManagement/TaskScheduling.md
+        - 任务监控（温）: whalealData/UserManual/TaskManagement/WarmTaskMonitoring.md
+        - 任务监控（冷）: whalealData/UserManual/TaskManagement/ColdTaskMonitoring.md
+        - 任务监控 (S3): whalealData/UserManual/TaskManagement/S3TaskMonitoring.md
+      - 归档管理:
+        - 日志查询（冷）: whalealData/UserManual/ArchiveManagement/ColdTaskLogQuery.md
+        - 文件巡检管理: whalealData/UserManual/ArchiveManagement/FileInspectionManagement.md
+        - 文件全文检索: whalealData/UserManual/ArchiveManagement/FileFullTextSearch.md
+      - 系统管理:
+        - 用户管理: whalealData/UserManual/SystemManagement/UserManagement.md
+        - 角色管理: whalealData/UserManual/SystemManagement/RoleManagement.md
+        - 菜单管理: whalealData/UserManual/SystemManagement/MenuManagement.md
+        - 邮件设置: whalealData/UserManual/SystemManagement/SystemSettings.md
+        - 操作日志: whalealData/UserManual/SystemManagement/OperationLog.md
+        - 错误日志: whalealData/UserManual/SystemManagement/ErrorLog.md
+      - 统计报表:
+        - 表作业执行统计: whalealData/UserManual/StatisticalReports/TableJobExecutionStatistics.md
+        - 异常作业执行统计: whalealData/UserManual/StatisticalReports/AbnormalJobExecutionStatistics.md
+        - 系统接入统计: whalealData/UserManual/StatisticalReports/SystemAccessStatistics.md
+        - 回滚记录统计: whalealData/UserManual/StatisticalReports/RollbackRecordsStatistics.md
+        - 作业明细: whalealData/UserManual/StatisticalReports/JobDetails.md
+        - 数据历史流向: whalealData/UserManual/StatisticalReports/DataHistoricalFlow.md
+    - 用例:
+      - 用户注册: whalealData/use cases/UserRegistration.md
+      - 用户登录: whalealData/use cases/UserLogin.md
+      - 添加数据源: whalealData/use cases/AddDataSource.md
+      - 添加目标源: whalealData/use cases/AddDestinationSource.md
+      - 添加温数据全量作业: whalealData/use cases/AddWarmDataFullLoadJob.md
+      - 添加冷数据全量作业: whalealData/use cases/AddColdDataFullLoadJob.md
+      - 添加S3全量作业: whalealData/use cases/AddS3FullLoadJob.md
+      - 添加温数据增量作业: whalealData/use cases/AddWarmDataIncrementalJob.md
+      - 添加冷数据增量作业: whalealData/use cases/AddColdDataIncrementalJob.md
+      - 添加S3增量作业: whalealData/use cases/AddS3IncrementalJob.md
+      - 创建单次任务: whalealData/use cases/CreateSingleTask.md
+      - 创建手工任务: whalealData/use cases/CreateManualTask.md
+      - 创建循环任务: whalealData/use cases/CreateLoopTask.md
+      - 任务执行监控: whalealData/use cases/TaskExecutionMonitoring.md
+      - 异常任务重新执行: whalealData/use cases/RetryAbnormalTask.md
+      - 异常任务回写: whalealData/use cases/AbnormalTaskFeedback.md
+      - 系统删除源端数据: whalealData/use cases/SystemDeleteSourceData.md
+      - 手动删除源端数据: whalealData/use cases/ManuallyDeleteSourceData.md
+      - 冷数据回写: whalealData/use cases/ColdDataWriteBack.md
+      - 冷数据全文检索: whalealData/use cases/ColdDataFullTextSearch.md
+      - SMTP邮件设置: whalealData/use cases/SMTPConfig.md
+      - 温作业Demo: whalealData/use cases/WarmJobDemo.md
+      - 冷作业Demo: whalealData/use cases/ColdWorkDemo.md
+      - S3作业Demo: whalealData/use cases/S3JobDemo.md
+
+  - Document Data Transfer:  # Document Data Transfer
+    - DocumentDataTransfer/index.md
+    - 概述:
+      - DDT架构简介: DocumentDataTransfer/Introduction/Architecture.md
+      - 客户案例: DocumentDataTransfer/Introduction/CustomerCase.md
+    - 安装:
+      - DDT环境要求: DocumentDataTransfer/Install/Requirements.md
+      - 安装部署: DocumentDataTransfer/Install/Installation.md
+      - 快速开始: DocumentDataTransfer/Install/QuickStart.md
+      - 配置: DocumentDataTransfer/Install/Configuring.md
+    - 用例:
+      - 功能测试: DocumentDataTransfer/Usecase/FunctionalTest.md
+      - 全量测试: DocumentDataTransfer/Usecase/FullTesting.md
+      - 实时测试: DocumentDataTransfer/Usecase/RealTimeTest.md
+  - whaleal JMC: 
+    - whalealJMC/index.md
+    - 快速使用指南: whalealJMC/4.QuickStart.md
+    - 平台概述: whalealJMC/2.PlatformOverview.md
+    - 平台布局介绍: whalealJMC/3.PlatformLayoutIntroduction.md
+    - 功能介绍: whalealJMC/module/4.1.Module.md
+    - API: whalealJMC/module/4.2.API.md
+    - SenderID申请材料: whalealJMC/5.SenderID.md
+    - 基础概念介绍: whalealJMC/module/4.3.JMCInfomation.md
+    - 常见问题: whalealJMC/9.QA.md
+    - 文档更新记录: whalealJMC/1.HomePage.md
+  - Support: 
+    - whalealSupport/index.md
+    - 登录: whalealSupport/UserManual/login.md
+    - 根据SLA创建工单: whalealSupport/UserManual/createCaseAccordingToSLA.md
+    - 我的工单: whalealSupport/UserManual/myCaseList.md
+    - 工单详情: whalealSupport/UserManual/caseDetails.md
+    - 产品与文档: whalealSupport/UserManual/productionAndDocument.md
+    - 站内信: whalealSupport/UserManual/notification.md
+    - 通讯录: whalealSupport/UserManual/addressList.md
+
+extra:
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: 中文
+      link: /zh/
+      lang: zh
+
+plugins:
+  - search
+  - roamlinks

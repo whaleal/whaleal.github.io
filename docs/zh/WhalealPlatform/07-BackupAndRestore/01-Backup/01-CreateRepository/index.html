@@ -6106,7 +6106,7 @@
 
 
 <h1 id="create-repository">Create Repository</h1>
-<p>The bacckup function of the WAP platform is implemented based on two methods: dump and DDT. mongodump is a toolkit provided by MongoDB, and DDT is a full-volume, full-volume + incremental, full-volume + real-time backup tool implemented by MongoDB Oplog. Provide users with all-round backup functions.</p>
+<p>The bacckup function of the WAP platform is implemented based on two methods: dump and DDT. mongodump is a tools provided by MongoDB, and DDT is a all data sync, all and realTime, all and increment backup tool implemented by MongoDB Oplog. Provide users with all-round backup functions.</p>
 <h2 id="backup-architecture-diagram">Backup architecture diagram</h2>
 <h3 id="dump">dump</h3>
 <p><img alt="05-CreateRepository" src="../../../images/07-BackupAndRestore/01-Backup/05-CreateRepository.png" /></p>
@@ -6153,7 +6153,7 @@
 </tr>
 <tr>
 <td>Task Snapshots Every</td>
-<td>Frequency of backing up data (every 1 day or every 7 days).</td>
+<td>Frequency of backing up data (1 to 30 days).</td>
 </tr>
 <tr>
 <td>Keep S3 File Days</td>
@@ -6162,6 +6162,18 @@
 <tr>
 <td>Recover Data From Days</td>
 <td>Number of days to retain oplog incremental data (used for data recovery to a specific <br />point in time), this number should be less than the snapshot file retention days.</td>
+</tr>
+<tr>
+<td>Secondary Preferred</td>
+<td>Whether to prioritize backing up data from Secondary.</td>
+</tr>
+<tr>
+<td>Init Time</td>
+<td>The time to start backing up data for the first time (i.e. start the 47019 and 57019MongoDB services and start copying all data).</td>
+</tr>
+<tr>
+<td>Trigger Time</td>
+<td>Set the time to trigger the snapshot, in hours, UTC timezone.</td>
 </tr>
 <tr>
 <td>Cache Size Of 47019</td>

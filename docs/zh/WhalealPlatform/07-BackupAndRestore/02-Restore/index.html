@@ -1833,6 +1833,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mongodb-architecture-compatibility-table-for-backup-and-recovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      MongoDB Architecture Compatibility Table for Backup and Recovery
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -6103,6 +6112,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mongodb-architecture-compatibility-table-for-backup-and-recovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      MongoDB Architecture Compatibility Table for Backup and Recovery
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -6168,6 +6186,46 @@ An automated restore can fail when certain storage settings of the backup's data
 <h3 id="restore-file-format">Restore File Format</h3>
 <p>Whaleal provides each snapshot as an uncompressed (.tar) or compressed (.tar.gz) archive containing a complete copy of the data directory.</p>
 <p>Choosing compressed snapshots results in faster delivery, but requires sufficient space on the target host for both the compressed snapshot and its extracted database files.</p>
+<h2 id="mongodb-architecture-compatibility-table-for-backup-and-recovery">MongoDB Architecture Compatibility Table for Backup and Recovery</h2>
+<table>
+  <tr>
+    <th></th>
+    <th colspan="2">Backup From</th>
+    <th colspan="3">Restore To</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Dump</td>
+    <td>DDT</td>
+    <td>standalone</td>
+    <td>Replica Set</td>
+    <td>Sharding</td>
+  </tr>
+  <tr>
+    <td>standalone</td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>dump: Yes(SnapShot)</td>
+    <td>dump: Yes(SnapShot)</td>
+    <td>dump: Yes(SnapShot)</td>
+  </tr>
+  <tr>
+    <td>Replica Set</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>dump: Yes(SnapShot、Point in time)<br />DDT: Yes(SnapShot、Point in time)</td>
+    <td>dump: Yes(SnapShot、Point in time)<br />DDT: Yes(SnapShot、Point in time)</td>
+    <td>dump: Yes(SnapShot、Point in time)<br />DDT: No</td>
+  </tr>
+  <tr>
+    <td>Sharding</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>No</td>
+    <td>dump: No<br />DDT: Yes(SnapShot、Point in time)</td>
+  </tr>
+</table>
 
 
 

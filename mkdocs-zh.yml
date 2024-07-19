@@ -168,6 +168,7 @@ nav:
     - Administrator Whaleal:
       - Start And Stop Whaleal Application: WhalealPlatform/15-AdministerWhaleal/01-StartAndStopWhalealApplication.md
       - IntegrationwithPrometheus: WhalealPlatform/15-AdministratorWhaleal/02-IntegrationwithPrometheus.md
+      - Upgrade Version: WhalealPlatform/15-AdministratorWhaleal/03-UpgradeVersion.md
     - Troubleshooting:
       - EC2 and K8S: WhalealPlatform/16-Troubleshooting/01-EC2andK8S.md
       - MongoDB Monitoring: WhalealPlatform/16-Troubleshooting/02-MongoDBMonitoring.md

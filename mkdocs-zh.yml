@@ -163,6 +163,7 @@ nav:
       - Collection Granularity: WhalealPlatform/13-Setting/03-CollectionGranularity.md
       - Kubernetes: WhalealPlatform/13-Setting/04-Kubernetes.md
       - S3: WhalealPlatform/13-Setting/05-S3.md
+      - Version: WhalealPlatform/13-Setting/06-Version.md
     - Support:
       - Cluster Inspection: WhalealPlatform/14-Support/01-ClusterInspection.md
     - Administrator Whaleal:

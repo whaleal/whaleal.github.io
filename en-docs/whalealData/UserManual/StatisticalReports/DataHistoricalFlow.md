@@ -2,7 +2,7 @@
 
 Clicking on the "Data Historical Flow" under the "Statistics Report" menu displays the data source flow within the platform. This page includes a search button, search criteria fields, and a clear criteria button.
 
-![image-20230621113944243](../../../../images/whalealDataImages/image-20230621113944243.png)
+![image-20230621113944243](../../../images/whalealDataImages/image-20230621113944243.png)
 
 ##### Search
 

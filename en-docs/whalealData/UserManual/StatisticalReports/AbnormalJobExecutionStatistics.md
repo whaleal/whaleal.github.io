@@ -2,7 +2,7 @@
 
 Clicking on the "Abnormal Job Execution Statistics" under the "Statistics Report" menu allows you to query the archival information of all abnormal table jobs. This page includes a search button, search criteria fields, a clear criteria button, and an export button.
 
-![image-20230621111904900](../../../../images/whalealDataImages/image-20230621111904900.png)
+![image-20230621111904900](../../../images/whalealDataImages/image-20230621111904900.png)
 
 ##### Search
 

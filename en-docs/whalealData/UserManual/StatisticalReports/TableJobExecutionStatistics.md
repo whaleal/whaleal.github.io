@@ -2,7 +2,7 @@
 
 Clicking on "Table Job Execution Statistics" under the "Statistics Report" menu allows you to query the archival information for all table jobs. This page includes a search button, search criteria fields, a clear criteria button, and an export button. Each entry represents a table job execution and includes information such as job name, table name, data source type, target source type, execution start and end times, execution status, exception errors, progress percentage, number of archived rows, archival path, executed SQL, and rollback status.
 
-![image-20230621110252096](../../../../images/whalealDataImages/image-20230621110252096.png)
+![image-20230621110252096](../../../images/whalealDataImages/image-20230621110252096.png)
 
 ##### Search
 

@@ -124,7 +124,7 @@ QPS is derived from log outputs on the data platform, with OPLOG write counts pe
 
 
 
-![img_11.png](../../../images/documentDataTransferImages/img_11.png) ![img_12.png](../../../images/documentDataTransferImages/img_12.png)
+![img_11.png](../../images/documentDataTransferImages/img_11.png) ![img_12.png](../../images/documentDataTransferImages/img_12.png)
 
 
 Summary: When cacheBucketSize=32, cacheBucketNum=32, and dataBatchSize=128, it can be observed that increasing the number of threads:
@@ -269,9 +269,9 @@ Summary: When cacheBucketSize=32, cacheBucketNum=32, and dataBatchSize=128, it c
   </tr>
 </table>
 
-![img_13.png](../../../images/documentDataTransferImages/img_13.png)
+![img_13.png](../../images/documentDataTransferImages/img_13.png)
 
-![img_14.png](../../../images/documentDataTransferImages/img_14.png)
+![img_14.png](../../images/documentDataTransferImages/img_14.png)
 
 Summary: When cacheBucketSize=48, cacheBucketNum=48, and dataBatchSize=128, it can be observed that increasing the number of threads:
 
@@ -415,8 +415,8 @@ Summary:
 
 (1) CPU and QPS:
 
-![img_21.png](../../../images/documentDataTransferImages/img_21.png)
+![img_21.png](../../images/documentDataTransferImages/img_21.png)
 
 (2) Memory Usage and QPS:
 
-![img_22.png](../../../images/documentDataTransferImages/img_22.png)
+![img_22.png](../../images/documentDataTransferImages/img_22.png)

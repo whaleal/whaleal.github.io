@@ -10,8 +10,8 @@ To set up an incremental job for cold data archiving, follow these steps:
 6. The table job comes with consistency validation. Select "Yes" and specify the required validation percentage. After synchronization, the platform will perform consistency validation on the synchronized data.
 7. Choose the data handling method, either manual deletion or system deletion. This feature deletes the source table based on the configured batch.
 
-![Cold Data Incremental Job](../../../images/whalealDataImages/image-20230621140520679.png)
+![Cold Data Incremental Job](../../images/whalealDataImages/image-20230621140520679.png)
 
-![Custom SQL Configuration](../../../images/whalealDataImages/image-20230621140550910.png)
+![Custom SQL Configuration](../../images/whalealDataImages/image-20230621140550910.png)
 
 By following these steps, you can configure an incremental job for cold data archiving, enabling efficient and accurate synchronization of MongoDB data for archiving purposes.

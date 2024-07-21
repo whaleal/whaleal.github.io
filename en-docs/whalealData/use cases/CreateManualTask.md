@@ -16,4 +16,4 @@ To execute a manual task:
 
 Manual tasks are particularly useful when you want to perform specific data archiving or synchronization tasks on-demand, giving you full control over when these tasks are executed.
 
-![创建手工任务.png](../../../images/whalealDataImages/创建手工任务.png)
+![创建手工任务.png](../../images/whalealDataImages/创建手工任务.png)

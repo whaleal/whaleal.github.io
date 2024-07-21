@@ -4,13 +4,13 @@
 
 __点击右上角登录__
 
-![loginPage.png](../../../images/whalealSupport/loginPage.png)
+![loginPage.png](../../images/whalealSupport/loginPage.png)
 
 __跳转认证__
 
-![authentication.png](../../../images/whalealSupport/authentication.png)
+![authentication.png](../../images/whalealSupport/authentication.png)
 
 __认证成功即登录成功__
 
-![authenticationSuccessful.png](../../../images/whalealSupport/authenticationSuccessful.png)
+![authenticationSuccessful.png](../../images/whalealSupport/authenticationSuccessful.png)
 

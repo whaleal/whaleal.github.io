@@ -2,7 +2,7 @@
 
 #### 案例一：某证券公司
 
-![img_5.png](../../../images/documentDataTransferImages/img_5.png)
+![img_5.png](../../images/documentDataTransferImages/img_5.png)
 
 **业务场景**:
 在某证券公司的生产环境中，需要保证数据的双活架构备份，以提升业务的韧性和可靠性。利用DDT工具，实现生产中心MongoDB数据库数据的实时同步到灾备中心的MongoDB数据库，确保数据的即时备份和业务的持续性。
@@ -14,7 +14,7 @@
 
 #### 案例二：某航空公司
 
-![img_6.png](../../../images/documentDataTransferImages/img_6.png)
+![img_6.png](../../images/documentDataTransferImages/img_6.png)
 
 **业务场景**:
 某航空公司需要将其旧版本MongoDB复制集集群从3.2升级到4.4版本，以满足业务需求的快速变更和提升数据库性能。

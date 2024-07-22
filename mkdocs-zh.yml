@@ -294,9 +294,9 @@ nav:
     - Home: mars/home.md
     - Contributors: mars/Mars-00Contributors.md
     - How2Contribute: mars/Mars-00How2Contribute.md
-    - 实体关联: mars/Mars-01与实体关联.md
-    - 原生配置: mars/Mars-01原生配置.md
-    - Spring配置的兼容性: mars/Mars-01和Spring配置的兼容性.md
+    - Entity: mars/Mars-01Entity.md
+    - Native: mars/Mars-01Native.md
+    - Spring: mars/Mars-01Spring.md
     - Aggregation: mars/Mars-02Aggregation.md
     - ChangeStream: mars/Mars-02ChangeStream.md
     - Command: mars/Mars-02Command.md

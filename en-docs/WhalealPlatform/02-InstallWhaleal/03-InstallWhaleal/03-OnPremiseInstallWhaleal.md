@@ -83,7 +83,7 @@ sh WAP/start.sh
 
 3. Click **ADD Host** to add a server.
 
-   ![image-20240621133348440](../../../images/whalealPlatFormImages/02-InstallWhaleal/WechatIMG34.png)
+   ![image-20240621133348440](../../../images/whaleal-platform-Images/02-install-whaleal/WechatIMG34.png)
 
 **Now that the server is available, you can use Whaleal to work.**
 

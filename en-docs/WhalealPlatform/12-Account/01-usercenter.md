@@ -12,7 +12,7 @@ You can modify your personal information including email, phone number, etc.
 
 2. Click Account
 
-![Account1](../../images/whalealPlatFormImages/12-Account/Account1.png)
+![Account1](../../images/whaleal-platform-Images/12-account/Account1.png)
 
 | Parameters                  | Description                                                  |
 | --------------------------- | ------------------------------------------------------------ |
@@ -27,7 +27,7 @@ You can modify your personal information including email, phone number, etc.
 
 **Click the Edit option button to modify your personal information.**
 
-![Account2](../../images/whalealPlatFormImages/12-Account/account2.png)
+![Account2](../../images/whaleal-platform-Images/12-account/account2.png)
 
 | Parameters | Can it be modified |
 | ---------- | ------------------ |

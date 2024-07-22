@@ -9,7 +9,7 @@ The collection granularity configuration can set the frequency of data collectio
 1. Click **Settings** in the left navigation bar
 2. Click **Collection Granularity**
 
-![CollectionGranularity](../../images/whalealPlatFormImages/13-Setting/CollectionGranularity.png)
+![CollectionGranularity](../../images/whaleal-platform-Images/13-setting/CollectionGranularity.png)
 
 ### Parameter Introduction
 

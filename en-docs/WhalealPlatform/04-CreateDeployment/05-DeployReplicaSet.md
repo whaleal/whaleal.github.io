@@ -24,7 +24,7 @@ Use a unique name for the replica set.
 
 Click the **Create Cluster** arrow in the top-right of the **MongoDB** page. Select **Replica Set** from the drop-down menu to open the **Create New Replica Set** view.
 
-![StandaloneAdvanced](../../images/whalealPlatFormImages/04-CreateDeployment/Replica.png)
+![StandaloneAdvanced](../../images/whaleal-platform-Images/04-create-deployment/Replica.png)
 
 ### Configure Cluster-Wide Settings.
 
@@ -86,7 +86,7 @@ To add an option:
 
 1. Click **Advanced Configuration**.
 
-   ![StandaloneAdvanced](../../images/whalealPlatFormImages/04-CreateDeployment/Advanced.png)
+   ![StandaloneAdvanced](../../images/whaleal-platform-Images/04-create-deployment/Advanced.png)
 
 2. Click **Add Option** and select the configuration option.
 

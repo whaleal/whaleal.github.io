@@ -8,8 +8,8 @@ To add a new target source to the platform, follow these steps:
 4. After adding the target source, go to the "System Management" menu and select "User Management". Click on the user you want to bind the target source to.
 5. In the user details, select the added target source from the list and click "Save". This user will now have access to the newly added target source.
 
-![Adding a Target Source](../../images/whalealDataImages/image-20230621132755714.png)
+![Adding a Target Source](../../images/whaleal-data-images/image-20230621132755714.png)
 
-![Binding Target Source to User](../../images/whalealDataImages/image-20230621134140682.png)
+![Binding Target Source to User](../../images/whaleal-data-images/image-20230621134140682.png)
 
 By following these steps, you can add and configure new target sources, allowing users to utilize these sources as destinations for data operations within the Whaleal Data platform.

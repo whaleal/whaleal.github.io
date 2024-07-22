@@ -2,7 +2,7 @@
 
 The homepage displays various statistics and information related to the system's activities. Users can customize the time range for which they want to see the data. Here's a breakdown of the different sections on the homepage:
 
-![image-20230619163709752](../../../images/whalealDataImages/image-20230619163709752.png)
+![image-20230619163709752](../../../images/whaleal-data-images/image-20230619163709752.png)
 
 #### Task Execution Statistics
 

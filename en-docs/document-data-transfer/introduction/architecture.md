@@ -46,7 +46,7 @@ Migration features include:
 
 ## Architecture
 
-![DDT Architecture](../../images/documentDataTransferImages/img_8.png)
+![DDT Architecture](../../images/document-data-transfer-images/img_8.png)
 
 Explanation:
 
@@ -60,7 +60,7 @@ Explanation:
 
 ### Real-Time Migration
 
-![Real-Time Migration](../../images/documentDataTransferImages/img_9.png)
+![Real-Time Migration](../../images/document-data-transfer-images/img_9.png)
 
 Note:
 
@@ -70,7 +70,7 @@ Note:
 
 ### Full Migration
 
-![Full Migration](../../images/documentDataTransferImages/img_10.png)
+![Full Migration](../../images/document-data-transfer-images/img_10.png)
 
 Note:
 

@@ -2,11 +2,11 @@
 
 By managing MongoDB clusters with Whaleal, we can start, shut down, restart, and other operations on the managed clusters. By clicking on the UI interface, we can easily implement these operations. The following is a list of operations that can be performed on the cluster using Wahaleal.
 
-![image-20240625153133435](../../images/whalealPlatFormImages/05-ManageDeployments/MongoDBoperation.png)
+![image-20240625153133435](../../images/whaleal-platform-Images/05-manage-deployment/MongoDBoperation.png)
 
 ### Connect to this instance
 
-![image-20240625153133435](../../images/whalealPlatFormImages/05-ManageDeployments/connect.png)
+![image-20240625153133435](../../images/whaleal-platform-Images/05-manage-deployment/connect.png)
 
 1. check the **Connect to this instance** button
 2. Select the connection method and click the corresponding button. The currently provided connection methods are **shell**,  **java** , and **python**.
@@ -32,13 +32,13 @@ When the cluster is in the Health state, we can restart the cluster through **Sh
 
 ### Rename
 
-![image-20240625153133435](../../images/whalealPlatFormImages/05-ManageDeployments/rename.png)
+![image-20240625153133435](../../images/whaleal-platform-Images/05-manage-deployment/rename.png)
 
 If you want to change the cluster name displayed in WAP, click **rename** to change the cluster name, but only change the cluster name displayed in Whaleal.
 
 ### Version Modify
 
-![image-20240625153133435](../../images/whalealPlatFormImages/05-ManageDeployments/VersionModify.png)
+![image-20240625153133435](../../images/whaleal-platform-Images/05-manage-deployment/VersionModify.png)
 
 Whaleal can upgrade and downgrade the managed clusters, but it cannot upgrade or downgrade across versions and needs to be operated step by step.
 
@@ -56,19 +56,19 @@ Before downgrading, you need to upload the target MongoDB version and all versio
 
 ### LogRotaate Startegy
 
-![image-20240625153133435](../../images/whalealPlatFormImages/05-ManageDeployments/LogLevel.png)
+![image-20240625153133435](../../images/whaleal-platform-Images/05-manage-deployment/LogLevel.png)
 
 The log is split once a day. You can configure the split time according to the options. The time used is the punctual time (UTC time)
 
 ### Convert to ReplSet
 
-![image-20240625153133435](../../images/whalealPlatFormImages/05-ManageDeployments/ConvertToReplSet.png)
+![image-20240625153133435](../../images/whaleal-platform-Images/05-manage-deployment/ConvertToReplSet.png)
 
 Slandalone architecture-specific operation options.
 
 ### Convert to Sharded Cluster
 
-![image-20240625153133435](../../images/whalealPlatFormImages/05-ManageDeployments/ConvertToShardedCluster.png)
+![image-20240625153133435](../../images/whaleal-platform-Images/05-manage-deployment/ConvertToShardedCluster.png)
 
 Operation options specific to the Replica Set architecture.
 

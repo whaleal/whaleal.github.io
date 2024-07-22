@@ -13,4 +13,4 @@ Here's how you can re-execute a failed task:
 
 This functionality provides a way to address and resolve exceptions that may have occurred during task execution, allowing you to retry the task and ensure its successful completion.
 
-![image-20230621151925489](../../images/whalealDataImages/image-20230621151925489.png)
+![image-20230621151925489](../../images/whaleal-data-images/image-20230621151925489.png)

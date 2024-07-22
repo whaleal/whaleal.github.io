@@ -8,7 +8,7 @@ User management, WAP user management can configure account permissions, modify p
 2. Click Account
 3. Click User Management
 
-![UserManagement1](../../images/whalealPlatFormImages/12-Account/UserManagement1.png)
+![UserManagement1](../../images/whaleal-platform-Images/12-account/UserManagement1.png)
 
 
 
@@ -16,7 +16,7 @@ User management, WAP user management can configure account permissions, modify p
 
 **Click on the right side of the operation**
 
-![UserManagement2](../../images/whalealPlatFormImages/12-Account/UserManagement2.png)
+![UserManagement2](../../images/whaleal-platform-Images/12-account/UserManagement2.png)
 
 **Cancel Admin**
 
@@ -36,7 +36,7 @@ User management, WAP user management can configure account permissions, modify p
 
 Click on the user name
 
-![UserManagement3](../../images/whalealPlatFormImages/12-Account/UserManagement3.png)
+![UserManagement3](../../images/whaleal-platform-Images/12-account/UserManagement3.png)
 
 **Authority Management**
 
@@ -52,13 +52,13 @@ Click on the user name
 
 * You can view the server permissions managed by the current user
 
-![UserManagement4](../../images/whalealPlatFormImages/12-Account/UserManagement4.png)
+![UserManagement4](../../images/whaleal-platform-Images/12-account/UserManagement4.png)
 
 **Mongo**
 
 * You can view the mongo permissions managed by the current user
 
-![UserManagement5](../../images/whalealPlatFormImages/12-Account/UserManagement5.png)
+![UserManagement5](../../images/whaleal-platform-Images/12-account/UserManagement5.png)
 
 
 

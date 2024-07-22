@@ -256,20 +256,20 @@ nav:
   - Document Data Transfer:  # Document Data Transfer
     - DocumentDataTransfer/index.md
     - 概述:
-      - DDT架构简介: DocumentDataTransfer/Introduction/Architecture.md
-      - 客户案例: DocumentDataTransfer/Introduction/CustomerCase.md
+      - DDT架构简介: DocumentDataTransfer/Introduction/architecture.md
+      - 客户案例: DocumentDataTransfer/Introduction/customer-case.md
     - 安装:
-      - DDT环境要求: DocumentDataTransfer/Install/Requirements.md
-      - 安装部署: DocumentDataTransfer/Install/Installation.md
-      - 快速开始: DocumentDataTransfer/Install/QuickStart.md
-      - 配置: DocumentDataTransfer/Install/Configuring.md
+      - DDT环境要求: DocumentDataTransfer/Install/requirement.md
+      - 安装部署: DocumentDataTransfer/Install/installation.md
+      - 快速开始: DocumentDataTransfer/Install/quick-start.md
+      - 配置: DocumentDataTransfer/Install/configuring.md
     - 用例:
-      - 功能测试: DocumentDataTransfer/Usecase/FunctionalTest.md
-      - 全量测试: DocumentDataTransfer/Usecase/FullTesting.md
-      - 实时测试: DocumentDataTransfer/Usecase/RealTimeTest.md
+      - 功能测试: DocumentDataTransfer/Usecase/functional-test.md
+      - 全量测试: DocumentDataTransfer/Usecase/full-test.md
+      - 实时测试: DocumentDataTransfer/Usecase/real-time-test.md
   - whaleal JMC:
     - whalealJMC/index.md
-    - 快速使用指南: whalealJMC/4.QuickStart.md
+    - 快速使用指南: whalealJMC/4.quick-start.md
     - 平台概述: whalealJMC/2.PlatformOverview.md
     - 平台布局介绍: whalealJMC/3.PlatformLayoutIntroduction.md
     - 功能介绍: whalealJMC/module/4.1.Module.md

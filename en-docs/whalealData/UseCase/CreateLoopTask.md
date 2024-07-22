@@ -17,4 +17,4 @@ To execute a recurring task:
 
 By creating recurring tasks, you can automate data archiving and synchronization at regular intervals, ensuring that your data remains up-to-date and consistent over time.
 
-![创建循环任务.png](../../images/whalealDataImages/创建循环任务.png)
+![创建循环任务.png](../../images/whaleal-data-images/image-5.png)

@@ -7,7 +7,7 @@ Configure SMTP to send emails, which is used to send warning information of the 
 1. Click on the left side of the setting
 2. Click SMTP
 
-![SMTP](../../images/whalealPlatFormImages/13-Setting/SMTP.png)
+![SMTP](../../images/whaleal-platform-Images/13-setting/SMTP.png)
 
 
 
@@ -27,7 +27,7 @@ Configure SMTP to send emails, which is used to send warning information of the 
 
 1.Click Edit to edit the configuration
 
-![SMTP1](../../images/whalealPlatFormImages/13-Setting/SMTP1.png)
+![SMTP1](../../images/whaleal-platform-Images/13-setting/SMTP1.png)
 
 2.Configuring SMTP Parameters
 

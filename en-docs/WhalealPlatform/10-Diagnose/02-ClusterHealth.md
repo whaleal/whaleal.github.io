@@ -8,19 +8,19 @@ Quick diagnosis includes the latency of both the WAP platform and agent hosts (W
 
 After selecting the Cluster Name and Node Name, click **Start Diagnose Session** to start diagnosing the node.
 
-![Start Diagnose Session](../../images/whalealPlatFormImages/10-Diagnose/startDiagnose.png)
+![Start Diagnose Session](../../images/whaleal-platform-Images/10-diagnose/startDiagnose.png)
 
 After clicking **Start Diagnose Session**, the diagnosis node may take some time, please be patient.
 
 After the diagnosis is completed, a pop-up window will pop up saying **End of Diagnosis!**
 
-![endDignose](../../images/whalealPlatFormImages/10-Diagnose/endDignose.png)
+![endDignose](../../images/whaleal-platform-Images/10-diagnose/endDignose.png)
 
 **Diagnose result**
 
-![DigResult](../../images/whalealPlatFormImages/10-Diagnose/DigResult.png)
+![DigResult](../../images/whaleal-platform-Images/10-diagnose/DigResult.png)
 
-![DigResult](../../images/whalealPlatFormImages/10-Diagnose/digresult2.png)
+![DigResult](../../images/whaleal-platform-Images/10-diagnose/digresult2.png)
 
 The indicators in the Diagnose result are problematic indicators and need to be checked in detail.
 

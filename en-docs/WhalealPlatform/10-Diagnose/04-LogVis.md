@@ -8,23 +8,23 @@ LogVis can view the slow query statistics in the logs within a certain period of
 
 1. Select Cluster Name and Node Name, then click the Analyze **button**.
 
-   ![Start Diagnose Session](../../images/whalealPlatFormImages/10-Diagnose/StartLogvis.png)
+   ![Start Diagnose Session](../../images/whaleal-platform-Images/10-diagnose/StartLogvis.png)
 
 2. Wait for a while and click the **magnifying glass icon** to view the analysis results
 
-   ![Start Diagnose Session](../../images/whalealPlatFormImages/10-Diagnose/result.png)
+   ![Start Diagnose Session](../../images/whaleal-platform-Images/10-diagnose/result.png)
 
 ### ConnectionList
 
 In ConnectionList, you can see which nodes the cluster is connected to and count the number of connections.
 
-![Start Diagnose Session](../../images/whalealPlatFormImages/10-Diagnose/connectionList.png)
+![Start Diagnose Session](../../images/whaleal-platform-Images/10-diagnose/connectionList.png)
 
 ### Statistical information
 
 In Statistical information, view the slow query statistics of each collection in the collection, including the number of slow queries, the average time of slow queries, and the longest/shortest time statistics of slow queries.
 
-![Start Diagnose Session](../../images/whalealPlatFormImages/10-Diagnose/slow.png)
+![Start Diagnose Session](../../images/whaleal-platform-Images/10-diagnose/slow.png)
 
 
 
@@ -34,8 +34,8 @@ In Slow query information, the collection name is displayed above. Click the col
 
 
 
-![Start Diagnose Session](../../images/whalealPlatFormImages/10-Diagnose/slowp.png)
+![Start Diagnose Session](../../images/whaleal-platform-Images/10-diagnose/slowp.png)
 
 
 
-![Start Diagnose Session](../../images/whalealPlatFormImages/10-Diagnose/slowloginfo.png)
+![Start Diagnose Session](../../images/whaleal-platform-Images/10-diagnose/slowloginfo.png)

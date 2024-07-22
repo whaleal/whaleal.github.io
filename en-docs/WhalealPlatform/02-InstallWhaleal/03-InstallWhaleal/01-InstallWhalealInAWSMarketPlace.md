@@ -14,23 +14,23 @@
 
 5. Find **Whalal Platform** and subscribe.
 
-   ![WAP](../../../images/whalealPlatFormImages/02-InstallWhaleal/WAP.png)
+   ![WAP](../../../images/whaleal-platform-Images/02-install-whaleal/WAP.png)
 
 6. Click  **Continue  To Subscribe**
 
-   ![subscribe](../../../images/whalealPlatFormImages/02-InstallWhaleal/subscribe.png)
+   ![subscribe](../../../images/whaleal-platform-Images/02-install-whaleal/subscribe.png)
 
    Wait for the progress below to load
 
-   ![waiting](../../../images/whalealPlatFormImages/02-InstallWhaleal/waiting.png)
+   ![waiting](../../../images/whaleal-platform-Images/02-install-whaleal/waiting.png)
 
    Loading completed
 
-   ![waiting](../../../images/whalealPlatFormImages/02-InstallWhaleal/completed.png)
+   ![waiting](../../../images/whaleal-platform-Images/02-install-whaleal/completed.png)
 
 7. View subscription results in Manage subscriptions,when you see the WAP in the image below in Manage subscriptions, your subscription is successful.
 
-   ![waiting](../../../images/whalealPlatFormImages/02-InstallWhaleal/WAP2.png)
+   ![waiting](../../../images/whaleal-platform-Images/02-install-whaleal/WAP2.png)
 
 ### Whaleal Platform Agent
 
@@ -44,23 +44,23 @@
 
 5. Find **Whalal Platform Agent** and subscribe.
 
-   ![WAP](../../../images/whalealPlatFormImages/02-InstallWhaleal/WhalealPlatformAgent.png)
+   ![WAP](../../../images/whaleal-platform-Images/02-install-whaleal/WhalealPlatformAgent.png)
 
 6. Click  **Continue  To Subscribe**
 
-   ![WAP](../../../images/whalealPlatFormImages/02-InstallWhaleal/AgentSbuscribe.png)
+   ![WAP](../../../images/whaleal-platform-Images/02-install-whaleal/AgentSbuscribe.png)
 
    Wait for the progress below to load
 
-   ![waiting](../../../images/whalealPlatFormImages/02-InstallWhaleal/AgentWaiting.png)
+   ![waiting](../../../images/whaleal-platform-Images/02-install-whaleal/AgentWaiting.png)
 
    Loading completed
 
-   ![waiting](../../../images/whalealPlatFormImages/02-InstallWhaleal/AgentCompleted.png)
+   ![waiting](../../../images/whaleal-platform-Images/02-install-whaleal/AgentCompleted.png)
 
 7. View subscription results in Manage subscriptions,when you see the WAP in the image below in Manage subscriptions, your subscription is successful.
 
-   ![waiting](../../../images/whalealPlatFormImages/02-InstallWhaleal/Agent.png)
+   ![waiting](../../../images/whaleal-platform-Images/02-install-whaleal/Agent.png)
 
 ## Install appdb for WAP service
 
@@ -68,7 +68,7 @@ Before building the appdb for the WAP service, refer to the [Installation](../02
 
 1. Start the instance through the subscribed Whaleal Platform Agent in Manage subscriptions and click **lunch new instance** below the subscription.
 
-   ![lunchinstance](../../../images/whalealPlatFormImages/02-InstallWhaleal/lunchinstance.png)
+   ![lunchinstance](../../../images/whaleal-platform-Images/02-install-whaleal/lunchinstance.png)
 
 2. Select region.
 
@@ -90,11 +90,11 @@ After starting the script, the following output will be displayed. The content i
 
 Record username and password
 
-![lunchinstance](../../../images/whalealPlatFormImages/02-InstallWhaleal/appdb.png)
+![lunchinstance](../../../images/whaleal-platform-Images/02-install-whaleal/appdb.png)
 
 After the modification is completed, test the connection locally
 
-![lunchinstance](../../../images/whalealPlatFormImages/02-InstallWhaleal/auth.png)
+![lunchinstance](../../../images/whaleal-platform-Images/02-install-whaleal/auth.png)
 
 ## Install WAP
 
@@ -102,7 +102,7 @@ Before building  WAP service, refer to the [Installation](../02-HardwareAndSoftw
 
 1. Under Manage subscriptions, find **Instance new Instance** under Whaleal Platform
 
-   ![lunchinstance](../../../images/whalealPlatFormImages/02-InstallWhaleal/waplunch.png)
+   ![lunchinstance](../../../images/whaleal-platform-Images/02-install-whaleal/waplunch.png)
 
 2. Select region.
 
@@ -120,17 +120,17 @@ Before building  WAP service, refer to the [Installation](../02-HardwareAndSoftw
 
 1. Access its public IP directly in the browser,visit the WAP guide page to configure WAP.
 
-   ![lunchinstance](../../../images/whalealPlatFormImages/02-InstallWhaleal/YDpage1.png)
+   ![lunchinstance](../../../images/whaleal-platform-Images/02-install-whaleal/YDpage1.png)
 
 2. Click the **Next step** button and then proceed to resource check.
 
    After all the checks are passed, you can proceed to the next step.
 
-   ![lunchinstance](../../../images/whalealPlatFormImages/02-InstallWhaleal/resourcecheck.png)
+   ![lunchinstance](../../../images/whaleal-platform-Images/02-install-whaleal/resourcecheck.png)
 
 3. Configure appdb and modify the three items Database host, User and Password.After the configuration is complete, click **Next step**.
 
-   ![lunchinstance](../../../images/whalealPlatFormImages/02-InstallWhaleal/YDpage3.png)
+   ![lunchinstance](../../../images/whaleal-platform-Images/02-install-whaleal/YDpage3.png)
 
 4. Configure Web Url and click **Next step**.
 
@@ -138,7 +138,7 @@ Before building  WAP service, refer to the [Installation](../02-HardwareAndSoftw
 
    ​	As shown below, when all components are successfully started, click **Next step**
 
-   ![lunchinstance](../../../images/whalealPlatFormImages/02-InstallWhaleal/YDpage4.png)
+   ![lunchinstance](../../../images/whaleal-platform-Images/02-install-whaleal/YDpage4.png)
 
 6. Click the **Finish**
 
@@ -150,4 +150,4 @@ Before building  WAP service, refer to the [Installation](../02-HardwareAndSoftw
 
 8. Login to WAP service.
 
-   ![lunchinstance](../../../images/whalealPlatFormImages/02-InstallWhaleal/success.png)
+   ![lunchinstance](../../../images/whaleal-platform-Images/02-install-whaleal/success.png)

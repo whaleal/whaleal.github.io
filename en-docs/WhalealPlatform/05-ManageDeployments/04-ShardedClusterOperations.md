@@ -14,7 +14,7 @@
 
 3. In the **Member Configuration** section, add a shard.
 
-   ![addshard](../../images/whalealPlatFormImages/05-ManageDeployments/addshard.png)
+   ![addshard](../../images/whaleal-platform-Images/05-manage-deployment/addshard.png)
 
    ​		a. Expand **shard settings**.
 
@@ -56,7 +56,7 @@
 
 3. In the **Member Configuration** section, remove a shard.
 
-   ![removeshard](../../images/whalealPlatFormImages/05-ManageDeployments/removeshard.png)
+   ![removeshard](../../images/whaleal-platform-Images/05-manage-deployment/removeshard.png)
 
    **This operation needs to be performed with caution**
 

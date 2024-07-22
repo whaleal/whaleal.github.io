@@ -37,6 +37,6 @@
 
 6. Go to Whaleal to check the EC2 management progress.
 
-   ![hostlist](../../../images/whalealPlatFormImages/04-CreateDeployment/hostlist.png)
+   ![hostlist](../../../images/whaleal-platform-Images/04-create-deployment/hostlist.png)
 
    ![hostlist](../../../images/whalealPlatFormImages/04-CreateDeployment/addEC2success.png)

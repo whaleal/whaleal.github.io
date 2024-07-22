@@ -255,17 +255,17 @@ nav:
   - Document Data Transfer:  # Document Data Transfer
     - document-data-transfer/index.md
     - Overview:
-      - Architecture: document-data-transfer/introduction/Architecture.md
-      - CustomerCase: document-data-transfer/introduction/CustomerCase.md
+      - Architecture: document-data-transfer/introduction/architecture.md
+      - CustomerCase: document-data-transfer/introduction/customer-case.md
     - Install:
-      - Requirements: document-data-transfer/install/Requirements.md
-      - Installation: document-data-transfer/install/Installation.md
-      - QuickStart: document-data-transfer/install/QuickStart.md
-      - Configuring: document-data-transfer/install/Configuring.md
+      - Requirements: document-data-transfer/install/requirement.md
+      - Installation: document-data-transfer/install/installation.md
+      - QuickStart: document-data-transfer/install/quick-start.md
+      - Configuring: document-data-transfer/install/configuring.md
     - Use Case:
-      - FunctionalTest: document-data-transfer/use-case/FunctionalTest.md
-      - FullTesting: document-data-transfer/use-case/FullTesting.md
-      - RealTimeTest: document-data-transfer/use-case/RealTimeTest.md
+      - FunctionalTest: document-data-transfer/use-case/functional-test.md
+      - FullTesting: document-data-transfer/use-case/full-test.md
+      - RealTimeTest: document-data-transfer/use-case/real-time-test.md
 
   # - Support: whalealSupport/index.md
 

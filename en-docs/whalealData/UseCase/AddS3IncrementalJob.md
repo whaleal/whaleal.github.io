@@ -12,8 +12,8 @@ To add a new S3 incremental load job to the platform, follow these steps:
 8. Since S3 has the characteristic that files with the same name will overwrite the existing files, you can choose from synchronization modes like "Replace without Handling", "Replace with Newest Files", or "ID + Filename" mode.
 9. Choose a data processing method, either manual deletion or automatic deletion, after synchronization. The data source table will be deleted according to your choice after synchronization is completed.
 
-![Adding an S3 Incremental Load Job](../../images/whalealDataImages/image-20230621141044800.png)
+![Adding an S3 Incremental Load Job](../../images/whaleal-data-images/image-20230621141044800.png)
 
-![Custom SQL for Incremental Load](../../images/whalealDataImages/image-20230621142128812.png)
+![Custom SQL for Incremental Load](../../images/whaleal-data-images/image-20230621142128812.png)
 
 By following these steps, you can create an S3 incremental load job that synchronizes data from a MongoDB Gridfs data source to a target S3 bucket using incremental synchronization based on defined SQL conditions. This allows for efficient and selective data synchronization within the Whaleal Data platform.

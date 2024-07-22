@@ -16,7 +16,7 @@ tar -zxvf DDT.tar.gz -C DDT
 ```
 
 #### 3. Modify Configuration Files
-[Introduction to Configuration](Configuring.md)
+[Introduction to Configuration](configuring.md)
 
 ```bash
 cd DDT/config

@@ -1,2 +1,0 @@
-# Install Whaleal in Docker
-

@@ -186,8 +186,8 @@ nav:
   - Whaleal Data:   # whaleal data
     - whalealData/index.md
     - InstallationDeployment:
-      - InstallationRequirements: whalealData/InstallationDeployment/InstallationRequirements.md
-      - JDKInstallationDeployment: whalealData/InstallationDeployment/JDKInstallationDeployment.md
+      - InstallationRequirements: whalealData/InstallationDeployment/installation-requirements.md
+      - JDKInstallationDeployment: whalealData/InstallationDeployment/jdk-installation-deployment.md
       - MYSQLInstallationDeployment: whalealData/InstallationDeployment/MYSQLInstallationDeployment.md
       - NginxInstallationDeployment: whalealData/InstallationDeployment/NginxInstallationDeployment.md
       - RedisInstallationDeployment: whalealData/InstallationDeployment/RedisInstallationDeployment.md

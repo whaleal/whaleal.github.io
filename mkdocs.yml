@@ -131,6 +131,8 @@ nav:
         - Create Repository: WhalealPlatform/07-BackupAndRestore/01-Backup/01-CreateRepository.md
         - Operations: WhalealPlatform/07-BackupAndRestore/01-Backup/02-Operations.md
       - Restore: WhalealPlatform/07-BackupAndRestore/02-Restore.md
+      - Mirrored MongoDB Data Through MongoDB Tools: WhalealPlatform/07-BackupAndRestore03-MirroredMongoDBData/01-MirroredMongoDBDataThroughMongoDBTools.md
+      - Mirrored MongoDB Data Through DDT: WhalealPlatform/07-BackupAndRestore03-MirroredMongoDBData/02-MirroredMongoDBDataThroughDDT.md
     - Security:
       - Configure Firewall to Access Whaleal: WhalealPlatform/08-Security/01-ConfigureFirewalltoAccessWhaleal.md
       - Secure MongoDB Deployment swith Authentication:
@@ -167,8 +169,6 @@ nav:
     - Administrator Whaleal:
       - Start And Stop Whaleal Application: WhalealPlatform/15-AdministratorWhaleal/01-StartAndStopWhalealApplication.md
       - IntegrationwithPrometheus: WhalealPlatform/15-AdministratorWhaleal/02-IntegrationwithPrometheus.md
-      - Upgrade Version: WhalealPlatform/15-AdministratorWhaleal/03-UpgradeVersion.md
-      - MongoDB Data Recovery: WhalealPlatform/15-AdministratorWhaleal/04-MongoDBDataRecovery.md
     - Troubleshooting:
       - EC2 and K8S: WhalealPlatform/16-Troubleshooting/01-EC2andK8S.md
       - MongoDB Monitoring: WhalealPlatform/16-Troubleshooting/02-MongoDBMonitoring.md

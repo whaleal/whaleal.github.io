@@ -52,9 +52,9 @@ Select the users who want to join the Project, and finally Confirm.
 > After deleting Project, the hosts and MongoDB in this Project will not belong to any Project, and will not be viewable by users in the host list and MongoDB list. If you need to be seen again, you need to grant the user the Write permission in Admin/Account.
 >
 
-![01-Projects-delete](../images/03-Projects/01-Projects-delete.png)
+![01-Projects-delete](../../images/whalealPlatFromImages/03-Projects/01-Projects-delete.png)
 
-![02-Projects-Resource](../images/03-Projects/02-Projects-Resource.png)
+![02-Projects-Resource](../../images/whalealPlatFromImages/03-Projects/02-Projects-Resource.png)
 
 ### View all of your projects.
 

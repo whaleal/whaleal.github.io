@@ -60,11 +60,11 @@ To add an option:
 
 1. Click **Add Option**.
 
-   ![StandaloneAdvanced](../images/05-ManageDeployments/StandaloneAdvanced.png)
+   ![StandaloneAdvanced](../../images/whalealPlatFromImages/05-ManageDeployments/StandaloneAdvanced.png)
 
 2. Click **Select** and select the configuration option.
 
-   ![StandaloneAdvanced](../images/05-ManageDeployments/StandaloneAdd.png)
+   ![StandaloneAdvanced](../../images/whalealPlatFromImages/05-ManageDeployments/StandaloneAdd.png)
 
 3. Whalel displays a context-sensitive input for configuring an acceptable value for the selected option.
 
@@ -82,13 +82,13 @@ To add an option:
 
 The **Replica Set Configuration** section contains the following cluster-wide configuration settings.\
 
-![StandaloneAdvanced](../images/05-ManageDeployments/ReplSetConfiguration.png)
+![StandaloneAdvanced](../../images/whalealPlatFromImages/05-ManageDeployments/ReplSetConfiguration.png)
 
 #### Configure Each Replica Set Member.
 
 Whaleal lists each replica set member under the **Update Replica Set** heading of the **Member Configuration** section. Each replica set member has the following configurable options:
 
-![StandaloneAdvanced](../images/05-ManageDeployments/ConfigureEachReplicaSetMember.png)
+![StandaloneAdvanced](../../images/whalealPlatFromImages/05-ManageDeployments/ConfigureEachReplicaSetMember.png)
 
 
 
@@ -107,7 +107,7 @@ Whaleal lists each replica set member under the **Update Replica Set** heading o
 
 The **Cluster Configuration** section contains the following configuration options for the replica set:
 
-![StandaloneAdvanced](../images/05-ManageDeployments/ConfigureyourReplicationSettings.png)
+![StandaloneAdvanced](../../images/whalealPlatFromImages/05-ManageDeployments/ConfigureyourReplicationSettings.png)
 
 | Setting                                    | Description                                                  |
 | :----------------------------------------- | :----------------------------------------------------------- |
@@ -127,11 +127,11 @@ To add an option:
 
 1. Click **Add Options**.
 
-   ![StandaloneAdvanced](../images/05-ManageDeployments/ReplAdvanced.png)
+   ![StandaloneAdvanced](../../images/whalealPlatFromImages/05-ManageDeployments/ReplAdvanced.png)
 
 2. Click **Select** and select the configuration option.
 
-   ![StandaloneAdvanced](../images/05-ManageDeployments/StandaloneAdd.png)
+   ![StandaloneAdvanced](../../images/whalealPlatFromImages/05-ManageDeployments/StandaloneAdd.png)
 
 3. Whaleal displays a context-sensitive input for configuring an acceptable value for the selected option.
 
@@ -149,7 +149,7 @@ To add an option:
 
 From the **Member Configuration** section, click **Shard Settings** to open the shard configuration options. Whaleal lists each shard in the cluster and the `mongod` processes associated to that shard. Each shard process has the following options. You cannot modify options that are greyed out:
 
-![StandaloneAdvanced](../images/05-ManageDeployments/ModifyClusterWideSettings.png)
+![StandaloneAdvanced](../../images/whalealPlatFromImages/05-ManageDeployments/ModifyClusterWideSettings.png)
 
 
 
@@ -167,7 +167,7 @@ To add additional shards to the cluster:
 
 1. Click **Add a Shard**.
 
-   ![StandaloneAdvanced](../images/05-ManageDeployments/addshard1.png)
+   ![StandaloneAdvanced](../../images/whalealPlatFromImages/05-ManageDeployments/addshard1.png)
 
 2. Under the **Cluster Configuration** section, set the following parameters for each `mongod` in the shard:
    - **Version**
@@ -178,7 +178,7 @@ To add additional shards to the cluster:
 
 From the **Member Configuration** section, click **Config Server Replica Set Settings** to open the CSRS configuration options. Each config server replica set member has the following options:
 
-![StandaloneAdvanced](../images/05-ManageDeployments/ConfigServerReplicaSetSettings.png)
+![StandaloneAdvanced](../../images/whalealPlatFromImages/05-ManageDeployments/ConfigServerReplicaSetSettings.png)
 
 | Setting           | Description                                                  |
 | :---------------- | :----------------------------------------------------------- |
@@ -195,7 +195,7 @@ From the **Member Configuration** section, click **Config Server Replica Set Set
 
 From the **Member Configuration** section, click **Mongos Settings** to open the `mongos` configuration options. Each `mongos` process has the following options:
 
-![StandaloneAdvanced](../images/05-ManageDeployments/MongosSettings.png)
+![StandaloneAdvanced](../../images/whalealPlatFromImages/05-ManageDeployments/MongosSettings.png)
 
 
 
@@ -209,7 +209,7 @@ From the **Member Configuration** section, click **Mongos Settings** to open the
 
 The **Replication Settings** section contains the following configuration options for each replica set in the cluster:
 
-![StandaloneAdvanced](../images/05-ManageDeployments/ConfigureEachReplicaSetinyourCluster.png)
+![StandaloneAdvanced](../../images/whalealPlatFromImages/05-ManageDeployments/ConfigureEachReplicaSetinyourCluster.png)
 
 
 
@@ -231,11 +231,11 @@ To add an option:
 
 1. Click **Advanced Configuration**.
 
-   ![StandaloneAdvanced](../images/05-ManageDeployments/ReplAdvanced.png)
+   ![StandaloneAdvanced](../../images/whalealPlatFromImages/05-ManageDeployments/ReplAdvanced.png)
 
 2. Click **Add Option** and select the configuration option.
 
-   ![StandaloneAdvanced](../images/05-ManageDeployments/StandaloneAdd.png)
+   ![StandaloneAdvanced](../../images/whalealPlatFromImages/05-ManageDeployments/StandaloneAdd.png)
 
 3. Whaleal displays a context-sensitive input for configuring an acceptable value for the selected option.
 

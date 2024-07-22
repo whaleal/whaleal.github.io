@@ -1,19 +1,56 @@
-## DDT Application Scenarios
+### DDT Application Cases: MongoDB to MongoDB Synchronization
 
-Let's introduce some use cases of users employing DDT, including business scenarios, durations, and performance comparisons.
+#### Case 1: A Securities Company
 
-### Case 1: Securities Company
+![img_5.png](../../images/documentDataTransferImages/img_5.png)
 
-![Case 1](../../images/documentDataTransferImages/img_5.png)
+**Business Scenario**:
+In the production environment of a securities company, it is crucial to ensure a dual-active architecture backup to enhance business resilience and reliability. By using the DDT tool, real-time synchronization of the MongoDB database data from the production center to the disaster recovery center was achieved, ensuring immediate data backup and business continuity.
 
-Benefits of Disaster Recovery: In addition to local backups in the production center, business operations can also be backed up in the disaster recovery center. In a dual-active architecture, support for dual-center mutual backup enhances business resilience, providing a double insurance for the business. By utilizing the DDT synchronization tool, remote data is written to the target center in real time.
+**Performance Comparison**:
+The application of the DDT tool enabled efficient real-time synchronization of MongoDB data, supporting a dual-center mutual backup architecture. Compared to traditional backup methods, DDT significantly improved the speed and efficiency of data synchronization.
 
-### Case 2: Airline Company
+---
 
-![Case 2](../../images/documentDataTransferImages/img_6.png)
+#### Case 2: An Airline Company
 
-There is a need for a cross-major-version upgrade of a MongoDB replica set cluster, upgrading from version 3.2 to 4.4. Due to the need for rapid upgrade changes on the application side, the traditional MongoDB replica set would require step-by-step version upgrades, which is time-consuming. Also, in case of anomalies, the transition back to the correct state might not be timely.
+![img_6.png](../../images/documentDataTransferImages/img_6.png)
 
-Our solution for the airline company is to set up a new 4.4 version database, using DDT to migrate old data to the new cluster in real time. When both new and old clusters have no delay, the application-side database address is switched.
+**Business Scenario**:
+An airline company needed to upgrade its old version MongoDB replica set cluster from version 3.2 to 4.4 to meet rapidly changing business needs and improve database performance.
 
-In this case, the original data size is 700GB, with a real-time data rate of 10,000 records per second, including intermittent DDL operations like table creation and deletion. DDT took a total of 6 hours to complete the transfer, with 5 hours for the full migration and 1 hour for real-time migration.
+**Solution**:
+A new MongoDB 4.4 version cluster was set up for the airline company, and the DDT tool was used to migrate data from the old MongoDB version to the new cluster in real-time. By maintaining data consistency and real-time during the migration process, a smooth database version upgrade and business continuity were achieved.
+
+**Performance Comparison**:
+In this case, the DDT tool completed the full migration of 700GB of data, with real-time data processing speeds reaching up to 10,000 transactions per second, including DDL operations. The total migration time was 6 hours, with the full data migration taking 5 hours and real-time synchronization taking 1 hour.
+
+---
+
+#### Case 3: An E-commerce Company
+
+**Business Scenario**:
+An e-commerce company needed to consolidate its existing multiple MongoDB sharded clusters into a single cluster to simplify management and improve system performance and scalability.
+
+**Solution**:
+Using the DDT tool's multi-data source migration feature, the e-commerce company's multiple sharded clusters were orderly migrated to a new single MongoDB cluster. Through automated operations and flexible task management, the data migration process was smoothly executed, ensuring data integrity.
+
+**Performance Comparison**:
+During the consolidation process, the DDT tool effectively managed the migration and synchronization of a large amount of data, improving data processing efficiency and migration success rate, providing strong support for the e-commerce company's system optimization and expansion.
+
+---
+
+#### Case 4: A Game Development Company
+
+**Business Scenario**:
+A game development company needed to migrate its multiple game databases from different MongoDB instances to a new global game database to support unified management of global game users and higher game performance requirements.
+
+**Solution**:
+With the DDT tool's efficient data synchronization and migration capabilities, the game development company successfully migrated game data distributed across multiple MongoDB instances to the new global MongoDB database. This ensured data consistency and real-time performance, supporting the company's global operations smoothly.
+
+**Performance Comparison**:
+During the migration process, the DDT tool handled a large number of game data synchronization and migration tasks, effectively improving data migration speed and efficiency, providing reliable assurance for the game development company's business expansion and user experience.
+
+---
+
+These cases demonstrate the successful application of the DDT tool in MongoDB to MongoDB synchronization scenarios. By implementing efficient data migration and synchronization strategies, the tool helps enterprises achieve database version upgrades, system integration, and global data management needs.

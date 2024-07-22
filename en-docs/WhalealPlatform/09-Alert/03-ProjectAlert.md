@@ -16,39 +16,39 @@ When using Whaleal to manage a MongoDB cluster, you can configure cluster alerts
 
 2. Click the three dots in the upper right corner of the group.
 
-   ![image-20240628171055358](../images/09-Alert/larkSetting.png)
+   ![image-20240628171055358](../../images/whalealPlatFormImages/09-Alert/larkSetting.png)
 
 3. Add a bot
 
    1. Click Bots
 
-      ![image-20240628171055358](../images/09-Alert/Bots.png)
+      ![image-20240628171055358](../../images/whalealPlatFormImages/09-Alert/Bots.png)
 
    2. Click Add Bot
 
-      ![image-20240628171055358](../images/09-Alert/AddBots.png)
+      ![image-20240628171055358](../../images/whalealPlatFormImages/09-Alert/AddBots.png)
 
    3. Click Custom Bot
 
-      ![image-20240628171055358](../images/09-Alert/CustomBot.png)
+      ![image-20240628171055358](../../images/whalealPlatFormImages/09-Alert/CustomBot.png)
 
    4. Edit Bot Name and Description
 
-      ![image-20240628171055358](../images/09-Alert/BotName.png)
+      ![image-20240628171055358](../../images/whalealPlatFormImages/09-Alert/BotName.png)
 
    5. Configure the key to use "_" to connect
 
-      ![image-20240628171055358](../images/09-Alert/Config.png)
+      ![image-20240628171055358](../../images/whalealPlatFormImages/09-Alert/Config.png)
 
    6. Configure the key spliced in step 5 in the Project.
 
-      ![image-20240628171055358](../images/09-Alert/LarkKey.png)
+      ![image-20240628171055358](../../images/whalealPlatFormImages/09-Alert/LarkKey.png)
 
 
 
 After the configuration is complete, click Alert Setting in the left navigation bar to configure the alart trigger values and trigger methods of different indicators according to Host Alert, MongoDB Alert or Project.
 
-![image-20240628171055358](../images/09-Alert/AlartConfig.png)
+![image-20240628171055358](../../images/whalealPlatFormImages/09-Alert/AlartConfig.png)
 
 ## DingTalk
 
@@ -56,39 +56,39 @@ After the configuration is complete, click Alert Setting in the left navigation 
 
 2. Click the three dots in the upper right corner of the group.
 
-   ![image-20240628171055358](../images/09-Alert/DingSetting.png)
+   ![image-20240628171055358](../../images/whalealPlatFormImages/09-Alert/DingSetting.png)
 
 3. Add a bot
 
    1. Click Bots
 
-      ![Ding](../images/09-Alert/DingBot.png)
+      ![Ding](../../images/whalealPlatFormImages/09-Alert/DingBot.png)
 
    2. Click Add Bot
 
-      ![image-20240628171055358](../images/09-Alert/DingAddBots.png)
+      ![image-20240628171055358](../../images/whalealPlatFormImages/09-Alert/DingAddBots.png)
 
    3. Select Custom Bot
 
-      ![image-20240628171055358](../images/09-Alert/DingCustom.png)
+      ![image-20240628171055358](../../images/whalealPlatFormImages/09-Alert/DingCustom.png)
 
    4. Edit Bot Name and Security Setting.
 
-      ![image-20240628171055358](../images/09-Alert/Dingname.png)
+      ![image-20240628171055358](../../images/whalealPlatFormImages/09-Alert/Dingname.png)
 
    5. Check the Bot you just created, then copy the access_token after the Webhook link and concatenate it with the value of Additional Signature in Security Setting using "_".
 
-      ![image-20240628171055358](../images/09-Alert/DingKey.png)
+      ![image-20240628171055358](../../images/whalealPlatFormImages/09-Alert/DingKey.png)
 
    6. Configure the key spliced in step 5 in the Project.
 
-      ![image-20240628171055358](../images/09-Alert/DingConfig.png)
+      ![image-20240628171055358](../../images/whalealPlatFormImages/09-Alert/DingConfig.png)
 
 
 
 After the configuration is complete, click Alert Setting in the left navigation bar to configure the alart trigger values and trigger methods of different indicators according to Host Alert, MongoDB Alert or Project.
 
-![image-20240628171055358](../images/09-Alert/ProjectAlartConfig.png)
+![image-20240628171055358](../../images/whalealPlatFormImages/09-Alert/ProjectAlartConfig.png)
 
 ## WebHook
 

@@ -8,13 +8,13 @@ When you use Whaleal to manage a host for the first time, Whaleal will detect th
 2. Click MongoDB Alert on the Alert Message page.
 3. In the MongoDB drop-down box, select the server for which you want to configure an alart.
 
-![image-20240628171055358](../images/09-Alert/MongoDBAlert.png)
+![image-20240628171055358](../../images/whalealPlatFormImages/09-Alert/MongoDBAlert.png)
 
 ## Indicator Configuration
 
 After selecting the target MongoDB, the configuration options shown in the following picture may appear.
 
-![image-20240628171055358](../images/09-Alert/MongoDBAlertConfig.png)
+![image-20240628171055358](../../images/whalealPlatFormImages/09-Alert/MongoDBAlertConfig.png)
 
 Configuration items：
 
@@ -33,7 +33,7 @@ Configuration items：
 
 When the alart value is triggered, we can see the current alart in open Alert, and we can search in MSG or configure the time interval to view the alart within a period of time.
 
-![image-20240628171055358](../images/09-Alert/MongoDBAlertapp.png)
+![image-20240628171055358](../../images/whalealPlatFormImages/09-Alert/MongoDBAlertapp.png)
 
 Alert will also send the alert to a specific platform through the information configured in the alert platform configured in Groups in the Project. For the configuration process, refer to [Project Alert](./03-ProjectAlert.md).
 

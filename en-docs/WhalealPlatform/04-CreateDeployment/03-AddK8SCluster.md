@@ -8,15 +8,15 @@
 
 1. Click **Server**>**K8S **on the left side of the navigation bar
 
-   ![StandaloneAdvanced](../images/04-CreateDeployment/home.png)
+   ![StandaloneAdvanced](../../images/whalealPlatFormImages/04-CreateDeployment/home.png)
 
 2. Click **Add Stateful Set**
 
-   ![StandaloneAdvanced](../images/04-CreateDeployment/AddStateful.png)
+   ![StandaloneAdvanced](../../images/whalealPlatFormImages/04-CreateDeployment/AddStateful.png)
 
 3. Complete the configuration of the parameters in the figure below. There are no special requirements. NS and Stateful Set meet the production requirements.
 
-   ![StandaloneAdvanced](../images/04-CreateDeployment/configk8s.png)
+   ![StandaloneAdvanced](../../images/whalealPlatFormImages/04-CreateDeployment/configk8s.png)
 
 4. Click **Confirm**.
 

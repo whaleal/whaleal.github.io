@@ -16,7 +16,7 @@ If you do not want to use Whaleal to manage the cluster, you can remove the clus
 
 2. On the card with the cluster, click **Remove from WAP**.
 
-   ![removefromcluster](../images/05-ManageDeployments/removefromcluster.png)
+   ![removefromcluster](../../images/whalealPlatFormImages/05-ManageDeployments/removefromcluster.png)
 
 1. Click the **Confirm** button in the pop-up window to confirm the removal
 
@@ -34,6 +34,6 @@ If you do not want to use Whaleal to manage the cluster, you can remove the clus
 
 2. On the card with the cluster, click **Turn off Monitoring**.
 
-   ![image-20240625142905266](../images/05-ManageDeployments/offMonitor.png)
+   ![image-20240625142905266](../../images/whalealPlatFormImages/05-ManageDeployments/offMonitor.png)
 
 1. Click the **Confirm** button in the pop-up window to confirm the removal

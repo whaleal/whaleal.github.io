@@ -10,7 +10,7 @@ Account configuration: users can configure whether the WAP account receives syst
 2. Click **Account**
 3. Click **Account Configuration**
 
-![AccountConfiguration](../images/12-Account/AccountConfiguration.png)
+![AccountConfiguration](../../images/whalealPlatFormImages/12-Account/AccountConfiguration.png)
 
 
 

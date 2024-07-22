@@ -5,7 +5,7 @@ Performance real-time monitoring can track and record the performance indicators
 1. Select your cluster and cluster nodes
 2. Click Real-time Diagnosis
 
-![Start Diagnose Session](../images/10-Diagnose/StartPerformance.png)
+![Start Diagnose Session](../../images/whalealPlatFromImages/10-Diagnose/StartPerformance.png)
 
 
 
@@ -13,12 +13,12 @@ Performance real-time monitoring can track and record the performance indicators
 
 You can view the comparison of monitoring indicators of different nodes in a cluster.
 
-![Start Diagnose Session](../images/10-Diagnose/MonitorComparson.png)
+![Start Diagnose Session](../../images/whalealPlatFromImages/10-Diagnose/MonitorComparson.png)
 
 1. Click Monitor Comparison
 2. You can choose the time range, node and indicator type for monitoring
 
-![Performance](../images/10-Diagnose/Performance1.png)
+![Performance](../../images/whalealPlatFromImages/10-Diagnose/Performance1.png)
 
-![Performance](../images/10-Diagnose/Performance2.png)
+![Performance](../../images/whalealPlatFromImages/10-Diagnose/Performance2.png)
 

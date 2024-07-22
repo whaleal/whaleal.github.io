@@ -220,7 +220,7 @@ password: password
 Reset Password and Login.
 
 
-​    ![02-login](../images/01-WhalealOverview/03-QuickStartOnPremise/02-login.png)
+​    ![02-login](../../images/whalealPlatFromImages/01-WhalealOverview/03-QuickStartOnPremise/02-login.png)
 
 
 
@@ -230,45 +230,45 @@ Reset Password and Login.
 
 1. Install and deploy the agent into the server. Each machine takes turns to do the following operations.
 
-   ![img](../images/01-WhalealOverview/03-QuickStartOnPremise/03-deploy-mongodb-server.png)
+   ![img](../../images/whalealPlatFromImages/01-WhalealOverview/03-QuickStartOnPremise/03-deploy-mongodb-server.png)
 
-   ![img](../images/01-WhalealOverview/03-QuickStartOnPremise/04-deploy-mongodb-server.png)
+   ![img](../../images/whalealPlatFromImages/01-WhalealOverview/03-QuickStartOnPremise/04-deploy-mongodb-server.png)
 
    
 
 2. After successful management, it will be displayed in the following figure.
 
-   ![img](../images/01-WhalealOverview/03-QuickStartOnPremise/05-hostList.png)
+   ![img](../../images/whalealPlatFromImages/01-WhalealOverview/03-QuickStartOnPremise/05-hostList.png)
 
 3. Upload MongoDB package.
 
-   ![img](../images/01-WhalealOverview/03-QuickStartOnPremise/06-mongodb-package.png)
+   ![img](../../images/whalealPlatFromImages/01-WhalealOverview/03-QuickStartOnPremise/06-mongodb-package.png)
 
 #### Build a MongoDB three-node replication set
 
 1.  Click to the MongoDB page and click **Replica Set** under **Create Cluster**.
 
-   ![img](../images/01-WhalealOverview/03-QuickStartOnPremise/07-mongodb-list.png)
+   ![img](../../images/whalealPlatFromImages/01-WhalealOverview/03-QuickStartOnPremise/07-mongodb-list.png)
 
 2. Create replication set node status information.
 
-   ![img](../images/01-WhalealOverview/03-QuickStartOnPremise/08-mongodb-deploy.png)
+   ![img](../../images/whalealPlatFromImages/01-WhalealOverview/03-QuickStartOnPremise/08-mongodb-deploy.png)
 
 3. Click on the **Show** to view the real-time creation log.
 
-   ![img](../images/01-WhalealOverview/03-QuickStartOnPremise/09-operational-events.png)
+   ![img](../../images/whalealPlatFromImages/01-WhalealOverview/03-QuickStartOnPremise/09-operational-events.png)
 
 4. Check the log to determine whether the cluster was created successfully.
 
-   ![img](../images/01-WhalealOverview/03-QuickStartOnPremise/10-operational-events.png)
+   ![img](../../images/whalealPlatFromImages/01-WhalealOverview/03-QuickStartOnPremise/10-operational-events.png)
 
 5. View information on each node in MongoDB
 
-   ![img](../images/01-WhalealOverview/03-QuickStartOnPremise/11-cluster-information.png)
+   ![img](../../images/whalealPlatFromImages/01-WhalealOverview/03-QuickStartOnPremise/11-cluster-information.png)
 
 6. Check the surveillance
 
-   ![img](../images/01-WhalealOverview/03-QuickStartOnPremise/12-monitor.png)
+   ![img](../../images/whalealPlatFromImages/01-WhalealOverview/03-QuickStartOnPremise/12-monitor.png)
 
    
 
@@ -278,7 +278,7 @@ Reset Password and Login.
 
    1. Click to the MongoDB page and open "Existing MongoDB Deployment".
 
-      ![img](../images/01-WhalealOverview/03-QuickStartOnPremise/13-existing-mongoDB-deployment.png)
+      ![img](../../images/whalealPlatFromImages/01-WhalealOverview/03-QuickStartOnPremise/13-existing-mongoDB-deployment.png)
 
    2. Fill in and copy relevant information
       a. Enter the cluster name of the replication set (custom)
@@ -287,17 +287,17 @@ Reset Password and Login.
       d. Add MongoDB's authenticated username and password
       e. Select the version number corresponding to the cluster
 
-      ![img](../images/01-WhalealOverview/03-QuickStartOnPremise/14-existing-mongoDB-deployment.png)
+      ![img](../../images/whalealPlatFromImages/01-WhalealOverview/03-QuickStartOnPremise/14-existing-mongoDB-deployment.png)
 
    3. Check the event log to determine whether the management was successful.
 
-      ![img](../images/01-WhalealOverview/03-QuickStartOnPremise/15-existing-event.png)
+      ![img](../../images/whalealPlatFromImages/01-WhalealOverview/03-QuickStartOnPremise/15-existing-event.png)
 
    4. View cluster node information.
 
-      ![img](../images/01-WhalealOverview/03-QuickStartOnPremise/16-mongodb-node.png)
+      ![img](../../images/whalealPlatFromImages/01-WhalealOverview/03-QuickStartOnPremise/16-mongodb-node.png)
 
    5. view the monitoring data.
 
-      ![img](../images/01-WhalealOverview/03-QuickStartOnPremise/17-mongodb-monitor.png)
+      ![img](../../images/whalealPlatFromImages/01-WhalealOverview/03-QuickStartOnPremise/17-mongodb-monitor.png)
 

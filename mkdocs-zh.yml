@@ -228,30 +228,30 @@ nav:
         - 作业明细: whalealData/UserManual/StatisticalReports/JobDetails.md
         - 数据历史流向: whalealData/UserManual/StatisticalReports/DataHistoricalFlow.md
     - 用例:
-      - 用户注册: whalealData/use cases/UserRegistration.md
-      - 用户登录: whalealData/use cases/UserLogin.md
-      - 添加数据源: whalealData/use cases/AddDataSource.md
-      - 添加目标源: whalealData/use cases/AddDestinationSource.md
-      - 添加温数据全量作业: whalealData/use cases/AddWarmDataFullLoadJob.md
-      - 添加冷数据全量作业: whalealData/use cases/AddColdDataFullLoadJob.md
-      - 添加S3全量作业: whalealData/use cases/AddS3FullLoadJob.md
-      - 添加温数据增量作业: whalealData/use cases/AddWarmDataIncrementalJob.md
-      - 添加冷数据增量作业: whalealData/use cases/AddColdDataIncrementalJob.md
-      - 添加S3增量作业: whalealData/use cases/AddS3IncrementalJob.md
-      - 创建单次任务: whalealData/use cases/CreateSingleTask.md
-      - 创建手工任务: whalealData/use cases/CreateManualTask.md
-      - 创建循环任务: whalealData/use cases/CreateLoopTask.md
-      - 任务执行监控: whalealData/use cases/TaskExecutionMonitoring.md
-      - 异常任务重新执行: whalealData/use cases/RetryAbnormalTask.md
-      - 异常任务回写: whalealData/use cases/AbnormalTaskFeedback.md
-      - 系统删除源端数据: whalealData/use cases/SystemDeleteSourceData.md
-      - 手动删除源端数据: whalealData/use cases/ManuallyDeleteSourceData.md
-      - 冷数据回写: whalealData/use cases/ColdDataWriteBack.md
-      - 冷数据全文检索: whalealData/use cases/ColdDataFullTextSearch.md
-      - SMTP邮件设置: whalealData/use cases/SMTPConfig.md
-      - 温作业Demo: whalealData/use cases/WarmJobDemo.md
-      - 冷作业Demo: whalealData/use cases/ColdWorkDemo.md
-      - S3作业Demo: whalealData/use cases/S3JobDemo.md
+      - 用户注册: whalealData/UseCase/UserRegistration.md
+      - 用户登录: whalealData/UseCase/UserLogin.md
+      - 添加数据源: whalealData/UseCase/AddDataSource.md
+      - 添加目标源: whalealData/UseCase/AddDestinationSource.md
+      - 添加温数据全量作业: whalealData/UseCase/AddWarmDataFullLoadJob.md
+      - 添加冷数据全量作业: whalealData/UseCase/AddColdDataFullLoadJob.md
+      - 添加S3全量作业: whalealData/UseCase/AddS3FullLoadJob.md
+      - 添加温数据增量作业: whalealData/UseCase/AddWarmDataIncrementalJob.md
+      - 添加冷数据增量作业: whalealData/UseCase/AddColdDataIncrementalJob.md
+      - 添加S3增量作业: whalealData/UseCase/AddS3IncrementalJob.md
+      - 创建单次任务: whalealData/UseCase/CreateSingleTask.md
+      - 创建手工任务: whalealData/UseCase/CreateManualTask.md
+      - 创建循环任务: whalealData/UseCase/CreateLoopTask.md
+      - 任务执行监控: whalealData/UseCase/TaskExecutionMonitoring.md
+      - 异常任务重新执行: whalealData/UseCase/RetryAbnormalTask.md
+      - 异常任务回写: whalealData/UseCase/AbnormalTaskFeedback.md
+      - 系统删除源端数据: whalealData/UseCase/SystemDeleteSourceData.md
+      - 手动删除源端数据: whalealData/UseCase/ManuallyDeleteSourceData.md
+      - 冷数据回写: whalealData/UseCase/ColdDataWriteBack.md
+      - 冷数据全文检索: whalealData/UseCase/ColdDataFullTextSearch.md
+      - SMTP邮件设置: whalealData/UseCase/SMTPConfig.md
+      - 温作业Demo: whalealData/UseCase/WarmJobDemo.md
+      - 冷作业Demo: whalealData/UseCase/ColdWorkDemo.md
+      - S3作业Demo: whalealData/UseCase/S3JobDemo.md
 
   - Document Data Transfer:  # Document Data Transfer
     - DocumentDataTransfer/index.md

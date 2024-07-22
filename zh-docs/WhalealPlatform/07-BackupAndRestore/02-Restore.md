@@ -14,7 +14,7 @@ To restore your backup, use one of these options:
 * Restore the files to another cluster using automation
 * Restore the files to current cluster using automation
 
-![01-Restore](../images/07-BackupAndRestore/02-Restore/01-Restore.png)
+![01-Restore](../../images/whalealPlatFromImages/07-BackupAndRestore/02-Restore/01-Restore.png)
 
 ## Restore
 

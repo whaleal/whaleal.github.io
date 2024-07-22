@@ -16,11 +16,11 @@ Whaleal provides a wizard for adding your existing MongoDB deployments to monito
 
 1. Click the **Create Cluster** dropdown menu.
 
-   ![StandaloneAdvanced](../images/04-CreateDeployment/CreateCluster.png)
+   ![StandaloneAdvanced](../../images/whalealPlatFormImages/04-CreateDeployment/CreateCluster.png)
 
 2. Select **Standalone**.
 
-   ![StandaloneAdvanced](../images/04-CreateDeployment/AllCluster.png)
+   ![StandaloneAdvanced](../../images/whalealPlatFormImages/04-CreateDeployment/AllCluster.png)
 
 ### Configure the standalone MongoDB instance.
 
@@ -45,7 +45,7 @@ To add an option:
 
 1. Click **Add Option**.
 
-   ![StandaloneAdvanced](../images/04-CreateDeployment/Standalone.png)
+   ![StandaloneAdvanced](../../images/whalealPlatFormImages/04-CreateDeployment/Standalone.png)
 
 2. Select a Startup Option.
 

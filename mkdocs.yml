@@ -62,7 +62,7 @@ theme:
     - search.share                # Search Query can be copied to Clipboard
     - search.suggest              # Display likeliest completion for the last queried word
     - content.code.copy
-    
+
   palette:
     # Light Mode
     - media: "(prefers-color-scheme: light)"
@@ -90,7 +90,7 @@ nav:
   - Home: index.md
   - Whaleal Platform:
     - WhalealPlatform/index.md
-    - Whaleal Overview: 
+    - Whaleal Overview:
       - Whaleal Architecture: WhalealPlatform/01-WhalealOverview/01-WhalealArchitecture.md
       - Example Deployment: WhalealPlatform/01-WhalealOverview/02-ExampleDeployment.md
       - QuickStart On Premise: WhalealPlatform/01-WhalealOverview/03-QuickStartOnPremise.md
@@ -115,7 +115,7 @@ nav:
       - Deploy ReplicaSet: WhalealPlatform/04-CreateDeployment/05-DeployReplicaSet.md
       - Deploy Sharded Cluster: WhalealPlatform/04-CreateDeployment/06-DeployShardedCluster.md
       - Deploy Existing Cluster: WhalealPlatform/04-CreateDeployment/07-DeployExistingCluster.md
-    - Manage Deployments: 
+    - Manage Deployments:
       - View All Clusters: WhalealPlatform/05-ManageDeployments/01-ViewAllClusters.md
       - Edit Deployment Configuration: WhalealPlatform/05-ManageDeployments/02-EditDeploymentConfiguration.md
       - Edit ReplicaSet: WhalealPlatform/05-ManageDeployments/03-EditsReplicaSets.md
@@ -141,7 +141,7 @@ nav:
         - Enable X509 Authentication: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/03-EnableX509Authentication.md
         - Manage MongoDB Users and Roles: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/04-ManageMongoDBUsersandRoles.md
         - Configure and Deploy Auditing: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/05-ConfigureandDeployAuditing.md
-    - Alert: 
+    - Alert:
       - Host Alert: WhalealPlatform/09-Alert/01-HostAlert.md
       - MongoDB Alert: WhalealPlatform/09-Alert/02-MongoDBAlert.md
       - Project Alert: WhalealPlatform/09-Alert/03-ProjectAlert.md
@@ -182,8 +182,8 @@ nav:
       - Agent: WhalealPlatform/17-FrequentlyAskedQuestions/05-Agent.md
     - Release Notes:
       - Whaleal Changelog: WhalealPlatform/18-ReleaseNotes/01-WhalealChangelog.md
-  
-  - Whaleal Data:   # whaleal data 
+
+  - Whaleal Data:   # whaleal data
     - whalealData/index.md
     - InstallationDeployment:
       - InstallationRequirements: whalealData/InstallationDeployment/InstallationRequirements.md
@@ -226,31 +226,31 @@ nav:
         - RollbackRecordsStatistics: whalealData/UserManual/StatisticalReports/RollbackRecordsStatistics.md
         - JobDetails: whalealData/UserManual/StatisticalReports/JobDetails.md
         - DataHistoricalFlow: whalealData/UserManual/StatisticalReports/DataHistoricalFlow.md
-    - use Cases:
-      - UserRegistration: whalealData/use cases/UserRegistration.md
-      - UserLogin: whalealData/use cases/UserLogin.md
-      - AddDataSource: whalealData/use cases/AddDataSource.md
-      - AddDestinationSource: whalealData/use cases/AddDestinationSource.md
-      - AddWarmDataFullLoadJob: whalealData/use cases/AddWarmDataFullLoadJob.md
-      - AddColdDataFullLoadJob: whalealData/use cases/AddColdDataFullLoadJob.md
-      - AddS3FullLoadJob: whalealData/use cases/AddS3FullLoadJob.md
-      - AddWarmDataIncrementalJob: whalealData/use cases/AddWarmDataIncrementalJob.md
-      - AddColdDataIncrementalJob: whalealData/use cases/AddColdDataIncrementalJob.md
-      - AddS3IncrementalJob: whalealData/use cases/AddS3IncrementalJob.md
-      - CreateSingleTask: whalealData/use cases/CreateSingleTask.md
-      - CreateManualTask: whalealData/use cases/CreateManualTask.md
-      - CreateLoopTask: whalealData/use cases/CreateLoopTask.md
-      - TaskExecutionMonitoring: whalealData/use cases/TaskExecutionMonitoring.md
-      - RetryAbnormalTask: whalealData/use cases/RetryAbnormalTask.md
-      - AbnormalTaskFeedback: whalealData/use cases/AbnormalTaskFeedback.md
-      - SystemDeleteSourceData: whalealData/use cases/SystemDeleteSourceData.md
-      - ManuallyDeleteSourceData: whalealData/use cases/ManuallyDeleteSourceData.md
-      - ColdDataWriteBack: whalealData/use cases/ColdDataWriteBack.md
-      - ColdDataFullTextSearch: whalealData/use cases/ColdDataFullTextSearch.md
-      - SMTPConfig: whalealData/use cases/SMTPConfig.md
-      - WarmJobDemo: whalealData/use cases/WarmJobDemo.md
-      - ColdWorkDemo: whalealData/use cases/ColdWorkDemo.md
-      - S3JobDemo: whalealData/use cases/S3JobDemo.md
+    - UseCase:
+      - UserRegistration: whalealData/UseCase/UserRegistration.md
+      - UserLogin: whalealData/UseCase/UserLogin.md
+      - AddDataSource: whalealData/UseCase/AddDataSource.md
+      - AddDestinationSource: whalealData/UseCase/AddDestinationSource.md
+      - AddWarmDataFullLoadJob: whalealData/UseCase/AddWarmDataFullLoadJob.md
+      - AddColdDataFullLoadJob: whalealData/UseCase/AddColdDataFullLoadJob.md
+      - AddS3FullLoadJob: whalealData/UseCase/AddS3FullLoadJob.md
+      - AddWarmDataIncrementalJob: whalealData/UseCase/AddWarmDataIncrementalJob.md
+      - AddColdDataIncrementalJob: whalealData/UseCase/AddColdDataIncrementalJob.md
+      - AddS3IncrementalJob: whalealData/UseCase/AddS3IncrementalJob.md
+      - CreateSingleTask: whalealData/UseCase/CreateSingleTask.md
+      - CreateManualTask: whalealData/UseCase/CreateManualTask.md
+      - CreateLoopTask: whalealData/UseCase/CreateLoopTask.md
+      - TaskExecutionMonitoring: whalealData/UseCase/TaskExecutionMonitoring.md
+      - RetryAbnormalTask: whalealData/UseCase/RetryAbnormalTask.md
+      - AbnormalTaskFeedback: whalealData/UseCase/AbnormalTaskFeedback.md
+      - SystemDeleteSourceData: whalealData/UseCase/SystemDeleteSourceData.md
+      - ManuallyDeleteSourceData: whalealData/UseCase/ManuallyDeleteSourceData.md
+      - ColdDataWriteBack: whalealData/UseCase/ColdDataWriteBack.md
+      - ColdDataFullTextSearch: whalealData/UseCase/ColdDataFullTextSearch.md
+      - SMTPConfig: whalealData/UseCase/SMTPConfig.md
+      - WarmJobDemo: whalealData/UseCase/WarmJobDemo.md
+      - ColdWorkDemo: whalealData/UseCase/ColdWorkDemo.md
+      - S3JobDemo: whalealData/UseCase/S3JobDemo.md
 
   - Document Data Transfer:  # Document Data Transfer
     - DocumentDataTransfer/index.md
@@ -280,5 +280,5 @@ extra:
 
 plugins:
   - search
-  - roamlinks 
+  - roamlinks
 

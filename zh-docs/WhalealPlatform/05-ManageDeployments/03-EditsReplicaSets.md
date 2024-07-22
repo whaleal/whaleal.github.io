@@ -22,7 +22,7 @@ You must have an existing server to which to deploy the new replica set member. 
 
 3. In **Member Configuration**, click **Add+**.
 
-   ![image-20240625133723128](../images/05-ManageDeployments/add.png)
+   ![image-20240625133723128](../../images/whalealPlatFromImages/05-ManageDeployments/add.png)
 
 4. In **Hostname**, select the host that you want to add as a new member of the replica set.
 
@@ -61,7 +61,7 @@ You must have an existing server to which to deploy the new replica set member. 
 
    
 
-   ![edit](../images/05-ManageDeployments/edit.png)
+   ![edit](../../images/whalealPlatFromImages/05-ManageDeployments/edit.png)
 
 1. Click **Update**.
 
@@ -79,7 +79,7 @@ You must have an existing server to which to deploy the new replica set member. 
 
 3. In **Member Configuration**, to find the target mongod process, click the red delete button on the right.
 
-   ![image-20240625133723128](../images/05-ManageDeployments/delete.png)
+   ![image-20240625133723128](../../images/whalealPlatFromImages/05-ManageDeployments/delete.png)
 
 1. Click **Update**.
 
@@ -97,6 +97,6 @@ You must have an existing server to which to deploy the new replica set member. 
 
 3. Configure the replica set in **Cluster Configuration**.
 
-   ![cluserConfig](../images/05-ManageDeployments/config.png)
+   ![cluserConfig](../../images/whalealPlatFromImages/05-ManageDeployments/config.png)
 
 1. Click **Update**.

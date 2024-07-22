@@ -16,13 +16,13 @@ Ensure that there are no event group operations currently, and if there are, wai
 
 Event group confirmation currently being performed:
 
-![01-eventGroup](../images/15-AdministratorWhaleal/03-UpgradeVersion/01-eventGroup.png)
+![01-eventGroup](../../images/whalealPlatFromImages/15-AdministratorWhaleal/03-UpgradeVersion/01-eventGroup.png)
 
 
 
 Event group terminated:
 
-![02-eventGroup](../images/15-AdministratorWhaleal/03-UpgradeVersion/02-eventGroup.png)
+![02-eventGroup](../../images/whalealPlatFromImages/15-AdministratorWhaleal/03-UpgradeVersion/02-eventGroup.png)
 
 
 
@@ -38,7 +38,7 @@ Ensure that there are no backup tasks currently operating, and if there are, wai
 
 Confirm whether there are any backup tasks in progress:
 
-![03-backupTask](../images/15-AdministratorWhaleal/03-UpgradeVersion/03-backupTask.png)
+![03-backupTask](../../images/whalealPlatFromImages/15-AdministratorWhaleal/03-UpgradeVersion/03-backupTask.png)
 
 
 

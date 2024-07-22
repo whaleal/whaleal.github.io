@@ -30,7 +30,7 @@ Replica set, sharded cluster, and shard names within the same project must be un
 
 Click the **Create Cluster** arrow in the top-right of the **MongoDB** page. Select **Sharding Cluster** from the drop-down menu to open the **Create Sharding Cluster** view.
 
-![StandaloneAdvanced](../images/04-CreateDeployment/shardCluster.png)
+![StandaloneAdvanced](../../images/whalealPlatFromImages/04-CreateDeployment/shardCluster.png)
 
 ### Configure Cluster-Wide Settings.
 
@@ -126,7 +126,7 @@ To add an option:
 
 1. Click **Advanced Configuration**.
 
-   ![StandaloneAdvanced](../images/04-CreateDeployment/Advanced.png)
+   ![StandaloneAdvanced](../../images/whalealPlatFromImages/04-CreateDeployment/Advanced.png)
 
 2. Click **Add Option** and select the configuration option.
 

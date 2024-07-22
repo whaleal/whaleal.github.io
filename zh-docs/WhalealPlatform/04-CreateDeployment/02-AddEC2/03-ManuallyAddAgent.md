@@ -4,17 +4,17 @@
 
 2. Visit Whaleal and click Server>EC2>Add Host>Mode One on the left side of the navigation bar
 
-   ![hostlist](../../images/04-CreateDeployment/ServerEC2.png)
+   ![hostlist](../../../images/whalealPlatFromImages/04-CreateDeployment/ServerEC2.png)
 
 3. Select Project, then click **Generate AGENT_ID**
 
-   ![hostlist](../../images/04-CreateDeployment/tip.png)
+   ![hostlist](../../../images/whalealPlatFromImages/04-CreateDeployment/tip.png)
 
 4. Install the agent
 
    Follow the prompts to execute all commands
 
-   ![hostlist](../../images/04-CreateDeployment/installagent.png)
+   ![hostlist](../../../images/whalealPlatFromImages/04-CreateDeployment/installagent.png)
 
 5. View the agent process
 
@@ -24,8 +24,7 @@
 
 6. Go to Whaleal to check the EC2 management progress.
 
-   ![hostlist](../../images/04-CreateDeployment/hostlist.png)
+   ![hostlist](../../../images/whalealPlatFromImages/04-CreateDeployment/hostlist.png)
 
    
 
-   

@@ -4,30 +4,30 @@ Explain Plan (execution plan) is used to explain the execution method and optimi
 
 1. Select Cluster Name
 
-   ![Start Diagnose Session](../images/10-Diagnose/excname.png)
+   ![Start Diagnose Session](../../images/whalealPlatFromImages/10-Diagnose/excname.png)
 
 2. Select a database and click on it to enter the database.
 
-   ![Start Diagnose Session](../images/10-Diagnose/database.png)
+   ![Start Diagnose Session](../../images/whalealPlatFromImages/10-Diagnose/database.png)
 
 3. Select a collection and click on it to enter the collection.
 
-   ![Start Diagnose Session](../images/10-Diagnose/collection.png)
+   ![Start Diagnose Session](../../images/whalealPlatFromImages/10-Diagnose/collection.png)
 
 4. Fill in the statement to be executed in the **FILTER**, and then click the **Find** button
 
-   ![Start Diagnose Session](../images/10-Diagnose/find.png)
+   ![Start Diagnose Session](../../images/whalealPlatFromImages/10-Diagnose/find.png)
 
 5. Fill in the statement to be executed in the **FILTER**, and then click the **explain** button
 
-   ![Start Diagnose Session](../images/10-Diagnose/explain.png)
+   ![Start Diagnose Session](../../images/whalealPlatFromImages/10-Diagnose/explain.png)
 
 ### Explain Result
 
 Visual Tree:Formatted explain result
 
-![Start Diagnose Session](../images/10-Diagnose/VisualTree.png)
+![Start Diagnose Session](../../images/whalealPlatFromImages/10-Diagnose/VisualTree.png)
 
 Raw Json:Complete explain result
 
-![Start Diagnose Session](../images/10-Diagnose/explainresullt.png)
+![Start Diagnose Session](../../images/whalealPlatFromImages/10-Diagnose/explainresullt.png)

@@ -6,7 +6,7 @@
 
 Displays a list of all snapshots, including snapshot files, creation time, expiration time, backup progress and other information of all nodes in the cluster. You can also view the running log of the entire backup cycle through Event Log.
 
-![02-BackUp](../../images/07-BackupAndRestore/01-Backup/02-BackUp.png)
+![02-BackUp](../../../images/whalealPlatFormImages/07-BackupAndRestore/01-Backup/02-BackUp.png)
 
 | Parameters           | Description                                                  |
 | -------------------- | ------------------------------------------------------------ |
@@ -25,7 +25,7 @@ Displays a list of all snapshots, including snapshot files, creation time, expir
 
 A list of backup data recovery tasks displays all backup and recovery operation records, and contains detailed information about specific tasks, including task execution time, task execution log, etc.
 
-![02-Restore](../../images/07-BackupAndRestore/01-Backup/03-Restore.png)
+![02-Restore](../../../images/whalealPlatFormImages/07-BackupAndRestore/01-Backup/03-Restore.png)
 
 | Parameters       | Description                                        |
 | ---------------- | -------------------------------------------------- |

@@ -4,7 +4,7 @@ Mongodb installation package management. To build Mongodb using the WAP platform
 
 
 
-![MongoDBPackage](../images/13-Setting/MongoDBPackage.png)
+![MongoDBPackage](../../images/whalealPlatFormImages/13-Setting/MongoDBPackage.png)
 
 ## Upload installation package steps
 

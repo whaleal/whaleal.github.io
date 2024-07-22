@@ -18,13 +18,13 @@ home_description: |
 # Gradient Color
 home_gradient_hsla: hsla(0deg,47%,55%,1) # Default Green: hsla(160deg,47%,55%,1)
 
-# Custom Homepage Button(s)
-home_button1_name: Whaleal Platform                  # Comment this parameter out to remove the button.
-home_button1_url: WhalealPlatform/                       # This path starts at your root mkdocs directory.
-home_button1_theme: md-button md-button--primary # Options: "md-button", "md-button md-button--primary"
-home_button1_icon: people                        # Options: "people", "gear", "image"
-home_button1_blurb: |                            # Short description of this button / section.
-  Whaleal Platform (WAP) 是一个智能运维和托管平台，为您的 MongoDB 服务提供 7*24 小时的实时监控和管理。
+# # Custom Homepage Button(s)
+# home_button1_name: Whaleal Platform                  # Comment this parameter out to remove the button.
+# home_button1_url: WhalealPlatform/                       # This path starts at your root mkdocs directory.
+# home_button1_theme: md-button md-button--primary # Options: "md-button", "md-button md-button--primary"
+# home_button1_icon: people                        # Options: "people", "gear", "image"
+# home_button1_blurb: |                            # Short description of this button / section.
+#   Whaleal Platform (WAP) 是一个智能运维和托管平台，为您的 MongoDB 服务提供 7*24 小时的实时监控和管理。
 
 home_button2_name: Whaleal Data   # Comment this parameter out to remove the button.
 home_button2_url: whalealData/    # This path starts at your root mkdocs directory.

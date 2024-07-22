@@ -267,7 +267,7 @@ nav:
       - FullTesting: DocumentDataTransfer/Usecase/FullTesting.md
       - RealTimeTest: DocumentDataTransfer/Usecase/RealTimeTest.md
 
-  - Support: whalealSupport/index.md
+  # - Support: whalealSupport/index.md
 
 extra:
   alternate:

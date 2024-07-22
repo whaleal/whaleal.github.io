@@ -90,99 +90,99 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Whaleal Platform:
-    - WhalealPlatform/index.md
-    - Whaleal Overview:
-      - Whaleal Architecture: WhalealPlatform/01-WhalealOverview/01-WhalealArchitecture.md
-      - Example Deployment: WhalealPlatform/01-WhalealOverview/02-ExampleDeployment.md
-      - QuickStart On Premise: WhalealPlatform/01-WhalealOverview/03-QuickStartOnPremise.md
-      - QuickStart On Marketplace: WhalealPlatform/01-WhalealOverview/04-QuickStartOnMarketplace.md
-    - Install Whaleal:
-      - Installation Checklist: WhalealPlatform/02-InstallWhaleal/01-InstallationChecklist.md
-      - Hardware And Software Requirements: WhalealPlatform/02-InstallWhaleal/02-HardwareAndSoftwareRequirements.md
-      - InstallWhaleal:
-        - Install Whaleal In AWS MarketPlace: WhalealPlatform/02-InstallWhaleal/03-InstallWhaleal/01-InstallWhalealInAWSMarketPlace.md
-        - Install Whaleal In Docker: WhalealPlatform/02-InstallWhaleal/03-InstallWhaleal/02-InstallWhalealinDocker.md
-        - On Premise Install Whaleal: WhalealPlatform/02-InstallWhaleal/03-InstallWhaleal/03-OnPremiseInstallWhaleal.md
-    - Projects:
-      - Projects: WhalealPlatform/03-Projects/01-Projects.md
-    - Create Deployment:
-      - Deployment Prerequisites: WhalealPlatform/04-CreateDeployment/01-DeploymentPrerequisites.md
-      - Add EC2:
-        - Resource Quota: WhalealPlatform/04-CreateDeployment/02-AddEC2/01-ResourceQuota.md
-        - Subscribe Agent: WhalealPlatform/04-CreateDeployment/02-AddEC2/02-SubscribeAgent.md
-        - Manually Add Agent: WhalealPlatform/04-CreateDeployment/02-AddEC2/03-ManuallyAddAgent.md
-      - Add K8S Cluster: WhalealPlatform/04-CreateDeployment/03-AddK8SCluster.md
-      - Deploy Standalone: WhalealPlatform/04-CreateDeployment/04-DeployStandalone.md
-      - Deploy ReplicaSet: WhalealPlatform/04-CreateDeployment/05-DeployReplicaSet.md
-      - Deploy Sharded Cluster: WhalealPlatform/04-CreateDeployment/06-DeployShardedCluster.md
-      - Deploy Existing Cluster: WhalealPlatform/04-CreateDeployment/07-DeployExistingCluster.md
-    - Manage Deployments:
-      - View All Clusters: WhalealPlatform/05-ManageDeployments/01-ViewAllClusters.md
-      - Edit Deployment Configuration: WhalealPlatform/05-ManageDeployments/02-EditDeploymentConfiguration.md
-      - Edit ReplicaSet: WhalealPlatform/05-ManageDeployments/03-EditsReplicaSets.md
-      - Sharded Cluster Operations: WhalealPlatform/05-ManageDeployments/04-ShardedClusterOperations.md
-      - Stop Managingandor Monitoring One Deployment: WhalealPlatform/05-ManageDeployments/05-StopManagingandorMonitoringOneDeployment.md
-      - MongoDB Operation: WhalealPlatform/05-ManageDeployments/06-MongoDBOperation.md
-    - Monitor:
-      - Monitoring Instructions: WhalealPlatform/06-Monitor/01-MonitoringInstructions.md
-      - Usage Monitoring: WhalealPlatform/06-Monitor/02-UsageMonitoring.md
-      - Monitoring indicator details: WhalealPlatform/06-Monitor/03-MonitoringIndicatorDetails.md
-    - Backup And Restore:
-      - Backup:
-        - Create Repository: WhalealPlatform/07-BackupAndRestore/01-Backup/01-CreateRepository.md
-        - Operations: WhalealPlatform/07-BackupAndRestore/01-Backup/02-Operations.md
-      - Restore: WhalealPlatform/07-BackupAndRestore/02-Restore.md
-    - Security:
-      - Configure Firewall to Access Whaleal: WhalealPlatform/08-Security/01-ConfigureFirewalltoAccessWhaleal.md
-      - Secure MongoDB Deployment swith Authentication:
-        - MongoDB Access Control: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/01-MongoDBAccessControl.md
-        - Enable Username Password Authentication: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/02-EnableUsernamePasswordAuthentication.md
-        - Enable X509 Authentication: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/03-EnableX509Authentication.md
-        - Manage MongoDB Users and Roles: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/04-ManageMongoDBUsersandRoles.md
-        - Configure and Deploy Auditing: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/05-ConfigureandDeployAuditing.md
-    - Alert:
-      - Host Alert: WhalealPlatform/09-Alert/01-HostAlert.md
-      - MongoDB Alert: WhalealPlatform/09-Alert/02-MongoDBAlert.md
-      - Project Alert: WhalealPlatform/09-Alert/03-ProjectAlert.md
-    - Diagnose:
-      - ClusterInfo: WhalealPlatform/10-Diagnose/01-ClusterInfo.md
-      - Cluster Health: WhalealPlatform/10-Diagnose/02-ClusterHealth.md
-      - Performance: WhalealPlatform/10-Diagnose/03-Performance.md
-      - LogVis: WhalealPlatform/10-Diagnose/04-LogVis.md
-      - ExploreData: WhalealPlatform/10-Diagnose/05-ExploreData.md
-    - Audit:
-      - Audit: WhalealPlatform/11-Audit/01-Audit.md
-    - Account:
-      - user Center: WhalealPlatform/12-Account/01-usercenter.md
-      - User Management: WhalealPlatform/12-Account/02-UserManagement.md
-      - Account Configuration: WhalealPlatform/12-Account/03-AccountConfiguration.md
-    - Setting:
-      - MongoDB Packge: WhalealPlatform/13-Setting/01-MongoDBPackge.md
-      - SMTP: WhalealPlatform/13-Setting/02-SMTP.md
-      - Collection Granularity: WhalealPlatform/13-Setting/03-CollectionGranularity.md
-      - Kubernetes: WhalealPlatform/13-Setting/04-Kubernetes.md
-      - S3: WhalealPlatform/13-Setting/05-S3.md
-      - Version: WhalealPlatform/13-Setting/06-Version.md
-    - Support:
-      - Cluster Inspection: WhalealPlatform/14-Support/01-ClusterInspection.md
-    - Administrator Whaleal:
-      - Start And Stop Whaleal Application: WhalealPlatform/15-AdministerWhaleal/01-StartAndStopWhalealApplication.md
-      - IntegrationwithPrometheus: WhalealPlatform/15-AdministratorWhaleal/02-IntegrationwithPrometheus.md
-      - Upgrade Version: WhalealPlatform/15-AdministratorWhaleal/03-UpgradeVersion.md
-    - Troubleshooting:
-      - EC2 and K8S: WhalealPlatform/16-Troubleshooting/01-EC2andK8S.md
-      - MongoDB Monitoring: WhalealPlatform/16-Troubleshooting/02-MongoDBMonitoring.md
-      - MongoDB Upgrade Downgrade: WhalealPlatform/16-Troubleshooting/03-MongoDBUpgradeDowngrade.md
-      - Backup and Restore: WhalealPlatform/16-Troubleshooting/04-BackupandRestore.md
-    - Frequently Asked Questions:
-      - WAP: WhalealPlatform/17-FrequentlyAskedQuestions/01-WAP.md
-      - Monitor: WhalealPlatform/17-FrequentlyAskedQuestions/02-Monitor.md
-      - Backup: WhalealPlatform/17-FrequentlyAskedQuestions/03-Backup.md
-      - Service: WhalealPlatform/17-FrequentlyAskedQuestions/04-Service.md
-      - Agent: WhalealPlatform/17-FrequentlyAskedQuestions/05-Agent.md
-    - Release Notes:
-      - Whaleal Changelog: WhalealPlatform/18-ReleaseNotes/01-WhalealChangelog.md
+  # - Whaleal Platform:
+  #   - WhalealPlatform/index.md
+  #   - Whaleal Overview:
+  #     - Whaleal Architecture: WhalealPlatform/01-WhalealOverview/01-WhalealArchitecture.md
+  #     - Example Deployment: WhalealPlatform/01-WhalealOverview/02-ExampleDeployment.md
+  #     - QuickStart On Premise: WhalealPlatform/01-WhalealOverview/03-QuickStartOnPremise.md
+  #     - QuickStart On Marketplace: WhalealPlatform/01-WhalealOverview/04-QuickStartOnMarketplace.md
+  #   - Install Whaleal:
+  #     - Installation Checklist: WhalealPlatform/02-InstallWhaleal/01-InstallationChecklist.md
+  #     - Hardware And Software Requirements: WhalealPlatform/02-InstallWhaleal/02-HardwareAndSoftwareRequirements.md
+  #     - InstallWhaleal:
+  #       - Install Whaleal In AWS MarketPlace: WhalealPlatform/02-InstallWhaleal/03-InstallWhaleal/01-InstallWhalealInAWSMarketPlace.md
+  #       - Install Whaleal In Docker: WhalealPlatform/02-InstallWhaleal/03-InstallWhaleal/02-InstallWhalealinDocker.md
+  #       - On Premise Install Whaleal: WhalealPlatform/02-InstallWhaleal/03-InstallWhaleal/03-OnPremiseInstallWhaleal.md
+  #   - Projects:
+  #     - Projects: WhalealPlatform/03-Projects/01-Projects.md
+  #   - Create Deployment:
+  #     - Deployment Prerequisites: WhalealPlatform/04-CreateDeployment/01-DeploymentPrerequisites.md
+  #     - Add EC2:
+  #       - Resource Quota: WhalealPlatform/04-CreateDeployment/02-AddEC2/01-ResourceQuota.md
+  #       - Subscribe Agent: WhalealPlatform/04-CreateDeployment/02-AddEC2/02-SubscribeAgent.md
+  #       - Manually Add Agent: WhalealPlatform/04-CreateDeployment/02-AddEC2/03-ManuallyAddAgent.md
+  #     - Add K8S Cluster: WhalealPlatform/04-CreateDeployment/03-AddK8SCluster.md
+  #     - Deploy Standalone: WhalealPlatform/04-CreateDeployment/04-DeployStandalone.md
+  #     - Deploy ReplicaSet: WhalealPlatform/04-CreateDeployment/05-DeployReplicaSet.md
+  #     - Deploy Sharded Cluster: WhalealPlatform/04-CreateDeployment/06-DeployShardedCluster.md
+  #     - Deploy Existing Cluster: WhalealPlatform/04-CreateDeployment/07-DeployExistingCluster.md
+  #   - Manage Deployments:
+  #     - View All Clusters: WhalealPlatform/05-ManageDeployments/01-ViewAllClusters.md
+  #     - Edit Deployment Configuration: WhalealPlatform/05-ManageDeployments/02-EditDeploymentConfiguration.md
+  #     - Edit ReplicaSet: WhalealPlatform/05-ManageDeployments/03-EditsReplicaSets.md
+  #     - Sharded Cluster Operations: WhalealPlatform/05-ManageDeployments/04-ShardedClusterOperations.md
+  #     - Stop Managingandor Monitoring One Deployment: WhalealPlatform/05-ManageDeployments/05-StopManagingandorMonitoringOneDeployment.md
+  #     - MongoDB Operation: WhalealPlatform/05-ManageDeployments/06-MongoDBOperation.md
+  #   - Monitor:
+  #     - Monitoring Instructions: WhalealPlatform/06-Monitor/01-MonitoringInstructions.md
+  #     - Usage Monitoring: WhalealPlatform/06-Monitor/02-UsageMonitoring.md
+  #     - Monitoring indicator details: WhalealPlatform/06-Monitor/03-MonitoringIndicatorDetails.md
+  #   - Backup And Restore:
+  #     - Backup:
+  #       - Create Repository: WhalealPlatform/07-BackupAndRestore/01-Backup/01-CreateRepository.md
+  #       - Operations: WhalealPlatform/07-BackupAndRestore/01-Backup/02-Operations.md
+  #     - Restore: WhalealPlatform/07-BackupAndRestore/02-Restore.md
+  #   - Security:
+  #     - Configure Firewall to Access Whaleal: WhalealPlatform/08-Security/01-ConfigureFirewalltoAccessWhaleal.md
+  #     - Secure MongoDB Deployment swith Authentication:
+  #       - MongoDB Access Control: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/01-MongoDBAccessControl.md
+  #       - Enable Username Password Authentication: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/02-EnableUsernamePasswordAuthentication.md
+  #       - Enable X509 Authentication: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/03-EnableX509Authentication.md
+  #       - Manage MongoDB Users and Roles: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/04-ManageMongoDBUsersandRoles.md
+  #       - Configure and Deploy Auditing: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/05-ConfigureandDeployAuditing.md
+  #   - Alert:
+  #     - Host Alert: WhalealPlatform/09-Alert/01-HostAlert.md
+  #     - MongoDB Alert: WhalealPlatform/09-Alert/02-MongoDBAlert.md
+  #     - Project Alert: WhalealPlatform/09-Alert/03-ProjectAlert.md
+  #   - Diagnose:
+  #     - ClusterInfo: WhalealPlatform/10-Diagnose/01-ClusterInfo.md
+  #     - Cluster Health: WhalealPlatform/10-Diagnose/02-ClusterHealth.md
+  #     - Performance: WhalealPlatform/10-Diagnose/03-Performance.md
+  #     - LogVis: WhalealPlatform/10-Diagnose/04-LogVis.md
+  #     - ExploreData: WhalealPlatform/10-Diagnose/05-ExploreData.md
+  #   - Audit:
+  #     - Audit: WhalealPlatform/11-Audit/01-Audit.md
+  #   - Account:
+  #     - user Center: WhalealPlatform/12-Account/01-usercenter.md
+  #     - User Management: WhalealPlatform/12-Account/02-UserManagement.md
+  #     - Account Configuration: WhalealPlatform/12-Account/03-AccountConfiguration.md
+  #   - Setting:
+  #     - MongoDB Packge: WhalealPlatform/13-Setting/01-MongoDBPackge.md
+  #     - SMTP: WhalealPlatform/13-Setting/02-SMTP.md
+  #     - Collection Granularity: WhalealPlatform/13-Setting/03-CollectionGranularity.md
+  #     - Kubernetes: WhalealPlatform/13-Setting/04-Kubernetes.md
+  #     - S3: WhalealPlatform/13-Setting/05-S3.md
+  #     - Version: WhalealPlatform/13-Setting/06-Version.md
+  #   - Support:
+  #     - Cluster Inspection: WhalealPlatform/14-Support/01-ClusterInspection.md
+  #   - Administrator Whaleal:
+  #     - Start And Stop Whaleal Application: WhalealPlatform/15-AdministerWhaleal/01-StartAndStopWhalealApplication.md
+  #     - IntegrationwithPrometheus: WhalealPlatform/15-AdministratorWhaleal/02-IntegrationwithPrometheus.md
+  #     - Upgrade Version: WhalealPlatform/15-AdministratorWhaleal/03-UpgradeVersion.md
+  #   - Troubleshooting:
+  #     - EC2 and K8S: WhalealPlatform/16-Troubleshooting/01-EC2andK8S.md
+  #     - MongoDB Monitoring: WhalealPlatform/16-Troubleshooting/02-MongoDBMonitoring.md
+  #     - MongoDB Upgrade Downgrade: WhalealPlatform/16-Troubleshooting/03-MongoDBUpgradeDowngrade.md
+  #     - Backup and Restore: WhalealPlatform/16-Troubleshooting/04-BackupandRestore.md
+  #   - Frequently Asked Questions:
+  #     - WAP: WhalealPlatform/17-FrequentlyAskedQuestions/01-WAP.md
+  #     - Monitor: WhalealPlatform/17-FrequentlyAskedQuestions/02-Monitor.md
+  #     - Backup: WhalealPlatform/17-FrequentlyAskedQuestions/03-Backup.md
+  #     - Service: WhalealPlatform/17-FrequentlyAskedQuestions/04-Service.md
+  #     - Agent: WhalealPlatform/17-FrequentlyAskedQuestions/05-Agent.md
+  #   - Release Notes:
+  #     - Whaleal Changelog: WhalealPlatform/18-ReleaseNotes/01-WhalealChangelog.md
 
   - Whaleal Data:   # whaleal data
     - whalealData/index.md

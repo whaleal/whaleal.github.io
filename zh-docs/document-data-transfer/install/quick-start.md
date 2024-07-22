@@ -16,7 +16,7 @@ tar -zxvf DDT.tar.gz  -C DDT
 ```
 
 #### 3.配置文件修改
-[配置介绍](Configuring.md)
+[配置介绍](configuring.md)
 
 ```
 cd DDT/config

@@ -254,19 +254,21 @@ nav:
       - S3作业Demo: whalealData/UseCase/S3JobDemo.md
 
   - Document Data Transfer:  # Document Data Transfer
-    - DocumentDataTransfer/index.md
+    - document-data-transfer/index.md
     - 概述:
-      - DDT架构简介: DocumentDataTransfer/Introduction/architecture.md
-      - 客户案例: DocumentDataTransfer/Introduction/customer-case.md
+      - DDT架构简介: document-data-transfer/introduction/architecture.md
+      - 客户案例: document-data-transfer/introduction/customer-case.md
     - 安装:
-      - DDT环境要求: DocumentDataTransfer/Install/requirement.md
-      - 安装部署: DocumentDataTransfer/Install/installation.md
-      - 快速开始: DocumentDataTransfer/Install/quick-start.md
-      - 配置: DocumentDataTransfer/Install/configuring.md
+      - DDT环境要求: document-data-transfer/install/requirement.md
+      - 安装部署: document-data-transfer/install/installation.md
+      - 快速开始: document-data-transfer/install/quick-start.md
+      - 配置: document-data-transfer/install/configuring.md
     - 用例:
-      - 功能测试: DocumentDataTransfer/Usecase/functional-test.md
-      - 全量测试: DocumentDataTransfer/Usecase/full-test.md
-      - 实时测试: DocumentDataTransfer/Usecase/real-time-test.md
+      - 功能测试: document-data-transfer/use-case/functional-test.md
+      - 全量测试: document-data-transfer/use-case/full-test.md
+      - 实时测试: document-data-transfer/use-case/real-time-test.md
+
+
   - whaleal JMC:
     - whalealJMC/index.md
     - 快速使用指南: whalealJMC/4.quick-start.md
@@ -288,9 +290,9 @@ nav:
     - 站内信: whalealSupport/UserManual/notification.md
     - 通讯录: whalealSupport/UserManual/addressList.md
   - CW:
-      - CWUsage/README.md
+      - cloud-warn-usage/readme.md
   - Mars:
-    - mars/README.md
+    - mars/readme.md
     - Home: mars/home.md
     - Contributors: mars/Mars-00Contributors.md
     - How2Contribute: mars/Mars-00How2Contribute.md

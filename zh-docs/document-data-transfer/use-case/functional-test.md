@@ -87,7 +87,7 @@ db.stats()
 
 #### 4.启动DDT
 
-参考[QuickStart](../Install/快速启动.md)
+参考[QuickStart](../install/快速启动.md)
 
 该测试环境使用如下参数
 
@@ -157,7 +157,7 @@ bind_ip=192.168.12.190
 
 #### 1.启动DDT
 
-参考[QuickStart](../Install/快速启动.md)
+参考[QuickStart](../install/快速启动.md)
 
 该测试环境使用如下参数
 

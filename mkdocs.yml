@@ -253,19 +253,19 @@ nav:
       - S3JobDemo: whalealData/UseCase/S3JobDemo.md
 
   - Document Data Transfer:  # Document Data Transfer
-    - DocumentDataTransfer/index.md
+    - document-data-transfer/index.md
     - Overview:
-      - Architecture: DocumentDataTransfer/Introduction/Architecture.md
-      - CustomerCase: DocumentDataTransfer/Introduction/CustomerCase.md
+      - Architecture: document-data-transfer/introduction/Architecture.md
+      - CustomerCase: document-data-transfer/introduction/CustomerCase.md
     - Install:
-      - Requirements: DocumentDataTransfer/Install/Requirements.md
-      - Installation: DocumentDataTransfer/Install/Installation.md
-      - QuickStart: DocumentDataTransfer/Install/QuickStart.md
-      - Configuring: DocumentDataTransfer/Install/Configuring.md
+      - Requirements: document-data-transfer/install/Requirements.md
+      - Installation: document-data-transfer/install/Installation.md
+      - QuickStart: document-data-transfer/install/QuickStart.md
+      - Configuring: document-data-transfer/install/Configuring.md
     - Use Case:
-      - FunctionalTest: DocumentDataTransfer/Usecase/FunctionalTest.md
-      - FullTesting: DocumentDataTransfer/Usecase/FullTesting.md
-      - RealTimeTest: DocumentDataTransfer/Usecase/RealTimeTest.md
+      - FunctionalTest: document-data-transfer/use-case/FunctionalTest.md
+      - FullTesting: document-data-transfer/use-case/FullTesting.md
+      - RealTimeTest: document-data-transfer/use-case/RealTimeTest.md
 
   # - Support: whalealSupport/index.md
 

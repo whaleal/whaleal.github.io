@@ -85,7 +85,7 @@ db.stats()
 
 #### 4. Start DDT
 
-Refer to [QuickStart](../Install/QuickStart.md)
+Refer to [QuickStart](../install/QuickStart.md)
 
 Test environment using the following parameters:
 
@@ -145,7 +145,7 @@ bind_ip = 192.168.12.190
 
 #### 1. Start DDT
 
-Refer to [QuickStart](../Install/QuickStart.md)
+Refer to [QuickStart](../install/QuickStart.md)
 
 Test environment using the following parameters:
 

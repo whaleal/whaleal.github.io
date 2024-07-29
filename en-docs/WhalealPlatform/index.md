@@ -2,7 +2,7 @@
 
 Whaleal Platform (WAP) is an intelligent operation, maintenance and hosting platform that provides real-time monitoring and management of your MongoDB services 7*24 hours a day.
 
-![01-WhalealArchitecture](../images/whaleal-platform-Images/01-whaleal-overview/01-whaleal-architecture/01-WhalealArchitecture.png)
+![01-WhalealArchitecture](../images/whaleal-platform-Images/01-whaleal-overview/01-whaleal-architecture/01-whaleal-architecture.png)
 
 As an open source MongoDB database monitoring solution, WAP provides instant troubleshooting and diagnostic capabilities to ensure the continued stable operation of your MongoDB database and increase productivity. At the same time, WAP also supports automatic backup and recovery, providing you with comprehensive data protection to ensure data security and reliability. 
 

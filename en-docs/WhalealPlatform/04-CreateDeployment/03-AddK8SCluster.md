@@ -12,7 +12,7 @@
 
 2. Click **Add Stateful Set**
 
-   ![StandaloneAdvanced](../../images/whaleal-platform-Images/04-create-deployment/AddStateful.png)
+   ![StandaloneAdvanced](../../images/whaleal-platform-Images/04-create-deployment/add-stateful.png)
 
 3. Complete the configuration of the parameters in the figure below. There are no special requirements. NS and Stateful Set meet the production requirements.
 

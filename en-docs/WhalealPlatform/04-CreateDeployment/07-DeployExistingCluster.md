@@ -109,7 +109,7 @@ To add existing MongoDB processes to Whaleal:
 
 
 
-![StandaloneAdvanced](../../images/whaleal-platform-Images/04-create-deployment/addExistProcess.png)
+![StandaloneAdvanced](../../images/whaleal-platform-Images/04-create-deployment/add-exist-process.png)
 
 #### 3. Follow the prompts to add the deployment
 

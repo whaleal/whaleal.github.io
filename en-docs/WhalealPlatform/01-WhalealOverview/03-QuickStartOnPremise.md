@@ -238,7 +238,7 @@ Reset Password and Login.
 
 2. After successful management, it will be displayed in the following figure.
 
-   ![img](../../images/whaleal-platform-Images/01-whaleal-overview/03-quick-start-on-premise/05-hostList.png)
+   ![img](../../images/whaleal-platform-Images/01-whaleal-overview/03-quick-start-on-premise/05-host-list.png)
 
 3. Upload MongoDB package.
 
@@ -278,7 +278,7 @@ Reset Password and Login.
 
    1. Click to the MongoDB page and open "Existing MongoDB Deployment".
 
-      ![img](../../images/whaleal-platform-Images/01-whaleal-overview/03-quick-start-on-premise/13-existing-mongoDB-deployment.png)
+      ![img](../../images/whaleal-platform-Images/01-whaleal-overview/03-quick-start-on-premise/13-existing-mongodb-deployment.png)
 
    2. Fill in and copy relevant information
       a. Enter the cluster name of the replication set (custom)
@@ -287,7 +287,7 @@ Reset Password and Login.
       d. Add MongoDB's authenticated username and password
       e. Select the version number corresponding to the cluster
 
-      ![img](../../images/whaleal-platform-Images/01-whaleal-overview/03-quick-start-on-premise/14-existing-mongoDB-deployment.png)
+      ![img](../../images/whaleal-platform-Images/01-whaleal-overview/03-quick-start-on-premise/14-existing-mongodb-deployment.png)
 
    3. Check the event log to determine whether the management was successful.
 

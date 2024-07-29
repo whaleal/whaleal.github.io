@@ -156,7 +156,11 @@ nav:
     - Account:
       - user Center: WhalealPlatform/12-Account/01-usercenter.md
       - User Management: WhalealPlatform/12-Account/02-user-management.md
+<<<<<<< HEAD
       - Account Configuration: WhalealPlatform/12-Account/03-account-configuration.md
+=======
+      - Account Configuration: WhalealPlatform/12-Account/03-AccountConfiguration.md
+>>>>>>> 6c129480d80f8adb2c11bccde2b364b82271732d
     - Setting:
       - MongoDB Packge: WhalealPlatform/13-Setting/01-mongodb-packge.md
       - SMTP: WhalealPlatform/13-Setting/02-smtp.md
@@ -195,62 +199,62 @@ nav:
       - Whaleal-dataInstallationDeployment: whalealData/InstallationDeployment/whaleal-data-installation-deployment.md
     - Whaleal data Manual:
       - LoginPage:
-        - UserFirstLogin: whalealData/UserManual/LoginPage/UserFirstLogin.md
-        - UserRegistration: whalealData/UserManual/LoginPage/UserRegistration.md
+        - UserFirstLogin: whalealData/UserManual/LoginPage/user-first-login.md
+        - UserRegistration: whalealData/UserManual/LoginPage/user-registration.md
       - HomepageDisplay: whalealData/UserManual/HomepageDisplay/HomepageDisplay.md
       - ConfigurationManagement:
-        - DataSourceManagement: whalealData/UserManual/ConfigurationManagement/DataSourceManagement.md
-        - DestinationSourceManagement: whalealData/UserManual/ConfigurationManagement/DestinationSourceManagement.md
-        - TableJobConfiguration: whalealData/UserManual/ConfigurationManagement/TableJobConfiguration.md
-        - TaskConfiguration: whalealData/UserManual/ConfigurationManagement/TaskConfiguration.md
+        - DataSourceManagement: whalealData/UserManual/ConfigurationManagement/data-source-management.md
+        - DestinationSourceManagement: whalealData/UserManual/ConfigurationManagement/destination-source-management.md
+        - TableJobConfiguration: whalealData/UserManual/ConfigurationManagement/table-job-configuration.md
+        - TaskConfiguration: whalealData/UserManual/ConfigurationManagement/task-configuration.md
       - TaskManagement:
-        - TaskScheduling: whalealData/UserManual/TaskManagement/TaskScheduling.md
-        - WarmTaskMonitoring: whalealData/UserManual/TaskManagement/WarmTaskMonitoring.md
-        - ColdTaskMonitoring: whalealData/UserManual/TaskManagement/ColdTaskMonitoring.md
-        - S3TaskMonitoring: whalealData/UserManual/TaskManagement/S3TaskMonitoring.md
+        - TaskScheduling: whalealData/UserManual/TaskManagement/task-scheduling.md
+        - WarmTaskMonitoring: whalealData/UserManual/TaskManagement/warm-task-monitoring.md
+        - ColdTaskMonitoring: whalealData/UserManual/TaskManagement/cold-task-monitoring.md
+        - S3TaskMonitoring: whalealData/UserManual/TaskManagement/s3-task-monitoring.md
       - ArchiveManagement:
-        - ColdTaskLogQuery: whalealData/UserManual/ArchiveManagement/ColdTaskLogQuery.md
-        - FileInspectionManagement: whalealData/UserManual/ArchiveManagement/FileInspectionManagement.md
-        - FileFullTextSearch: whalealData/UserManual/ArchiveManagement/FileFullTextSearch.md
+        - ColdTaskLogQuery: whalealData/UserManual/ArchiveManagement/cold-task-log-query.md
+        - FileInspectionManagement: whalealData/UserManual/ArchiveManagement/file-inspection-management.md
+        - FileFullTextSearch: whalealData/UserManual/ArchiveManagement/file-full-text-search.md
       - SystemManagement:
-        - UserManagement: whalealData/UserManual/SystemManagement/UserManagement.md
-        - RoleManagement: whalealData/UserManual/SystemManagement/RoleManagement.md
-        - MenuManagement: whalealData/UserManual/SystemManagement/MenuManagement.md
-        - SystemSettings: whalealData/UserManual/SystemManagement/SystemSettings.md
-        - OperationLog: whalealData/UserManual/SystemManagement/OperationLog.md
-        - ErrorLog: whalealData/UserManual/SystemManagement/ErrorLog.md
+        - UserManagement: whalealData/UserManual/SystemManagement/user-management.md
+        - RoleManagement: whalealData/UserManual/SystemManagement/role-management.md
+        - MenuManagement: whalealData/UserManual/SystemManagement/menu-management.md
+        - SystemSettings: whalealData/UserManual/SystemManagement/system-settings.md
+        - OperationLog: whalealData/UserManual/SystemManagement/operation-log.md
+        - ErrorLog: whalealData/UserManual/SystemManagement/error-log.md
       - StatisticalReports:
-        - TableJobExecutionStatistics: whalealData/UserManual/StatisticalReports/TableJobExecutionStatistics.md
-        - AbnormalJobExecutionStatistics: whalealData/UserManual/StatisticalReports/AbnormalJobExecutionStatistics.md
-        - SystemAccessStatistics: whalealData/UserManual/StatisticalReports/SystemAccessStatistics.md
-        - RollbackRecordsStatistics: whalealData/UserManual/StatisticalReports/RollbackRecordsStatistics.md
-        - JobDetails: whalealData/UserManual/StatisticalReports/JobDetails.md
-        - DataHistoricalFlow: whalealData/UserManual/StatisticalReports/DataHistoricalFlow.md
+        - TableJobExecutionStatistics: whalealData/UserManual/StatisticalReports/table-job-execution-statistics.md
+        - AbnormalJobExecutionStatistics: whalealData/UserManual/StatisticalReports/abnormal-job-execution-statistics.md
+        - SystemAccessStatistics: whalealData/UserManual/StatisticalReports/system-access-statistics.md
+        - RollbackRecordsStatistics: whalealData/UserManual/StatisticalReports/roll-back-records-statistics.md
+        - JobDetails: whalealData/UserManual/StatisticalReports/job-details.md
+        - DataHistoricalFlow: whalealData/UserManual/StatisticalReports/data-historical-flow.md
     - UseCase:
-      - UserRegistration: whalealData/UseCase/UserRegistration.md
-      - UserLogin: whalealData/UseCase/UserLogin.md
+      - UserRegistration: whalealData/UseCase/user-registration.md
+      - UserLogin: whalealData/UseCase/user-login.md
       - AddDataSource: whalealData/UseCase/add-data-source.md
       - AddDestinationSource: whalealData/UseCase/add-destination-source.md
       - AddWarmDataFullLoadJob: whalealData/UseCase/add-warm-data-full-load-job.md
       - AddColdDataFullLoadJob: whalealData/UseCase/add-cold-data-full-load-job.md
       - AddS3FullLoadJob: whalealData/UseCase/add-s3-full-load-job.md
-      - AddWarmDataIncrementalJob: whalealData/UseCase/AddWarmDataIncrementalJob.md
+      - AddWarmDataIncrementalJob: whalealData/UseCase/add-warm-data-incremental-job.md
       - AddColdDataIncrementalJob: whalealData/UseCase/add-cold-data-incremental-job.md
       - AddS3IncrementalJob: whalealData/UseCase/add-s3-incremental-job.md
-      - CreateSingleTask: whalealData/UseCase/CreateSingleTask.md
-      - CreateManualTask: whalealData/UseCase/CreateManualTask.md
-      - CreateLoopTask: whalealData/UseCase/CreateLoopTask.md
-      - TaskExecutionMonitoring: whalealData/UseCase/TaskExecutionMonitoring.md
-      - RetryAbnormalTask: whalealData/UseCase/RetryAbnormalTask.md
+      - CreateSingleTask: whalealData/UseCase/create-single-task.md
+      - CreateManualTask: whalealData/UseCase/create-manual-task.md
+      - CreateLoopTask: whalealData/UseCase/create-loop-task.md
+      - TaskExecutionMonitoring: whalealData/UseCase/task-execution-monitoring.md
+      - RetryAbnormalTask: whalealData/UseCase/retry-abnormal-task.md
       - AbnormalTaskFeedback: whalealData/UseCase/abnormal-task-feedback.md
-      - SystemDeleteSourceData: whalealData/UseCase/SystemDeleteSourceData.md
-      - ManuallyDeleteSourceData: whalealData/UseCase/ManuallyDeleteSourceData.md
-      - ColdDataWriteBack: whalealData/UseCase/ColdDataWriteBack.md
-      - ColdDataFullTextSearch: whalealData/UseCase/ColdDataFullTextSearch.md
-      - SMTPConfig: whalealData/UseCase/SMTPConfig.md
-      - WarmJobDemo: whalealData/UseCase/WarmJobDemo.md
-      - ColdWorkDemo: whalealData/UseCase/ColdWorkDemo.md
-      - S3JobDemo: whalealData/UseCase/S3JobDemo.md
+      - SystemDeleteSourceData: whalealData/UseCase/system-delete-source-data.md
+      - ManuallyDeleteSourceData: whalealData/UseCase/manually-delete-source-data.md
+      - ColdDataWriteBack: whalealData/UseCase/cold-data-write-back.md
+      - ColdDataFullTextSearch: whalealData/UseCase/cold-data-full-text-search.md
+      - SMTPConfig: whalealData/UseCase/smtp-config.md
+      - WarmJobDemo: whalealData/UseCase/warm-job-demo.md
+      - ColdWorkDemo: whalealData/UseCase/cold-work-demo.md
+      - S3JobDemo: whalealData/UseCase/s3-job-demo.md
 
   - Document Data Transfer:  # Document Data Transfer
     - document-data-transfer/index.md

@@ -96,62 +96,62 @@ nav:
       - Whaleal Data安装部署: whaleal-data/installation-deployment/whaleal-data-installation-deployment.md
     - Whaleal Data使用手册:
       - 登录页面:
-        - 用户首次登录: whaleal-data/user-manual/LoginPage/UserFirstLogin.md
-        - 用户注册: whaleal-data/user-manual/LoginPage/UserRegistration.md
-      - 首页展示: whaleal-data/user-manual/HomepageDisplay/HomepageDisplay.md
+        - 用户首次登录: whaleal-data/user-manual/login-page/user-first-login.md
+        - 用户注册: whaleal-data/user-manual/login-page/user-registration.md
+      - 首页展示: whaleal-data/user-manual/homepage-display/HomepageDisplay.md
       - 配置管理:
-        - 数据源管理: whaleal-data/user-manual/ConfigurationManagement/DataSourceManagement.md
-        - 目标源管理: whaleal-data/user-manual/ConfigurationManagement/DestinationSourceManagement.md
-        - 表作业配置: whaleal-data/user-manual/ConfigurationManagement/TableJobConfiguration.md
-        - 任务配置: whaleal-data/user-manual/ConfigurationManagement/TaskConfiguration.md
+        - 数据源管理: whaleal-data/user-manual/configuration-management/data-source-management.md
+        - 目标源管理: whaleal-data/user-manual/configuration-management/destination-source-management.md
+        - 表作业配置: whaleal-data/user-manual/configuration-management/table-job-configuration.md
+        - 任务配置: whaleal-data/user-manual/configuration-management/task-configuration.md
       - 任务管理:
-        - 任务调度: whaleal-data/user-manual/TaskManagement/TaskScheduling.md
-        - 任务监控（温）: whaleal-data/user-manual/TaskManagement/WarmTaskMonitoring.md
-        - 任务监控（冷）: whaleal-data/user-manual/TaskManagement/ColdTaskMonitoring.md
-        - 任务监控 (S3): whaleal-data/user-manual/TaskManagement/S3TaskMonitoring.md
+        - 任务调度: whaleal-data/user-manual/task-management/task-scheduling.md
+        - 任务监控（温）: whaleal-data/user-manual/task-management/warm-task-monitoring.md
+        - 任务监控（冷）: whaleal-data/user-manual/task-management/cold-task-monitoring.md
+        - 任务监控 (S3): whaleal-data/user-manual/task-management/s3-task-monitoring.md
       - 归档管理:
-        - 日志查询（冷）: whaleal-data/user-manual/ArchiveManagement/ColdTaskLogQuery.md
-        - 文件巡检管理: whaleal-data/user-manual/ArchiveManagement/FileInspectionManagement.md
-        - 文件全文检索: whaleal-data/user-manual/ArchiveManagement/FileFullTextSearch.md
+        - 日志查询（冷）: whaleal-data/user-manual/archive-management/cold-task-log-query.md
+        - 文件巡检管理: whaleal-data/user-manual/archive-management/file-inspection-management.md
+        - 文件全文检索: whaleal-data/user-manual/archive-management/file-full-text-search.md
       - 系统管理:
-        - 用户管理: whaleal-data/user-manual/SystemManagement/UserManagement.md
-        - 角色管理: whaleal-data/user-manual/SystemManagement/RoleManagement.md
-        - 菜单管理: whaleal-data/user-manual/SystemManagement/MenuManagement.md
-        - 邮件设置: whaleal-data/user-manual/SystemManagement/SystemSettings.md
-        - 操作日志: whaleal-data/user-manual/SystemManagement/OperationLog.md
-        - 错误日志: whaleal-data/user-manual/SystemManagement/ErrorLog.md
+        - 用户管理: whaleal-data/user-manual/system-management/user-management.md
+        - 角色管理: whaleal-data/user-manual/system-management/role-management.md
+        - 菜单管理: whaleal-data/user-manual/system-management/menu-management.md
+        - 邮件设置: whaleal-data/user-manual/system-management/system-settings.md
+        - 操作日志: whaleal-data/user-manual/system-management/operation-log.md
+        - 错误日志: whaleal-data/user-manual/system-management/error-log.md
       - 统计报表:
-        - 表作业执行统计: whaleal-data/user-manual/StatisticalReports/TableJobExecutionStatistics.md
-        - 异常作业执行统计: whaleal-data/user-manual/StatisticalReports/AbnormalJobExecutionStatistics.md
-        - 系统接入统计: whaleal-data/user-manual/StatisticalReports/SystemAccessStatistics.md
-        - 回滚记录统计: whaleal-data/user-manual/StatisticalReports/RollbackRecordsStatistics.md
-        - 作业明细: whaleal-data/user-manual/StatisticalReports/JobDetails.md
-        - 数据历史流向: whaleal-data/user-manual/StatisticalReports/DataHistoricalFlow.md
+        - 表作业执行统计: whaleal-data/user-manual/statistical-reports/table-job-execution-statistics.md
+        - 异常作业执行统计: whaleal-data/user-manual/statistical-reports/abnormal-job-execution-statistics.md
+        - 系统接入统计: whaleal-data/user-manual/statistical-reports/system-access-statistics.md
+        - 回滚记录统计: whaleal-data/user-manual/statistical-reports/roll-back-records-statistics.md
+        - 作业明细: whaleal-data/user-manual/statistical-reports/job-details.md
+        - 数据历史流向: whaleal-data/user-manual/statistical-reports/data-historical-flow.md
     - 用例:
-      - 用户注册: whaleal-data/use-case/UserRegistration.md
-      - 用户登录: whaleal-data/use-case/UserLogin.md
+      - 用户注册: whaleal-data/use-case/user-registration.md
+      - 用户登录: whaleal-data/use-case/user-login.md
       - 添加数据源: whaleal-data/use-case/add-data-source.md
       - 添加目标源: whaleal-data/use-case/add-destination-source.md
       - 添加温数据全量作业: whaleal-data/use-case/add-warm-data-full-load-job.md
       - 添加冷数据全量作业: whaleal-data/use-case/add-cold-data-full-load-job.md
       - 添加S3全量作业: whaleal-data/use-case/add-s3-full-load-job.md
-      - 添加温数据增量作业: whaleal-data/use-case/AddWarmDataIncrementalJob.md
+      - 添加温数据增量作业: whaleal-data/use-case/add-warm-data-incremental-job.md
       - 添加冷数据增量作业: whaleal-data/use-case/add-cold-data-incremental-job.md
       - 添加S3增量作业: whaleal-data/use-case/add-s3-incremental-job.md
-      - 创建单次任务: whaleal-data/use-case/CreateSingleTask.md
-      - 创建手工任务: whaleal-data/use-case/CreateManualTask.md
-      - 创建循环任务: whaleal-data/use-case/CreateLoopTask.md
-      - 任务执行监控: whaleal-data/use-case/TaskExecutionMonitoring.md
-      - 异常任务重新执行: whaleal-data/use-case/RetryAbnormalTask.md
+      - 创建单次任务: whaleal-data/use-case/create-single-task.md
+      - 创建手工任务: whaleal-data/use-case/create-manual-task.md
+      - 创建循环任务: whaleal-data/use-case/create-loop-task.md
+      - 任务执行监控: whaleal-data/use-case/task-execution-monitoring.md
+      - 异常任务重新执行: whaleal-data/use-case/retry-abnormal-task.md
       - 异常任务回写: whaleal-data/use-case/abnormal-task-feedback.md
-      - 系统删除源端数据: whaleal-data/use-case/SystemDeleteSourceData.md
-      - 手动删除源端数据: whaleal-data/use-case/ManuallyDeleteSourceData.md
-      - 冷数据回写: whaleal-data/use-case/ColdDataWriteBack.md
-      - 冷数据全文检索: whaleal-data/use-case/ColdDataFullTextSearch.md
-      - SMTP邮件设置: whaleal-data/use-case/SMTPConfig.md
-      - 温作业Demo: whaleal-data/use-case/WarmJobDemo.md
-      - 冷作业Demo: whaleal-data/use-case/ColdWorkDemo.md
-      - S3作业Demo: whaleal-data/use-case/S3JobDemo.md
+      - 系统删除源端数据: whaleal-data/use-case/system-delete-source-data.md
+      - 手动删除源端数据: whaleal-data/use-case/manually-delete-source-data.md
+      - 冷数据回写: whaleal-data/use-case/cold-data-write-back.md
+      - 冷数据全文检索: whaleal-data/use-case/cold-data-full-text-search.md
+      - SMTP邮件设置: whaleal-data/use-case/smtp-config.md
+      - 温作业Demo: whaleal-data/use-case/warm-job-demo.md
+      - 冷作业Demo: whaleal-data/use-case/cold-work-demo.md
+      - S3作业Demo: whaleal-data/use-case/s3-job-demo.md
 
 
 

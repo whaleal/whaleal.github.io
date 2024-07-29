@@ -7,8 +7,8 @@
 
 ### 平台架构图
 
-![平台架构图.png](../images/whalealDataImages/平台架构图.png)
+![平台架构图.png](../images/whaleal-data/img-8.png)
 
 ### 	软件结构图
 
-![软件结构图.png](../images/whalealDataImages/软件结构图.png)
+![软件结构图.png](../images/whaleal-data/img-19.png)

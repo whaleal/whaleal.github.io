@@ -14,9 +14,9 @@ __忘记密码__
 
 若用户忘记密码需要重置,可在登录页点击忘记密码
 
-![passwordReset3.png](../../images/whaleal-account/passwordReset3.png)
+![passwordReset3.png](../../images/whaleal-account/password-reset3.png)
 
 可通过两种方式重置密码:手机短信和邮箱验证码
 
-![passwordReset4.png](../../images/whaleal-account/passwordReset4.png)
+![passwordReset4.png](../../images/whaleal-account/password-reset4.png)
 

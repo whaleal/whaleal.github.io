@@ -65,7 +65,7 @@ __修改成员角色__
 
 选择对应角色点击更新
 
-![updateMemberRole.png](../../images/whaleal-account/updateMemberRole.png)
+![updateMemberRole.png](../../images/whaleal-account/update-member-role.png)
 
 
 __角色__

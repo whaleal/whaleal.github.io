@@ -46,7 +46,7 @@ __配置授权作用域__
 
 配置应用授权信息的范围
 
-![scopeConfig.png](../../images/whaleal-account/scopeConfig.png)
+![scopeConfig.png](../../images/whaleal-account/scope-config.png)
 
 __配置权限__
 

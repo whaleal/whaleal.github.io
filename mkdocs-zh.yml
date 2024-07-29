@@ -96,37 +96,37 @@ nav:
       - Whaleal Data安装部署: whaleal-data/installation-deployment/whaleal-data-installation-deployment.md
     - Whaleal Data使用手册:
       - 登录页面:
-        - 用户首次登录: whaleal-data/user-manual/LoginPage/user-first-login.md
-        - 用户注册: whaleal-data/user-manual/LoginPage/user-registration.md
-      - 首页展示: whaleal-data/user-manual/HomepageDisplay/HomepageDisplay.md
+        - 用户首次登录: whaleal-data/user-manual/login-page/user-first-login.md
+        - 用户注册: whaleal-data/user-manual/login-page/user-registration.md
+      - 首页展示: whaleal-data/user-manual/homepage-display/HomepageDisplay.md
       - 配置管理:
-        - 数据源管理: whaleal-data/user-manual/ConfigurationManagement/data-source-management.md
-        - 目标源管理: whaleal-data/user-manual/ConfigurationManagement/destination-source-management.md
-        - 表作业配置: whaleal-data/user-manual/ConfigurationManagement/table-job-configuration.md
-        - 任务配置: whaleal-data/user-manual/ConfigurationManagement/task-configuration.md
+        - 数据源管理: whaleal-data/user-manual/configuration-management/data-source-management.md
+        - 目标源管理: whaleal-data/user-manual/configuration-management/destination-source-management.md
+        - 表作业配置: whaleal-data/user-manual/configuration-management/table-job-configuration.md
+        - 任务配置: whaleal-data/user-manual/configuration-management/task-configuration.md
       - 任务管理:
-        - 任务调度: whaleal-data/user-manual/TaskManagement/task-scheduling.md
-        - 任务监控（温）: whaleal-data/user-manual/TaskManagement/warm-task-monitoring.md
-        - 任务监控（冷）: whaleal-data/user-manual/TaskManagement/cold-task-monitoring.md
-        - 任务监控 (S3): whaleal-data/user-manual/TaskManagement/s3-task-monitoring.md
+        - 任务调度: whaleal-data/user-manual/task-management/task-scheduling.md
+        - 任务监控（温）: whaleal-data/user-manual/task-management/warm-task-monitoring.md
+        - 任务监控（冷）: whaleal-data/user-manual/task-management/cold-task-monitoring.md
+        - 任务监控 (S3): whaleal-data/user-manual/task-management/s3-task-monitoring.md
       - 归档管理:
-        - 日志查询（冷）: whaleal-data/user-manual/ArchiveManagement/cold-task-log-query.md
-        - 文件巡检管理: whaleal-data/user-manual/ArchiveManagement/file-inspection-management.md
-        - 文件全文检索: whaleal-data/user-manual/ArchiveManagement/file-full-text-search.md
+        - 日志查询（冷）: whaleal-data/user-manual/archive-management/cold-task-log-query.md
+        - 文件巡检管理: whaleal-data/user-manual/archive-management/file-inspection-management.md
+        - 文件全文检索: whaleal-data/user-manual/archive-management/file-full-text-search.md
       - 系统管理:
-        - 用户管理: whaleal-data/user-manual/SystemManagement/user-management.md
-        - 角色管理: whaleal-data/user-manual/SystemManagement/role-management.md
-        - 菜单管理: whaleal-data/user-manual/SystemManagement/menu-management.md
-        - 邮件设置: whaleal-data/user-manual/SystemManagement/system-settings.md
-        - 操作日志: whaleal-data/user-manual/SystemManagement/operation-log.md
-        - 错误日志: whaleal-data/user-manual/SystemManagement/error-log.md
+        - 用户管理: whaleal-data/user-manual/system-management/user-management.md
+        - 角色管理: whaleal-data/user-manual/system-management/role-management.md
+        - 菜单管理: whaleal-data/user-manual/system-management/menu-management.md
+        - 邮件设置: whaleal-data/user-manual/system-management/system-settings.md
+        - 操作日志: whaleal-data/user-manual/system-management/operation-log.md
+        - 错误日志: whaleal-data/user-manual/system-management/error-log.md
       - 统计报表:
-        - 表作业执行统计: whaleal-data/user-manual/StatisticalReports/table-job-execution-statistics.md
-        - 异常作业执行统计: whaleal-data/user-manual/StatisticalReports/abnormal-job-execution-statistics.md
-        - 系统接入统计: whaleal-data/user-manual/StatisticalReports/system-access-statistics.md
-        - 回滚记录统计: whaleal-data/user-manual/StatisticalReports/roll-back-records-statistics.md
-        - 作业明细: whaleal-data/user-manual/StatisticalReports/job-details.md
-        - 数据历史流向: whaleal-data/user-manual/StatisticalReports/data-historical-flow.md
+        - 表作业执行统计: whaleal-data/user-manual/statistical-reports/table-job-execution-statistics.md
+        - 异常作业执行统计: whaleal-data/user-manual/statistical-reports/abnormal-job-execution-statistics.md
+        - 系统接入统计: whaleal-data/user-manual/statistical-reports/system-access-statistics.md
+        - 回滚记录统计: whaleal-data/user-manual/statistical-reports/roll-back-records-statistics.md
+        - 作业明细: whaleal-data/user-manual/statistical-reports/job-details.md
+        - 数据历史流向: whaleal-data/user-manual/statistical-reports/data-historical-flow.md
     - 用例:
       - 用户注册: whaleal-data/use-case/user-registration.md
       - 用户登录: whaleal-data/use-case/user-login.md

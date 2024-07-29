@@ -188,11 +188,11 @@ nav:
     - InstallationDeployment:
       - InstallationRequirements: whalealData/InstallationDeployment/installation-requirements.md
       - JDKInstallationDeployment: whalealData/InstallationDeployment/jdk-installation-deployment.md
-      - MYSQLInstallationDeployment: whalealData/InstallationDeployment/MYSQLInstallationDeployment.md
-      - NginxInstallationDeployment: whalealData/InstallationDeployment/NginxInstallationDeployment.md
-      - RedisInstallationDeployment: whalealData/InstallationDeployment/RedisInstallationDeployment.md
-      - ZookeeperInstallationDeployment: whalealData/InstallationDeployment/ZookeeperInstallationDeployment.md
-      - Whaleal-dataInstallationDeployment: whalealData/InstallationDeployment/Whaleal-dataInstallationDeployment.md
+      - MYSQLInstallationDeployment: whalealData/InstallationDeployment/mysql-installation-deployment.md
+      - NginxInstallationDeployment: whalealData/InstallationDeployment/nginx-installation-deployment.md
+      - RedisInstallationDeployment: whalealData/InstallationDeployment/redis-installation-deployment.md
+      - ZookeeperInstallationDeployment: whalealData/InstallationDeployment/zookeeper-installation-deployment.md
+      - Whaleal-dataInstallationDeployment: whalealData/InstallationDeployment/whaleal-data-installation-deployment.md
     - Whaleal data Manual:
       - LoginPage:
         - UserFirstLogin: whalealData/UserManual/LoginPage/UserFirstLogin.md
@@ -229,20 +229,20 @@ nav:
     - UseCase:
       - UserRegistration: whalealData/UseCase/UserRegistration.md
       - UserLogin: whalealData/UseCase/UserLogin.md
-      - AddDataSource: whalealData/UseCase/AddDataSource.md
-      - AddDestinationSource: whalealData/UseCase/AddDestinationSource.md
-      - AddWarmDataFullLoadJob: whalealData/UseCase/AddWarmDataFullLoadJob.md
-      - AddColdDataFullLoadJob: whalealData/UseCase/AddColdDataFullLoadJob.md
-      - AddS3FullLoadJob: whalealData/UseCase/AddS3FullLoadJob.md
+      - AddDataSource: whalealData/UseCase/add-data-source.md
+      - AddDestinationSource: whalealData/UseCase/add-destination-source.md
+      - AddWarmDataFullLoadJob: whalealData/UseCase/add-warm-data-full-load-job.md
+      - AddColdDataFullLoadJob: whalealData/UseCase/add-cold-data-full-load-job.md
+      - AddS3FullLoadJob: whalealData/UseCase/add-s3-full-load-job.md
       - AddWarmDataIncrementalJob: whalealData/UseCase/AddWarmDataIncrementalJob.md
-      - AddColdDataIncrementalJob: whalealData/UseCase/AddColdDataIncrementalJob.md
-      - AddS3IncrementalJob: whalealData/UseCase/AddS3IncrementalJob.md
+      - AddColdDataIncrementalJob: whalealData/UseCase/add-cold-data-incremental-job.md
+      - AddS3IncrementalJob: whalealData/UseCase/add-s3-incremental-job.md
       - CreateSingleTask: whalealData/UseCase/CreateSingleTask.md
       - CreateManualTask: whalealData/UseCase/CreateManualTask.md
       - CreateLoopTask: whalealData/UseCase/CreateLoopTask.md
       - TaskExecutionMonitoring: whalealData/UseCase/TaskExecutionMonitoring.md
       - RetryAbnormalTask: whalealData/UseCase/RetryAbnormalTask.md
-      - AbnormalTaskFeedback: whalealData/UseCase/AbnormalTaskFeedback.md
+      - AbnormalTaskFeedback: whalealData/UseCase/abnormal-task-feedback.md
       - SystemDeleteSourceData: whalealData/UseCase/SystemDeleteSourceData.md
       - ManuallyDeleteSourceData: whalealData/UseCase/ManuallyDeleteSourceData.md
       - ColdDataWriteBack: whalealData/UseCase/ColdDataWriteBack.md

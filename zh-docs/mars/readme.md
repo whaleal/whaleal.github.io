@@ -135,7 +135,7 @@ mars的源码分为两个分支，功能如下：
 
 ### 🧬贡献代码的步骤及PR遵照的原则
 
-详见wiki  [How2Contribute](./Mars-00How2Contribute.md)
+详见wiki  [How2Contribute](how-contribute.md)
 
 
 

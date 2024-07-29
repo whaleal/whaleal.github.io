@@ -18,14 +18,6 @@ home_description: |
 # Gradient Color
 home_gradient_hsla: hsla(0deg,47%,55%,1) # Default Green: hsla(160deg,47%,55%,1)
 
-# # Custom Homepage Button(s)
-# home_button1_name: Whaleal Platform                  # Comment this parameter out to remove the button.
-# home_button1_url: WhalealPlatform/                       # This path starts at your root mkdocs directory.
-# home_button1_theme: md-button md-button--primary # Options: "md-button", "md-button md-button--primary"
-# home_button1_icon: people                        # Options: "people", "gear", "image"
-# home_button1_blurb: |                            # Short description of this button / section.
-#   Whaleal Platform (WAP) 是一个智能运维和托管平台，为您的 MongoDB 服务提供 7*24 小时的实时监控和管理。
-
 home_button2_name: Whaleal Data   # Comment this parameter out to remove the button.
 home_button2_url: whaleal-data/    # This path starts at your root mkdocs directory.
 home_button2_theme: md-button # Options: "md-button", "md-button md-button--primary"
@@ -96,12 +88,12 @@ nav:
     - whaleal-data/index.md
     - 安装部署:
       - 安装要求: whaleal-data/installation-deployment/installation-requirements.md
-      - JDK安装部署: whaleal-data/installation-deployment/JDKinstallation-deployment.md
-      - MYSQL安装部署: whaleal-data/installation-deployment/MYSQLinstallation-deployment.md
-      - Nginx安装部署: whaleal-data/installation-deployment/Nginxinstallation-deployment.md
-      - Redis 安装部署: whaleal-data/installation-deployment/Redisinstallation-deployment.md
-      - Zookeeper安装部署: whaleal-data/installation-deployment/Zookeeperinstallation-deployment.md
-      - Whaleal Data安装部署: whaleal-data/installation-deployment/Whaleal-datainstallation-deployment.md
+      - JDK安装部署: whaleal-data/installation-deployment/jdk-installation-deployment.md
+      - MYSQL安装部署: whaleal-data/installation-deployment/mysql-Linstallation-deployment.md
+      - Nginx安装部署: whaleal-data/installation-deployment/nginx-installation-deployment.md
+      - Redis 安装部署: whaleal-data/installation-deployment/redis-installation-deployment.md
+      - Zookeeper安装部署: whaleal-data/installation-deployment/zookeeper-installation-deployment.md
+      - Whaleal Data安装部署: whaleal-data/installation-deployment/whaleal-data-installation-deployment.md
     - Whaleal Data使用手册:
       - 登录页面:
         - 用户首次登录: whaleal-data/user-manual/LoginPage/UserFirstLogin.md
@@ -138,20 +130,20 @@ nav:
     - 用例:
       - 用户注册: whaleal-data/use-case/UserRegistration.md
       - 用户登录: whaleal-data/use-case/UserLogin.md
-      - 添加数据源: whaleal-data/use-case/AddDataSource.md
-      - 添加目标源: whaleal-data/use-case/AddDestinationSource.md
-      - 添加温数据全量作业: whaleal-data/use-case/AddWarmDataFullLoadJob.md
-      - 添加冷数据全量作业: whaleal-data/use-case/AddColdDataFullLoadJob.md
-      - 添加S3全量作业: whaleal-data/use-case/AddS3FullLoadJob.md
+      - 添加数据源: whaleal-data/use-case/add-data-source.md
+      - 添加目标源: whaleal-data/use-case/add-destination-source.md
+      - 添加温数据全量作业: whaleal-data/use-case/add-warm-data-full-load-job.md
+      - 添加冷数据全量作业: whaleal-data/use-case/add-cold-data-full-load-job.md
+      - 添加S3全量作业: whaleal-data/use-case/add-s3-full-load-job.md
       - 添加温数据增量作业: whaleal-data/use-case/AddWarmDataIncrementalJob.md
-      - 添加冷数据增量作业: whaleal-data/use-case/AddColdDataIncrementalJob.md
-      - 添加S3增量作业: whaleal-data/use-case/AddS3IncrementalJob.md
+      - 添加冷数据增量作业: whaleal-data/use-case/add-cold-data-incremental-job.md
+      - 添加S3增量作业: whaleal-data/use-case/add-s3-incremental-job.md
       - 创建单次任务: whaleal-data/use-case/CreateSingleTask.md
       - 创建手工任务: whaleal-data/use-case/CreateManualTask.md
       - 创建循环任务: whaleal-data/use-case/CreateLoopTask.md
       - 任务执行监控: whaleal-data/use-case/TaskExecutionMonitoring.md
       - 异常任务重新执行: whaleal-data/use-case/RetryAbnormalTask.md
-      - 异常任务回写: whaleal-data/use-case/AbnormalTaskFeedback.md
+      - 异常任务回写: whaleal-data/use-case/abnormal-task-feedback.md
       - 系统删除源端数据: whaleal-data/use-case/SystemDeleteSourceData.md
       - 手动删除源端数据: whaleal-data/use-case/ManuallyDeleteSourceData.md
       - 冷数据回写: whaleal-data/use-case/ColdDataWriteBack.md
@@ -205,26 +197,38 @@ nav:
 
   - CW:
       - cloud-warn-usage/readme.md
+
+
+  - whaleal-acount:
+      - oauth2/oauth2.md
+      - login: user-manual/login.md
+      - register: user-manual/login.md
+      - password-reset: user-manual/password-reset.md
+      - client: user-manual/client.md
+      - organization: user-manual/organization.md
+      - user-info: user-manual/user-info.md
+
+
   - Mars:
     - mars/readme.md
     - Home: mars/home.md
-    - Contributors: mars/Mars-00Contributors.md
-    - How2Contribute: mars/Mars-00How2Contribute.md
-    - Entity: mars/Mars-01Entity.md
-    - Native: mars/Mars-01Native.md
-    - Spring: mars/Mars-01Spring.md
-    - Aggregation: mars/Mars-02Aggregation.md
-    - ChangeStream: mars/Mars-02ChangeStream.md
-    - Command: mars/Mars-02Command.md
-    - CRUD: mars/Mars-02CRUD.md
-    - Function: mars/Mars-02Function.md
-    - GridFS: mars/Mars-02GridFS.md
-    - Indexes: mars/Mars-02Indexes.md
-    - Log: mars/Mars-03Log.md
-    - Monitor: mars/Mars-03Monitor.md
-    - Session-Transaction: mars/Mars-03Session-Transaction.md
-    - Performance: mars/Mars-Performance.md
-    - FAQ: mars/Mars-FAQ.md
+    - Contributors: mars/contributors.md
+    - How2Contribute: mars/how-contribute.md
+    - Entity: mars/entity.md
+    - Native: mars/native.md
+    - Spring: mars/spring.md
+    - Aggregation: mars/aggregation.md
+    - ChangeStream: mars/change-stream.md
+    - Command: mars/command.md
+    - CRUD: mars/crud.md
+    - Function: mars/function.md
+    - GridFS: mars/grid-file-system.md
+    - Indexes: mars/indexes.md
+    - Log: mars/log.md
+    - Monitor: mars/monitor.md
+    - Session-Transaction: mars/transaction.md
+    - Performance: mars/performance.md
+    - FAQ: mars/question-answer.md
 
 
 

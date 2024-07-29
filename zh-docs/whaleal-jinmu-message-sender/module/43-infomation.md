@@ -6,7 +6,7 @@
 
 ### 1.1 签名（中国大陆特有）
 
-![image6-1](../../images/JMC/img6-1.png)
+![image6-1](../../images/whaleal-jinmu-message-sender/img6-1.png)
 **图例6-1** 短信实例
 
 展示在短信内容里。如：图例 6-1 中的小优科技。

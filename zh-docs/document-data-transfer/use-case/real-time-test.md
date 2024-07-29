@@ -158,8 +158,8 @@ QPS来自数据平台的日志输出信息，每秒统计OPLOG写入次数；我
   </tr>
 </table>
 
-![img_17.png](../../images/documentDataTransferImages/img_17.png)
-![img_18.png](../../images/documentDataTransferImages/img_18.png)
+![img_17.png](../../images/document-data-transfer/img_17.png)
+![img_18.png](../../images/document-data-transfer/img_18.png)
 
 总结：当cacheBucketSize=16，cacheBucketNum=16，dataBatchSize=128时，可以看出当线程数增加时：
 
@@ -307,8 +307,8 @@ QPS来自数据平台的日志输出信息，每秒统计OPLOG写入次数；我
   </tr>
 </table>
 
-![img_19.png](../../images/documentDataTransferImages/img_19.png)
-![img_20.png](../../images/documentDataTransferImages/img_20.png)
+![img_19.png](../../images/document-data-transfer/img_19.png)
+![img_20.png](../../images/document-data-transfer/img_20.png)
 
 总结：当cacheBucketSize=32，cacheBucketNum=32，dataBatchSize=128时，可以看出当线程数增加时：
 
@@ -320,10 +320,10 @@ QPS来自数据平台的日志输出信息，每秒统计OPLOG写入次数；我
 
 （1）CPU与QPS：
 
-![img_23.png](../../images/documentDataTransferImages/img_23.png)
+![img_23.png](../../images/document-data-transfer/img_23.png)
 
 
 （2）内存使用情况与QPS：
 
 
-![img_24.png](../../images/documentDataTransferImages/img_24.png)
+![img_24.png](../../images/document-data-transfer/img_24.png)

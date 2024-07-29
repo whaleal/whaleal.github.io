@@ -9,11 +9,11 @@ __VM命令进入操作界面__
 
 命令行输入`vm`
 
-![openVonageAccount.png](../../images/JMC/openVonageAccount.png)
+![openVonageAccount.png](../../images/whaleal-jinmu-message-sender/open-vonage-account.png)
 
 按照提示输入`5`将主账号中的余额部分转移到目标子账号,注意先输入主账号的key,其次输入目标子账号的key,最后输入金额
 
-![balanceTransfer.png](../../images/JMC/balanceTransfer.png)
+![balanceTransfer.png](../../images/whaleal-jinmu-message-sender/balance-transfer.png)
 
 
 

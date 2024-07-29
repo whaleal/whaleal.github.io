@@ -85,14 +85,14 @@ Header设置:
 ```
 Content-Type: application/json
 ```
-![image4-3](../../images/JMC/img4-3.png)
+![image4-3](../../images/whaleal-jinmu-message-sender/img4-3.png)
 **图例4-3** Header 设置
 
 GET请求设置:
 ```
 GET https://sms.jinmuinfo.com/send/v2/check?baseKey={baseKey}&secret={secret}&from={from}&msg={msg}&to={to}&type={type}
 ```
-![image4-4](../../images/JMC/img4-4.png)
+![image4-4](../../images/whaleal-jinmu-message-sender/img4-4.png)
 **图例4-4** GET 请求设置
 
 
@@ -112,7 +112,7 @@ Body (raw JSON):
 }
 ```
 
-![image4-5](../../images/JMC/img4-5.png)
+![image4-5](../../images/whaleal-jinmu-message-sender/img4-5.png)
 **图例4-5** POST 请求设置
 
 
@@ -218,18 +218,18 @@ private static JSONObject send(String baseKey, String secret, String type, Strin
 
 ### Header
 
-![image4-6](../../images/JMC/img4-6.png)
+![image4-6](../../images/whaleal-jinmu-message-sender/img4-6.png)
 **图例4-6** POST Header 设置
 
 
 ### GET
 
-![image4-7](../../images/JMC/img4-7.png)
+![image4-7](../../images/whaleal-jinmu-message-sender/img4-7.png)
 **图例4-7** GET 请求设置
 
 ### POST
 
-![image4-8](../../images/JMC/img4-8.png)
+![image4-8](../../images/whaleal-jinmu-message-sender/img4-8.png)
 **图例4-8** POST 请求设置
 
 ## Java示例
@@ -317,7 +317,7 @@ curl --location 'https://sms.jinmuinfo.com/beta/send' \
 }'
 ```
 
-![image4-9](../../images/JMC/应用发信.png)
+![image4-9](../../images/whaleal-jinmu-message-sender/app-sneder.png)
 
 **图例4-9** 应用发信
 

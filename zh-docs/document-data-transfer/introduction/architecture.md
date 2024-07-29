@@ -58,7 +58,7 @@ DDT是Mongodb数据同步组件
 **架构**
 
 
-![img_8.png](../../images/documentDataTransferImages/img_8.png)
+![img_8.png](../../images/document-data-transfer/img_8.png)
 
 
 
@@ -82,7 +82,7 @@ c. target (将数据更新到目标库，可分为全量/实时/对比的实现)
 
 ### 实时迁移
 
-![img_9.png](../../images/documentDataTransferImages/img_9.png)
+![img_9.png](../../images/document-data-transfer/img_9.png)
 
 
 
@@ -104,7 +104,7 @@ c. target (将数据更新到目标库，可分为全量/实时/对比的实现)
 
 ### 全量迁移
 
-![img_10.png](../../images/documentDataTransferImages/img_10.png)
+![img_10.png](../../images/document-data-transfer/img_10.png)
 
 注：
 

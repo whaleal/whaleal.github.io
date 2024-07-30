@@ -83,153 +83,145 @@ markdown_extensions:
 nav:
   - Home: index.md
 
+  - Whaleal Data: # whaleal data
+      - whaleal-data/index.md
+      - 安装部署:
+          - 安装要求: whaleal-data/installation-deployment/installation-requirements.md
+          - JDK安装部署: whaleal-data/installation-deployment/jdk-installation-deployment.md
+          - MYSQL安装部署: whaleal-data/installation-deployment/mysql-installation-deployment.md
+          - Nginx安装部署: whaleal-data/installation-deployment/nginx-installation-deployment.md
+          - Redis安装部署: whaleal-data/installation-deployment/redis-installation-deployment.md
+          - Zookeeper安装部署: whaleal-data/installation-deployment/zookeeper-installation-deployment.md
+          - Whaleal Data安装部署: whaleal-data/installation-deployment/whaleal-data-installation-deployment.md
+      - Whaleal Data使用手册:
+          - 登录页面:
+              - 用户首次登录: whaleal-data/user-manual/login-page/user-first-login.md
+              - 用户注册: whaleal-data/user-manual/login-page/user-registration.md
+          - 首页展示: whaleal-data/user-manual/homepage-display/homepageDisplay.md
+          - 配置管理:
+              - 数据源管理: whaleal-data/user-manual/configuration-management/data-source-management.md
+              - 目标源管理: whaleal-data/user-manual/configuration-management/destination-source-management.md
+              - 表作业配置: whaleal-data/user-manual/configuration-management/table-job-configuration.md
+              - 任务配置: whaleal-data/user-manual/configuration-management/task-configuration.md
+          - 任务管理:
+              - 任务调度: whaleal-data/user-manual/task-management/task-scheduling.md
+              - 任务监控（温）: whaleal-data/user-manual/task-management/warm-task-monitoring.md
+              - 任务监控（冷）: whaleal-data/user-manual/task-management/cold-task-monitoring.md
+              - 任务监控 (S3): whaleal-data/user-manual/task-management/s3-task-monitoring.md
+          - 归档管理:
+              - 日志查询（冷）: whaleal-data/user-manual/archive-management/cold-task-log-query.md
+              - 文件巡检管理: whaleal-data/user-manual/archive-management/file-inspection-management.md
+              - 文件全文检索: whaleal-data/user-manual/archive-management/file-full-text-search.md
+          - 系统管理:
+              - 用户管理: whaleal-data/user-manual/system-management/user-management.md
+              - 角色管理: whaleal-data/user-manual/system-management/role-management.md
+              - 菜单管理: whaleal-data/user-manual/system-management/menu-management.md
+              - 邮件设置: whaleal-data/user-manual/system-management/system-settings.md
+              - 操作日志: whaleal-data/user-manual/system-management/operation-log.md
+              - 错误日志: whaleal-data/user-manual/system-management/error-log.md
+          - 统计报表:
+              - 表作业执行统计: whaleal-data/user-manual/statistical-reports/table-job-execution-statistics.md
+              - 异常作业执行统计: whaleal-data/user-manual/statistical-reports/abnormal-job-execution-statistics.md
+              - 系统接入统计: whaleal-data/user-manual/statistical-reports/system-access-statistics.md
+              - 回滚记录统计: whaleal-data/user-manual/statistical-reports/roll-back-records-statistics.md
+              - 作业明细: whaleal-data/user-manual/statistical-reports/job-details.md
+              - 数据历史流向: whaleal-data/user-manual/statistical-reports/data-historical-flow.md
+      - 用例:
+          - 用户注册: whaleal-data/use-case/user-registration.md
+          - 用户登录: whaleal-data/use-case/user-login.md
+          - 添加数据源: whaleal-data/use-case/add-data-source.md
+          - 添加目标源: whaleal-data/use-case/add-destination-source.md
+          - 添加温数据全量作业: whaleal-data/use-case/add-warm-data-full-load-job.md
+          - 添加冷数据全量作业: whaleal-data/use-case/add-cold-data-full-load-job.md
+          - 添加S3全量作业: whaleal-data/use-case/add-s3-full-load-job.md
+          - 添加温数据增量作业: whaleal-data/use-case/add-warm-data-incremental-job.md
+          - 添加冷数据增量作业: whaleal-data/use-case/add-cold-data-incremental-job.md
+          - 添加S3增量作业: whaleal-data/use-case/add-s3-incremental-job.md
+          - 创建单次任务: whaleal-data/use-case/create-single-task.md
+          - 创建手工任务: whaleal-data/use-case/create-manual-task.md
+          - 创建循环任务: whaleal-data/use-case/create-loop-task.md
+          - 任务执行监控: whaleal-data/use-case/task-execution-monitoring.md
+          - 异常任务重新执行: whaleal-data/use-case/retry-abnormal-task.md
+          - 异常任务回写: whaleal-data/use-case/abnormal-task-feedback.md
+          - 系统删除源端数据: whaleal-data/use-case/system-delete-source-data.md
+          - 手动删除源端数据: whaleal-data/use-case/manually-delete-source-data.md
+          - 冷数据回写: whaleal-data/use-case/cold-data-write-back.md
+          - 冷数据全文检索: whaleal-data/use-case/cold-data-full-text-search.md
+          - SMTP邮件设置: whaleal-data/use-case/smtp-config.md
+          - 温作业Demo: whaleal-data/use-case/warm-job-demo.md
+          - 冷作业Demo: whaleal-data/use-case/cold-work-demo.md
+          - S3作业Demo: whaleal-data/use-case/s3-job-demo.md
 
-  - Whaleal Data:   # whaleal data
-    - whaleal-data/index.md
-    - 安装部署:
-      - 安装要求: whaleal-data/installation-deployment/installation-requirements.md
-      - JDK安装部署: whaleal-data/installation-deployment/jdk-installation-deployment.md
-      - MYSQL安装部署: whaleal-data/installation-deployment/mysql-Linstallation-deployment.md
-      - Nginx安装部署: whaleal-data/installation-deployment/nginx-installation-deployment.md
-      - Redis 安装部署: whaleal-data/installation-deployment/redis-installation-deployment.md
-      - Zookeeper安装部署: whaleal-data/installation-deployment/zookeeper-installation-deployment.md
-      - Whaleal Data安装部署: whaleal-data/installation-deployment/whaleal-data-installation-deployment.md
-    - Whaleal Data使用手册:
-      - 登录页面:
-        - 用户首次登录: whaleal-data/user-manual/login-page/user-first-login.md
-        - 用户注册: whaleal-data/user-manual/login-page/user-registration.md
-      - 首页展示: whaleal-data/user-manual/homepage-display/homepage-display.md
-      - 配置管理:
-        - 数据源管理: whaleal-data/user-manual/configuration-management/data-source-management.md
-        - 目标源管理: whaleal-data/user-manual/configuration-management/destination-source-management.md
-        - 表作业配置: whaleal-data/user-manual/configuration-management/table-job-configuration.md
-        - 任务配置: whaleal-data/user-manual/configuration-management/task-configuration.md
-      - 任务管理:
-        - 任务调度: whaleal-data/user-manual/task-management/task-scheduling.md
-        - 任务监控（温）: whaleal-data/user-manual/task-management/warm-task-monitoring.md
-        - 任务监控（冷）: whaleal-data/user-manual/task-management/cold-task-monitoring.md
-        - 任务监控 (S3): whaleal-data/user-manual/task-management/s3-task-monitoring.md
-      - 归档管理:
-        - 日志查询（冷）: whaleal-data/user-manual/archive-management/cold-task-log-query.md
-        - 文件巡检管理: whaleal-data/user-manual/archive-management/file-inspection-management.md
-        - 文件全文检索: whaleal-data/user-manual/archive-management/file-full-text-search.md
-      - 系统管理:
-        - 用户管理: whaleal-data/user-manual/system-management/user-management.md
-        - 角色管理: whaleal-data/user-manual/system-management/role-management.md
-        - 菜单管理: whaleal-data/user-manual/system-management/menu-management.md
-        - 邮件设置: whaleal-data/user-manual/system-management/system-settings.md
-        - 操作日志: whaleal-data/user-manual/system-management/operation-log.md
-        - 错误日志: whaleal-data/user-manual/system-management/error-log.md
-      - 统计报表:
-        - 表作业执行统计: whaleal-data/user-manual/statistical-reports/table-job-execution-statistics.md
-        - 异常作业执行统计: whaleal-data/user-manual/statistical-reports/abnormal-job-execution-statistics.md
-        - 系统接入统计: whaleal-data/user-manual/statistical-reports/system-access-statistics.md
-        - 回滚记录统计: whaleal-data/user-manual/statistical-reports/roll-back-records-statistics.md
-        - 作业明细: whaleal-data/user-manual/statistical-reports/job-details.md
-        - 数据历史流向: whaleal-data/user-manual/statistical-reports/data-historical-flow.md
-    - 用例:
-      - 用户注册: whaleal-data/use-case/user-registration.md
-      - 用户登录: whaleal-data/use-case/user-login.md
-      - 添加数据源: whaleal-data/use-case/add-data-source.md
-      - 添加目标源: whaleal-data/use-case/add-destination-source.md
-      - 添加温数据全量作业: whaleal-data/use-case/add-warm-data-full-load-job.md
-      - 添加冷数据全量作业: whaleal-data/use-case/add-cold-data-full-load-job.md
-      - 添加S3全量作业: whaleal-data/use-case/add-s3-full-load-job.md
-      - 添加温数据增量作业: whaleal-data/use-case/add-warm-data-incremental-job.md
-      - 添加冷数据增量作业: whaleal-data/use-case/add-cold-data-incremental-job.md
-      - 添加S3增量作业: whaleal-data/use-case/add-s3-incremental-job.md
-      - 创建单次任务: whaleal-data/use-case/create-single-task.md
-      - 创建手工任务: whaleal-data/use-case/create-manual-task.md
-      - 创建循环任务: whaleal-data/use-case/create-loop-task.md
-      - 任务执行监控: whaleal-data/use-case/task-execution-monitoring.md
-      - 异常任务重新执行: whaleal-data/use-case/retry-abnormal-task.md
-      - 异常任务回写: whaleal-data/use-case/abnormal-task-feedback.md
-      - 系统删除源端数据: whaleal-data/use-case/system-delete-source-data.md
-      - 手动删除源端数据: whaleal-data/use-case/manually-delete-source-data.md
-      - 冷数据回写: whaleal-data/use-case/cold-data-write-back.md
-      - 冷数据全文检索: whaleal-data/use-case/cold-data-full-text-search.md
-      - SMTP邮件设置: whaleal-data/use-case/smtp-config.md
-      - 温作业Demo: whaleal-data/use-case/warm-job-demo.md
-      - 冷作业Demo: whaleal-data/use-case/cold-work-demo.md
-      - S3作业Demo: whaleal-data/use-case/s3-job-demo.md
-
-
-
-  - Document Data Transfer:  # Document Data Transfer
-    - document-data-transfer/index.md
-    - 概述:
-      - DDT架构简介: document-data-transfer/introduction/architecture.md
-      - 客户案例: document-data-transfer/introduction/customer-case.md
-    - 安装:
-      - DDT环境要求: document-data-transfer/install/requirement.md
-      - 安装部署: document-data-transfer/install/installation.md
-      - 快速开始: document-data-transfer/install/quick-start.md
-      - 配置: document-data-transfer/install/configuring.md
-    - 用例:
-      - 功能测试: document-data-transfer/use-case/functional-test.md
-      - 全量测试: document-data-transfer/use-case/full-test.md
-      - 实时测试: document-data-transfer/use-case/real-time-test.md
-
+  - Document Data Transfer: # Document Data Transfer
+      - document-data-transfer/index.md
+      - 概述:
+          - DDT架构简介: document-data-transfer/introduction/architecture.md
+          - 客户案例: document-data-transfer/introduction/customer-case.md
+      - 安装:
+          - DDT环境要求: document-data-transfer/install/requirement.md
+          - 安装部署: document-data-transfer/install/installation.md
+          - 快速开始: document-data-transfer/install/quick-start.md
+          - 配置: document-data-transfer/install/configuring.md
+      - 用例:
+          - 功能测试: document-data-transfer/use-case/functional-test.md
+          - 全量测试: document-data-transfer/use-case/full-test.md
+          - 实时测试: document-data-transfer/use-case/real-time-test.md
+          - MongoDB 版本: document-data-transfer/use-case/mongodb-version.md
 
   - whaleal JMC:
-    - whaleal-jinmu-message-sender/index.md
-    - 快速使用指南: whaleal-jinmu-message-sender/4-quick-start.md
-    - 平台概述: whaleal-jinmu-message-sender/2-platform-overview.md
-    - 平台布局介绍: whaleal-jinmu-message-sender/3-platform-layout-introduction.md
-    - 功能介绍: whaleal-jinmu-message-sender/module/41-module.md
-    - API: whaleal-jinmu-message-sender/module/42-api.md
-    - SenderID申请材料: whaleal-jinmu-message-sender/5-sender-id.md
-    - 基础概念介绍: whaleal-jinmu-message-sender/module/43-infomation.md
-    - 常见问题: whaleal-jinmu-message-sender/9-quesion-answer.md
-    - 文档更新记录: whaleal-jinmu-message-sender/1-home-page.md
-
+      - whaleal-jinmu-message-sender/index.md
+      - 快速使用指南: whaleal-jinmu-message-sender/4-quick-start.md
+      - 平台概述: whaleal-jinmu-message-sender/2-platform-overview.md
+      - 平台布局介绍: whaleal-jinmu-message-sender/3-platform-layout-introduction.md
+      - 功能介绍: whaleal-jinmu-message-sender/module/41-module.md
+      - API: whaleal-jinmu-message-sender/module/42-api.md
+      - SenderID申请材料: whaleal-jinmu-message-sender/5-sender-id.md
+      - 基础概念介绍: whaleal-jinmu-message-sender/module/43-infomation.md
+      - 常见问题: whaleal-jinmu-message-sender/9-quesion-answer.md
+      - 文档更新记录: whaleal-jinmu-message-sender/1-home-page.md
 
   - Support:
-    - whaleal-support/index.md
-    - 登录: whaleal-support/user-manual/login.md
-    - 根据SLA创建工单: whaleal-support/user-manual/create-case-according-to-sla.md
-    - 我的工单: whaleal-support/user-manual/case-list.md
-    - 工单详情: whaleal-support/user-manual/case-details.md
-    - 产品与文档: whaleal-support/user-manual/production-document.md
-    - 站内信: whaleal-support/user-manual/notification.md
-    - 通讯录: whaleal-support/user-manual/address-list.md
-
+      - whaleal-support/index.md
+      - 登录: whaleal-support/user-manual/login.md
+      - 根据SLA创建工单: whaleal-support/user-manual/create-case-according-to-sla.md
+      - 我的工单: whaleal-support/user-manual/case-list.md
+      - 工单详情: whaleal-support/user-manual/case-details.md
+      - 产品与文档: whaleal-support/user-manual/production-document.md
+      - 站内信: whaleal-support/user-manual/notification.md
+      - 通讯录: whaleal-support/user-manual/address-list.md
 
   - CW:
       - cloud-warn-usage/readme.md
 
-
-  - whaleal-acount:
+  - whaleal-account:
       - oauth2/oauth2.md
-      - login: user-manual/login.md
-      - register: user-manual/login.md
-      - password-reset: user-manual/password-reset.md
-      - client: user-manual/client.md
-      - organization: user-manual/organization.md
-      - user-info: user-manual/user-info.md
-
+      - login: whaleal-account/user-manual/login.md
+      - register: whaleal-account/user-manual/register.md
+      - password-reset: whaleal-account/user-manual/password-reset.md
+      - client: whaleal-account/user-manual/client.md
+      - organization: whaleal-account/user-manual/organization.md
+      - user-info: whaleal-account/user-manual/user-Info.md
 
   - Mars:
-    - mars/readme.md
-    - Home: mars/home.md
-    - Contributors: mars/contributors.md
-    - How2Contribute: mars/how-contribute.md
-    - Entity: mars/entity.md
-    - Native: mars/native.md
-    - Spring: mars/spring.md
-    - Aggregation: mars/aggregation.md
-    - ChangeStream: mars/change-stream.md
-    - Command: mars/command.md
-    - CRUD: mars/crud.md
-    - Function: mars/function.md
-    - GridFS: mars/grid-file-system.md
-    - Indexes: mars/indexes.md
-    - Log: mars/log.md
-    - Monitor: mars/monitor.md
-    - Session-Transaction: mars/transaction.md
-    - Performance: mars/performance.md
-    - FAQ: mars/question-answer.md
-
+      - mars/readme.md
+      - Home: mars/home.md
+      - Contributors: mars/contributors.md
+      - How2Contribute: mars/how-contribute.md
+      - Entity: mars/entity.md
+      - Native: mars/native.md
+      - Spring: mars/spring.md
+      - Aggregation: mars/aggregation.md
+      - ChangeStream: mars/change-stream.md
+      - Command: mars/command.md
+      - CRUD: mars/crud.md
+      - Function: mars/function.md
+      - GridFS: mars/grid-file-system.md
+      - Indexes: mars/indexes.md
+      - Log: mars/log.md
+      - Monitor: mars/monitor.md
+      - Session-Transaction: mars/transaction.md
+      - Performance: mars/performance.md
+      - FAQ: mars/question-answer.md
 
 
 

@@ -10,7 +10,7 @@ copyright: © 2024 | @whaleal
 
 
 # Custom Homepage Elements
-home_cover_image: images/wizard-posting.png # This path starts at your root mkdocs directory.
+home_cover_image: images/docs-logo.png # This path starts at your root mkdocs directory.
 home_tagline: Whaleal
 home_description: |
   欢迎来到Whaleal产品文档网站,这里提供了全面的文档,帮助您了解和使用我们的产品。

@@ -87,187 +87,187 @@ markdown_extensions:
   - pymdownx.superfences
 
 nav:
-  - Home: index.md
   - Whaleal Platform:
-    - WhalealPlatform/index.md
-    - Whaleal Overview:
-      - Whaleal Architecture: WhalealPlatform/01-WhalealOverview/01-whaleal-architecture.md
-      - Example Deployment: WhalealPlatform/01-WhalealOverview/02-example-deployment.md
-      - QuickStart On Premise: WhalealPlatform/01-WhalealOverview/03-quick-start-on-premise.md
-      - QuickStart On Marketplace: WhalealPlatform/01-WhalealOverview/04-quick-start-on-marketplace.md
-    - Install Whaleal:
-      - Installation Checklist: WhalealPlatform/02-InstallWhaleal/01-installation-checklist.md
-      - Hardware And Software Requirements: WhalealPlatform/02-InstallWhaleal/02-hardware-and-software-requirements.md
-      - InstallWhaleal:
-        - Install Whaleal In AWS MarketPlace: WhalealPlatform/02-InstallWhaleal/03-InstallWhaleal/01-install-whalealIn-aws-marketplace.md
-        - Install Whaleal In Docker: WhalealPlatform/02-InstallWhaleal/03-InstallWhaleal/02-install-whalealin-docker.md
-        - On Premise Install Whaleal: WhalealPlatform/02-InstallWhaleal/03-InstallWhaleal/03-on-premise-install-whaleal.md
-    - Projects:
-      - Projects: WhalealPlatform/03-Projects/01-projects.md
-    - Create Deployment:
-      - Deployment Prerequisites: WhalealPlatform/04-CreateDeployment/01-deployment-prerequisites.md
-      - Add EC2:
-        - Resource Quota: WhalealPlatform/04-CreateDeployment/02-AddEC2/01-resource-quota.md
-        - Subscribe Agent: WhalealPlatform/04-CreateDeployment/02-AddEC2/02-subscribe-agent.md
-        - Manually Add Agent: WhalealPlatform/04-CreateDeployment/02-AddEC2/03-manually-add-agent.md
-      - Add K8S Cluster: WhalealPlatform/04-CreateDeployment/03-add-k8s-cluster.md
-      - Deploy Standalone: WhalealPlatform/04-CreateDeployment/04-deploy-standalone.md
-      - Deploy ReplicaSet: WhalealPlatform/04-CreateDeployment/05-deploy-replica-set.md
-      - Deploy Sharded Cluster: WhalealPlatform/04-CreateDeployment/06-deploy-sharded-cluster.md
-      - Deploy Existing Cluster: WhalealPlatform/04-CreateDeployment/07-deploy-existing-cluster.md
-    - Manage Deployments:
-      - View All Clusters: WhalealPlatform/05-ManageDeployments/01-view-all-clusters.md
-      - Edit Deployment Configuration: WhalealPlatform/05-ManageDeployments/02-edit-deployment-configuration.md
-      - Edit ReplicaSet: WhalealPlatform/05-ManageDeployments/03-edits-replica-sets.md
-      - Sharded Cluster Operations: WhalealPlatform/05-ManageDeployments/04-sharded-cluster-operations.md
-      - Stop Managingandor Monitoring One Deployment: WhalealPlatform/05-ManageDeployments/05-stop-managingandor-monitoring-one-deployment.md
-      - MongoDB Operation: WhalealPlatform/05-ManageDeployments/06-mongodb-operation.md
-    - Monitor:
-      - Monitoring Instructions: WhalealPlatform/06-Monitor/01-monitoring-instructions.md
-      - Usage Monitoring: WhalealPlatform/06-Monitor/02-usage-monitoring.md
-      - Monitoring indicator details: WhalealPlatform/06-Monitor/03-monitoring-indicator-details.md
-    - Backup And Restore:
-      - Backup:
-        - Create Repository: WhalealPlatform/07-BackupAndRestore/01-Backup/01-create-repository.md
-        - Operations: WhalealPlatform/07-BackupAndRestore/01-Backup/02-operations.md
-      - Restore: WhalealPlatform/07-BackupAndRestore/02-restore.md
-      - Mirrored MongoDB Data Through MongoDB Tools: WhalealPlatform/07-BackupAndRestore03-MirroredMongoDBData/01-mirrored-mongodb-data-through-mongodb-tools.md
-      - Mirrored MongoDB Data Through DDT: WhalealPlatform/07-BackupAndRestore03-MirroredMongoDBData/02-mirrored-mongodb-data-through-ddt.md
-    - Security:
-      - Configure Firewall to Access Whaleal: WhalealPlatform/08-Security/01-configure-firewallto-access-whaleal.md
-      - Secure MongoDB Deployment swith Authentication:
-        - MongoDB Access Control: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/01-mongodb-access-control.md
-        - Enable Username Password Authentication: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/02-enable-username-password-authentication.md
-        - Enable X509 Authentication: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/03-enable-x509-authentication.md
-        - Manage MongoDB Users and Roles: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/04-manage-mongodb-users-and-roles.md
-        - Configure and Deploy Auditing: WhalealPlatform/08-Security/03-SecureMongoDBDeploymentswithAuthentication/05-configureand-deploy-auditing.md
-    - Alert:
-      - Host Alert: WhalealPlatform/09-Alert/01-host-alert.md
-      - MongoDB Alert: WhalealPlatform/09-Alert/02-mongodb-alert.md
-      - Project Alert: WhalealPlatform/09-Alert/03-project-alert.md
-    - Diagnose:
-      - ClusterInfo: WhalealPlatform/10-Diagnose/01-cluster-info.md
-      - Cluster Health: WhalealPlatform/10-Diagnose/02-cluster-health.md
-      - Performance: WhalealPlatform/10-Diagnose/03-performance.md
-      - LogVis: WhalealPlatform/10-Diagnose/04-log-vis.md
-      - ExploreData: WhalealPlatform/10-Diagnose/05-explore-data.md
-    - Audit:
-      - Audit: WhalealPlatform/11-Audit/01-audit.md
-    - Account:
-      - user Center: WhalealPlatform/12-Account/01-usercenter.md
-      - User Management: WhalealPlatform/12-Account/02-user-management.md
-      - Account Configuration: WhalealPlatform/12-Account/03-account-configuration.md
-    - Setting:
-      - MongoDB Packge: WhalealPlatform/13-Setting/01-mongodb-packge.md
-      - SMTP: WhalealPlatform/13-Setting/02-smtp.md
-      - Collection Granularity: WhalealPlatform/13-Setting/03-collection-granularity.md
-      - Kubernetes: WhalealPlatform/13-Setting/04-kubernetes.md
-      - S3: WhalealPlatform/13-Setting/05-s3.md
-      - Version: WhalealPlatform/13-Setting/06-version.md
-    - Support:
-      - Cluster Inspection: WhalealPlatform/14-Support/01-cluster-inspection.md
-    - Administrator Whaleal:
-      - Start And Stop Whaleal Application: WhalealPlatform/15-AdministratorWhaleal/01-start-and-stop-whaleal-application.md
-      - IntegrationwithPrometheus: WhalealPlatform/15-AdministratorWhaleal/02-integrationwith-prometheus.md
-    - Troubleshooting:
-      - EC2 and K8S: WhalealPlatform/16-Troubleshooting/01-ec2-and-k8s.md
-      - MongoDB Monitoring: WhalealPlatform/16-Troubleshooting/02-mongodb-monitoring.md
-      - MongoDB Upgrade Downgrade: WhalealPlatform/16-Troubleshooting/03-mongodb-upgrade-downgrade.md
-      - Backup and Restore: WhalealPlatform/16-Troubleshooting/04-backup-and-restore.md
-    - Frequently Asked Questions:
-      - WAP: WhalealPlatform/17-FrequentlyAskedQuestions/01-wap.md
-      - Monitor: WhalealPlatform/17-FrequentlyAskedQuestions/02-monitor.md
-      - Backup: WhalealPlatform/17-FrequentlyAskedQuestions/03-backup.md
-      - Service: WhalealPlatform/17-FrequentlyAskedQuestions/04-service.md
-      - Agent: WhalealPlatform/17-FrequentlyAskedQuestions/05-agent.md
-    - Release Notes:
-      - Whaleal Changelog: WhalealPlatform/18-ReleaseNotes/01-whaleal-changelog.md
+      - whaleal-platform/index.md
+      - Whaleal Overview:
+          - Whaleal Architecture: whaleal-platform/01-whaleal-overview/01-whaleal-architecture.md
+          - Example Deployment: whaleal-platform/01-whaleal-overview/02-example-deployment.md
+          - QuickStart On Premise: whaleal-platform/01-whaleal-overview/03-quick-start-on-premise.md
+          - QuickStart On Marketplace: whaleal-platform/01-whaleal-overview/04-quick-start-on-marketplace.md
+      - Install Whaleal:
+          - Installation Checklist: whaleal-platform/02-install-whaleal/01-installation-checklist.md
+          - Hardware And Software Requirements: whaleal-platform/02-install-whaleal/02-hardware-and-software-requirements.md
+          - InstallWhaleal:
+              - Install Whaleal In AWS MarketPlace: whaleal-platform/02-install-whaleal/03-install-whaleal/01-install-whaleal-in-aws-marketplace.md
+              - Install Whaleal In Docker: whaleal-platform/02-install-whaleal/03-install-whaleal/02-install-whaleal-in-docker.md
+              - On Premise Install Whaleal: whaleal-platform/02-install-whaleal/03-install-whaleal/03-on-premise-install-whaleal.md
+      - Projects:
+          - Projects: whaleal-platform/03-projects/01-projects.md
+      - Create Deployment:
+          - Deployment Prerequisites: whaleal-platform/04-create-deployment/01-deployment-prerequisites.md
+          - Add EC2:
+              - Resource Quota: whaleal-platform/04-create-deployment/02-add-ec2/01-resource-quota.md
+              - Subscribe Agent: whaleal-platform/04-create-deployment/02-add-ec2/02-subscribe-agent.md
+              - Manually Add Agent: whaleal-platform/04-create-deployment/02-add-ec2/03-manually-add-agent.md
+          - Add K8S Cluster: whaleal-platform/04-create-deployment/03-add-k8s-cluster.md
+          - Deploy Standalone: whaleal-platform/04-create-deployment/04-deploy-standalone.md
+          - Deploy ReplicaSet: whaleal-platform/04-create-deployment/05-deploy-replica-set.md
+          - Deploy Sharded Cluster: whaleal-platform/04-create-deployment/06-deploy-sharded-cluster.md
+          - Deploy Existing Cluster: whaleal-platform/04-create-deployment/07-deploy-existing-cluster.md
+      - Manage Deployments:
+          - View All Clusters: whaleal-platform/05-manage-deployments/01-view-all-clusters.md
+          - Edit Deployment Configuration: whaleal-platform/05-manage-deployments/02-edit-deployment-configuration.md
+          - Edit ReplicaSet: whaleal-platform/05-manage-deployments/03-edit-replica-sets.md
+          - Sharded Cluster Operations: whaleal-platform/05-manage-deployments/04-sharded-cluster-operations.md
+          - Stop Managingandor Monitoring One Deployment: whaleal-platform/05-manage-deployments/05-stop-managing-and-or-monitoring-one-deployment.md
+          - MongoDB Operation: whaleal-platform/05-manage-deployments/06-mongodb-operation.md
+      - Monitor:
+          - Monitoring Instructions: whaleal-platform/06-monitor/01-monitoring-instructions.md
+          - Usage Monitoring: whaleal-platform/06-monitor/02-usage-monitoring.md
+          - Monitoring indicator details: whaleal-platform/06-monitor/03-monitoring-indicator-details.md
+      - Backup And Restore:
+          - Backup:
+              - Create Repository: whaleal-platform/07-backup-and-restore/01-backup/01-create-repository.md
+              - Operations: whaleal-platform/07-backup-and-restore/01-backup/02-operations.md
+          - Restore: whaleal-platform/07-backup-and-restore/02-restore.md
+          - Mirrored MongoDB Data Through MongoDB Tools: whaleal-platform/07-backup-and-restore/03-mirrored-mongodb-data/01-mirrored-mongodb-data-through-mongodb-tools.md
+          - Mirrored MongoDB Data Through DDT: whaleal-platform/07-backup-and-restore/03-mirrored-mongodb-data/02-mirrored-mongodb-data-through-ddt.md
+      - Security:
+          - Configure Firewall to Access Whaleal: whaleal-platform/08-security/01-configure-firewall-to-access-whaleal.md
+          - Secure MongoDB Deployment swith Authentication:
+              - MongoDB Access Control: whaleal-platform/08-security/03-secure-mongodb-deployments-with-authentication/01-mongodb-access-control.md
+              - Enable Username Password Authentication: whaleal-platform/08-security/03-secure-mongodb-deployments-with-authentication/02-enable-username-password-authentication.md
+              - Enable X509 Authentication: whaleal-platform/08-security/03-secure-mongodb-deployments-with-authentication/03-enable-x509-authentication.md
+              - Manage MongoDB Users and Roles: whaleal-platform/08-security/03-secure-mongodb-deployments-with-authentication/04-manage-mongodb-users-and-roles.md
+              - Configure and Deploy Auditing: whaleal-platform/08-security/03-secure-mongodb-deployments-with-authentication/05-configure-and-deploy-auditing.md
+      - Alert:
+          - Host Alert: whaleal-platform/09-alert/01-host-alert.md
+          - MongoDB Alert: whaleal-platform/09-alert/02-mongodb-alert.md
+          - Project Alert: whaleal-platform/09-alert/03-project-alert.md
+      - Diagnose:
+          - ClusterInfo: whaleal-platform/10-diagnose/01-cluster-info.md
+          - Cluster Health: whaleal-platform/10-diagnose/02-cluster-health.md
+          - Performance: whaleal-platform/10-diagnose/03-performance.md
+          - LogVis: whaleal-platform/10-diagnose/04-log-vis.md
+          - ExploreData: whaleal-platform/10-diagnose/05-explore-data.md
+      - Audit:
+          - Audit: whaleal-platform/11-audit/01-audit.md
+      - Account:
+          - user Center: whaleal-platform/12-account/01-user-center.md
+          - User Management: whaleal-platform/12-account/02-user-management.md
+          - Account Configuration: whaleal-platform/12-account/03-account-configuration.md
+      - Setting:
+          - MongoDB Packge: whaleal-platform/13-setting/01-mongodb-packge.md
+          - SMTP: whaleal-platform/13-setting/02-smtp.md
+          - Collection Granularity: whaleal-platform/13-setting/03-collection-granularity.md
+          - Kubernetes: whaleal-platform/13-setting/04-kubernetes.md
+          - S3: whaleal-platform/13-setting/05-s3.md
+          - Version: whaleal-platform/13-setting/06-version.md
+      - Support:
+          - Cluster Inspection: whaleal-platform/14-support/01-cluster-inspection.md
+      - Administrator Whaleal:
+          - Start And Stop Whaleal Application: whaleal-platform/15-administrator-whaleal/01-start-and-stop-whaleal-application.md
+          - IntegrationwithPrometheus: whaleal-platform/15-administrator-whaleal/02-integration-with-prometheus.md
+      - Troubleshooting:
+          - EC2 and K8S: whaleal-platform/16-troubleshooting/01-ec2-and-k8s.md
+          - MongoDB Monitoring: whaleal-platform/16-troubleshooting/02-mongodb-monitoring.md
+          - MongoDB Upgrade Downgrade: whaleal-platform/16-troubleshooting/03-mongodb-upgrade-downgrade.md
+          - Backup and Restore: whaleal-platform/16-troubleshooting/04-backup-and-restore.md
+      - Frequently Asked Questions:
+          - WAP: whaleal-platform/17-frequently-asked-questions/01-wap.md
+          - Monitor: whaleal-platform/17-frequently-asked-questions/02-monitor.md
+          - Backup: whaleal-platform/17-frequently-asked-questions/03-backup.md
+          - Service: whaleal-platform/17-frequently-asked-questions/04-service.md
+          - Agent: whaleal-platform/17-frequently-asked-questions/05-agent.md
+      - Release Notes:
+          - Whaleal Changelog: whaleal-platform/18-release-notes/01-whaleal-changelog.md
 
-  - Whaleal Data:   # whaleal data
-    - whalealData/index.md
-    - InstallationDeployment:
-      - InstallationRequirements: whalealData/InstallationDeployment/installation-requirements.md
-      - JDKInstallationDeployment: whalealData/InstallationDeployment/jdk-installation-deployment.md
-      - MYSQLInstallationDeployment: whalealData/InstallationDeployment/mysql-installation-deployment.md
-      - NginxInstallationDeployment: whalealData/InstallationDeployment/nginx-installation-deployment.md
-      - RedisInstallationDeployment: whalealData/InstallationDeployment/redis-installation-deployment.md
-      - ZookeeperInstallationDeployment: whalealData/InstallationDeployment/zookeeper-installation-deployment.md
-      - Whaleal-dataInstallationDeployment: whalealData/InstallationDeployment/whaleal-data-installation-deployment.md
-    - Whaleal data Manual:
-      - LoginPage:
-        - UserFirstLogin: whalealData/UserManual/LoginPage/user-first-login.md
-        - UserRegistration: whalealData/UserManual/LoginPage/user-registration.md
-      - HomepageDisplay: whalealData/UserManual/HomepageDisplay/HomepageDisplay.md
-      - ConfigurationManagement:
-        - DataSourceManagement: whalealData/UserManual/ConfigurationManagement/data-source-management.md
-        - DestinationSourceManagement: whalealData/UserManual/ConfigurationManagement/destination-source-management.md
-        - TableJobConfiguration: whalealData/UserManual/ConfigurationManagement/table-job-configuration.md
-        - TaskConfiguration: whalealData/UserManual/ConfigurationManagement/task-configuration.md
-      - TaskManagement:
-        - TaskScheduling: whalealData/UserManual/TaskManagement/task-scheduling.md
-        - WarmTaskMonitoring: whalealData/UserManual/TaskManagement/warm-task-monitoring.md
-        - ColdTaskMonitoring: whalealData/UserManual/TaskManagement/cold-task-monitoring.md
-        - S3TaskMonitoring: whalealData/UserManual/TaskManagement/s3-task-monitoring.md
-      - ArchiveManagement:
-        - ColdTaskLogQuery: whalealData/UserManual/ArchiveManagement/cold-task-log-query.md
-        - FileInspectionManagement: whalealData/UserManual/ArchiveManagement/file-inspection-management.md
-        - FileFullTextSearch: whalealData/UserManual/ArchiveManagement/file-full-text-search.md
-      - SystemManagement:
-        - UserManagement: whalealData/UserManual/SystemManagement/user-management.md
-        - RoleManagement: whalealData/UserManual/SystemManagement/role-management.md
-        - MenuManagement: whalealData/UserManual/SystemManagement/menu-management.md
-        - SystemSettings: whalealData/UserManual/SystemManagement/system-settings.md
-        - OperationLog: whalealData/UserManual/SystemManagement/operation-log.md
-        - ErrorLog: whalealData/UserManual/SystemManagement/error-log.md
-      - StatisticalReports:
-        - TableJobExecutionStatistics: whalealData/UserManual/StatisticalReports/table-job-execution-statistics.md
-        - AbnormalJobExecutionStatistics: whalealData/UserManual/StatisticalReports/abnormal-job-execution-statistics.md
-        - SystemAccessStatistics: whalealData/UserManual/StatisticalReports/system-access-statistics.md
-        - RollbackRecordsStatistics: whalealData/UserManual/StatisticalReports/roll-back-records-statistics.md
-        - JobDetails: whalealData/UserManual/StatisticalReports/job-details.md
-        - DataHistoricalFlow: whalealData/UserManual/StatisticalReports/data-historical-flow.md
-    - UseCase:
-      - UserRegistration: whalealData/UseCase/user-registration.md
-      - UserLogin: whalealData/UseCase/user-login.md
-      - AddDataSource: whalealData/UseCase/add-data-source.md
-      - AddDestinationSource: whalealData/UseCase/add-destination-source.md
-      - AddWarmDataFullLoadJob: whalealData/UseCase/add-warm-data-full-load-job.md
-      - AddColdDataFullLoadJob: whalealData/UseCase/add-cold-data-full-load-job.md
-      - AddS3FullLoadJob: whalealData/UseCase/add-s3-full-load-job.md
-      - AddWarmDataIncrementalJob: whalealData/UseCase/add-warm-data-incremental-job.md
-      - AddColdDataIncrementalJob: whalealData/UseCase/add-cold-data-incremental-job.md
-      - AddS3IncrementalJob: whalealData/UseCase/add-s3-incremental-job.md
-      - CreateSingleTask: whalealData/UseCase/create-single-task.md
-      - CreateManualTask: whalealData/UseCase/create-manual-task.md
-      - CreateLoopTask: whalealData/UseCase/create-loop-task.md
-      - TaskExecutionMonitoring: whalealData/UseCase/task-execution-monitoring.md
-      - RetryAbnormalTask: whalealData/UseCase/retry-abnormal-task.md
-      - AbnormalTaskFeedback: whalealData/UseCase/abnormal-task-feedback.md
-      - SystemDeleteSourceData: whalealData/UseCase/system-delete-source-data.md
-      - ManuallyDeleteSourceData: whalealData/UseCase/manually-delete-source-data.md
-      - ColdDataWriteBack: whalealData/UseCase/cold-data-write-back.md
-      - ColdDataFullTextSearch: whalealData/UseCase/cold-data-full-text-search.md
-      - SMTPConfig: whalealData/UseCase/smtp-config.md
-      - WarmJobDemo: whalealData/UseCase/warm-job-demo.md
-      - ColdWorkDemo: whalealData/UseCase/cold-work-demo.md
-      - S3JobDemo: whalealData/UseCase/s3-job-demo.md
+  - Whaleal Data: # whaleal data
+      - whaleal-data/index.md
+      - InstallationDeployment:
+          - InstallationRequirements: whaleal-data/installation-deployment/installation-requirements.md
+          - JDKInstallationDeployment: whaleal-data/installation-deployment/jdk-installation-deployment.md
+          - MYSQLInstallationDeployment: whaleal-data/installation-deployment/mysql-installation-deployment.md
+          - NginxInstallationDeployment: whaleal-data/installation-deployment/nginx-installation-deployment.md
+          - RedisInstallationDeployment: whaleal-data/installation-deployment/redis-installation-deployment.md
+          - ZookeeperInstallationDeployment: whaleal-data/installation-deployment/zookeeper-installation-deployment.md
+          - Whaleal-dataInstallationDeployment: whaleal-data/installation-deployment/whaleal-data-installation-deployment.md
+      - Whaleal data Manual:
+          - LoginPage:
+              - UserFirstLogin: whaleal-data/user-manual/login-page/user-first-login.md
+              - UserRegistration: whaleal-data/user-manual/login-page/user-registration.md
+          - HomepageDisplay: whaleal-data/user-manual/homepage-display/homepage-display.md
+          - ConfigurationManagement:
+              - DataSourceManagement: whaleal-data/user-manual/configuration-management/data-source-management.md
+              - DestinationSourceManagement: whaleal-data/user-manual/configuration-management/destination-source-management.md
+              - TableJobConfiguration: whaleal-data/user-manual/configuration-management/table-job-configuration.md
+              - TaskConfiguration: whaleal-data/user-manual/configuration-management/task-configuration.md
+          - TaskManagement:
+              - TaskScheduling: whaleal-data/user-manual/task-management/task-scheduling.md
+              - WarmTaskMonitoring: whaleal-data/user-manual/task-management/warm-task-monitoring.md
+              - ColdTaskMonitoring: whaleal-data/user-manual/task-management/cold-task-monitoring.md
+              - S3TaskMonitoring: whaleal-data/user-manual/task-management/s3-task-monitoring.md
+          - ArchiveManagement:
+              - ColdTaskLogQuery: whaleal-data/user-manual/archive-management/cold-task-log-query.md
+              - FileInspectionManagement: whaleal-data/user-manual/archive-management/file-inspection-management.md
+              - FileFullTextSearch: whaleal-data/user-manual/archive-management/file-full-text-search.md
+          - SystemManagement:
+              - UserManagement: whaleal-data/user-manual/system-management/user-management.md
+              - RoleManagement: whaleal-data/user-manual/system-management/role-management.md
+              - MenuManagement: whaleal-data/user-manual/system-management/menu-management.md
+              - SystemSettings: whaleal-data/user-manual/system-management/system-settings.md
+              - OperationLog: whaleal-data/user-manual/system-management/operation-log.md
+              - ErrorLog: whaleal-data/user-manual/system-management/error-log.md
+          - StatisticalReports:
+              - TableJobExecutionStatistics: whaleal-data/user-manual/statistical-reports/table-job-execution-statistics.md
+              - AbnormalJobExecutionStatistics: whaleal-data/user-manual/statistical-reports/abnormal-job-execution-statistics.md
+              - SystemAccessStatistics: whaleal-data/user-manual/statistical-reports/system-access-statistics.md
+              - RollbackRecordsStatistics: whaleal-data/user-manual/statistical-reports/rollback-records-statistics.md
+              - JobDetails: whaleal-data/user-manual/statistical-reports/job-details.md
+              - DataHistoricalFlow: whaleal-data/user-manual/statistical-reports/data-historical-flow.md
+      - UseCase:
+          - UserRegistration: whaleal-data/use-case/user-registration.md
+          - UserLogin: whaleal-data/use-case/user-login.md
+          - AddDataSource: whaleal-data/use-case/add-data-source.md
+          - AddDestinationSource: whaleal-data/use-case/add-destination-source.md
+          - AddWarmDataFullLoadJob: whaleal-data/use-case/add-warm-data-full-load-job.md
+          - AddColdDataFullLoadJob: whaleal-data/use-case/add-cold-data-full-load-job.md
+          - AddS3FullLoadJob: whaleal-data/use-case/add-s3-full-load-job.md
+          - AddWarmDataIncrementalJob: whaleal-data/use-case/add-warm-data-incremental-job.md
+          - AddColdDataIncrementalJob: whaleal-data/use-case/add-cold-data-incremental-job.md
+          - AddS3IncrementalJob: whaleal-data/use-case/add-s3-incremental-job.md
+          - CreateSingleTask: whaleal-data/use-case/create-single-task.md
+          - CreateManualTask: whaleal-data/use-case/create-manual-task.md
+          - CreateLoopTask: whaleal-data/use-case/create-loop-task.md
+          - TaskExecutionMonitoring: whaleal-data/use-case/task-execution-monitoring.md
+          - RetryAbnormalTask: whaleal-data/use-case/retry-abnormal-task.md
+          - AbnormalTaskFeedback: whaleal-data/use-case/abnormal-task-feedback.md
+          - SystemDeleteSourceData: whaleal-data/use-case/system-delete-source-data.md
+          - ManuallyDeleteSourceData: whaleal-data/use-case/manually-delete-source-data.md
+          - ColdDataWriteBack: whaleal-data/use-case/cold-data-write-back.md
+          - ColdDataFullTextSearch: whaleal-data/use-case/cold-data-full-text-search.md
+          - SMTPConfig: whaleal-data/use-case/smtp-config.md
+          - WarmJobDemo: whaleal-data/use-case/warm-job-demo.md
+          - ColdWorkDemo: whaleal-data/use-case/cold-work-demo.md
+          - S3JobDemo: whaleal-data/use-case/s3-job-demo.md
 
-  - Document Data Transfer:  # Document Data Transfer
-    - document-data-transfer/index.md
-    - Overview:
-      - Architecture: document-data-transfer/introduction/architecture.md
-      - CustomerCase: document-data-transfer/introduction/customer-case.md
-    - Install:
-      - Requirements: document-data-transfer/install/requirement.md
-      - Installation: document-data-transfer/install/installation.md
-      - QuickStart: document-data-transfer/install/quick-start.md
-      - Configuring: document-data-transfer/install/configuring.md
-    - Use Case:
-      - FunctionalTest: document-data-transfer/use-case/functional-test.md
-      - FullTesting: document-data-transfer/use-case/full-test.md
-      - RealTimeTest: document-data-transfer/use-case/real-time-test.md
+  - Document Data Transfer: # Document Data Transfer
+      - document-data-transfer/index.md
+      - Overview:
+          - Architecture: document-data-transfer/introduction/architecture.md
+          - CustomerCase: document-data-transfer/introduction/customer-case.md
+      - Install:
+          - Requirements: document-data-transfer/install/requirements.md
+          - Installation: document-data-transfer/install/installation.md
+          - QuickStart: document-data-transfer/install/quick-start.md
+          - Configuring: document-data-transfer/install/configuring.md
+      - Use Case:
+          - FunctionalTest: document-data-transfer/use-case/functional-test.md
+          - FullTesting: document-data-transfer/use-case/full-test.md
+          - RealTimeTest: document-data-transfer/use-case/real-time-test.md
 
   # - Support: whalealSupport/index.md
+
 
 extra:
   alternate:

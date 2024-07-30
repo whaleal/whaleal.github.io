@@ -98,7 +98,7 @@ nav:
       - 登录页面:
         - 用户首次登录: whaleal-data/user-manual/login-page/user-first-login.md
         - 用户注册: whaleal-data/user-manual/login-page/user-registration.md
-      - 首页展示: whaleal-data/user-manual/homepage-display/HomepageDisplay.md
+      - 首页展示: whaleal-data/user-manual/homepage-display/homepage-display.md
       - 配置管理:
         - 数据源管理: whaleal-data/user-manual/configuration-management/data-source-management.md
         - 目标源管理: whaleal-data/user-manual/configuration-management/destination-source-management.md

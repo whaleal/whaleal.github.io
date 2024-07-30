@@ -22,7 +22,7 @@ For a list of default ports and health check endpoints for Whaleal, please refer
 
 ## Whaleal Backup
 
-Whaleal performs MongoDB database backup through [DDT](https://docs.whaleal.com/DocumentDataTransfer/) or [DUMP](https://www.mongodb.com/docs/database-tools/mongodump/).
+Whaleal performs MongoDB database backup through [DDT](https://docs.whaleal.com/document-data-transfer/) or [DUMP](https://www.mongodb.com/docs/database-tools/mongodump/).
 
 For information on how to start, check status, stop, and restart the MongoDB backup process, refer to Starting and Stopping MongoDB Backup.
 

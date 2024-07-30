@@ -9,7 +9,7 @@ copyright: © 2024 | @whaleal
 
 
 # Custom Homepage Elements
-home_cover_image: images/wizard-posting.png # This path starts at your root mkdocs directory.
+home_cover_image: images/docs-logo.png # This path starts at your root mkdocs directory.
 home_tagline: Whaleal
 home_description: |
   Welcome to the Whaleal Product Documentation website, which provides comprehensive documentation to help you understand and use our products.

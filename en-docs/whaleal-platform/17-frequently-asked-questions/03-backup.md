@@ -17,7 +17,7 @@ If the bucket name is filled in incorrectly, create a backup policy and refresh 
 
 
 
-#### 3. Backup issu，In configuration:
+#### 3. Backup introduce:
 
 1. Full volume and real-time
 2. Full volume and increment

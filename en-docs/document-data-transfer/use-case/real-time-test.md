@@ -299,8 +299,8 @@ Summary: When cacheBucketSize=16, cacheBucketNum=16, dataBatchSize=128, it can b
   </tr>
 </table>
 
-![img_19.png](../../images/document-data-transfer-images/img_19.png)
-![img_20.png](../../images/document-data-transfer-images/img_20.png)
+![img_19.png](../../images/document-data-transfer/img_19.png)
+![img_20.png](../../images/document-data-transfer/img_20.png)
 
 Summary: When cacheBucketSize=32, cacheBucketNum=32, dataBatchSize=128, it can be observed that increasing the number of threads increases QPS, due to the limitation of the Oplog read rate.
 
@@ -308,10 +308,10 @@ Summary: When cacheBucketSize=32, cacheBucketNum=32, dataBatchSize=128, it can b
 
 (1) CPU vs. QPS:
 
-![img_23.png](../../images/document-data-transfer-images/img_23.png)
+![img_23.png](../../images/document-data-transfer/img_23.png)
 
 (2) Memory Usage vs. QPS:
 
-![img_24.png](../../images/document-data-transfer-images/img_24.png)
+![img_24.png](../../images/document-data-transfer/img_24.png)
 
 Make the necessary translation adjustments and ensure that the formatting and image paths are not modified.

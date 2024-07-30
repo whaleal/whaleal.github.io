@@ -10,6 +10,6 @@ To add a new S3 full load job to the platform, follow these steps:
 6. Since S3 has the characteristic that files with the same name will overwrite the existing files, you can choose from synchronization modes like "Replace without Handling", "Replace with Newest Files", or "ID + Filename" mode.
 7. Choose a data processing method, either manual deletion or automatic deletion, after synchronization. The data source table will be deleted according to your choice after synchronization is completed.
 
-![Adding an S3 Full Load Job](../../images/whaleal-data-images/image-20230621135150997.png)
+![Adding an S3 Full Load Job](../../images/whaleal-data/image-20230621135150997.png)
 
 By following these steps, you can create an S3 full load job that synchronizes data from a MongoDB Gridfs data source to a target S3 bucket. This allows for efficient management and synchronization of data between different storage systems within the Whaleal Data platform.

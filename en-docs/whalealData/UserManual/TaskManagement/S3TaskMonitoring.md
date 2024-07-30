@@ -2,7 +2,7 @@
 
 Clicking on "Task Monitoring (S3)" under the "Task Management" menu will display information about the execution status of S3 tasks. This page includes information about completed tasks, ongoing tasks, and tasks with exceptions. Each search button is associated with a set of search criteria, allowing you to filter and display tasks efficiently.
 
-![image-20230620161115219](../../../images/whaleal-data-images/image-20230620161115219.png)
+![image-20230620161115219](../../../images/whaleal-data/image-20230620161115219.png)
 
 ##### Task Status
 
@@ -10,7 +10,7 @@ Clicking on "Task Monitoring (S3)" under the "Task Management" menu will display
 
 Clicking on "Completed Tasks" will display information about tasks that have been successfully completed. This page includes details such as the execution strategy, start and end times, duration, execution status, progress percentage, archived items, source table data status, and executed SQL statements. The page also features four buttons: search, modify source table data status, manually delete source table data, and refresh.
 
-![image-20230620164039744](../../../images/whaleal-data-images/image-20230620164039744.png)
+![image-20230620164039744](../../../images/whaleal-data/image-20230620164039744.png)
 
 **Search**
 
@@ -32,7 +32,7 @@ The progress percentage of a task is updated every 3 seconds. Clicking the refre
 
 Clicking on "Ongoing Tasks" will display information about tasks that are currently in progress. This page includes details such as the execution strategy, start and end times, duration, execution status, progress percentage, archived items, and executed SQL statements. The page features three buttons: search, terminate task, and task status validation.
 
-![image-20230620164238193](../../../images/whaleal-data-images/image-20230620164238193.png)
+![image-20230620164238193](../../../images/whaleal-data/image-20230620164238193.png)
 
 **Search**
 
@@ -50,7 +50,7 @@ Each task can contain multiple table jobs. When one table job is completed, the 
 
 Clicking on "Exception Tasks" will display information about tasks that encountered exceptions. This page includes details such as the execution strategy, start and end times, duration, execution status, exception details, progress percentage, archived items, executed SQL statements, and rollback status. This page features three buttons: search, rollback, and re-execute.
 
-![image-20230620164349940](../../../images/whaleal-data-images/image-20230620164349940.png)
+![image-20230620164349940](../../../images/whaleal-data/image-20230620164349940.png)
 
 **Search**
 

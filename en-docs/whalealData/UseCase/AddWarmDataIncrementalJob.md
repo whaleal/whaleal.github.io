@@ -11,6 +11,6 @@ To add a new warm data incremental load job to the platform, follow these steps:
 7. For MySQL-related jobs, you can choose the isolation level for synchronization. For MongoDB to MongoDB synchronization, you can choose whether to sync Gridfs. If you choose "No," the platform will only synchronize regular documents.
 8. Choose a data processing method, either manual deletion or automatic deletion, after synchronization. The data source table will be deleted according to your choice after synchronization is completed.
 
-![Adding a Warm Data Incremental Load Job](../../images/whaleal-data-images/image-20230621135720717.png)
+![Adding a Warm Data Incremental Load Job](../../images/whaleal-data/image-20230621135720717.png)
 
 By following these steps, you can create a warm data incremental load job that synchronizes data from a data source database table to a target destination database table using incremental load mode. This allows for continuous synchronization of data within the Whaleal Data platform.

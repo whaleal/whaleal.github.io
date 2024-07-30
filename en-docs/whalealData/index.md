@@ -4,8 +4,8 @@ Whaleal-data is an archiving platform designed for data archiving. It supports t
 
 ### Platform Architecture Diagram
 
-![Platform Architecture Diagram.png](../images/whaleal-data-images/image-8.png)
+![Platform Architecture Diagram.png](../images/whaleal-data/image-8.png)
 
 ### Software Structure Diagram
 
-![Software Structure Diagram.png](../images/whaleal-data-images/image-19.png)
+![Software Structure Diagram.png](../images/whaleal-data/image-19.png)

@@ -2,7 +2,7 @@
 
 Clicking on "Task Monitoring (Warm)" under the "Task Management" menu will display a page that shows the execution status of warm tasks. The page includes information about completed tasks, tasks in progress, and exceptional tasks. Each search button is associated with condition boxes that allow you to filter and display tasks based on specified criteria.
 
-![image-20230620140353683](../../../images/whaleal-data-images/image-20230620140353683.png)
+![image-20230620140353683](../../../images/whaleal-data/image-20230620140353683.png)
 
 ##### Completed Tasks
 

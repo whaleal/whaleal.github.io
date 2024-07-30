@@ -2,7 +2,7 @@
 
 Clicking on "Job Details" under the "Statistics Report" menu displays the detailed information about jobs within the platform. This page includes a search button, search criteria fields, and an export button.
 
-![image-20230621113251137](../../../images/whaleal-data-images/image-20230621113251137.png)
+![image-20230621113251137](../../../images/whaleal-data/image-20230621113251137.png)
 
 ##### Search
 

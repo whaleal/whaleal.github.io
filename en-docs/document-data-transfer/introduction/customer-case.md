@@ -2,7 +2,7 @@
 
 #### Case 1: A Securities Company
 
-![img_5.png](../../images/document-data-transfer-images/img_5.png)
+![img_5.png](../../images/document-data-transfer/img_5.png)
 
 **Business Scenario**:
 In the production environment of a securities company, it is crucial to ensure a dual-active architecture backup to enhance business resilience and reliability. By using the DDT tool, real-time synchronization of the MongoDB database data from the production center to the disaster recovery center was achieved, ensuring immediate data backup and business continuity.
@@ -14,7 +14,7 @@ The application of the DDT tool enabled efficient real-time synchronization of M
 
 #### Case 2: An Airline Company
 
-![img_6.png](../../images/document-data-transfer-images/img_6.png)
+![img_6.png](../../images/document-data-transfer/img_6.png)
 
 **Business Scenario**:
 An airline company needed to upgrade its old version MongoDB replica set cluster from version 3.2 to 4.4 to meet rapidly changing business needs and improve database performance.

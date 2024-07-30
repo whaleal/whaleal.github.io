@@ -4,7 +4,7 @@ To configure SMTP email settings, follow these steps:
 
 1. Click on the "System Management" menu and select "System Settings." This page is only accessible to the administrator user. The page displays SMTP configuration options.
 
-   ![image-20230621105006375](../../images/whaleal-data-images/image-20230621105006375.png)
+   ![image-20230621105006375](../../images/whaleal-data/image-20230621105006375.png)
 
 2. Fill in the required information for the SMTP configuration, including SMTP server, port, username, password, sender email, and recipient email.
 

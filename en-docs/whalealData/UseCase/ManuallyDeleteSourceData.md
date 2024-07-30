@@ -15,4 +15,4 @@ To manually delete the source data after archiving:
 
 This provides you with control over when and how the source data is deleted after archiving, allowing you to manage your data archiving process according to your specific needs.
 
-![image-20230621152337512](../../images/whaleal-data-images/image-20230621152337512.png)
+![image-20230621152337512](../../images/whaleal-data/image-20230621152337512.png)

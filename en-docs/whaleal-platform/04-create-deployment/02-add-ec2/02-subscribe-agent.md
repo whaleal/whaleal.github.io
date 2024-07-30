@@ -2,7 +2,7 @@
 
 
 
-1. Subscribe to Whaleal Platform Agent, refer to [Install Whaleal in AWS MarketPlace](../02-InstallWhaleal/03-InstallWhaleal/01-InstallWhalealInAWSMarketPlace.md)
+1. Subscribe to Whaleal Platform Agent, refer to [Install Whaleal in AWS MarketPlace](../../02-install-whaleal/03-install-whaleal/01-install-whalealIn-aws-marketplace.md)
 
 2. Connecting to EC2 Instance
 
@@ -37,6 +37,6 @@
 
 6. Go to Whaleal to check the EC2 management progress.
 
-   ![hostlist](../../../images/whaleal-platform-Images/04-create-deployment/hostlist.png)
+   ![hostlist](../../../images/whaleal-platform/04-create-deployment/hostlist.png)
 
-   ![hostlist](../../../images/whalealPlatFormImages/04-CreateDeployment/addEC2success.png)
+   ![hostlist](../../../images/whaleal-platform/04-create-deployment/add-ec2-success.png)

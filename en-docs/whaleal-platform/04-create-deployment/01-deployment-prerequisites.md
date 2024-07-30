@@ -29,9 +29,9 @@ The network configuration must allow each MongoDB Agent to make a direct connect
 
 Whaleal supports backup and monitoring only for MongoDB version 5.0 and later.
 
-For more information about backup, refer to [BackupAndRestore](./07-BackupAndRestore/01-Backup/01-CreateRepository.md)
+For more information about backup, refer to [BackupAndRestore](../07-backup-and-restore/01-backup/01-create-repository.md)
 
-For more information about backup, refer to [Monitor](./06-Monitor/01-MonitoringInstructions.md)
+For more information about backup, refer to [Monitor](../06-monitor/01-monitoring-instructions.md)
 
 #### MongoDB  Backup Support
 

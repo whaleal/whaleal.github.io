@@ -6,7 +6,7 @@ Below is a description of deploying Whaleal and MongoDB in different environment
 
 ## Test Install on a Single Host
 
-For a test deployment, you can deploy all of the WAP components to a single host, as described in Install a Simple Test WAP Installation.
+For a test deployment, you can deploy all the WAP components to a single host, as described in Install a Simple Test WAP Installation.
 
 > If you would like to test backup services, use the WAP Application to configure them. When configuring WAP, you can specify the backup settings.
 
@@ -24,4 +24,4 @@ This deployment provides redundancy for the WAP Application Database and Snapsho
 
 > All hosts must satisfy the combined hardware and software requirements for systems specified in the System Requirements column.
 
-For an example tutorial on installing the minimally viable Whaleal installation, see [QuickStart](./03-QuickStart.md).
+For an example tutorial on installing the minimally viable Whaleal installation, see [QuickStart](./03-quick-start-on-premise.md).

@@ -18,13 +18,13 @@ Ensure that there are no event group operations currently, and if there are, wai
 
 Event group confirmation currently being performed:
 
-![01-eventGroup](../../images/whaleal-platform-Images/15-administrator-whaleal/01-event-group.png)
+![01-eventGroup](../../images/whaleal-platform/15-administrator-whaleal/01-event-group.png)
 
 
 
 Event group terminated:
 
-![02-eventGroup](../../images/whaleal-platform-Images/15-administrator-whaleal/02-event-group.png)
+![02-eventGroup](../../images/whaleal-platform/15-administrator-whaleal/02-event-group.png)
 
 
 
@@ -40,7 +40,7 @@ Ensure that there are no backup tasks currently operating, and if there are, wai
 
 Confirm whether there are any backup tasks in progress:
 
-![03-backupTask](../../images/whaleal-platform-Images/15-administrator-whaleal/03-backup-task.png)
+![03-backupTask](../../images/whaleal-platform/15-administrator-whaleal/03-backup-task.png)
 
 
 
@@ -48,27 +48,27 @@ Confirm whether there are any backup tasks in progress:
 
 1. Confirm the server associated with the backup task
 
-![04-backupServer](../../images/whaleal-platform-Images/15-administrator-whaleal/04-backup-server.png)
+![04-backupServer](../../images/whaleal-platform/15-administrator-whaleal/04-backup-server.png)
 
 
 
 2. Terminate backup task
 
-![05-backupTerminate](../../images/whaleal-platform-Images/15-administrator-whaleal/05-backup-terminate.png)
+![05-backupTerminate](../../images/whaleal-platform/15-administrator-whaleal/05-backup-terminate.png)
 
 
 
 3. Verify if there are any backup tasks running
 
-![06-backupTask](../../images/whaleal-platform-Images/15-administrator-whaleal/06-backup-task.png)
+![06-backupTask](../../images/whaleal-platform/15-administrator-whaleal/06-backup-task.png)
 
-![07-backupTask2](../../images/whaleal-platform-Images/15-administrator-whaleal/07-backup-task2.png)
+![07-backupTask2](../../images/whaleal-platform/15-administrator-whaleal/07-backup-task2.png)
 
 
 
 4. Turn off backup policy
 
-![08-closeBackup](../../images/whaleal-platform-Images/15-administrator-whaleal/08-close-backup.png)
+![08-closeBackup](../../images/whaleal-platform/15-administrator-whaleal/08-close-backup.png)
 
 
 
@@ -77,7 +77,7 @@ Confirm whether there are any backup tasks in progress:
 Ensure that the current wap java service is running without abnormalities
 Command: `jps -m` or `ps -ef|  grep java`
 
-![09-wapJavaService](../../images/whaleal-platform-Images/15-administrator-whaleal/09-wap-java-service.png)
+![09-wapJavaService](../../images/whaleal-platform/15-administrator-whaleal/09-wap-java-service.png)
 
 There are 4 java processes launched by the wap service, and the process names are:
 
@@ -94,13 +94,13 @@ NGINX Service:
 
 Commands: `ps -ef | grep nginx`
 
-![10-nginx](../../images/whaleal-platform-Images/15-administrator-whaleal/10-nginx.png)
+![10-nginx](../../images/whaleal-platform/15-administrator-whaleal/10-nginx.png)
 
 AppDB Service:
 
 Commands:`ps -ef | grep mongo`
 
-![11-appdb](../../images/whaleal-platform-Images/15-administrator-whaleal/11-appdb.png)
+![11-appdb](../../images/whaleal-platform/15-administrator-whaleal/11-appdb.png)
 
 Confirm that the MongoDB process is alive.
 
@@ -194,7 +194,7 @@ Make sure the prerequisites are correct and then perform the following actions:
 
    Modify the external access IP and appdb connection (check the startup script backed up in step 3)
 
-   ![12-appdbConfig](../../images/whaleal-platform-Images/15-administrator-whaleal/12-appdb-config.png)
+   ![12-appdbConfig](../../images/whaleal-platform/15-administrator-whaleal/12-appdb-config.png)
 
 8. Launch wap services
 
@@ -209,7 +209,7 @@ Make sure the prerequisites are correct and then perform the following actions:
    ps -ef|  grep java
    ```
 
-   ![13-wapService](../../images/whaleal-platform-Images/15-administrator-whaleal/13-wap-service.png)
+   ![13-wapService](../../images/whaleal-platform/15-administrator-whaleal/13-wap-service.png)
 
 ​	There are 4 java processes launched by the wap service:
 
@@ -222,7 +222,7 @@ Make sure the prerequisites are correct and then perform the following actions:
 ps -ef | grep nginx
 ```
 
-![14-nginx](../../images/whaleal-platform-Images/15-administrator-whaleal/14-nginx.png)
+![14-nginx](../../images/whaleal-platform/15-administrator-whaleal/14-nginx.png)
 
 
 
@@ -236,11 +236,11 @@ Automatically update agent services.
 
 1. Find the whal-token value on the WAP platform
 
-   ![15-token](../../images/whaleal-platform-Images/15-administrator-whaleal/15-token.png)
+   ![15-token](../../images/whaleal-platform/15-administrator-whaleal/15-token.png)
 
 2. Record platform URL:8080
 
-   ![16-url](../../images/whaleal-platform-Images/15-administrator-whaleal/16-url.png)
+   ![16-url](../../images/whaleal-platform/15-administrator-whaleal/16-url.png)
 
 3. Calling interfaces on WAP platform
 
@@ -254,7 +254,7 @@ Automatically update agent services.
    curl -H whaleal-token:"eyJhbGciOiJIUzUxMiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAAAKtWKi5NUrJS8g8I1vV19XVyDVLSUUqtKFCyMjQ3tLQ0MDazMNdRSkxOzi_NKwGqS0zJzcwDKslMQeIU5eekInGLE3NASkuCkzOrEktdwp1cDTPNs5OUagF3hac5bQAAAA.qXP4lIv1gJlJnJJDP4yy0TUetHp6jIMfBY2xRCwiJkKeq-9IaO_kRw0-mKRVg1X0dAer3izHaQV1IrbYosYX9w"  http://54.87.119.179:8080/api/server/agent/updateAgentJar
    ```
 
-   ![17-curlAgent](../../images/whaleal-platform-Images/15-administrator-whaleal/17-curl-agent.png)
+   ![17-curlAgent](../../images/whaleal-platform/15-administrator-whaleal/17-curl-agent.png)
 
 ##### MongoDB production server update
 
@@ -262,9 +262,9 @@ Consistent with the way App Database updates the Agent.
 
 Check whether the EC2 host and MongoDB cluster status are normal after the update.
 
-![18-ec2](../../images/whaleal-platform-Images/15-administrator-whaleal/18-ec2.png)
+![18-ec2](../../images/whaleal-platform/15-administrator-whaleal/18-ec2.png)
 
-![19-mongoList](../../images/whaleal-platform-Images/15-administrator-whaleal/19-mongo-list.png)
+![19-mongoList](../../images/whaleal-platform/15-administrator-whaleal/19-mongo-list.png)
 
 
 
@@ -304,7 +304,7 @@ Check whether the EC2 host and MongoDB cluster status are normal after the updat
    jps -m or ps -ef|  grep java
    ```
 
-   ![20-java](../../images/whaleal-platform-Images/15-administrator-whaleal/20-java.png)
+   ![20-java](../../images/whaleal-platform/15-administrator-whaleal/20-java.png)
 
    There are 4 java processes launched by the wap service, and the process names are:
 
@@ -320,7 +320,7 @@ Check whether the EC2 host and MongoDB cluster status are normal after the updat
   ps -ef|  grep nginx
   ```
 
-​	![21-nginx](../../images/whaleal-platform-Images/15-administrator-whaleal/21-nginx.png)
+​	![21-nginx](../../images/whaleal-platform/15-administrator-whaleal/21-nginx.png)
 
 
 
@@ -348,7 +348,7 @@ Check whether the EC2 host and MongoDB cluster status are normal after the updat
    ps -ef|  grep agent
    ```
 
-   ![22-agent](../../images/whaleal-platform-Images/15-administrator-whaleal/22-agent.png)
+   ![22-agent](../../images/whaleal-platform/15-administrator-whaleal/22-agent.png)
 
 
 
@@ -379,7 +379,7 @@ Check whether the EC2 host and MongoDB cluster status are normal after the updat
 
 1. Use the Setting tab of the WAP page to find the content of the Version.
 
-   ![23-wapVersion](../../images/whaleal-platform-Images/15-administrator-whaleal/23-wap-version.png)
+   ![23-wapVersion](../../images/whaleal-platform/15-administrator-whaleal/23-wap-version.png)
 
 2. Check if a new version is available by clicking check upgrade.
 
@@ -387,4 +387,4 @@ Check whether the EC2 host and MongoDB cluster status are normal after the updat
 
 4. Click Update Agent to update to the latest version of Agent.
 
-   ![24-agentVersion](../../images/whaleal-platform-Images/15-administrator-whaleal/24-agent-version.png)
+   ![24-agentVersion](../../images/whaleal-platform/15-administrator-whaleal/24-agent-version.png)

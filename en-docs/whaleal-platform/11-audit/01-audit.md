@@ -10,13 +10,13 @@ The WAP platform supports the MongoDB community version to enable the Deploy Aud
 
 Click Audit on the right menu bar
 
-![audit](../../images/whaleal-platform-Images/11-audit/audit.png)
+![audit](../../images/whaleal-platform/11-audit/audit.png)
 
 
 
 ## Selection feature introduction
 
-![audit1](../../images/whaleal-platform-Images/11-audit/audit1.png)
+![audit1](../../images/whaleal-platform/11-audit/audit1.png)
 
 ### 
 
@@ -31,7 +31,7 @@ Click Audit on the right menu bar
 
 ## Dashboard page
 
-![audit2](../../images/whaleal-platform-Images/11-audit/audit2.png)
+![audit2](../../images/whaleal-platform/11-audit/audit2.png)
 
 | Parameters                    | Description                                                  |
 | ----------------------------- | ------------------------------------------------------------ |
@@ -44,7 +44,7 @@ Click Audit on the right menu bar
 
 ## Log information
 
-![audit3](../../images/whaleal-platform-Images/11-audit/audit3.png)
+![audit3](../../images/whaleal-platform/11-audit/audit3.png)
 
 
 

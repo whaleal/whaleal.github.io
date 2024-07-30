@@ -8,13 +8,13 @@ When Whaleal is used to manage a host for the first time, Whaleal detects that t
 2. Click Host Alert on the Alert Message page.
 3. In the host drop-down box, select the server for which you want to configure an alart.
 
-![hostAlert](../../images/whaleal-platform-Images/09-alert/host-alert.png)
+![hostAlert](../../images/whaleal-platform/09-alert/host-alert.png)
 
 ## Indicator Configuration
 
 After selecting the target hsot, the configuration options shown in the following picture may appear.
 
-![hsotAlertConfig](../../images/whaleal-platform-Images/09-alert/hsot-alert-config.png)
+![hsotAlertConfig](../../images/whaleal-platform/09-alert/hsot-alert-config.png)
 
 Configuration items：
 
@@ -36,6 +36,6 @@ Configuration items：
 
 When the alart value is triggered, we can see the current alart in open Alert, and we can search in MSG or configure the time interval to view the alart within a period of time.
 
-![Alertapp](../../images/whaleal-platform-Images/09-alert/alert-app.png)
+![Alertapp](../../images/whaleal-platform/09-alert/alert-app.png)
 
 Alert will also send the alert to a specific platform through the information configured in the alert platform configured in Groups in the Project. For the configuration process, refer to [Project Alert](./03-project-alert.md).

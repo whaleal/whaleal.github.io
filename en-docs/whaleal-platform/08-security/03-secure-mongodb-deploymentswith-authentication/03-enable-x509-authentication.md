@@ -20,13 +20,13 @@ These procedures describe how to configure and enable CA Certificate authenticat
 
 2.Select the **Cluster Name** you want to configure.
 
-![03-EnableX509Authentication](../../../images/whaleal-platform-Images/08-security/03-enable-x509-authentication.png)
+![03-EnableX509Authentication](../../../images/whaleal-platform/08-security/03-enable-x509-authentication.png)
 
 3.Click **Safety Management**
 
 4.Click **Auth**
 
-![03-EnableX509Authentication1](../../../images/whaleal-platform-Images/08-security/03-enable-x509-authentication1.png)
+![03-EnableX509Authentication1](../../../images/whaleal-platform/08-security/03-enable-x509-authentication1.png)
 
 5.Click **Authentication management**,
 
@@ -34,7 +34,7 @@ These procedures describe how to configure and enable CA Certificate authenticat
 
 7.Finally click **Confirm**
 
-![03-EnableX509Authentication2](../../../images/whaleal-platform-Images/08-security/03-enable-x509-authentication2.png)
+![03-EnableX509Authentication2](../../../images/whaleal-platform/08-security/03-enable-x509-authentication2.png)
 
 
 

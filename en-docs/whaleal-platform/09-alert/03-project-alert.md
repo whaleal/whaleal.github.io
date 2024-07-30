@@ -16,39 +16,39 @@ When using Whaleal to manage a MongoDB cluster, you can configure cluster alerts
 
 2. Click the three dots in the upper right corner of the group.
 
-   ![image-20240628171055358](../../images/whaleal-platform-Images/09-alert/lark-setting.png)
+   ![image-20240628171055358](../../images/whaleal-platform/09-alert/lark-setting.png)
 
 3. Add a bot
 
    1. Click Bots
 
-      ![image-20240628171055358](../../images/whaleal-platform-Images/09-alert/bots.png)
+      ![image-20240628171055358](../../images/whaleal-platform/09-alert/bots.png)
 
    2. Click Add Bot
 
-      ![image-20240628171055358](../../images/whaleal-platform-Images/09-alert/add-bots.png)
+      ![image-20240628171055358](../../images/whaleal-platform/09-alert/add-bots.png)
 
    3. Click Custom Bot
 
-      ![image-20240628171055358](../../images/whaleal-platform-Images/09-alert/custom-bot.png)
+      ![image-20240628171055358](../../images/whaleal-platform/09-alert/custom-bot.png)
 
    4. Edit Bot Name and Description
 
-      ![image-20240628171055358](../../images/whaleal-platform-Images/09-alert/bot-name.png)
+      ![image-20240628171055358](../../images/whaleal-platform/09-alert/bot-name.png)
 
    5. Configure the key to use "_" to connect
 
-      ![image-20240628171055358](../../images/whaleal-platform-Images/09-alert/config.png)
+      ![image-20240628171055358](../../images/whaleal-platform/09-alert/config.png)
 
    6. Configure the key spliced in step 5 in the Project.
 
-      ![image-20240628171055358](../../images/whaleal-platform-Images/09-alert/lark-key.png)
+      ![image-20240628171055358](../../images/whaleal-platform/09-alert/lark-key.png)
 
 
 
 After the configuration is complete, click Alert Setting in the left navigation bar to configure the alart trigger values and trigger methods of different indicators according to Host Alert, MongoDB Alert or Project.
 
-![image-20240628171055358](../../images/whaleal-platform-Images/09-alert/alart-config.png)
+![image-20240628171055358](../../images/whaleal-platform/09-alert/alart-config.png)
 
 ## DingTalk
 
@@ -56,39 +56,39 @@ After the configuration is complete, click Alert Setting in the left navigation 
 
 2. Click the three dots in the upper right corner of the group.
 
-   ![image-20240628171055358](../../images/whaleal-platform-Images/09-alert/ding-setting.png)
+   ![image-20240628171055358](../../images/whaleal-platform/09-alert/ding-setting.png)
 
 3. Add a bot
 
    1. Click Bots
 
-      ![Ding](../../images/whaleal-platform-Images/09-alert/ding-bot.png)
+      ![Ding](../../images/whaleal-platform/09-alert/ding-bot.png)
 
    2. Click Add Bot
 
-      ![image-20240628171055358](../../images/whaleal-platform-Images/09-alert/ding-add-bots.png)
+      ![image-20240628171055358](../../images/whaleal-platform/09-alert/ding-add-bots.png)
 
    3. Select Custom Bot
 
-      ![image-20240628171055358](../../images/whaleal-platform-Images/09-alert/ding-custom.png)
+      ![image-20240628171055358](../../images/whaleal-platform/09-alert/ding-custom.png)
 
    4. Edit Bot Name and Security Setting.
 
-      ![image-20240628171055358](../../images/whaleal-platform-Images/09-alert/ding-name.png)
+      ![image-20240628171055358](../../images/whaleal-platform/09-alert/ding-name.png)
 
    5. Check the Bot you just created, then copy the access_token after the Webhook link and concatenate it with the value of Additional Signature in Security Setting using "_".
 
-      ![image-20240628171055358](../../images/whaleal-platform-Images/09-alert/ding-key.png)
+      ![image-20240628171055358](../../images/whaleal-platform/09-alert/ding-key.png)
 
    6. Configure the key spliced in step 5 in the Project.
 
-      ![image-20240628171055358](../../images/whaleal-platform-Images/09-alert/ding-config.png)
+      ![image-20240628171055358](../../images/whaleal-platform/09-alert/ding-config.png)
 
 
 
 After the configuration is complete, click Alert Setting in the left navigation bar to configure the alart trigger values and trigger methods of different indicators according to Host Alert, MongoDB Alert or Project.
 
-![image-20240628171055358](../../images/whaleal-platform-Images/09-alert/project-alart-config.png)
+![image-20240628171055358](../../images/whaleal-platform/09-alert/project-alart-config.png)
 
 ## WebHook
 

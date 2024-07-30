@@ -49,7 +49,7 @@ A game development company needed to migrate its multiple game databases from di
 With the DDT tool's efficient data synchronization and migration capabilities, the game development company successfully migrated game data distributed across multiple MongoDB instances to the new global MongoDB database. This ensured data consistency and real-time performance, supporting the company's global operations smoothly.
 
 **Performance Comparison**:
-During the migration process, the DDT tool handled a large number of game data synchronization and migration tasks, effectively improving data migration speed and efficiency, providing reliable assurance for the game development company's business expansion and user experience.
+During the migration process, the DDT tool handled many game data synchronization and migration tasks, effectively improving data migration speed and efficiency, providing reliable assurance for the game development company's business expansion and user experience.
 
 ---
 

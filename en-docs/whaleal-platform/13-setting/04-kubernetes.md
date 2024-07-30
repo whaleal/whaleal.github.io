@@ -8,7 +8,7 @@ Configure Kubernetes for the WAP platform. Add Kubernetes to create hosts and mo
 
 2.Click Kubernetes
 
-![Kubernetes](../../images/whaleal-platform-Images/13-setting/kubernetes.png)
+![Kubernetes](../../images/whaleal-platform/13-setting/kubernetes.png)
 
 
 
@@ -16,7 +16,7 @@ Configure Kubernetes for the WAP platform. Add Kubernetes to create hosts and mo
 
 1.Click ADD K8S
 
-![Kubernetes1](../../images/whaleal-platform-Images/13-setting/kubernetes1.png)
+![Kubernetes1](../../images/whaleal-platform/13-setting/kubernetes1.png)
 
 **Name**: Configure k8s name
 
@@ -66,8 +66,8 @@ current-context: lke196921-ctx
 * **Type**: Choose Kubernetes
 * **Configuration**: Copy the Kubeconfig file here
 
-![Kubernetes6](../../images/whaleal-platform-Images/13-setting/kubernetes6.png)
+![Kubernetes6](../../images/whaleal-platform/13-setting/kubernetes6.png)
 
 3.Click confirm Configuration Complete
 
-![Kubernetes7](../../images/whaleal-platform-Images/13-setting/kubernetes7.png)
+![Kubernetes7](../../images/whaleal-platform/13-setting/kubernetes7.png)

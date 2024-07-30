@@ -30,13 +30,13 @@ This procedure describes how to configure and enable username and password authe
 
 2.Select the **Cluster Name** you want to configure.
 
-![02-EnableUsernamePasswordAuthentication](../../../images/whaleal-platform-Images/08-security/03-enable-x509-authentication.png)
+![02-EnableUsernamePasswordAuthentication](../../../images/whaleal-platform/08-security/03-enable-x509-authentication.png)
 
 3.Click **Safety Management**
 
 4.Click **Auth**
 
-![02-EnableUsernamePasswordAuthentication1](../../../images/whaleal-platform-Images/08-security/03-enable-x509-authentication1.png)
+![02-EnableUsernamePasswordAuthentication1](../../../images/whaleal-platform/08-security/03-enable-x509-authentication1.png)
 
 5.Click **Authentication management**,
 
@@ -44,7 +44,7 @@ This procedure describes how to configure and enable username and password authe
 
 7.Finally click **Confirm**
 
-![02-EnableUsernamePasswordAuthentication2](../../../images/whaleal-platform-Images/08-security/02-enable-user-name-password-authentication2.png)
+![02-EnableUsernamePasswordAuthentication2](../../../images/whaleal-platform/08-security/02-enable-user-name-password-authentication2.png)
 
 
 

@@ -8,11 +8,11 @@ The bacckup function of the WAP platform is implemented based on two methods: du
 
 ### dump
 
-![05-CreateRepository](../../../images/whaleal-platform-Images/07-backup-restore/01-backup/05-create-repository.png)
+![05-CreateRepository](../../../images/whaleal-platform/07-backup-restore/01-backup/05-create-repository.png)
 
 ### DDT
 
-![04-CreateRepository](../../../images/whaleal-platform-Images/07-backup-restore/01-backup/04--create-repository.png)
+![04-CreateRepository](../../../images/whaleal-platform/07-backup-restore/01-backup/04--create-repository.png)
 
 
 
@@ -55,7 +55,7 @@ The bacckup function of the WAP platform is implemented based on two methods: du
 
 ### View Backup Tasks
 
-![01-ViewBackupTasks](../../../images/whaleal-platform-Images/07-backup-restore/01-backup/01-view-backup-tasks.png)
+![01-ViewBackupTasks](../../../images/whaleal-platform/07-backup-restore/01-backup/01-view-backup-tasks.png)
 
 
 

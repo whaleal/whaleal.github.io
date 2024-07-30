@@ -8,7 +8,7 @@ When MongoDB needed data recovery due to some problems, there was a problem with
 
 2. Download backup data on S3
 
-   ![01-S3](/Users/guanfei.li/Desktop/home/project/whaleal.github.io/en-docs/WhalealPlatform/images/15-AdministratorWhaleal/04-MongoDBDataRecovery/01-S3.png)
+   ![01-S3](../../../images/whaleal-platform/15-administrator-whaleal/01-s3.png)
 
    OR
 
@@ -42,4 +42,3 @@ When MongoDB needed data recovery due to some problems, there was a problem with
    empty/
    ```
 
-   

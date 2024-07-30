@@ -6,7 +6,7 @@ In addition to the basic problem troubleshooting tools built into the platform, 
 
 ## Diagnostic information collection
 
-![01-ClusterInspection](../../images/whaleal-platform-Images/14-support/01-cluster-inspection.png)
+![01-ClusterInspection](../../images/whaleal-platform/14-support/01-cluster-inspection.png)
 
 
 

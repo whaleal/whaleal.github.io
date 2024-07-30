@@ -194,7 +194,7 @@ nav:
       - cloud-warn-usage/readme.md
 
   - whaleal-account:
-      - oauth2/oauth2.md
+      - whaleal-account/oauth2/oauth2.md
       - login: whaleal-account/user-manual/login.md
       - register: whaleal-account/user-manual/register.md
       - password-reset: whaleal-account/user-manual/password-reset.md

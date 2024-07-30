@@ -99,7 +99,7 @@ nav:
           - Hardware And Software Requirements: whaleal-platform/02-install-whaleal/02-hardware-and-software-requirements.md
           - Install Whaleal:
               - Install Whaleal In AWS MarketPlace: whaleal-platform/02-install-whaleal/03-install-whaleal/01-install-whaleal-in-aws-marketplace.md
-              - Install Whaleal In Docker: whaleal-platform/02-install-whaleal/03-install-whaleal/02-install-whaleal-in-docker.md
+              - Install Whaleal In Docker: whaleal-platform/02-install-whaleal/03-install-whaleal/02-install-whalealin-docker.md
               - On Premise Install Whaleal: whaleal-platform/02-install-whaleal/03-install-whaleal/03-on-premise-install-whaleal.md
       - Projects:
           - Projects: whaleal-platform/03-projects/01-projects.md
@@ -117,7 +117,7 @@ nav:
       - Manage Deployments:
           - View All Clusters: whaleal-platform/05-manage-deployments/01-view-all-clusters.md
           - Edit Deployment Configuration: whaleal-platform/05-manage-deployments/02-edit-deployment-configuration.md
-          - Edit ReplicaSets: whaleal-platform/05-manage-deployments/03-edit-replica-sets.md
+          - Edit ReplicaSets: whaleal-platform/05-manage-deployments/03-edits-replica-sets.md
           - Sharded Cluster Operations: whaleal-platform/05-manage-deployments/04-sharded-cluster-operations.md
           - Stop Managing and/or Monitoring One Deployment: whaleal-platform/05-manage-deployments/05-stop-managingandor-monitoring-one-deployment.md
           - MongoDB Operation: whaleal-platform/05-manage-deployments/06-mongodb-operation.md

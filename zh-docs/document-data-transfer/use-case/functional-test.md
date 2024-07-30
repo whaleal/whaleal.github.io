@@ -87,7 +87,7 @@ db.stats()
 
 #### 4.启动DDT
 
-参考[QuickStart](../install/快速启动.md)
+参考[QuickStart](../install/quick-start.md)
 
 该测试环境使用如下参数
 

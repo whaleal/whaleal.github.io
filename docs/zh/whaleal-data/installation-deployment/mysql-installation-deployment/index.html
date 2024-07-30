@@ -13,6 +13,10 @@
       
       
       
+        <link rel="prev" href="../jdk-installation-deployment/">
+      
+      
+        <link rel="next" href="../nginx-installation-deployment/">
       
       
       <link rel="icon" href="../../../images/logo.png">
@@ -20,7 +24,7 @@
     
     
       
-        <title>Mysql installation deployment - Whaleal docs</title>
+        <title>MYSQL安装部署 - Whaleal docs</title>
       
     
     
@@ -108,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Mysql installation deployment
+              MYSQL安装部署
             
           </span>
         </div>
@@ -263,10 +267,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../" class="md-tabs__link">
           
   
@@ -372,7 +378,7 @@
   
     
   
-  whaleal-acount
+  whaleal-account
 
         </a>
       </li>
@@ -468,6 +474,8 @@
       
   
   
+    
+  
   
   
     
@@ -486,14 +494,17 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
@@ -509,13 +520,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Whaleal Data
@@ -528,8 +539,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -553,11 +566,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -571,7 +584,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             安装部署
@@ -624,10 +637,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../mysql-Linstallation-deployment.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    MYSQL安装部署
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -636,6 +667,375 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mysql 安装部署
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mysql 安装部署">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      开放指定端口或关闭防火墙
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="开放指定端口或关闭防火墙">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 查看已经开放的端口
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.开放指定端口
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 重新加载防火墙配置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 确认端口开放
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 关闭防火墙
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 确认防火墙状态
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础环境准备
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="基础环境准备">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 创建用户
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 安装 MySQL 需要的依赖
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 解压安装包
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 修改文件名称
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 创建所需目录
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 修改目录权限
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mysql_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      部署 Mysql 服务
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="部署 Mysql 服务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 初始化数据库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mycnf" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 编辑 my.cnf
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 配置环境变量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 配置启动脚本
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.重新加载配置文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.设置开机自启动
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.启动 mysql
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.查看 mysql 端口是否启动
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置密码远程连接
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="配置密码远程连接">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.输入刚刚打印出来的密码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-root" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.登陆成功后修改 root 密码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.查看用户信息
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-host" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.修改 host 字段为 %
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.刷新权限
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      添加归档平台字段
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="添加归档平台字段">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.登录 MySQL 数据库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.创建数据库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.添加数据文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      4，查看数据
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -673,7 +1073,7 @@
         
   
   <span class="md-ellipsis">
-    Redis 安装部署
+    Redis安装部署
   </span>
   
 
@@ -888,7 +1288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../user-manual/homepage-display/homepage-display.md" class="md-nav__link">
+      <a href="../../user-manual/homepage-display/homepageDisplay/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2595,6 +2995,8 @@
       
         
       
+        
+      
     
     
       
@@ -2680,6 +3082,27 @@
   
   <span class="md-ellipsis">
     实时测试
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../document-data-transfer/use-case/mongodb-version/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MongoDB 版本
   </span>
   
 
@@ -3304,7 +3727,7 @@
             
   
   <span class="md-ellipsis">
-    whaleal-acount
+    whaleal-account
   </span>
   
 
@@ -3314,7 +3737,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            whaleal-acount
+            whaleal-account
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -3346,7 +3769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user-manual/login.md" class="md-nav__link">
+      <a href="../../../whaleal-account/user-manual/login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3367,7 +3790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user-manual/login.md" class="md-nav__link">
+      <a href="../../../whaleal-account/user-manual/register/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3388,7 +3811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user-manual/password-reset.md" class="md-nav__link">
+      <a href="../../../whaleal-account/user-manual/password-reset/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3409,7 +3832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user-manual/client.md" class="md-nav__link">
+      <a href="../../../whaleal-account/user-manual/client/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3430,7 +3853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user-manual/organization.md" class="md-nav__link">
+      <a href="../../../whaleal-account/user-manual/organization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3451,7 +3874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user-manual/user-info.md" class="md-nav__link">
+      <a href="../../../whaleal-account/user-manual/user-Info/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4349,7 +4772,7 @@
   
 
 
-  <h1>Mysql installation deployment</h1>
+  <h1>MYSQL安装部署</h1>
 
 <h2 id="mysql">Mysql 安装部署</h2>
 <pre><code>Mysql 推荐使用版本 8.0
@@ -4507,6 +4930,44 @@ show tables;
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../jdk-installation-deployment/" class="md-footer__link md-footer__link--prev" aria-label="上一页: JDK安装部署">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                JDK安装部署
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../nginx-installation-deployment/" class="md-footer__link md-footer__link--next" aria-label="下一页: Nginx安装部署">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                Nginx安装部署
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">

@@ -62,13 +62,13 @@ Confirm whether there are any backup tasks in progress:
 
 ![06-backupTask](../../images/whaleal-platform-Images/15-administrator-whaleal/06-backup-task.png)
 
-![07-backupTask2](../../images/whaleal-platform-Images/15-administrator-whaleal/07-backupTask2.png)
+![07-backupTask2](../../images/whaleal-platform-Images/15-administrator-whaleal/07-backup-task2.png)
 
 
 
 4. Turn off backup policy
 
-![08-closeBackup](../../images/whaleal-platform-Images/15-administrator-whaleal/08-closeBackup.png)
+![08-closeBackup](../../images/whaleal-platform-Images/15-administrator-whaleal/08-close-backup.png)
 
 
 
@@ -77,7 +77,7 @@ Confirm whether there are any backup tasks in progress:
 Ensure that the current wap java service is running without abnormalities
 Command: `jps -m` or `ps -ef|  grep java`
 
-![09-wapJavaService](../../images/whaleal-platform-Images/15-administrator-whaleal/09-wapJavaService.png)
+![09-wapJavaService](../../images/whaleal-platform-Images/15-administrator-whaleal/09-wap-java-service.png)
 
 There are 4 java processes launched by the wap service, and the process names are:
 
@@ -194,7 +194,7 @@ Make sure the prerequisites are correct and then perform the following actions:
 
    Modify the external access IP and appdb connection (check the startup script backed up in step 3)
 
-   ![12-appdbConfig](../../images/whaleal-platform-Images/15-administrator-whaleal/12-appdbConfig.png)
+   ![12-appdbConfig](../../images/whaleal-platform-Images/15-administrator-whaleal/12-appdb-config.png)
 
 8. Launch wap services
 
@@ -209,7 +209,7 @@ Make sure the prerequisites are correct and then perform the following actions:
    ps -ef|  grep java
    ```
 
-   ![13-wapService](../../images/whaleal-platform-Images/15-administrator-whaleal/13-wapService.png)
+   ![13-wapService](../../images/whaleal-platform-Images/15-administrator-whaleal/13-wap-service.png)
 
 ​	There are 4 java processes launched by the wap service:
 
@@ -254,7 +254,7 @@ Automatically update agent services.
    curl -H whaleal-token:"eyJhbGciOiJIUzUxMiIsInppcCI6IkdaSVAifQ.H4sIAAAAAAAAAKtWKi5NUrJS8g8I1vV19XVyDVLSUUqtKFCyMjQ3tLQ0MDazMNdRSkxOzi_NKwGqS0zJzcwDKslMQeIU5eekInGLE3NASkuCkzOrEktdwp1cDTPNs5OUagF3hac5bQAAAA.qXP4lIv1gJlJnJJDP4yy0TUetHp6jIMfBY2xRCwiJkKeq-9IaO_kRw0-mKRVg1X0dAer3izHaQV1IrbYosYX9w"  http://54.87.119.179:8080/api/server/agent/updateAgentJar
    ```
 
-   ![17-curlAgent](../../images/whaleal-platform-Images/15-administrator-whaleal/17-curlAgent.png)
+   ![17-curlAgent](../../images/whaleal-platform-Images/15-administrator-whaleal/17-curl-agent.png)
 
 ##### MongoDB production server update
 
@@ -264,7 +264,7 @@ Check whether the EC2 host and MongoDB cluster status are normal after the updat
 
 ![18-ec2](../../images/whaleal-platform-Images/15-administrator-whaleal/18-ec2.png)
 
-![19-mongoList](../../images/whaleal-platform-Images/15-administrator-whaleal/19-mongoList.png)
+![19-mongoList](../../images/whaleal-platform-Images/15-administrator-whaleal/19-mongo-list.png)
 
 
 
@@ -379,7 +379,7 @@ Check whether the EC2 host and MongoDB cluster status are normal after the updat
 
 1. Use the Setting tab of the WAP page to find the content of the Version.
 
-   ![23-wapVersion](../../images/whaleal-platform-Images/15-administrator-whaleal/23-wapVersion.png)
+   ![23-wapVersion](../../images/whaleal-platform-Images/15-administrator-whaleal/23-wap-version.png)
 
 2. Check if a new version is available by clicking check upgrade.
 
@@ -387,4 +387,4 @@ Check whether the EC2 host and MongoDB cluster status are normal after the updat
 
 4. Click Update Agent to update to the latest version of Agent.
 
-   ![24-agentVersion](../../images/whaleal-platform-Images/15-administrator-whaleal/24-agentVersion.png)
+   ![24-agentVersion](../../images/whaleal-platform-Images/15-administrator-whaleal/24-agent-version.png)

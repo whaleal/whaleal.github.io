@@ -43,17 +43,17 @@ WAP also supports seamless integration of monitoring indicators into Prometheus.
 
 2.Import grafana json file
 
-![image-20240712170434492](../../images/whaleal-platform-Images/15-administrator-whaleal/IntegrationwithPrometheus.png)
+![image-20240712170434492](../../images/whaleal-platform-Images/15-administrator-whaleal/integrationwith-prometheus.png)
 
 3.Select grafana json file to import
 
-![image-20240712170501595](../../images/whaleal-platform-Images/15-administrator-whaleal/IntegrationwithPrometheus1.png)
+![image-20240712170501595](../../images/whaleal-platform-Images/15-administrator-whaleal/integrationwith-prometheus1.png)
 
 4.Click import
 
-![image-20240716112410796](../../images/whaleal-platform-Images/15-administrator-whaleal/IntegrationwithPrometheus2.png)
+![image-20240716112410796](../../images/whaleal-platform-Images/15-administrator-whaleal/integrationwith-prometheus2.png)
 
 5.Configuration Complete
 
-![image-20240716112103625](../../images/whaleal-platform-Images/15-administrator-whaleal/IntegrationwithPrometheus3.png)
+![image-20240716112103625](../../images/whaleal-platform-Images/15-administrator-whaleal/integrationwith-prometheus3.png)
 

@@ -18,7 +18,7 @@ You can view the comparison of monitoring indicators of different nodes in a clu
 1. Click Monitor Comparison
 2. You can choose the time range, node and indicator type for monitoring
 
-![Performance](../../images/whaleal-platform-Images/10-diagnose/Performance1.png)
+![Performance](../../images/whaleal-platform-Images/10-diagnose/performance1.png)
 
-![Performance](../../images/whaleal-platform-Images/10-diagnose/Performance2.png)
+![Performance](../../images/whaleal-platform-Images/10-diagnose/performance2.png)
 

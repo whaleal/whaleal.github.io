@@ -23,7 +23,7 @@ home_button1_url: WhalealPlatform/                       # This path starts at y
 home_button1_theme: md-button md-button--primary # Options: "md-button", "md-button md-button--primary"
 home_button1_icon: people                        # Options: "people", "gear", "image"
 home_button1_blurb: |                            # Short description of this button / section.
-  Whaleal Platform (WAP) is an intelligent operation, maintenance and hosting platform that provides real-time monitoring and management of your MongoDB services 7*24 hours a day.
+  Whaleal Platform (WAP) is an intelligent operation, maintenance and hosting platform that provides real-time monitoring and management of your MongoDB services.
 
 home_button2_name: Whaleal Data   # Comment this parameter out to remove the button.
 home_button2_url: whalealData/    # This path starts at your root mkdocs directory.

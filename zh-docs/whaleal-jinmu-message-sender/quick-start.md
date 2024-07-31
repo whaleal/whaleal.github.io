@@ -29,7 +29,7 @@ JMC对用户端接入流程进行了精简，用户仅需提供相关信息，�
 
 *点击添加 填写应用名称*
 
-![imagecreateApp](../images/whaleal-jinmu-message-sender/create%20App.png)
+![imagecreateApp](../images/whaleal-jinmu-message-sender/create-app.png)
 
 *点击确认创建成功*
 
@@ -114,7 +114,7 @@ curl --location 'https://sms.jinmuinfo.com/beta/send' \
 #### step2.2 普通API发信
 ##### 获取API KEY配置信息
 
-![API KEY配置](../images/whaleal-jinmu-message-sender/API%20KEY配置.png)
+![API KEY配置](../images/whaleal-jinmu-message-sender/api-key-conf.png)
 
 **baseKey**: 第一列的key参数
 
@@ -172,7 +172,7 @@ Content-Type: application/json
 POST请求设置:
 
 
-![image4-5](../images/whaleal-jinmu-message-sender/API%20POST.png)
+![image4-5](../images/whaleal-jinmu-message-sender/api-post.png)
 
 ##### 查看发信日志
 ![image4-9](../images/whaleal-jinmu-message-sender/message-log.png)

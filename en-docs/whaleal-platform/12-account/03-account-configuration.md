@@ -14,6 +14,7 @@ Account configuration: users can configure whether the WAP account receives syst
 
 
 
+
 **Receive Alart Notifications**
 
 * Choose whether to receive alert notifications

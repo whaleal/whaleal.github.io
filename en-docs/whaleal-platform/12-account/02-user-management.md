@@ -32,6 +32,7 @@ User management, WAP user management can configure account permissions, modify p
 
 
 
+
 ## Configuring User Permissions
 
 Click on the user name

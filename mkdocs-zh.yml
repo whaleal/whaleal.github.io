@@ -169,7 +169,7 @@ nav:
           - MongoDB 版本: document-data-transfer/use-case/mongodb-version.md
 
   - Whaleal JMC:
-      - whaleal-jinmu-message-sender/quick-start.md
+#      - whaleal-jinmu-message-sender/quick-start.md
       - 快速使用指南: whaleal-jinmu-message-sender/quick-start.md
       - 平台概述: whaleal-jinmu-message-sender/platform-overview.md
       - 平台布局介绍: whaleal-jinmu-message-sender/platform-layout-introduction.md

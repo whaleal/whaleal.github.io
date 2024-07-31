@@ -845,68 +845,17 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#charset-koi8-r" class="md-nav__link">
-    <span class="md-ellipsis">
-      charset koi8-r;
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#access_log-logshostaccesslog-main" class="md-nav__link">
-    <span class="md-ellipsis">
-      access_log logs/host.access.log main;
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#error_page-404-404html" class="md-nav__link">
-    <span class="md-ellipsis">
-      error_page 404 /404.html;
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#redirect-server-error-pages-to-the-static-page-50xhtml" class="md-nav__link">
-    <span class="md-ellipsis">
-      redirect server error pages to the static page /50x.html
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="">
-      <ul class="md-nav__list">
-        
           <li class="md-nav__item">
   <a href="#7" class="md-nav__link">
     <span class="md-ellipsis">
       7. 启动服务
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -3016,8 +2965,6 @@
       
         
       
-        
-      
     
     
       
@@ -3060,28 +3007,7 @@
         
   
   <span class="md-ellipsis">
-    Quick start
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../whaleal-jinmu-message-sender/quick-start/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Quick start
+    快速使用指南
   </span>
   
 
@@ -3203,7 +3129,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../whaleal-jinmu-message-sender/module/information.md" class="md-nav__link">
+      <a href="../../../whaleal-jinmu-message-sender/module/information/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3224,7 +3150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../whaleal-jinmu-message-sender/question-answer.md" class="md-nav__link">
+      <a href="../../../whaleal-jinmu-message-sender/question-answer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4417,68 +4343,17 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#charset-koi8-r" class="md-nav__link">
-    <span class="md-ellipsis">
-      charset koi8-r;
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#access_log-logshostaccesslog-main" class="md-nav__link">
-    <span class="md-ellipsis">
-      access_log logs/host.access.log main;
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#error_page-404-404html" class="md-nav__link">
-    <span class="md-ellipsis">
-      error_page 404 /404.html;
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#redirect-server-error-pages-to-the-static-page-50xhtml" class="md-nav__link">
-    <span class="md-ellipsis">
-      redirect server error pages to the static page /50x.html
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="">
-      <ul class="md-nav__list">
-        
           <li class="md-nav__item">
   <a href="#7" class="md-nav__link">
     <span class="md-ellipsis">
       7. 启动服务
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -4504,6 +4379,8 @@
   
   
 
+
+  <h1>Nginx 安装部署</h1>
 
 <h2 id="nginx">Nginx 安装部署</h2>
 <h3 id="_1">开放指定端口或关闭防火墙</h3>
@@ -4544,13 +4421,12 @@
  ip cloud.whalealMG.com
 </code></pre>
 <h4 id="6_1">6. 编辑配置文件</h4>
-<p>```
-server {
+<div class="highlight"><pre><span></span><code>server {
  listen 80;
- server_name cloud.whalealmg.com; #本地域名解析</p>
-<h1 id="charset-koi8-r">charset koi8-r;</h1>
-<h1 id="access_log-logshostaccesslog-main">access_log logs/host.access.log main;</h1>
-<p>location / {
+ server_name cloud.whalealmg.com; #本地域名解析
+#charset koi8-r;
+#access_log logs/host.access.log main;
+location / {
 root /usr/local/nginx/html/dist/; #前端介质包路径
 index index.html index.htm;
 try_files $uri $uri/ /index.html;
@@ -4561,21 +4437,21 @@ proxy_set_header X-Forwarded-Proto $scheme;
 proxy_set_header X-Forwarded-Port $server_port;
 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 proxy_set_header Upgrade $http_upgrade;
-proxy_set_header Connection "upgrade";
+proxy_set_header Connection &quot;upgrade&quot;;
 }
-location ~ .*.(js|css|jpg|jpeg|gif|png|ico|pdf|txt)$ {
+location ~ .*\.(js|css|jpg|jpeg|gif|png|ico|pdf|txt)$ {
 root /usr/local/nginx/html/dist/;
 index index.html index.htm;
-}</p>
-<h1 id="error_page-404-404html">error_page 404 /404.html;</h1>
-<h1 id="redirect-server-error-pages-to-the-static-page-50xhtml">redirect server error pages to the static page /50x.html</h1>
-<h1 id="_3"></h1>
-<p>error_page 500 502 503 504 /50x.html;
+}
+#error_page 404 /404.html;
+# redirect server error pages to the static page /50x.html
+#
+error_page 500 502 503 504 /50x.html;
 location = /50x.html {
 root html;
 }
 }
-```</p>
+</code></pre></div>
 <h4 id="7">7. 启动服务</h4>
 <pre><code>  /usr/local/nginx/sbin/nginx
 </code></pre>

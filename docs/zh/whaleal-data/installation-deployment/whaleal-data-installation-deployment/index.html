@@ -830,26 +830,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jwt" class="md-nav__link">
-    <span class="md-ellipsis">
-      jwt
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="jwt">
-      <ul class="md-nav__list">
-        
           <li class="md-nav__item">
   <a href="#java" class="md-nav__link">
     <span class="md-ellipsis">
@@ -865,6 +845,11 @@
       查看日志确认启动成功
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -3745,7 +3730,7 @@
         
   
   <span class="md-ellipsis">
-    Readme
+    readme
   </span>
   
 
@@ -4229,26 +4214,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#jwt" class="md-nav__link">
-    <span class="md-ellipsis">
-      jwt
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="jwt">
-      <ul class="md-nav__list">
-        
           <li class="md-nav__item">
   <a href="#java" class="md-nav__link">
     <span class="md-ellipsis">
@@ -4264,6 +4229,11 @@
       查看日志确认启动成功
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -4308,6 +4278,8 @@
   
 
 
+  <h1>Whaleal Data 安装部署</h1>
+
 <h2 id="whaleal-data">Whaleal-data安装部署</h2>
 <h3 id="_1">服务器高可用部署</h3>
 <p>将服务在多个机器进行部署使用负载均衡器将流量分发到多个服务器上，以实现请求的平衡和分担。常见的负载均衡算法包括轮询、最少连接和哈希算法等。在系统中使用多个相同配置的服务器，以便在一个服务器发生故障时，其他服务器可以接管其工作并保持系统的连续性。常见的冗余备份模式包括主备模式、活动-活动模式和N+1模式等。</p>
@@ -4322,8 +4294,7 @@
 <pre><code>源码编译后生成”filing-system-0.0.1-SNAPSHOT.jar”介质包。将该介质包上传至服务器。编辑配置文件：application.yml
 </code></pre>
 <h4 id="_5">配置文件内容</h4>
-<p>```
-server:
+<div class="highlight"><pre><span></span><code>server:
  port: 8000
 spring:
  jackson:
@@ -4349,13 +4320,13 @@ spring:
  validation-query: SELECT 1
  filters: stat
  stat-view-servlet:
- url-pattern: /druid/<em>
+ url-pattern: /druid/*
  reset-enable: false
  enabled: true
  allow: 127.0.0.1
  web-stat-filter:
- url-pattern: /</em>
- exclusions: "<em>.js,</em>.gif,<em>.jpg,</em>.bmp,<em>.png,</em>.css,<em>.ico,/druid/</em>"
+ url-pattern: /*
+ exclusions: &quot;*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico,/druid/*&quot;
  redis:
  host: 127.0.0.1
  port: 6379
@@ -4365,11 +4336,11 @@ spring:
  zookeeper:
  server-lists: IP:2181
  namespace: epanasiashop-job-filing
- digest: zookeeper:Zkpp.x123</p>
-<h1 id="jwt">jwt</h1>
-<p>jwt:
+ digest: zookeeper:Zkpp.x123
+#jwt
+jwt:
  header: Authorization
- secret: filingSecret!@#<em>
+ secret: filingSecret!@#*
  expiration: 21600000
  online: online-token
  codeKey: code-key
@@ -4390,14 +4361,14 @@ allow-origin: http://127.0.0.1
 loginCode:
  expiration: 2
 mybatis-plus:
- mapper-locations: classpath:mapper/</em>.xml
+ mapper-locations: classpath:mapper/*.xml
  typeAliasesPackage: com.whaleal.filing.entity,com.whaleal.filing.model
  type-enums-package: com.whaleal.filing.enums
-```</p>
+</code></pre></div>
 <h4 id="java">修改完相应设置后 Java 介质包指定配置文件后台启动</h4>
-<p>启动命令：
-<code>nohup java -jar -Xms2048M -Xmx20000M -XX:PermSize=768M -XX:MaxPermSize=1536M -server -jar 
-filing-system-0.0.1-SNAPSHOT.jar --spring.config.location=application.yml --jasypt.encryptor.password=SfXlqZmK4P257 &amp;</code></p>
+<div class="highlight"><pre><span></span><code>nohup java -jar -Xms2048M -Xmx20000M -XX:PermSize=768M -XX:MaxPermSize=1536M -server -jar 
+filing-system-0.0.1-SNAPSHOT.jar --spring.config.location=application.yml --jasypt.encryptor.password=SfXlqZmK4P257 &amp;
+</code></pre></div>
 <h4 id="_6">查看日志确认启动成功</h4>
 <pre><code>tail -f nohup.out
 </code></pre>

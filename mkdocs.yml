@@ -87,6 +87,8 @@ markdown_extensions:
   - pymdownx.superfences
 
 nav:
+  - Home: index.md
+  
   - Whaleal Platform:
       - whaleal-platform/index.md
       - Whaleal Overview:

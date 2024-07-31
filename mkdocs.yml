@@ -258,7 +258,7 @@ nav:
           - Architecture: document-data-transfer/introduction/architecture.md
           - Customer Case: document-data-transfer/introduction/customer-case.md
       - Install:
-          - Requirements: document-data-transfer/install/requirements.md
+          - Requirements: document-data-transfer/install/requirement.md
           - Installation: document-data-transfer/install/installation.md
           - Quick Start: document-data-transfer/install/quick-start.md
           - Configuring: document-data-transfer/install/configuring.md

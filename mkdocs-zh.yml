@@ -123,7 +123,7 @@ nav:
               - 表作业执行统计: whaleal-data/user-manual/statistical-reports/table-job-execution-statistics.md
               - 异常作业执行统计: whaleal-data/user-manual/statistical-reports/abnormal-job-execution-statistics.md
               - 系统接入统计: whaleal-data/user-manual/statistical-reports/system-access-statistics.md
-              - 回滚记录统计: whaleal-data/user-manual/statistical-reports/rollback-records-statistics.md
+              - 回滚记录统计: whaleal-data/user-manual/statistical-reports/roll-back-records-statistics.md
               - 作业明细: whaleal-data/user-manual/statistical-reports/job-details.md
               - 数据历史流向: whaleal-data/user-manual/statistical-reports/data-historical-flow.md
       - 用例:
@@ -169,7 +169,7 @@ nav:
           - MongoDB 版本: document-data-transfer/use-case/mongodb-version.md
 
   - Whaleal JMC:
-      - whaleal-jinmu-message-sender/index.md
+      - whaleal-jinmu-message-sender/quick-start.md
       - 快速使用指南: whaleal-jinmu-message-sender/quick-start.md
       - 平台概述: whaleal-jinmu-message-sender/platform-overview.md
       - 平台布局介绍: whaleal-jinmu-message-sender/platform-layout-introduction.md

@@ -191,7 +191,7 @@ POST请求设置:
 
 JMC支持全球国家发信，具体国家发信要求，请联系锦木人员进行确定申请资料。
 
-[查看更多信息](module/43-infomation.md)
+[查看更多信息](module/infomation.md)
 
 ### step4 金额充值
 

@@ -1,31 +1,57 @@
 ## Nginx 安装部署
+
 ### 开放指定端口或关闭防火墙
+
 #### 1． 查看已经开放的端口
+
     firewall-cmd --list-ports
-#### 2.开放指定端口 
+
+#### 2.开放指定端口
+
     firewall-cmd --zone=public --add-port=80/tcp --permanent
+
 #### 3.重新加载防火墙配置
+
        firewall-cmd --reload
+
 #### 4.确认端口开放
+
        firewall-cmd --list-ports
+
 #### 5.关闭防火墙
+
        systemctl stop firewalld
+
 #### 6.确认防火墙状态
+
        systemctl status firewalld
+
 ### 安装部署
+
 #### 1. 解压安装包
+
      tar -zxvf nginx-1.16.1.tar.gz -C /usr/local/
+
 #### 2. 安装依赖
+
      yum install -y pcre pcre-devel
      yum install -y zlib zlib-devel
+
 #### 3. 配置路径
+
      ./configure --prefix=/usr/local/nginx
+
 #### 4. 编译
+
      make && make install
+
 #### 5. 配置本地主机访问域名解析
+
      vi /etc/hosts
      ip cloud.whalealMG.com
+
 #### 6. 编辑配置文件
+
 ```
 server {
  listen 80;
@@ -58,5 +84,7 @@ root html;
 }
 }
 ```
+
 #### 7. 启动服务
+
       /usr/local/nginx/sbin/nginx  

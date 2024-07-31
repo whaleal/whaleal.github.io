@@ -25,6 +25,7 @@ You can modify your personal information including email, phone number, etc.
 
 
 
+
 **Click the Edit option button to modify your personal information.**
 
 ![Account2](../../images/whaleal-platform/12-account/account2.png)

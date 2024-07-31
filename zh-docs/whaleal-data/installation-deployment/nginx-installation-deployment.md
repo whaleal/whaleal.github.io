@@ -52,7 +52,9 @@
 
 #### 6. 编辑配置文件
 
+
 ```
+
 server {
  listen 80;
  server_name cloud.whalealmg.com; #本地域名解析
@@ -83,7 +85,9 @@ location = /50x.html {
 root html;
 }
 }
+
 ```
+
 
 #### 7. 启动服务
 

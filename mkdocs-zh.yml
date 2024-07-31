@@ -169,7 +169,6 @@ nav:
           - MongoDB 版本: document-data-transfer/use-case/mongodb-version.md
 
   - Whaleal JMC:
-#      - whaleal-jinmu-message-sender/quick-start.md
       - 快速使用指南: whaleal-jinmu-message-sender/quick-start.md
       - 平台概述: whaleal-jinmu-message-sender/platform-overview.md
       - 平台布局介绍: whaleal-jinmu-message-sender/platform-layout-introduction.md
@@ -203,7 +202,7 @@ nav:
       - 用户信息: whaleal-account/user-manual/user-info.md
 
   - Mars:
-      - mars/readme.md
+      - readme: mars/readme.md
       - 首页: mars/home.md
       - 贡献者: mars/contributors.md
       - 如何贡献: mars/how-contribute.md

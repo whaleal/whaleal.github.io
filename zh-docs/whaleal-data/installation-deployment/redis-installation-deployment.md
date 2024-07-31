@@ -1,7 +1,9 @@
 ## Redis 安装部署
 ### 开放指定端口或关闭防火墙
 #### 1． 查看已经开放的端口
+
     firewall-cmd --list-ports
+
 #### 2.开放指定端口 
     firewall-cmd --zone=public --add-port=6379/tcp --permanent
 #### 3.重新加载防火墙配置

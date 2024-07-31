@@ -7,15 +7,24 @@
 
 
 ### 	程序包部署
+
 #### 前端服务启动 
+
     源码编译后生成”dist”介质包。将 dist 介质包发送到服务器上。路径为 nginx 配置的介质包安装路径下
+
 #### 重新启动 nginx 服务
+
     /usr/local/nginx/sbin/nginx -s reload -t
 
 #### 后端服务启动
+
     源码编译后生成”filing-system-0.0.1-SNAPSHOT.jar”介质包。将该介质包上传至服务器。编辑配置文件：application.yml
+
 #### 配置文件内容
+
+
 ```
+
 server:
  port: 8000
 spring:
@@ -86,19 +95,27 @@ mybatis-plus:
  mapper-locations: classpath:mapper/*.xml
  typeAliasesPackage: com.whaleal.filing.entity,com.whaleal.filing.model
  type-enums-package: com.whaleal.filing.enums
+ 
 ```
+
 #### 修改完相应设置后 Java 介质包指定配置文件后台启动
-启动命令：
+
+
 ```
+
 nohup java -jar -Xms2048M -Xmx20000M -XX:PermSize=768M -XX:MaxPermSize=1536M -server -jar 
 filing-system-0.0.1-SNAPSHOT.jar --spring.config.location=application.yml --jasypt.encryptor.password=SfXlqZmK4P257 &
+
 ```
 
 #### 查看日志确认启动成功
+
     tail -f nohup.out
 
 ### 	docker容器快速部署
+
 ```
+
 进入docker-compose.yml同级目录，使用 `docker-compose up -d`启动。
 
 docker服务启动成功后，可通过`docker logs -f root_whaleal-data_1`命令查看whaleal-data服务运行日志。
@@ -111,6 +128,7 @@ docker服务启动成功后，可通过`docker logs -f root_whaleal-data_1`命�
 user:"admin"
 pwd:"123456"
 系统强制要求用户修改密码后登录
+
 ```
 
 

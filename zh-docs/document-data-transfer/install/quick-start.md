@@ -49,6 +49,7 @@ http://bind_ip:58000/DDT_WEB/#/home
  ```
 
 2 手动校验数据
+
 ```
 java -jar checkData.jar /配置文件路径/DDT.properties
 ```

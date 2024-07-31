@@ -26,7 +26,7 @@ home_button2_blurb: |         # Short description of this button / section.
   Whaleal Data 是专为数据归档设计的归档平台，支持三种类型的归档:冷归档、温归档和S3归档。
 
 home_button3_name: Document Data Transfer   # Comment this parameter out to remove the button.
-home_button3_url: DocumentDataTransfer/    # This path starts at your root mkdocs directory.
+home_button3_url: document-data-transfer/    # This path starts at your root mkdocs directory.
 home_button3_theme: md-button # Options: "md-button", "md-button md-button--primary"
 home_button3_icon: image      # Options: "people", "gear", "image"
 home_button3_blurb: |         # Short description of this button / section.

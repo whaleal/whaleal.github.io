@@ -104,4 +104,3 @@ Choosing compressed snapshots results in faster delivery, but requires sufficien
     <td>dump: No<br />DDT: Yes(SnapShot、Point in time)</td>
   </tr>
 </table>
-

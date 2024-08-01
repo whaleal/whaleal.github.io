@@ -5537,24 +5537,22 @@
 </li>
 <li>
 <p>Download backup data on 47019</p>
-</li>
-</ol>
 <div class="highlight"><pre><span></span><code>mongodump --host &lt;host&gt;:47019 -u &lt;user&gt; -p &lt;password&gt;--authenticationDatabase &lt;authdb&gt;
 </code></pre></div>
-<ol>
-<li>Restore downloaded backup data to a new cluster</li>
-</ol>
+</li>
+<li>
+<p>Restore downloaded backup data to a new cluster</p>
 <div class="highlight"><pre><span></span><code>mongorestore --host &lt;host&gt;:&lt;port&gt; -u &lt;user&gt; -p ****** --authenticationDatabase &lt;authdb&gt; dump
 </code></pre></div>
-<ol>
-<li>Download incremental Oplog from 57019</li>
-</ol>
+</li>
+<li>
+<p>Download incremental Oplog from 57019</p>
 <p>Find the corresponding incremental backup Oplog in the 57109 cluster through the cluster ID</p>
 <div class="highlight"><pre><span></span><code>mongodump --host &lt;host&gt;:57019 -d wap -c oplog669cf3fd3d4d3b380bf5206a -u &lt;user&gt; -p &lt;password&gt; --authenticationDatabase &lt;authdb&gt;
 </code></pre></div>
-<ol>
-<li>Specify the timestamp, re-apply Oplog, and restore the data to the specified point in time.</li>
-</ol>
+</li>
+<li>
+<p>Specify the timestamp, re-apply Oplog, and restore the data to the specified point in time.</p>
 <div class="highlight"><pre><span></span><code>mkdir empty
 mongorestore --host &lt;host&gt;:&lt;port&gt; -u &lt;user&gt; --authenticationDatabase &lt;authdb&gt; \
 --oplogReplay \
@@ -5562,6 +5560,8 @@ mongorestore --host &lt;host&gt;:&lt;port&gt; -u &lt;user&gt; --authenticationDa
 --oplogLimit ******** \
 empty/
 </code></pre></div>
+</li>
+</ol>
 
 
 

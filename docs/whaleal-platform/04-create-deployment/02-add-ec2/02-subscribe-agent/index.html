@@ -5536,36 +5536,36 @@
 </li>
 <li>
 <p>Connecting to EC2 Instance</p>
+<div class="highlight"><pre><span></span><code>sudo -i 
+</code></pre></div>
 </li>
-</ol>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>-i<span class="w"> </span>
+<li>
+<p>Enter the /opt directory</p>
+<div class="highlight"><pre><span></span><code>cd /opt/agent
 </code></pre></div>
-<ol>
-<li>Enter the /opt directory</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/opt/agent
-</code></pre></div>
-<ol>
-<li>Modify the <strong>/opt/agent/parameters.properties</strong> file</li>
-</ol>
-<div class="highlight"><pre><span></span><code>vi<span class="w"> </span>parameters.properties
+</li>
+<li>
+<p>Modify the <strong>/opt/agent/parameters.properties</strong> file</p>
+<div class="highlight"><pre><span></span><code>vi parameters.properties
 
-<span class="c1">#Modify the first line</span>
-<span class="c1">#In the configuration item &quot;foreign_url=&quot;, replace Whaleal_Public_IP with Whaleal&#39;s public IP as follows</span>
-<span class="nv">foreign_url</span><span class="o">=</span>http://Whaleal_Public_IP:8080
+#Modify the first line
+#In the configuration item &quot;foreign_url=&quot;, replace Whaleal_Public_IP with Whaleal&#39;s public IP as follows
+foreign_url=http://Whaleal_Public_IP:8080
 </code></pre></div>
-<ol>
-<li>Restart the agent.</li>
-</ol>
-<div class="highlight"><pre><span></span><code>ps<span class="w"> </span>-ef<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>agent
-<span class="nb">kill</span><span class="w"> </span>-9<span class="w"> </span>Agent_PID
+</li>
+<li>
+<p>Restart the agent.</p>
+<div class="highlight"><pre><span></span><code>ps -ef | grep agent
+kill -9 Agent_PID
 </code></pre></div>
 <p>Wait two minutes and check to confirm that the agent has automatically restarted</p>
-<ol>
-<li>Go to Whaleal to check the EC2 management progress.</li>
-</ol>
+</li>
+<li>
+<p>Go to Whaleal to check the EC2 management progress.</p>
 <p><img alt="hostlist" src="../../../../images/whaleal-platform/04-create-deployment/hostlist.png" /></p>
 <p><img alt="hostlist" src="../../../../images/whaleal-platform/04-create-deployment/add-ec2-success.png" /></p>
+</li>
+</ol>
 
 
 

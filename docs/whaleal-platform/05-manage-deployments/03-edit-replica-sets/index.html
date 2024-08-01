@@ -5692,46 +5692,64 @@
 <h3 id="add-a-replica-set-member">Add a Replica Set Member</h3>
 <p>You must have an existing server to which to deploy the new replica set member. To add a member to an existing replica set, increasing the size of the set:</p>
 <ol>
-<li>Navigate to the <strong>Clusters</strong> view for your deployment.</li>
-</ol>
-<p>​        a. If it is not already displayed, select your desired project from the <strong>MongoDB</strong> menu in the navigation bar.</p>
-<p>​        b. If it is not already displayed, select your desired project from the <strong>Projects</strong> menu in the drop-down box options.</p>
-<p>​        Click the <strong>Clusters</strong> view.</p>
+<li>
+<p>Navigate to the <strong>Clusters</strong> view for your deployment.</p>
 <ol>
+<li>
+<p>If it is not already displayed, select your desired project from the <strong>MongoDB</strong> menu in the navigation bar.</p>
+</li>
+<li>
+<p>If it is not already displayed, select your desired project from the <strong>Projects</strong> menu in the drop-down box options.</p>
+</li>
+</ol>
+<p>Click the <strong>Clusters</strong> view.</p>
+</li>
 <li>
 <p>On the card with the replica set, click <strong>Cluster Modify</strong>.</p>
 </li>
 <li>
 <p>In <strong>Member Configuration</strong>, click <strong>Add+</strong>.</p>
+<p><img alt="image-20240625133723128" src="../../../images/whaleal-platform/05-manage-deployment/add.png" /></p>
+</li>
+<li>
+<p>In <strong>Hostname</strong>, select the host that you want to add as a new member of the replica set.</p>
+<p>Use the following procedure to add the host if it doesn't appear in the <strong>Hostname</strong> list:</p>
+<ol>
+<li>
+<p>In <strong>Hostname</strong>, select <strong>New Server</strong>.</p>
+<p>If no hosts have yet been added to the project, the <strong>Hostname</strong> list does not appear. Click <strong>Server</strong> instead.</p>
+</li>
+<li>
+<p>In the <strong>Server</strong> dialog, select your operating system and click <strong>Add Host</strong>.</p>
+</li>
+<li>
+<p>Follow the instructions to install an Agent on the new host.</p>
 </li>
 </ol>
-<p><img alt="image-20240625133723128" src="../../../images/whaleal-platform/05-manage-deployment/add.png" /></p>
-<ol>
-<li>In <strong>Hostname</strong>, select the host that you want to add as a new member of the replica set.</li>
-</ol>
-<p>Use the following procedure to add the host if it doesn't appear in the <strong>Hostname</strong> list:</p>
-<p>​        a. In <strong>Hostname</strong>, select <strong>New Server</strong>.</p>
-<p>​            If no hosts have yet been added to the project, the <strong>Hostname</strong> list does not appear. Click <strong>Server</strong> instead.</p>
-<p>​        b. In the <strong>Server</strong> dialog, select your operating system and click <strong>Add Host</strong>.</p>
-<p>​        c. Follow the instructions to install an Agent on the new host.</p>
-<ol>
-<li>Click <strong>Update</strong>.</li>
+</li>
+<li>
+<p>Click <strong>Update</strong>.</p>
+</li>
 </ol>
 <h3 id="edit-a-replica-set-member">Edit a Replica Set Member</h3>
 <ol>
-<li>Navigate to the <strong>Clusters</strong> view for your deployment.</li>
-</ol>
-<p>​        a. If it is not already displayed, select your desired project from the <strong>MongoDB</strong> menu in the navigation bar.</p>
-<p>​        b. If it is not already displayed, select your desired project from the <strong>Projects</strong> menu in the drop-down box options.</p>
-<p>​        Click the <strong>Clusters</strong> view.</p>
+<li>
+<p>Navigate to the <strong>Clusters</strong> view for your deployment.</p>
 <ol>
+<li>
+<p>If it is not already displayed, select your desired project from the <strong>MongoDB</strong> menu in the navigation bar.</p>
+</li>
+<li>
+<p>If it is not already displayed, select your desired project from the <strong>Projects</strong> menu in the drop-down box options.</p>
+</li>
+</ol>
+<p>Click the <strong>Clusters</strong> view.</p>
+</li>
 <li>
 <p>On the card with the replica set, click <strong>Cluster Modify</strong>.</p>
 </li>
 <li>
 <p>In <strong>Member Configuration</strong>, modify the settings for the replica set member that you want to edit.</p>
-</li>
-</ol>
 <table>
 <thead>
 <tr>
@@ -5751,46 +5769,60 @@
 </tbody>
 </table>
 <p><img alt="edit" src="../../../images/whaleal-platform/05-manage-deployment/edit.png" /></p>
-<ol>
-<li>Click <strong>Update</strong>.</li>
+</li>
+<li>
+<p>Click <strong>Update</strong>.</p>
+</li>
 </ol>
 <h3 id="remove-a-replica-set-member">Remove a Replica Set Member</h3>
 <ol>
-<li>Navigate to the <strong>Clusters</strong> view for your deployment.</li>
-</ol>
-<p>​        a. If it is not already displayed, select your desired project from the <strong>MongoDB</strong> menu in the navigation bar.</p>
-<p>​        b. If it is not already displayed, select your desired project from the <strong>Projects</strong> menu in the drop-down box options.</p>
-<p>​        Click the <strong>Clusters</strong> view.</p>
+<li>
+<p>Navigate to the <strong>Clusters</strong> view for your deployment.</p>
 <ol>
+<li>
+<p>If it is not already displayed, select your desired project from the <strong>MongoDB</strong> menu in the navigation bar.</p>
+</li>
+<li>
+<p>If it is not already displayed, select your desired project from the <strong>Projects</strong> menu in the drop-down box options.</p>
+</li>
+</ol>
+<p>Click the <strong>Clusters</strong> view.</p>
+</li>
 <li>
 <p>On the card with the replica set, click <strong>Cluster Modify</strong>.</p>
 </li>
 <li>
 <p>In <strong>Member Configuration</strong>, to find the target mongod process, click the red delete button on the right.</p>
-</li>
-</ol>
 <p><img alt="image-20240625133723128" src="../../../images/whaleal-platform/05-manage-deployment/delete.png" /></p>
-<ol>
-<li>Click <strong>Update</strong>.</li>
+</li>
+<li>
+<p>Click <strong>Update</strong>.</p>
+</li>
 </ol>
 <h3 id="edit-a-cluster-configuration">Edit a Cluster Configuration</h3>
 <ol>
-<li>Navigate to the <strong>Clusters</strong> view for your deployment.</li>
-</ol>
-<p>​        a. If it is not already displayed, select your desired project from the <strong>MongoDB</strong> menu in the navigation bar.</p>
-<p>​        b. If it is not already displayed, select your desired project from the <strong>Projects</strong> menu in the drop-down box options.</p>
-<p>​        Click the <strong>Clusters</strong> view.</p>
+<li>
+<p>Navigate to the <strong>Clusters</strong> view for your deployment.</p>
 <ol>
+<li>
+<p>If it is not already displayed, select your desired project from the <strong>MongoDB</strong> menu in the navigation bar.</p>
+</li>
+<li>
+<p>If it is not already displayed, select your desired project from the <strong>Projects</strong> menu in the drop-down box options.</p>
+</li>
+</ol>
+<p>Click the <strong>Clusters</strong> view.</p>
+</li>
 <li>
 <p>On the card with the replica set, click <strong>Cluster Modify</strong>.</p>
 </li>
 <li>
 <p>Configure the replica set in <strong>Cluster Configuration</strong>.</p>
-</li>
-</ol>
 <p><img alt="cluserConfig" src="../../../images/whaleal-platform/05-manage-deployment/config.png" /></p>
-<ol>
-<li>Click <strong>Update</strong>.</li>
+</li>
+<li>
+<p>Click <strong>Update</strong>.</p>
+</li>
 </ol>
 
 

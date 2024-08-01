@@ -5690,80 +5690,167 @@
 <h1 id="install-whaleal-in-aws-marketplace">Install Whaleal in AWS MarketPlace</h1>
 <h2 id="subscription-service">Subscription Service</h2>
 <h3 id="whalal-platform">Whalal Platform</h3>
-<p>1.Log in to the AWS console.</p>
-<p>2.Search Marketplace in Servers.</p>
-<p>3.Click <strong>Discover products</strong> in the left navigation bar of the marketplace.</p>
-<p>4.Search for <strong>whaleal</strong> in MarketPlace.</p>
-<p>5.Find <strong>Whalal Platform</strong> and subscribe.</p>
+<ol>
+<li>
+<p>Log in to the AWS console.</p>
+</li>
+<li>
+<p>Search Marketplace in Servers.</p>
+</li>
+<li>
+<p>Click <strong>Discover products</strong> in the left navigation bar of the marketplace.</p>
+</li>
+<li>
+<p>Search for <strong>whaleal</strong> in MarketPlace.</p>
+</li>
+<li>
+<p>Find <strong>Whalal Platform</strong> and subscribe.</p>
 <p><img alt="WAP" src="../../../../images/whaleal-platform/02-install-whaleal/wap.png" /></p>
-<p>6.Click  <strong>Continue  To Subscribe</strong></p>
+</li>
+<li>
+<p>Click  <strong>Continue  To Subscribe</strong></p>
 <p><img alt="subscribe" src="../../../../images/whaleal-platform/02-install-whaleal/subscribe.png" /></p>
 <p>Wait for the progress below to load</p>
 <p><img alt="waiting" src="../../../../images/whaleal-platform/02-install-whaleal/waiting.png" /></p>
 <p>Loading completed</p>
 <p><img alt="waiting" src="../../../../images/whaleal-platform/02-install-whaleal/completed.png" /></p>
-<p>7.View subscription results in Manage subscriptions,when you see the WAP in the image below in Manage subscriptions, your subscription is successful.</p>
+</li>
+<li>
+<p>View subscription results in Manage subscriptions,when you see the WAP in the image below in Manage subscriptions, your subscription is successful.</p>
 <p><img alt="waiting" src="../../../../images/whaleal-platform/02-install-whaleal/wap2.png" /></p>
+</li>
+</ol>
 <h3 id="whaleal-platform-agent">Whaleal Platform Agent</h3>
-<p>1.Log in to the AWS console.</p>
-<p>2.Search Marketplace in Servers.</p>
-<p>3.Click <strong>Discover products</strong> in the left navigation bar of the marketplace.</p>
-<p>4.Search for <strong>whaleal</strong> in MarketPlace.</p>
-<p>5.Find <strong>Whalal Platform Agent</strong> and subscribe.</p>
+<ol>
+<li>
+<p>Log in to the AWS console.</p>
+</li>
+<li>
+<p>Search Marketplace in Servers.</p>
+</li>
+<li>
+<p>Click <strong>Discover products</strong> in the left navigation bar of the marketplace.</p>
+</li>
+<li>
+<p>Search for <strong>whaleal</strong> in MarketPlace.</p>
+</li>
+<li>
+<p>Find <strong>Whalal Platform Agent</strong> and subscribe.</p>
 <p><img alt="WAP" src="../../../../images/whaleal-platform/02-install-whaleal/whaleal-platform-agent.png" /></p>
-<p>6.Click  <strong>Continue  To Subscribe</strong></p>
-<p><img alt="WAP" src="../../../../images/whaleal-platform/02-install-whaleal/agent-sbuscribe.png" /></p>
-<p>Wait for the progress below to load</p>
-<p><img alt="waiting" src="../../../../images/whaleal-platform/02-install-whaleal/agent-waiting.png" /></p>
-<p>Loading completed</p>
+</li>
+<li>
+<p>Click  <strong>Continue  To Subscribe</strong></p>
+<p><img alt="WAP" src="../../../../images/whaleal-platform/02-install-whaleal/agent-sbuscribe.png" />Wait for the progress below to load</p>
+<p><img alt="waiting" src="../../../../images/whaleal-platform/02-install-whaleal/agent-waiting.png" />Loading completed</p>
 <p><img alt="waiting" src="../../../../images/whaleal-platform/02-install-whaleal/agent-completed.png" /></p>
-<p>7.View subscription results in Manage subscriptions,when you see the WAP in the image below in Manage subscriptions, your subscription is successful.</p>
+</li>
+<li>
+<p>View subscription results in Manage subscriptions,when you see the WAP in the image below in Manage subscriptions, your subscription is successful.</p>
 <p><img alt="waiting" src="../../../../images/whaleal-platform/02-install-whaleal/agent.png" /></p>
+</li>
+</ol>
 <h2 id="install-appdb-for-wap-service">Install appdb for WAP service</h2>
 <p>Before building the appdb for the WAP service, refer to the <a href="../../02-hardware-and-software-requirements/">Installation</a> Checklist to set the minimum instance parameter configuration.</p>
-<p>1.Start the instance through the subscribed Whaleal Platform Agent in Manage subscriptions and click <strong>lunch new instance</strong> below the subscription.</p>
+<ol>
+<li>
+<p>Start the instance through the subscribed Whaleal Platform Agent in Manage subscriptions and click <strong>lunch new instance</strong> below the subscription.</p>
 <p><img alt="lunchinstance" src="../../../../images/whaleal-platform/02-install-whaleal/lunch-instance.png" /></p>
-<p>2.Select region.</p>
-<p>3.Select Instance type based on actual business pressure.</p>
-<p>4.Select Key pair (login).</p>
-<p>5.Select or configure a security group and edit Inbound rules and Outbound rules according to business requirements.</p>
-<p>6.Configuring storage space size.</p>
-<p>7.Click <strong>lunch</strong> to start the instance.</p>
-<p>8.Access the instance and use the script in the instance to start appdb.</p>
-<p>There is a QuickStart_MongoDB.sh script in the /opt directory of the instance. You can directly execute the script to start a mongodb, or use the self-built method to start the mongodb service as the WAP appdb. No matter which method is used to start, ensure that the starting user has sufficient read and write permissions.</p>
-<p>After starting the script, the following output will be displayed. The content in the red box below is saved locally to prevent loss.</p>
+</li>
+<li>
+<p>Select region.</p>
+</li>
+<li>
+<p>Select Instance type based on actual business pressure.</p>
+</li>
+<li>
+<p>Select Key pair (login).</p>
+</li>
+<li>
+<p>Select or configure a security group and edit Inbound rules and Outbound rules according to business requirements.</p>
+</li>
+<li>
+<p>Configuring storage space size.</p>
+</li>
+<li>
+<p>Click <strong>lunch</strong> to start the instance.</p>
+</li>
+<li>
+<p>Access the instance and use the script in the instance to start appdb.</p>
+<p>There is a QuickStart_MongoDB.sh script in the /opt directory of the instance. You can directly execute the script to start a   mongodb, or use the self-built method to start the mongodb service as the WAP appdb. No matter which method is used to   start, ensure that the starting user has sufficient read and write permissions.</p>
+<p>After starting the script, the following output will be displayed. The content in the red box below is saved locally to prevent   loss.</p>
 <p>Record username and password</p>
-<p><img alt="lunchinstance" src="../../../../images/whaleal-platform/02-install-whaleal/appdb.png" /></p>
-<p>After the modification is completed, test the connection locally</p>
+<p><img alt="lunchinstance" src="../../../../images/whaleal-platform/02-install-whaleal/appdb.png" />After the modification is completed, test the connection locally</p>
 <p><img alt="lunchinstance" src="../../../../images/whaleal-platform/02-install-whaleal/auth.png" /></p>
+</li>
+</ol>
 <h2 id="install-wap">Install WAP</h2>
 <p>Before building  WAP service, refer to the <a href="../../02-hardware-and-software-requirements/">Installation</a> Checklist to set the minimum instance parameter configuration.</p>
-<p>1.Under Manage subscriptions, find <strong>Instance new Instance</strong> under Whaleal Platform</p>
+<ol>
+<li>
+<p>Under Manage subscriptions, find <strong>Instance new Instance</strong> under Whaleal Platform</p>
 <p><img alt="lunchinstance" src="../../../../images/whaleal-platform/02-install-whaleal/waplunch.png" /></p>
-<p>2.Select region.</p>
-<p>3.Select Instance type based on actual business pressure.</p>
-<p>4.Select Key pair (login).</p>
-<p>5.Select or configure a security group and edit Inbound rules and Outbound rules according to business requirements.</p>
-<p>6.Configuring storage space size.</p>
-<p>7.Click <strong>lunch</strong> to start the instance.</p>
+</li>
+<li>
+<p>Select region.</p>
+</li>
+<li>
+<p>Select Instance type based on actual business pressure.</p>
+</li>
+<li>
+<p>Select Key pair (login).</p>
+</li>
+<li>
+<p>Select or configure a security group and edit Inbound rules and Outbound rules according to business requirements.</p>
+</li>
+<li>
+<p>Configuring storage space size.</p>
+</li>
+<li>
+<p>Click <strong>lunch</strong> to start the instance.</p>
+</li>
+</ol>
 <h2 id="configuring-wap">Configuring WAP</h2>
-<p>1.Access its public IP directly in the browser,visit the WAP guide page to configure WAP.</p>
+<ol>
+<li>
+<p>Access its public IP directly in the browser,visit the WAP guide page to configure WAP.</p>
 <p><img alt="lunchinstance" src="../../../../images/whaleal-platform/02-install-whaleal/yd-page-1.png" /></p>
-<p>2.Click the <strong>Next step</strong> button and then proceed to resource check.</p>
+</li>
+<li>
+<p>Click the <strong>Next step</strong> button and then proceed to resource check.</p>
 <p>After all the checks are passed, you can proceed to the next step.</p>
 <p><img alt="lunchinstance" src="../../../../images/whaleal-platform/02-install-whaleal/resource-check.png" /></p>
-<p>3.Configure appdb and modify the three items Database host, User and Password.After the configuration is complete, click <strong>Next step</strong>.</p>
+</li>
+<li>
+<p>Configure appdb and modify the three items Database host, User and Password.After the configuration is complete, click <strong>Next step</strong>.</p>
 <p><img alt="lunchinstance" src="../../../../images/whaleal-platform/02-install-whaleal/yd-page-3.png" /></p>
-<p>4.Configure Web Url and click <strong>Next step</strong>.</p>
-<p>5.At this point, the configuration is successful and click <strong>lunch</strong>.</p>
-<p>​   As shown below, when all components are successfully started, click <strong>Next step</strong></p>
+</li>
+<li>
+<p>Configure Web Url and click <strong>Next step</strong>.</p>
+</li>
+<li>
+<p>At this point, the configuration is successful and click <strong>lunch</strong>.</p>
+<p>As shown below, when all components are successfully started, click <strong>Next step</strong></p>
 <p><img alt="lunchinstance" src="../../../../images/whaleal-platform/02-install-whaleal/yd-page-4.png" /></p>
-<p>6.Click the <strong>Finish</strong></p>
-<p>7.First login WAP.</p>
-<p>a. The first login the default user name is "admin" and the default password is "password".</p>
-<p>b. Change default password after login.</p>
-<p>8.Login to WAP service.</p>
+</li>
+<li>
+<p>Click the <strong>Finish</strong></p>
+</li>
+<li>
+<p>First login WAP.</p>
+<ol>
+<li>
+<p>The first login the default user name is "admin" and the default password is "password".</p>
+</li>
+<li>
+<p>Change default password after login.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Login to WAP service.</p>
 <p><img alt="lunchinstance" src="../../../../images/whaleal-platform/02-install-whaleal/success.png" /></p>
+</li>
+</ol>
 
 
 

@@ -8,11 +8,11 @@ LogVis can view the slow query statistics in the logs within a certain period of
 
 1. Select Cluster Name and Node Name, then click the Analyze **button**.
 
-   ![Start Diagnose Session](../../images/whaleal-platform/10-diagnose/start-logvis.png)
+     ![Start Diagnose Session](../../images/whaleal-platform/10-diagnose/start-logvis.png)
 
 2. Wait for a while and click the **magnifying glass icon** to view the analysis results
 
-   ![Start Diagnose Session](../../images/whaleal-platform/10-diagnose/result.png)
+     ![Start Diagnose Session](../../images/whaleal-platform/10-diagnose/result.png)
 
 ### ConnectionList
 

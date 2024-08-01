@@ -5675,134 +5675,72 @@
 
 <h1 id="monitoring-indicator-details">Monitoring Indicator Details</h1>
 <h2 id="system-resource-metrics">System Resource Metrics</h2>
-<ol>
-<li><strong>CPU</strong>: Monitors the CPU usage to identify if the system is overloaded.</li>
-</ol>
+<p><strong>CPU</strong>: Monitors the CPU usage to identify if the system is overloaded.</p>
 <p><img alt="image-20240621153303718" src="../../../images/whaleal-platform/06-monitor/cpu.png" /></p>
-<ol>
-<li><strong>Memory Swap</strong>: Tracks swap space usage. Excessive swapping can degrade performance.</li>
-</ol>
+<p><strong>Memory Swap</strong>: Tracks swap space usage. Excessive swapping can degrade performance.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/mem-swap.png" /></p>
-<ol>
-<li><strong>System Memory</strong>: Observes overall memory usage to ensure there’s enough available for MongoDB operations.</li>
-</ol>
+<p><strong>System Memory</strong>: Observes overall memory usage to ensure there’s enough available for MongoDB operations.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/mem.png" /></p>
-<ol>
-<li><strong>System Network</strong>: Monitors network throughput and latency to identify potential network bottlenecks.</li>
-</ol>
+<p><strong>System Network</strong>: Monitors network throughput and latency to identify potential network bottlenecks.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/system-net-work.jpg" /></p>
-<ol>
-<li><strong>Disk IOPS</strong>: Measures input/output operations per second on the disk, indicating how quickly data is read from or written to the disk.</li>
-</ol>
+<p><strong>Disk IOPS</strong>: Measures input/output operations per second on the disk, indicating how quickly data is read from or written to the disk.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/disk-io.png" /></p>
-<ol>
-<li><strong>DiskInfo</strong>: Provides detailed information about disk usage and health.</li>
-</ol>
+<p><strong>DiskInfo</strong>: Provides detailed information about disk usage and health.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/disk-info.png" /></p>
 <h2 id="mongodb-specific-metrics">MongoDB-specific Metrics</h2>
-<ol>
-<li><strong>Opcounters</strong>: Tracks the number of operations (insert, query, update, delete, etc.) performed.</li>
-</ol>
+<p><strong>Opcounters</strong>: Tracks the number of operations (insert, query, update, delete, etc.) performed.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/opcounters.png" /></p>
-<ol>
-<li><strong>Connections</strong>: Monitors the number of active client connections to ensure the system can handle the load.</li>
-</ol>
+<p><strong>Connections</strong>: Monitors the number of active client connections to ensure the system can handle the load.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/connections.png" /></p>
-<ol>
-<li><strong>Page Faults</strong>: Measures the rate of page faults, indicating how often MongoDB needs to read data from disk into memory.</li>
-</ol>
+<p><strong>Page Faults</strong>: Measures the rate of page faults, indicating how often MongoDB needs to read data from disk into memory.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/page-faults.png" /></p>
-<ol>
-<li><strong>Memory</strong>: Tracks MongoDB’s internal memory usage, including how much memory is used by different components.</li>
-</ol>
+<p><strong>Memory</strong>: Tracks MongoDB’s internal memory usage, including how much memory is used by different components.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/memory.png" /></p>
-<ol>
-<li><strong>Network</strong>: Monitors MongoDB network traffic to ensure data is being transmitted efficiently.</li>
-</ol>
+<p><strong>Network</strong>: Monitors MongoDB network traffic to ensure data is being transmitted efficiently.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/network.png" /></p>
-<ol>
-<li><strong>Asserts</strong>: Tracks internal database assertions, which can indicate potential issues or bugs.</li>
-</ol>
+<p><strong>Asserts</strong>: Tracks internal database assertions, which can indicate potential issues or bugs.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/asserts.png" /></p>
 <h2 id="cache-metrics">Cache Metrics</h2>
-<ol>
-<li><strong>Cache Flow</strong>: Measures the flow of data into and out of the cache, indicating cache efficiency.</li>
-</ol>
+<p><strong>Cache Flow</strong>: Measures the flow of data into and out of the cache, indicating cache efficiency.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/cache-flow.png" /></p>
-<ol>
-<li><strong>Cache Usage</strong>: Monitors how effectively the cache is being utilized.</li>
-</ol>
+<p><strong>Cache Usage</strong>: Monitors how effectively the cache is being utilized.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/cache-ssage.png" /></p>
 <h2 id="performance-metrics">Performance Metrics</h2>
-<ol>
-<li><strong>Latency</strong>: Measures the response time for queries, helping to identify performance bottlenecks.</li>
-</ol>
+<p><strong>Latency</strong>: Measures the response time for queries, helping to identify performance bottlenecks.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/latency.png" /></p>
-<ol>
-<li><strong>Tickets</strong>: Tracks the availability of tickets for read and write operations, indicating resource contention.</li>
-</ol>
+<p><strong>Tickets</strong>: Tracks the availability of tickets for read and write operations, indicating resource contention.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/tickets.png" /></p>
-<ol>
-<li><strong>Target Query</strong>: Monitors the performance of specific targeted queries.</li>
-</ol>
+<p><strong>Target Query</strong>: Monitors the performance of specific targeted queries.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/target-query.png" /></p>
-<ol>
-<li><strong>ScanAndOrder</strong>: Tracks operations where MongoDB must scan documents and order them in memory, which can be resource-intensive.</li>
-</ol>
+<p><strong>ScanAndOrder</strong>: Tracks operations where MongoDB must scan documents and order them in memory, which can be resource-intensive.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/scan-order.png" /></p>
-<ol>
-<li><strong>CollectionSCAN</strong>: Measures the frequency of collection scans, which are less efficient than indexed queries.</li>
-</ol>
+<p><strong>CollectionSCAN</strong>: Measures the frequency of collection scans, which are less efficient than indexed queries.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/collection-scan.png" /></p>
 <h2 id="document-and-data-metrics">Document and Data Metrics</h2>
-<ol>
-<li><strong>Document Info</strong>: Provides details about the number and size of documents.</li>
-</ol>
+<p><strong>Document Info</strong>: Provides details about the number and size of documents.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/document-Info.png" /></p>
-<ol>
-<li><strong>Deleted Document</strong>: Tracks the rate at which documents are deleted.</li>
-</ol>
+<p><strong>Deleted Document</strong>: Tracks the rate at which documents are deleted.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/deleted-document.png" /></p>
-<ol>
-<li><strong>Oplog Window</strong>: Monitors the size of the oplog window, crucial for replication lag and recovery.</li>
-</ol>
+<p><strong>Oplog Window</strong>: Monitors the size of the oplog window, crucial for replication lag and recovery.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/oplog-window.png" /></p>
-<ol>
-<li><strong>LogicalSize</strong>: Measures the logical size of the database, providing insight into data growth.</li>
-</ol>
+<p><strong>LogicalSize</strong>: Measures the logical size of the database, providing insight into data growth.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/logical-size.png" /></p>
-<ol>
-<li><strong>OpenCursor</strong>: Tracks the number of open cursors, indicating active database operations.</li>
-</ol>
+<p><strong>OpenCursor</strong>: Tracks the number of open cursors, indicating active database operations.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/open-cursor.png" /></p>
-<ol>
-<li><strong>Logical DataSize</strong>: Measures the logical size of data stored in MongoDB.</li>
-</ol>
+<p><strong>Logical DataSize</strong>: Measures the logical size of data stored in MongoDB.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/logical-data-size.png" /></p>
-<ol>
-<li><strong>IndexSize</strong>: Tracks the size of indexes, impacting query performance.</li>
-</ol>
+<p><strong>IndexSize</strong>: Tracks the size of indexes, impacting query performance.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/index-size.png" /></p>
-<ol>
-<li><strong>OplogSize</strong>: Monitors the size of the oplog, essential for replication health.</li>
-</ol>
+<p><strong>OplogSize</strong>: Monitors the size of the oplog, essential for replication health.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/oplog-size.png" /></p>
 <h2 id="lock-and-transaction-metrics">Lock and Transaction Metrics</h2>
-<ol>
-<li><strong>LockCondition</strong>: Tracks lock contention within MongoDB, which can affect performance.</li>
-</ol>
+<p><strong>LockCondition</strong>: Tracks lock contention within MongoDB, which can affect performance.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/lock-condition.png" /></p>
-<ol>
-<li><strong>DatabaseLock</strong>: Measures the time the database is locked for various operations.</li>
-</ol>
+<p><strong>DatabaseLock</strong>: Measures the time the database is locked for various operations.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/database-lock.png" /></p>
-<ol>
-<li><strong>CollectionLock</strong>: Monitors lock contention at the collection level.</li>
-</ol>
+<p><strong>CollectionLock</strong>: Monitors lock contention at the collection level.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/collection-lock.png" /></p>
-<ol>
-<li><strong>Transaction Condition</strong>: Tracks transaction performance and conflicts.</li>
-</ol>
+<p><strong>Transaction Condition</strong>: Tracks transaction performance and conflicts.</p>
 <p><img alt="image-20240621153642506" src="../../../images/whaleal-platform/06-monitor/transaction-condition.png" /></p>
 
 

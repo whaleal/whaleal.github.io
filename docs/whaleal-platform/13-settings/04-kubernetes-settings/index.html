@@ -5622,18 +5622,32 @@
 <h1 id="configure-kubernetes">Configure Kubernetes</h1>
 <p>Configure Kubernetes for the WAP platform. Add Kubernetes to create hosts and mongodb using Kubernetes.</p>
 <h2 id="view-kubernetes-configuration">View Kubernetes Configuration</h2>
-<p>1.Click on the left side of the setting</p>
-<p>2.Click Kubernetes</p>
+<ol>
+<li>
+<p>Click on the left side of the setting</p>
+</li>
+<li>
+<p>Click Kubernetes</p>
 <p><img alt="Kubernetes" src="../../../images/whaleal-platform/13-setting/kubernetes.png" /></p>
+</li>
+</ol>
 <h2 id="add-kubernetes-configuration-steps">Add Kubernetes configuration steps</h2>
-<p>1.Click ADD K8S</p>
+<ol>
+<li>
+<p>Click ADD K8S</p>
 <p><img alt="Kubernetes1" src="../../../images/whaleal-platform/13-setting/kubernetes1.png" /></p>
 <p><strong>Name</strong>: Configure k8s name</p>
 <p><strong>Type</strong>: Support for Linode Kubernetes and Amazon EKS</p>
 <p><strong>Configuration</strong>: k8s Configuration configuration file is used to connect to EKS</p>
-<p>2.Click Confirm</p>
+</li>
+<li>
+<p>Click Confirm</p>
+</li>
+</ol>
 <h2 id="example-configuring-kubernetes">Example: Configuring Kubernetes</h2>
-<p>1.You need to prepare the Kubernetes confing file in advance. The following is an example of Kubernetes confing</p>
+<ol>
+<li>
+<p>You need to prepare the Kubernetes confing file in advance. The following is an example of Kubernetes confing</p>
 <div class="highlight"><pre><span></span><code>apiVersion: v1
 kind: Config
 preferences: {}
@@ -5659,19 +5673,21 @@ contexts:
 
 current-context: lke196921-ctx
 </code></pre></div>
-<p>2.Configure kubernetes fill in</p>
+</li>
+<li>
+<p>Configure kubernetes fill in</p>
 <ul>
-<li>
-<p><strong>name</strong>: Enter the kubernetes cluster name</p>
-</li>
-<li>
-<p><strong>Type</strong>: Choose Kubernetes</p>
-</li>
+<li><strong>name</strong>: Enter the kubernetes cluster name</li>
+<li><strong>Type</strong>: Choose Kubernetes</li>
 <li><strong>Configuration</strong>: Copy the Kubeconfig file here</li>
 </ul>
 <p><img alt="Kubernetes6" src="../../../images/whaleal-platform/13-setting/kubernetes6.png" /></p>
-<p>3.Click confirm Configuration Complete</p>
+</li>
+<li>
+<p>Click confirm Configuration Complete</p>
 <p><img alt="Kubernetes7" src="../../../images/whaleal-platform/13-setting/kubernetes7.png" /></p>
+</li>
+</ol>
 
 
 

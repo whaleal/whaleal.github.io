@@ -228,47 +228,45 @@ Reset Password and Login.
 
 #### Deploy MongoDB's server
 
-1.Install and deploy the agent into the server. Each machine takes turns to do the following operations.
+1. Install and deploy the agent into the server. Each machine takes turns to do the following operations  
 
-![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/03-deploy-mongodb-server.png)
+     ![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/03-deploy-mongodb-server.png)
 
-![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/04-deploy-mongodb-server.png)
+     ![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/04-deploy-mongodb-server.png)
 
+2. After successful management, it will be displayed in the following figure.
 
+     ![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/05-host-list.png)
 
-2.After successful management, it will be displayed in the following figure.
+3. Upload MongoDB package.
 
-![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/05-host-list.png)
-
-3.Upload MongoDB package.
-
-![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/06-mongodb-package.png)
+     ![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/06-mongodb-package.png)
 
 #### Build a MongoDB three-node replication set
 
-1.Click to the MongoDB page and click **Replica Set** under **Create Cluster**.
+1. Click to the MongoDB page and click **Replica Set** under **Create Cluster**.
 
-![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/07-mongodb-list.png)
+     ![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/07-mongodb-list.png)
 
-2.Create replication set node status information.
+2. Create replication set node status information.
 
-![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/08-mongodb-deploy.png)
+     ![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/08-mongodb-deploy.png)
 
-3.Click on the **Show** to view the real-time creation log.
+3. Click on the **Show** to view the real-time creation log.
 
-![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/09-operational-events.png)
+     ![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/09-operational-events.png)
 
-4.Check the log to determine whether the cluster was created successfully.
+4. Check the log to determine whether the cluster was created successfully.
 
-![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/10-operational-events.png)
+     ![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/10-operational-events.png)
 
-5.View information on each node in MongoDB
+5. View information on each node in MongoDB
 
-![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/11-cluster-information.png)
+     ![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/11-cluster-information.png)
 
-6.Check the surveillance
+6. Check the surveillance
 
-![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/12-monitor.png)
+     ![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/12-monitor.png)
 
 
 
@@ -276,33 +274,30 @@ Reset Password and Login.
 
 **Reference: Deploy MongoDB's server**
 
-1.Click to the MongoDB page and open "Existing MongoDB Deployment".
+1. Click to the MongoDB page and open "Existing MongoDB Deployment".
 
-![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/13-existing-mongodb-deployment.png)
+     ![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/13-existing-mongodb-deployment.png)
 
-2.Fill in and copy relevant information
+2. Fill in and copy relevant information
 
-* Enter the cluster name of the replication set (custom)
+    1. Enter the cluster name of the replication set (custom)
+    2. Select the project and host name of the storage management system
+    3. Enter the port number of the MongoDB cluster
+    4.  Add MongoDB's authenticated username and password
+    5. Select the version number corresponding to the cluster
 
-* Select the project and host name of the storage management system
+     ![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/14-existing-mongodb-deployment.png)
 
-* Enter the port number of the MongoDB cluster
+3. Check the event log to determine whether the management was successful.
 
-* Add MongoDB's authenticated username and password
+     ![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/15-existing-event.png)
 
-* Select the version number corresponding to the cluster
+4. View cluster node information.
 
-![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/14-existing-mongodb-deployment.png)
+     ![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/16-mongodb-node.png)
 
-3.Check the event log to determine whether the management was successful.
+5. view the monitoring data.
 
-![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/15-existing-event.png)
+     ![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/17-mongodb-monitor.png)
 
-4.View cluster node information.
-
-![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/16-mongodb-node.png)
-
-5.view the monitoring data.
-
-![img](../../images/whaleal-platform/01-whaleal-overview/03-quick-start-on-premise/17-mongodb-monitor.png)
 

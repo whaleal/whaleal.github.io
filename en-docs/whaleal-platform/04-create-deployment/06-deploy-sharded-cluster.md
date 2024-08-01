@@ -68,8 +68,8 @@ To add additional shards to the cluster:
 
 1. Click **Add a Shard**.
 2. Under the **Cluster Configuration** section, set the following parameters for each `mongod` in the shard:
-   - **Version**
-   - **Data Directory**
+     - **Version**
+     - **Data Directory**
 
 ### Configure Each Configuration Server in Your Cluster.
 
@@ -126,7 +126,7 @@ To add an option:
 
 1. Click **Advanced Configuration**.
 
-   ![StandaloneAdvanced](../../images/whaleal-platform/04-create-deployment/advanced.png)
+     ![StandaloneAdvanced](../../images/whaleal-platform/04-create-deployment/advanced.png)
 
 2. Click **Add Option** and select the configuration option.
 

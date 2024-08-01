@@ -26,26 +26,25 @@ This procedure describes how to configure and enable username and password authe
 
 ### Enable Password Authentication
 
-1.Click **MongoDB** in the left navigation bar
+1. Click **MongoDB** in the left navigation bar
 
-2.Select the **Cluster Name** you want to configure.
+2. Select the **Cluster Name** you want to configure.
 
-![02-EnableUsernamePasswordAuthentication](../../../images/whaleal-platform/08-security/03-enable-x509-authentication.png)
+     ![02-EnableUsernamePasswordAuthentication](../../../images/whaleal-platform/08-security/03-enable-x509-authentication.png)
 
-3.Click **Safety Management**
+3. Click **Safety Management**
 
-4.Click **Auth**
+4. Click **Auth**
 
-![02-EnableUsernamePasswordAuthentication1](../../../images/whaleal-platform/08-security/03-enable-x509-authentication1.png)
+     ![02-EnableUsernamePasswordAuthentication1](../../../images/whaleal-platform/08-security/03-enable-x509-authentication1.png)
+     
+5. Click **Authentication management**,
 
-5.Click **Authentication management**,
+6. Select **Account and password and CA certificate** for authLevel
 
-6.Select **Account and password and CA certificate** for authLevel
+7. Finally click **Confirm**
 
-7.Finally click **Confirm**
-
-![02-EnableUsernamePasswordAuthentication2](../../../images/whaleal-platform/08-security/02-enable-user-name-password-authentication2.png)
-
+     ![02-EnableUsernamePasswordAuthentication2](../../../images/whaleal-platform/08-security/02-enable-user-name-password-authentication2.png)
 
 
 Enable password authentication. If there is no user, you need to create a user Please refer to:[ManageMongoDBUsersandRoles](04-manage-mongodb-users-and-roles.md)

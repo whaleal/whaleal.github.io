@@ -87,4 +87,67 @@
 29. **韩国短信退订问题？**
 - 答：[韩国短信退订参考发信规则](https://api.support.vonage.com/hc/en-us/articles/204017213-South-Korea)。 退订需要客户自行打电话退订
 
+30. **澳大利亚的发信？**
 
+- 答：
+*注：购买的Vonage号码，就是发信号码。*
+1. **步骤1**：贵司确定购买号码用途及购买号码个数。申请号码预计需要一天。
+2. **步骤2**：技术部门购买号码成功后，根据贵司资料进行申请SenderID。申请SenderID预计需要一周。
+3. **步骤3**：对接进行JMC发短信。
+
+或
+
+如果您注册senderID为xxxx，这种情况不需要使用号码也可以进行发信
+   
+如果使用购买的号码作为senderid，则每一个号码都是一个独立的senderID
+
+
+31. **美国/加拿大发送短信？**
+
+- 答：
+  
+  ![发信途径](../images/whaleal-jinmu-message-sender/img.png)
+  
+- **10位长号码**：需要注册DLC，未注册任何认证的有250条每天限制。注册后，可以协商配置每秒并发量。
+- **TFN号码**：30条短信/秒，申请号码周期为3-7个工作日。
+
+看您需要购买什么类型的号码进行发信。
+
+购买TFN号码申请材料需要： 参考：[Verified Toll-Free Numbers (TFN) - US and Canada](https://api.support.vonage.com/hc/en-us/articles/360055483251-Verified-Toll-Free-Numbers-TFN-US-and-Canada)
+
+32. **俄罗斯senderID申请？**
+
+- 答：俄罗斯的senderID需要注册费50欧，每个月服务费50欧
+
+33. **发信接口安全性？**
+
+- 答：可使用应用发信接口，该接口使用key和密钥进行身份认证，同时可以配置IP白名单
+
+
+34. **vonage平台支持号码的企业认证吗？**
+- 答：号码在Vonage平台上是以租用形式提供的。因此，这些号码的所有权归属于Vonage，用户仅拥有使用权。此外，这些号码无法进行企业认证，只能作为租用号码供客户长期使用。
+
+如果想做显示名的话，是可以的 [CNAME](https://api.support.vonage.com/hc/en-us/articles/4407994930964-Can-I-display-my-name-on-the-receiving-party-s-phone-for-outbound-calls)
+
+如果需要填写认证，归属如下：
+
+```
+TFN 号码信息如下：
+"original_carrier": {
+"network_code": "US-TOLL-FREE",
+"name": "United States Toll Free",
+"country": "US",
+"network_type": "landline_tollfree"
+},
+
+US 号码：
+"network_code": "US-VIRTUAL-VONAGE",
+"name": "Vonage Network Inc.",
+"country": "US",
+"network_type": "virtual"
+```
+
+35. **vongae的sip源ip？**
+- 答：
+
+216.147.0.1  216.147.0.2  216.147.1.1  216.147.1.2  216.147.2.1  216.147.2.2  216.147.3.1  216.147.3.2  216.147.4.1  216.147.4.2  216.147.5.1  216.147.5.2

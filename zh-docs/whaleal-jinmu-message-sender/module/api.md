@@ -317,7 +317,7 @@ curl --location 'https://sms.jinmuinfo.com/beta/send' \
 }'
 ```
 
-![image4-9](../../images/whaleal-jinmu-message-sender/app-sneder.png)
+![image4-9](../../images/whaleal-jinmu-message-sender/app-sender-api.png)
 
 **图例4-9** 应用发信
 

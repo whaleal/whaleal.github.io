@@ -10,14 +10,14 @@ Before you install Whaleal, you must:
 
 2. Deploy hosts that meet the [Whaleal System Requirements.](../02-hardware-and-software-requirements.md)
 
-   > **IMPORTANT**
-   >
-   > Your Whaleal instance can fail in production if you fail to configure the following:
-   >
-   > - Whaleal hosts per the [Whaleal System Requirements.](../02-hardware-and-software-requirements.md)
-   > - MongoDB hosts per the Production Notes in the MongoDB manual. MongoDB instances in Whaleal include:
-   >   - The Whaleal Application Database,
-   >   - Each blockstore.
+     > **IMPORTANT**
+     >
+     > Your Whaleal instance can fail in production if you fail to configure the following:
+     >
+     > - Whaleal hosts per the [Whaleal System Requirements.](../02-hardware-and-software-requirements.md)
+     > - MongoDB hosts per the Production Notes in the MongoDB manual. MongoDB instances in Whaleal include:
+     >   - The Whaleal Application Database,
+     >   - Each blockstore.
 
 3. Install the Whaleal Application Database and optional Backup Database. The databases require *dedicated* MongoDB instances. *Don't* use MongoDB installations that store other data. Whaleal requires the Backup Database if you use the Backup feature.
 
@@ -27,9 +27,9 @@ The Whaleal Application must authenticate to the backing databases as a MongoDB 
 
 To install Whaleal:
 
-### Contact [Jinmu Company](https://www.jinmuinfo.com/) to get the latest WAP.tar.gz compressed file
+Contact [Jinmu Company](https://www.jinmuinfo.com/) to get the latest WAP.tar.gz compressed file
 
-### Optional: Verify Whaleal package integrity.
+Optional: Verify Whaleal package integrity.
 
 ### Install the Whaleal package on each server being used for Whaleal.
 
@@ -67,9 +67,9 @@ sh WAP/start.sh
 
 1. Enter the following URL in a browser, where `<host>` is the fully qualified domain name of the server:
 
-   ```
-   http://<bind_ip>:8080
-   ```
+     ```
+     http://<bind_ip>:8080
+     ```
 
 2. Use the default username and password for the first login. The default username is: **admin**, the default password is: **password**
 

@@ -21,47 +21,45 @@ wapAdamin user is the agent management user and will be created by default
 
 ## Add a MongoDB User
 
-1.Click on **mongodb**
+1. Click on **mongodb**
 
-2.Select the **Cluster Name** you want to configure.
+2. Select the **Cluster Name** you want to configure.
 
-![04-ManageMongoDBUsersandRoles1](../../../images/whaleal-platform/08-security/04-manage-mongoDdb-user-sand-roles1.png)
+     ![04-ManageMongoDBUsersandRoles1](../../../images/whaleal-platform/08-security/04-manage-mongoDdb-user-sand-roles1.png)
 
-3.Click Safety Management
+3. Click Safety Management
 
-4.Click User
+4. Click User
 
-5.Click Add User
+5. Click Add User
 
-![04-ManageMongoDBUsersandRoles2](../../../images/whaleal-platform/08-security/04-manage-mongodb-user-sand-roles2.png)
+     ![04-ManageMongoDBUsersandRoles2](../../../images/whaleal-platform/08-security/04-manage-mongodb-user-sand-roles2.png)
 
-6.Configure username and password
+6. Configure username and password
 
-7.You can also click generation to quickly generate a secure password. **Note: Remember to copy and save the password after generating it.**
+7. You can also click generation to quickly generate a secure password. **Note: Remember to copy and save the password after generating it.**
 
-![04-ManageMongoDBUsersandRoles3](../../../images/whaleal-platform/08-security/04-manage-mongodb-user-sand-roles3.png)
+     ![04-ManageMongoDBUsersandRoles3](../../../images/whaleal-platform/08-security/04-manage-mongodb-user-sand-roles3.png)
 
-8.Configure authentication repository and roles
+8. Configure authentication repository and roles
+    - db: Fill in the mongodb authentication library
+    - role: Select the user's role. Different roles have different permissions.
+    
+      ![04-ManageMongoDBUsersandRoles4](../../../images/whaleal-platform/08-security/04-manage-mongodb-user-sand-roles4.png)
 
-* db: Fill in the mongodb authentication library
-* role: Select the user's role. Different roles have different permissions.
+9. Select an Verification Mechanism
 
-![04-ManageMongoDBUsersandRoles4](../../../images/whaleal-platform/08-security/04-manage-mongodb-user-sand-roles4.png)
+    - Selectable SCRAM-SHA-1 or SCRAM-SHA-256
+    
+      ![04-ManageMongoDBUsersandRoles5](../../../images/whaleal-platform/08-security/04-manage-mongodb-user-sand-roles5.png)
 
-9.Select an Verification Mechanism
+10. Configuring Authentication Restriction
 
-* Selectable SCRAM-SHA-1 or SCRAM-SHA-256
+    - clientSource: restricts which addresses this user can authenticate and use the given roles.
+    - serverAddress: restricts the addresses this user can authenticate and has the given roles.
+    
+      ![04-ManageMongoDBUsersandRoles6](../../../images/whaleal-platform/08-security/04-manage-mongodb-user-sand-roles6.png)
 
-![04-ManageMongoDBUsersandRoles5](../../../images/whaleal-platform/08-security/04-manage-mongodb-user-sand-roles5.png)
+11. After the configuration is complete, click confirm
 
-10.Configuring Authentication Restriction
-
-* clientSource: restricts which addresses this user can authenticate and use the given roles.
-
-* serverAddress: restricts the addresses this user can authenticate and has the given roles.
-
-![04-ManageMongoDBUsersandRoles6](../../../images/whaleal-platform/08-security/04-manage-mongodb-user-sand-roles6.png)
-
-11.After the configuration is complete, click confirm
-
-![04-ManageMongoDBUsersandRoles7](../../../images/whaleal-platform/08-security/04-manage-mongodb-user-sand-roles7.png)
+      ![04-ManageMongoDBUsersandRoles7](../../../images/whaleal-platform/08-security/04-manage-mongodb-user-sand-roles7.png)

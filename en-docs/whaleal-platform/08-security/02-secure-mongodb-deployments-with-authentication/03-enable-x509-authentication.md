@@ -16,25 +16,25 @@ These procedures describe how to configure and enable CA Certificate authenticat
 
 **Enable CA client certificate authentication for your WAP project**
 
-1.Click **MongoDB** in the left navigation bar
+1. Click **MongoDB** in the left navigation bar
 
-2.Select the **Cluster Name** you want to configure.
+2. Select the **Cluster Name** you want to configure.
 
-![03-EnableX509Authentication](../../../images/whaleal-platform/08-security/03-enable-x509-authentication.png)
+       ![03-EnableX509Authentication](../../../images/whaleal-platform/08-security/03-enable-x509-authentication.png)
 
-3.Click **Safety Management**
+3. Click **Safety Management**
 
-4.Click **Auth**
+4. Click **Auth**
 
-![03-EnableX509Authentication1](../../../images/whaleal-platform/08-security/03-enable-x509-authentication1.png)
+     ![03-EnableX509Authentication1](../../../images/whaleal-platform/08-security/03-enable-x509-authentication1.png)
 
-5.Click **Authentication management**,
+5. Click **Authentication management**,
 
-6.Select **Account and password and CA certificate** for authLevel
+6. Select **Account and password and CA certificate** for authLevel
 
-7.Finally click **Confirm**
+7. Finally click **Confirm**
 
-![03-EnableX509Authentication2](../../../images/whaleal-platform/08-security/03-enable-x509-authentication2.png)
+     ![03-EnableX509Authentication2](../../../images/whaleal-platform/08-security/03-enable-x509-authentication2.png)
 
 
 

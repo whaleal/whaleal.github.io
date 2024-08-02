@@ -3754,7 +3754,7 @@
         
   
   <span class="md-ellipsis">
-    Readme
+    readme
   </span>
   
 
@@ -4331,7 +4331,8 @@
 <h2 id="zookeeper">Zookeeper 安装部署</h2>
 <h3 id="_1">开放指定端口或关闭防火墙</h3>
 <h4 id="1">1． 查看已经开放的端口</h4>
-<p>firewall-cmd --list-ports</p>
+<pre><code>firewall-cmd --list-ports
+</code></pre>
 <h4 id="2">2.开放指定端口</h4>
 <pre><code>firewall-cmd --zone=public --add-port=2181/tcp --permanent
 </code></pre>

@@ -18,6 +18,7 @@ Use a unique name for the replica set.
 ### Navigate to the **Deployment** page for your project.
 
 1. If it is not already displayed, select your desired project from the **Projects** menu in the navigation bar.
+
 2. If it is not already displayed, click **MongoDB** in the sidebar.
 
 ### Open the Cluster Creation View.
@@ -86,7 +87,7 @@ To add an option:
 
 1. Click **Advanced Configuration**.
 
-   ![StandaloneAdvanced](../../images/whaleal-platform/04-create-deployment/advanced.png)
+     ![StandaloneAdvanced](../../images/whaleal-platform/04-create-deployment/advanced.png)
 
 2. Click **Add Option** and select the configuration option.
 

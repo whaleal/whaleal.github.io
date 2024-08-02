@@ -15,45 +15,45 @@ WAP provides a Version function to facilitate users to update the platform. Thro
 
 ## Steps to update WAP version
 
-1.Click check upgrade
+1. Click check upgrade
 
-![Version2](../../images/whaleal-platform/13-setting/version2.png)
+     ![Version2](../../images/whaleal-platform/13-setting/version2.png)
 
-2.Select the version you want to upgrade to
+2. Select the version you want to upgrade to
 
-![Version3](../../images/whaleal-platform/13-setting/version3.png)
+     ![Version3](../../images/whaleal-platform/13-setting/version3.png)
 
-3.Click upgrade
+3. Click upgrade
 
-![Version4](../../images/whaleal-platform/13-setting/version4.png)
+     ![Version4](../../images/whaleal-platform/13-setting/version4.png)
 
-4.Wait for the check to complete, click Upgrade
+4. Wait for the check to complete, click Upgrade
 
-![Version5](../../images/whaleal-platform/13-setting/version5.png)
+     ![Version5](../../images/whaleal-platform/13-setting/version5.png)
 
-5.Click next step
+5. Click next step
 
-![Version6](../../images/whaleal-platform/13-setting/version6.png)
+     ![Version6](../../images/whaleal-platform/13-setting/version6.png)
 
-6.Check that the current environment is normal, click enxt step
+6. Check that the current environment is normal, click enxt step
 
-![Version7](../../images/whaleal-platform/13-setting/version7.png)
+     ![Version7](../../images/whaleal-platform/13-setting/version7.png)
 
-7.Click Launch
+7. Click Launch
 
-![Version8](../../images/whaleal-platform/13-setting/version8.png)
+     ![Version8](../../images/whaleal-platform/13-setting/version8.png)
 
-8.After loading is complete, click next step
+8. After loading is complete, click next step
 
-![Version9](../../images/whaleal-platform/13-setting/version9.png)
+     ![Version9](../../images/whaleal-platform/13-setting/version9.png)
 
-9.Click Finish
+9. Click Finish
 
-![Version10](../../images/whaleal-platform/13-setting/version10.png)
+     ![Version10](../../images/whaleal-platform/13-setting/version10.png)
 
-10.update completed
+10. update completed
 
-![Version11](../../images/whaleal-platform/13-setting/version11.png)
+      ![Version11](../../images/whaleal-platform/13-setting/version11.png)
 
-![Version12](../../images/whaleal-platform/13-setting/version12.png)
+      ![Version12](../../images/whaleal-platform/13-setting/version12.png)
 

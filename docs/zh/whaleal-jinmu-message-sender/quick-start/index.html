@@ -2909,17 +2909,41 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      查看应用发信日志
-    </span>
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      响应状态
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      响应参数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="响应参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看应用发信日志
+    </span>
+  </a>
   
 </li>
         
@@ -2952,7 +2976,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       请求参数
     </span>
@@ -2970,7 +2994,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       查看发信日志
     </span>
@@ -3779,7 +3803,7 @@
         
   
   <span class="md-ellipsis">
-    Readme
+    readme
   </span>
   
 
@@ -4263,17 +4287,41 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      查看应用发信日志
-    </span>
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      响应状态
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      响应参数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="响应参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看应用发信日志
+    </span>
+  </a>
   
 </li>
         
@@ -4306,7 +4354,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       请求参数
     </span>
@@ -4324,7 +4372,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       查看发信日志
     </span>
@@ -4464,18 +4512,86 @@
 </tr>
 </tbody>
 </table>
-<p>成功示例:
+<h3 id="_3">响应状态</h3>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>说明</th>
+<th>schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>OK</td>
+<td>Result</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized</td>
+<td></td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden</td>
+<td></td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found</td>
+<td></td>
+</tr>
+<tr>
+<td>34</td>
+<td>应用key不存在或已禁用</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_4">响应参数</h3>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>参数说明</th>
+<th>类型</th>
+<th>schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>msg</td>
+<td>响应消息</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>code</td>
+<td>code值为0时，代表发信成功，非0代表发信失败</td>
+<td>integer(int32)</td>
+<td>integer(int32)</td>
+</tr>
+<tr>
+<td>data</td>
+<td>当code值为0时,data的值为唯一messageID，当code值为非0时,data的值为异常消息</td>
+<td>string</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>成功示例:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;msg&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;发送成功&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="w">    </span><span class="nt">&quot;msg&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Send succeeded&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0413f5dc-b2df-424e-869a-c17d6a0f493b&quot;</span>
 <span class="p">}</span>
-</code></pre></div></p>
+</code></pre></div>
 <p>失败示例:
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;msg&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;appKey不存在或已禁用&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">35</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">    </span><span class="nt">&quot;msg&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Send failed&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">34</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Application not exists or disabled&quot;</span>
 <span class="p">}</span>
 </code></pre></div></p>
 <p>应用发信请求设置:</p>
@@ -4491,7 +4607,7 @@
 }&#39;
 </code></pre></div>
 <p><img alt="image4-9" src="../../images/whaleal-jinmu-message-sender/app-sender-api.png" /></p>
-<h5 id="_3">查看应用发信日志</h5>
+<h5 id="_5">查看应用发信日志</h5>
 <p><img alt="image4-9" src="../../images/whaleal-jinmu-message-sender/app-message-log.png" /></p>
 <h4 id="step22-api">step2.2 普通API发信</h4>
 <h5 id="api-key_1">获取API KEY配置信息</h5>
@@ -4504,7 +4620,7 @@
 <p>接口地址: <a href="https://sms.jinmuinfo.com/send/v2/check">https://sms.jinmuinfo.com/send/v2/check</a><br />
 请求方式: POST<br />
 接口描述: 短信API接口</p>
-<h5 id="_4">请求参数</h5>
+<h5 id="_6">请求参数</h5>
 <table>
 <thead>
 <tr>
@@ -4580,7 +4696,7 @@
 </code></pre></div></p>
 <p>POST请求设置:</p>
 <p><img alt="image4-5" src="../../images/whaleal-jinmu-message-sender/api-post.png" /></p>
-<h5 id="_5">查看发信日志</h5>
+<h5 id="_7">查看发信日志</h5>
 <p><img alt="image4-9" src="../../images/whaleal-jinmu-message-sender/message-log.png" /></p>
 <h3 id="step3-senderid">step3 senderID申请</h3>
 <p><strong>senderID申请</strong>: 请联系锦木人员进行申请，不同国家不同申请资料。</p>

@@ -60,11 +60,11 @@ To add an option:
 
 1. Click **Add Option**.
 
-   ![StandaloneAdvanced](../../images/whaleal-platform/05-manage-deployment/standalone-advanced.png)
+     ![StandaloneAdvanced](../../images/whaleal-platform/05-manage-deployment/standalone-advanced.png)
 
 2. Click **Select** and select the configuration option.
 
-   ![StandaloneAdvanced](../../images/whaleal-platform/05-manage-deployment/standalone-add.png)
+     ![StandaloneAdvanced](../../images/whaleal-platform/05-manage-deployment/standalone-add.png)
 
 3. Whalel displays a context-sensitive input for configuring an acceptable value for the selected option.
 
@@ -127,11 +127,11 @@ To add an option:
 
 1. Click **Add Options**.
 
-   ![StandaloneAdvanced](../../images/whaleal-platform/05-manage-deployment/repl-advanced.png)
+     ![StandaloneAdvanced](../../images/whaleal-platform/05-manage-deployment/repl-advanced.png)
 
 2. Click **Select** and select the configuration option.
 
-   ![StandaloneAdvanced](../../images/whaleal-platform/05-manage-deployment/standalone-add.png)
+     ![StandaloneAdvanced](../../images/whaleal-platform/05-manage-deployment/standalone-add.png)
 
 3. Whaleal displays a context-sensitive input for configuring an acceptable value for the selected option.
 
@@ -167,12 +167,12 @@ To add additional shards to the cluster:
 
 1. Click **Add a Shard**.
 
-   ![StandaloneAdvanced](../../images/whaleal-platform/05-manage-deployment/add-shard1.png)
+     ![StandaloneAdvanced](../../images/whaleal-platform/05-manage-deployment/add-shard1.png)
 
 2. Under the **Cluster Configuration** section, set the following parameters for each `mongod` in the shard:
-   - **Version**
-   - **Data Directory**
-   - **Log File**
+    - **Version**
+    - **Data Directory**
+    - **Log File**
 
 #### Configure Each Configuration Server in Your Cluster.
 
@@ -231,11 +231,11 @@ To add an option:
 
 1. Click **Advanced Configuration**.
 
-   ![StandaloneAdvanced](../../images/whaleal-platform/05-manage-deployment/repl-advanced.png)
+     ![StandaloneAdvanced](../../images/whaleal-platform/05-manage-deployment/repl-advanced.png)
 
 2. Click **Add Option** and select the configuration option.
 
-   ![StandaloneAdvanced](../../images/whaleal-platform/05-manage-deployment/standalone-add.png)
+     ![StandaloneAdvanced](../../images/whaleal-platform/05-manage-deployment/standalone-add.png)
 
 3. Whaleal displays a context-sensitive input for configuring an acceptable value for the selected option.
 

@@ -99,7 +99,7 @@ If you are adding a sharded cluster, you must create this user through the mongo
 
 To add existing MongoDB processes to Whaleal:
 
-#### 1.  Navigate to the **MongoDB** page for your project.
+#### 1. Navigate to the **MongoDB** page for your project.
 
 ​	a. If it is not already displayed, select your desired project from the **Projects** menu in the navigation bar.
 
@@ -126,4 +126,4 @@ To add existing MongoDB processes to Whaleal:
 | **Password**     | The password of the Mongodb that needs to be managed.        |
 | **Version**      | Select the version of MongoDB that needs to be managed. If there is no suitable version, please upload the relevant version of MongoDB package in **Setting**>>**MongoDB Packge**. |
 
-#### 4.After the configuration is complete, click **Submit**
+#### 4. After the configuration is complete, click **Submit**

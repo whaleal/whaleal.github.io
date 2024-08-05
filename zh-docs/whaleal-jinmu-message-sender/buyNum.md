@@ -1,12 +1,12 @@
 ### 号码限制
 
-Vonage 在哪些国家有号码？[CNAME](https://api.support.vonage.com/hc/en-us/articles/204015043-Which-countries-does-Vonage-have-numbers-in)
+[Vonage 在哪些国家有号码？](https://api.support.vonage.com/hc/en-us/articles/204015043-Which-countries-does-Vonage-have-numbers-in)
 
-短信的号码 [CNAME](https://api.support.vonage.com/hc/en-us/articles/115011451687)
+[短信的号码 ](https://api.support.vonage.com/hc/en-us/articles/115011451687)
 
-短信 + 语音号码 [CNAME](https://api.support.vonage.com/hc/en-us/articles/115011612267)
+[短信 + 语音号码](https://api.support.vonage.com/hc/en-us/articles/115011612267)
 
-语音号码 [CNAME](https://api.support.vonage.com/hc/en-us/articles/115011761808)
+[语音号码](https://api.support.vonage.com/hc/en-us/articles/115011761808)
 
 
 

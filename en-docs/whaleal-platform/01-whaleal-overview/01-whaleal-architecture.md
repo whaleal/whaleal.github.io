@@ -16,7 +16,7 @@ The Whaleal application provides a user interface and a MongoDB agent for HTTP s
 
 By default, the Whaleal Web application runs on port 80, the Whaleal backend interface runs on port 8080, and the Whaleal initialization boot page runs on port 9599.
 
-For a list of default ports and health check endpoints for Whaleal, please refer to the [firewall configuration](../08-security/01-configure-firewallto-access-whaleal.md).
+For a list of default ports and health check endpoints for Whaleal, please refer to the [firewall configuration](../08-security/01-configure-firewall-to-access-whaleal.md).
 
 
 

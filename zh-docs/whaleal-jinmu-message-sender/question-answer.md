@@ -156,3 +156,16 @@
     - 答：
     
      216.147.0.1  216.147.0.2  216.147.1.1  216.147.1.2  216.147.2.1  216.147.2.2  216.147.3.1  216.147.3.2  216.147.4.1  216.147.4.2    216.147.5.1  216.147.5.2
+
+
+36. **购买号码限制要求？**
+
+    - 答：
+      
+      [Vonage 在哪些国家有号码？](https://api.support.vonage.com/hc/en-us/articles/204015043-Which-countries-does-Vonage-have-numbers-in)
+
+      [短信的号码 ](https://api.support.vonage.com/hc/en-us/articles/115011451687)
+
+      [短信 + 语音号码](https://api.support.vonage.com/hc/en-us/articles/115011612267)
+
+      [语音号码](https://api.support.vonage.com/hc/en-us/articles/115011761808)

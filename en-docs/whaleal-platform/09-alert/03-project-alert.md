@@ -26,7 +26,7 @@ When using Whaleal to manage a MongoDB cluster, you can configure cluster alerts
 
     2. Click Add Bot
 
-       ​    ![image-20240628171055358](../../images/whaleal-platform/09-alert/add-bots.png)
+         ![image-20240628171055358](../../images/whaleal-platform/09-alert/add-bots.png)
 
     3. Click Custom Bot
 

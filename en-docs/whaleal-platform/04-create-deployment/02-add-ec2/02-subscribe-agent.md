@@ -2,7 +2,7 @@
 
 
 
-1. Subscribe to Whaleal Platform Agent, refer to [Install Whaleal in AWS MarketPlace](../../02-install-whaleal/03-install-whaleal/01-install-whalealIn-aws-marketplace.md)
+1. Subscribe to Whaleal Platform Agent, refer to [Install Whaleal in AWS MarketPlace](../../02-install-whaleal/03-install-whaleal/01-install-whaleal-in-aws-marketplace.md)
 
 2. Connecting to EC2 Instance
 

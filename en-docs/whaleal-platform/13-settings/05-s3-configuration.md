@@ -1,6 +1,6 @@
 # Configure S3
 
-Configure s3 storage for WAP. Some functions in WAP require s3 configuration to use, such as [Support](../14-support/01-cluster-inspection.md) and [Diagnose-LogVis](../10-diagnose/04-log-vis.md). Here is how to configure s3 in the environment
+Configure s3 storage for WAP. Some functions in WAP require s3 configuration to use, such as [Support](../14-support/01-cluster-inspection.md) and [Diagnose-LogVis](../10-diagnose/04-log-visualization.md). Here is how to configure s3 in the environment
 
 ## View s3 Configuration
 

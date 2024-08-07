@@ -42,4 +42,4 @@ The WAP platform supports the MongoDB community version to enable the Deploy Aud
 
 
 
-After opening the audit log, you can view the specific content on the audit page. Please see [audit](../../11-audit/01-audit.md)
+After opening the audit log, you can view the specific content on the audit page. Please see [audit](../../11-audit/01-audit-overview.md)

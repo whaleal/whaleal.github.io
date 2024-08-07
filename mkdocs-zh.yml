@@ -235,6 +235,11 @@ extra:
     - name: 中文
       link: /zh/
       lang: zh
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/whaleal
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:support@jinmuinfo.com
 
 plugins:
   - search

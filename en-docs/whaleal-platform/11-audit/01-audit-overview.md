@@ -2,7 +2,7 @@
 
 The WAP platform supports the MongoDB community version to enable the Deploy Auditing function to record key information in detail, including user operations, request methods, cluster operations, user logins and other important content. These records provide administrators with a comprehensive data view to promptly identify any potential security risks or abnormal behaviors.
 
- To enable Audit for your mongodb cluster, please refer to:[ConfigureandDeployAuditing](../08-security/03-secure-mongodb-deploymentswith-authentication/05-configureand-deploy-auditing.md)
+ To enable Audit for your mongodb cluster, please refer to:[ConfigureandDeployAuditing](../08-security/02-secure-mongodb-deployments-with-authentication/05-configure-and-deploy-auditing.md)
 
 ## Contents Introduction
 

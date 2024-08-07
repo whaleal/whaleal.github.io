@@ -192,7 +192,7 @@ nav:
       - whaleal-data/index.md
       - Installation Deployment:
           - Installation Requirements: whaleal-data/installation-deployment/installation-requirements.md
-          - JDK Installation Deployment: whaleal-data/installation-deployment/jdk-installation-deployment.md
+          - JDK Installation Deployment: whaleal-data/installation-deployment/jdk-Installation-deployment.md
           - MySQL Installation Deployment: whaleal-data/installation-deployment/mysql-installation-deployment.md
           - Nginx Installation Deployment: whaleal-data/installation-deployment/nginx-installation-deployment.md
           - Redis Installation Deployment: whaleal-data/installation-deployment/redis-installation-deployment.md
@@ -284,6 +284,11 @@ extra:
     - name: 中文
       link: /zh/
       lang: zh
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/whaleal
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:support@jinmuinfo.com
 
 plugins:
   - search

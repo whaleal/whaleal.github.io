@@ -287,7 +287,7 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/whaleal
-    - icon: fontawesome/solid/paper-plane
+    - icon: fontawesome/solid/envelope
       link: mailto:support@jinmuinfo.com
 
 plugins:

@@ -102,3 +102,63 @@ Stop the business first, then stop the DDT service, and then replace the connect
 #### 13. If both the source and target sides of DDT synchronization have write operations, will DDT synchronization have an impact?
 
 In this way, the data on the source side and the destination side will be inconsistent.
+
+
+
+#### 14. What are the recommended host quotas for deploying WAP with backup enabled？
+
+for WAP Server
+
+```
+OS：
+    CentOS7 x86_64
+Host Resources：
+    8C 16GB Storage:500GB
+```
+
+for APPDB Server(Used to store WAP data)
+
+```
+OS：
+    CentOS7 x86_64
+Host Resources：
+    8C 16GB Storage:200GB
+```
+
+for DDT Server(Used to store backup data)
+
+```
+OS：
+    CentOS7 x86_64
+Host Resources：
+    8C 16GB 
+```
+
+Compute storage Resources：
+
+```
+oplog windows is ‘x‘ days
+oplog size为 is 'y’ GB
+The recovery data retention days in wap are 'z' days
+MongoDB has'D 'GB of full data
+
+The total number of disks required is:
+y * z/x + D + D +D/2
+```
+
+DEMO :
+
+```
+if oplog windows is ‘5‘ days
+oplog size为 is '50’ GB
+The recovery data retention days in wap are '30' days
+MongoDB has '100' GB of full data
+The incremental disk capacity is 50 * 30/5 = 300GB
+Full disk capacity is required:
+Full disk 100GB
+Compressing data 100GB
+Redundant disk storage：100/2 = 50GB
+
+Total disks required：
+50 * 30/5 + 100 +100 + 100/2 = 550GB
+```

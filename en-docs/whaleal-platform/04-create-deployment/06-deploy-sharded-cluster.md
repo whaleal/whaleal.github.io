@@ -58,7 +58,7 @@ From the **Member Configuration** section, click **Shard Settings** to open the 
 | **Votes**          | Specify the number of votes that the replica set member has during elections. This setting corresponds to the `votes` `mongod` replica set configuration option. |
 | **Priority**       | Specify the priority of the member during elections. Replica set members with a priority of `0` cannot become the primary node and cannot trigger elections. This setting corresponds to the `priority` `mongod` replica set configuration option. |
 | **Delay**          | Specify the number of seconds "behind" the primary member this member should "lag". This setting corresponds to the `secondaryDelaySecs` `mongod`replica set configuration option. |
-| **Data Directory** | Specify the directory where the `mongod` process stores data files. This setting corresponds to the `storage.dbPath` `mongod` configuration file option. The Whaleal Automation must have file system permission to read, write, and execute all files and folders in the specified directory.Each `mongod` process must have its own database directory. If deploying multiple `mongod` processes on the same host, ensure each process has its own distinct directory. |
+| **Data Directory** | Specify the directory where the `mongod` process stores data files. This setting corresponds to the `storage.dbPath` `mongod` configuration file option. The Whaleal Automation must have file system permission to read, write, and execute all files and folders in the specified directory.Each `mongod` process must have its own database directory. If deploying multiple `mongod` processes on the same host, ensure each process has its own distinct directory.It is recommended to mount a separate disk under the /data directory and specify the MongoDB data storage directory under /data. |
 | **Log File**       | The log file and data file are in the same directory, and the directory cannot be customized. |
 | **Build Indexes**  | Specify `true` to direct the `mongod` to build indexes. This setting corresponds to the `buildIndexes` `mongod` replica set configuration option. |
 
@@ -68,8 +68,8 @@ To add additional shards to the cluster:
 
 1. Click **Add a Shard**.
 2. Under the **Cluster Configuration** section, set the following parameters for each `mongod` in the shard:
-     - **Version**
-     - **Data Directory**
+   - **Version**
+   - **Data Directory**
 
 ### Configure Each Configuration Server in Your Cluster.
 
@@ -126,7 +126,7 @@ To add an option:
 
 1. Click **Advanced Configuration**.
 
-     ![StandaloneAdvanced](../../images/whaleal-platform/04-create-deployment/advanced.png)
+   ![StandaloneAdvanced](../../images/whaleal-platform/04-create-deployment/advanced.png)
 
 2. Click **Add Option** and select the configuration option.
 

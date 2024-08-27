@@ -17,11 +17,11 @@ Whaleal provides a wizard for adding your existing MongoDB deployments to monito
 
 1. Click the **Create Cluster** dropdown menu.
 
-     ![StandaloneAdvanced](../../images/whaleal-platform/04-create-deployment/create-cluster.png)
+   ![StandaloneAdvanced](../../images/whaleal-platform/04-create-deployment/create-cluster.png)
 
 2. Select **Standalone**.
 
-     ![StandaloneAdvanced](../../images/whaleal-platform/04-create-deployment/all-cluster.png)
+   ![StandaloneAdvanced](../../images/whaleal-platform/04-create-deployment/all-cluster.png)
 
 ### Configure the standalone MongoDB instance.
 
@@ -32,7 +32,7 @@ In the **Standalone** section, complete the following fields.
 | **Project**        | Select the Project name of your Standalone deployment. You cannot change this once set. |
 | **Hostname**       | Type the resolvable address for the host serving your MongoDB deployment. This can be a hostname or an IPv4 address. |
 | **Port**           | Type the IANA port number for your MongoDB deployment.       |
-| **Data Directory** | Type the system path to the database directory for this deployment. The default is /data/data_port. |
+| **Data Directory** | Type the system path to the database directory for this deployment. The default is /data/data_port.It is recommended to mount a separate disk under the /data directory and specify the MongoDB data storage directory under /data. |
 | **Version**        | Select the MongoDB version for your standalone MongoDB deployment. |
 | **Log File**       | The log file and data file are in the same directory, and the directory cannot be customized. The default is `/data/data_port/mongodb.log`. |
 | **AuthLevel**      | Select authentication method                                 |
@@ -46,7 +46,7 @@ To add an option:
 
 1. Click **Add Option**.
 
-     ![StandaloneAdvanced](../../images/whaleal-platform/04-create-deployment/standalone.png)
+   ![StandaloneAdvanced](../../images/whaleal-platform/04-create-deployment/standalone.png)
 
 2. Select a Startup Option.
 

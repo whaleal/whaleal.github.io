@@ -1,5 +1,5 @@
 
-#### API 接入方式（API发信）
+## API 接入方式（API发信）
 
 ##### 接口说明
 
@@ -9,8 +9,7 @@
 请求方式: GET/POST  
 接口描述: 短信API接口
 
-
-## 请求参数
+##### 请求参数
 
 | 参数名称       | 参数说明                                       | 请求类型 | 是否必须 | 数据类型 | 说明                      |
 |----------------|------------------------------------------------|----------|----------|----------|---------------------------|
@@ -154,14 +153,15 @@ private static JSONObject send(String baseKey, String secret, String type, Strin
 
 ## API发信（指定webhook回调地址）
 
-### 接口说明
+##### 接口说明
+
 接口同时支持 GET 和 POST，推荐使用 POST 请求。
 
-- **接口地址**: `https://sms.jinmuinfo.com/sendCallback`
-- **请求方式**: GET/POST
-- **接口描述**: 短信 API 接口（附带callback）
+接口地址: https://sms.jinmuinfo.com/sendCallback  
+请求方式: GET/POST  
+接口描述: 短信 API 接口（附带callback）
 
-### 请求参数
+##### 请求参数
 
 | 参数名称 | 参数说明 | 请求类型 | 是否必须 | 数据类型 | 说明 |
 |----------|----------|----------|----------|----------|------|
@@ -172,7 +172,7 @@ private static JSONObject send(String baseKey, String secret, String type, Strin
 | type     | JMC 发信，默认参数为 text，当内容为非英文时，参数设置为 unicode | query | false | string | unicode/text |
 | callback | 指定本次发信的Webhook回调地址，只支持http和https协议 | query | true  | string | http://ip+port/xxx https://ip+port/xxx |
 
-### 响应状态
+##### 响应状态
 
 | 状态码 | 说明 | schema |
 |--------|------|--------|
@@ -183,7 +183,7 @@ private static JSONObject send(String baseKey, String secret, String type, Strin
 | 23     | callback地址无效 | null |
 | 35     | baseKey不存在或已禁用 | null |
 
-### 响应参数
+##### 响应参数
 
 | 参数名称 | 参数说明 | 类型 | schema |
 |----------|----------|------|--------|
@@ -192,9 +192,10 @@ private static JSONObject send(String baseKey, String secret, String type, Strin
 | msg      | 消息 | string | |
 | messageID | 消息ID | string | |
 
-### 响应示例
+##### 响应示例
 
 **成功示例**
+
 ```json
 {  
    "msg": "发送成功!",
@@ -205,6 +206,7 @@ private static JSONObject send(String baseKey, String secret, String type, Strin
 ```
 
 **失败示例**
+
 ```json
 {  
     "msg": "baseKey不存在或已禁用",
@@ -214,25 +216,24 @@ private static JSONObject send(String baseKey, String secret, String type, Strin
 }
 ```
 
-## Postman示例
+##### Postman示例
 
-### Header
+Header
 
 ![image4-6](../../images/whaleal-jinmu-message-sender/img4-6.png)
 **图例4-6** POST Header 设置
 
-
-### GET
+GET
 
 ![image4-7](../../images/whaleal-jinmu-message-sender/img4-7.png)
 **图例4-7** GET 请求设置
 
-### POST
+POST
 
 ![image4-8](../../images/whaleal-jinmu-message-sender/img4-8.png)
 **图例4-8** POST 请求设置
 
-## Java示例
+##### Java示例
 
 ```
 java
@@ -284,12 +285,11 @@ private static JSONObject send(String baseKey, String type, String from, String 
 
 推荐使用POST请求。
 
-接口地址: https://sms.jinmuinfo.com/beta/send
-请求方式: POST
-
+接口地址: https://sms.jinmuinfo.com/beta/send  
+请求方式: POST  
 接口描述: 应用发信接口
 
-## 请求参数
+##### 请求参数
 
 | 参数名称  | 参数说明                                            | 请求类型 | 是否必须 | 数据类型 | 说明                    |
 | --------- | --------------------------------------------------- | -------- | -------- | -------- | ----------------------- |
@@ -321,9 +321,72 @@ curl --location 'https://sms.jinmuinfo.com/beta/send' \
 
 **图例4-9** 应用发信
 
+## 获取API Key所属账户的余额
 
+##### 接口说明
 
+通过接口获取API Key所属账户的余额
 
+接口地址: https://sms.jinmuinfo.com/getBalance  
+请求方式: GET  
+接口描述: 余额API接口  
+
+##### 请求参数
+
+| 参数名称 | 参数说明                           | 请求类型 | 是否必须 | 数据类型 | 说明                                        |
+| -------- | ---------------------------------- | -------- | -------- | -------- | ------------------------------------------- |
+| baseKey  | 加密后的 KEY，用于校验请求是否合法 | query    | true     | string   | 由锦木服务团队提供                          |
+| secret   | 与 baseKey 唯一对应的密钥          | query    | false    | string   | 由锦木服务团队提供，V1版本key不用填入此参数 |
+
+##### 响应状态
+
+| Status Code | Description  | Schema |
+| :---------- | :----------- | :----- |
+| 200         | OK           | Result |
+| 401         | Unauthorized |        |
+| 403         | Forbidden    |        |
+| 404         | Not Found    |        |
+
+##### 响应参数
+
+| Parameter Name | Description      | Type   | Schema  |
+| :------------- | :--------------- | :----- | :------ |
+| code           | Status code      | int32  | integer |
+| data           | Response data    | object |         |
+| msg            | Response message | string |         |
+
+##### 响应示例
+
+成功示例：
+
+```json
+{
+    "msg": "请求成功",
+    "code": 0,
+    "data": {
+        "balance": 100.00000,
+        "currency": "$"
+    }
+}
+```
+
+失败示例：
+
+```json
+{
+    "msg": "认证失败",
+    "code": 34,
+    "data": false
+}
+```
+
+```json
+{
+    "msg": "baseKey不存在",
+    "code": 35,
+    "data": false
+}
+```
 
 ## 注意事项
 

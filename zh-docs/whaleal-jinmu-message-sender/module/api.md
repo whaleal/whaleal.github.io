@@ -279,48 +279,6 @@ private static JSONObject send(String baseKey, String type, String from, String 
 
 
 
-## 应用发信API
-
-##### 接口说明
-
-推荐使用POST请求。
-
-接口地址: https://sms.jinmuinfo.com/beta/send  
-请求方式: POST  
-接口描述: 应用发信接口
-
-##### 请求参数
-
-| 参数名称  | 参数说明                                            | 请求类型 | 是否必须 | 数据类型 | 说明                    |
-| --------- | --------------------------------------------------- | -------- | -------- | -------- | ----------------------- |
-| appKey    | 加密后的 KEY，用于校验请求是否合法                  | data     | true     | string   | 在jmc平台应用管理中查看 |
-| appSecret | 与 appKey 唯一对应的密钥                            | data     | true     | string   | 在jmc平台应用管理中查看 |
-| from      | 发送的 from 内容                                    | data     | true     | string   | XX 数字中心             |
-| to        | 接收用户的手机号码                                  | data     | true     | string   | 86136XXXXXXXX           |
-| type      | 发信类型，默认参数为 text，非英文内容时设为 unicode | data     | false    | string   | unicode/text            |
-| content   | 发信内容                                            | data     | true    | string   | 发信内容                |
-
-
-
-应用发信请求设置:
-
-```
-curl --location 'https://sms.jinmuinfo.com/beta/send' \
---header 'Content-Type: application/json' \
---data '{
-        "appKey" : "{appKey}",
-        "appSecret" : "{appSecret}",
-        "from" : "{from}",
-        "to" : "{to}",
-        "type" : "{type}",
-        "content" : "{content}"
-}'
-```
-
-![image4-9](../../images/whaleal-jinmu-message-sender/app-sender-api.png)
-
-**图例4-9** 应用发信
-
 ## 获取API Key所属账户的余额
 
 ##### 接口说明

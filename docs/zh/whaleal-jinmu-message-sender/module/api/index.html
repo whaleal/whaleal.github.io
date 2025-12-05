@@ -4597,9 +4597,9 @@
 
 <h2 id="api-api">API 接入方式（API发信）</h2>
 <h5 id="_1">接口说明</h5>
-<p>接口支持POST，使用POST请求。此接口会校验号码黑名单。</p>
-<p>接口地址: <a href="http://sms.jinmuinfo.com/send/json">https://sms.jinmuinfo.com/send/json</a><br />
-请求方式: POST<br />
+<p>接口同时支持GET和POST，推荐使用POST请求。此接口会校验号码黑名单。</p>
+<p>接口地址: <a href="https://sms.jinmuinfo.com/send/v2/check">https://sms.jinmuinfo.com/send/v2/check</a><br />
+请求方式: GET/POST<br />
 接口描述: 短信API接口</p>
 <h5 id="_2">请求参数</h5>
 <table>
@@ -4764,10 +4764,15 @@
 <p>Header设置:
 <div class="highlight"><pre><span></span><code>Content-Type: application/json
 </code></pre></div>
-<img alt="image4-3" src="../../../images/whaleal-jinmu-message-sender/img4-3.png" /></p>
-<p><strong>图例4-3</strong> Header 设置</p>
+<img alt="image4-3" src="../../../images/whaleal-jinmu-message-sender/img4-3.png" />
+<strong>图例4-3</strong> Header 设置</p>
+<p>GET请求设置:
+<div class="highlight"><pre><span></span><code>GET https://sms.jinmuinfo.com/send/v2/check?baseKey={baseKey}&amp;secret={secret}&amp;from={from}&amp;msg={msg}&amp;to={to}&amp;type={type}
+</code></pre></div>
+<img alt="image4-4" src="../../../images/whaleal-jinmu-message-sender/img4-4.png" />
+<strong>图例4-4</strong> GET 请求设置</p>
 <p>POST请求设置:
-<div class="highlight"><pre><span></span><code>POST https://sms.jinmuinfo.com/send/json
+<div class="highlight"><pre><span></span><code>POST https://sms.jinmuinfo.com/send/v2/check
 Body (raw JSON):
 {
     &quot;baseKey&quot;: &quot;{baseKey}&quot;,
@@ -4778,11 +4783,22 @@ Body (raw JSON):
     &quot;type&quot;: &quot;{type}&quot;
 }
 </code></pre></div></p>
-<p><img alt="img4-5.1" src="../../../images/whaleal-jinmu-message-sender/img4-5.1.png" /></p>
-<p><strong>图例4-5</strong> POST 请求设置</p>
+<p><img alt="image4-5" src="../../../images/whaleal-jinmu-message-sender/img4-5.png" />
+<strong>图例4-5</strong> POST 请求设置</p>
 <h5 id="java">Java 示例</h5>
-<div class="highlight"><pre><span></span><code>private static JSONObject send(String baseKey, String secret, String type, String from, String msg, String to) throws Exception {
-    String url = &quot;https://sms.jinmuinfo.com/send/json&quot;;
+<div class="highlight"><pre><span></span><code>public static void main(String[] args) throws Exception {
+    String baseKey = &quot;XXXXXX&quot;;
+    String secret = &quot;XXXX&quot;;
+    String type = &quot;unicode&quot;;
+    String from = &quot;jinmu&quot;;
+    String msg = &quot;发送演示&quot;;
+    String to = &quot;861XXXXXXXXXX&quot;;
+    JSONObject object = send(baseKey, secret, type, from, msg, to);
+    System.out.println(object.toJSONString());
+}
+
+private static JSONObject send(String baseKey, String secret, String type, String from, String msg, String to) throws Exception {
+    String url = &quot;https://sms.jinmuinfo.com/send/v2/check&quot;;
     Connection connection = Jsoup.connect(url).ignoreContentType(true);
     Map&lt;String, String&gt; data = new HashMap&lt;&gt;();
     data.put(&quot;baseKey&quot;, baseKey);
@@ -4791,17 +4807,9 @@ Body (raw JSON):
     data.put(&quot;from&quot;, from);
     data.put(&quot;msg&quot;, msg);
     data.put(&quot;to&quot;, to);
-
-    String jsonBody = JSON.toJSONString(jsonMap);
-
-    // Jsoup POST JSON
-    Connection connection = Jsoup.connect(url)
-            .ignoreContentType(true)           // 忽略返回类型
-            .header(&quot;Content-Type&quot;, &quot;application/json&quot;)  // 设置请求头
-            .requestBody(jsonBody)             // 设置请求体
-            .method(Connection.Method.POST);
-
-    String bodyStr = connection.execute().body();      // 执行请求
+    connection.data(data);
+    Document doc = connection.post();
+    String bodyStr = doc.body().ownText();
     return JSON.parseObject(bodyStr);
 }
 </code></pre></div>

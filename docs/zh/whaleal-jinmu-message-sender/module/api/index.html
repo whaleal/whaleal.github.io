@@ -3087,13 +3087,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#api" class="md-nav__link">
+  <a href="#api-key" class="md-nav__link">
     <span class="md-ellipsis">
-      应用发信API
+      获取API Key所属账户的余额
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="应用发信API">
+    <nav class="md-nav" aria-label="获取API Key所属账户的余额">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3114,41 +3114,8 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-key" class="md-nav__link">
-    <span class="md-ellipsis">
-      获取API Key所属账户的余额
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="获取API Key所属账户的余额">
-      <ul class="md-nav__list">
-        
           <li class="md-nav__item">
   <a href="#_13" class="md-nav__link">
-    <span class="md-ellipsis">
-      接口说明
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
-    <span class="md-ellipsis">
-      请求参数
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
       响应状态
     </span>
@@ -3157,7 +3124,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
+  <a href="#_14" class="md-nav__link">
     <span class="md-ellipsis">
       响应参数
     </span>
@@ -3166,7 +3133,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_17" class="md-nav__link">
+  <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
       响应示例
     </span>
@@ -3180,7 +3147,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_18" class="md-nav__link">
+  <a href="#_16" class="md-nav__link">
     <span class="md-ellipsis">
       注意事项
     </span>
@@ -4474,13 +4441,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#api" class="md-nav__link">
+  <a href="#api-key" class="md-nav__link">
     <span class="md-ellipsis">
-      应用发信API
+      获取API Key所属账户的余额
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="应用发信API">
+    <nav class="md-nav" aria-label="获取API Key所属账户的余额">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -4501,41 +4468,8 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-key" class="md-nav__link">
-    <span class="md-ellipsis">
-      获取API Key所属账户的余额
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="获取API Key所属账户的余额">
-      <ul class="md-nav__list">
-        
           <li class="md-nav__item">
   <a href="#_13" class="md-nav__link">
-    <span class="md-ellipsis">
-      接口说明
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
-    <span class="md-ellipsis">
-      请求参数
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
       响应状态
     </span>
@@ -4544,7 +4478,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
+  <a href="#_14" class="md-nav__link">
     <span class="md-ellipsis">
       响应参数
     </span>
@@ -4553,7 +4487,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_17" class="md-nav__link">
+  <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
       响应示例
     </span>
@@ -4567,7 +4501,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_18" class="md-nav__link">
+  <a href="#_16" class="md-nav__link">
     <span class="md-ellipsis">
       注意事项
     </span>
@@ -4597,9 +4531,9 @@
 
 <h2 id="api-api">API 接入方式（API发信）</h2>
 <h5 id="_1">接口说明</h5>
-<p>接口支持POST，使用POST请求。此接口会校验号码黑名单。</p>
-<p>接口地址: <a href="http://sms.jinmuinfo.com/send/json">https://sms.jinmuinfo.com/send/json</a><br />
-请求方式: POST<br />
+<p>接口同时支持GET和POST，推荐使用POST请求。此接口会校验号码黑名单。</p>
+<p>接口地址: <a href="https://sms.jinmuinfo.com/send/v2/check">https://sms.jinmuinfo.com/send/v2/check</a><br />
+请求方式: GET/POST<br />
 接口描述: 短信API接口</p>
 <h5 id="_2">请求参数</h5>
 <table>
@@ -4764,10 +4698,15 @@
 <p>Header设置:
 <div class="highlight"><pre><span></span><code>Content-Type: application/json
 </code></pre></div>
-<img alt="image4-3" src="../../../images/whaleal-jinmu-message-sender/img4-3.png" /></p>
-<p><strong>图例4-3</strong> Header 设置</p>
+<img alt="image4-3" src="../../../images/whaleal-jinmu-message-sender/img4-3.png" />
+<strong>图例4-3</strong> Header 设置</p>
+<p>GET请求设置:
+<div class="highlight"><pre><span></span><code>GET https://sms.jinmuinfo.com/send/v2/check?baseKey={baseKey}&amp;secret={secret}&amp;from={from}&amp;msg={msg}&amp;to={to}&amp;type={type}
+</code></pre></div>
+<img alt="image4-4" src="../../../images/whaleal-jinmu-message-sender/img4-4.png" />
+<strong>图例4-4</strong> GET 请求设置</p>
 <p>POST请求设置:
-<div class="highlight"><pre><span></span><code>POST https://sms.jinmuinfo.com/send/json
+<div class="highlight"><pre><span></span><code>POST https://sms.jinmuinfo.com/send/v2/check
 Body (raw JSON):
 {
     &quot;baseKey&quot;: &quot;{baseKey}&quot;,
@@ -4778,11 +4717,22 @@ Body (raw JSON):
     &quot;type&quot;: &quot;{type}&quot;
 }
 </code></pre></div></p>
-<p><img alt="img4-5.1" src="../../../images/whaleal-jinmu-message-sender/img4-5.1.png" /></p>
-<p><strong>图例4-5</strong> POST 请求设置</p>
+<p><img alt="image4-5" src="../../../images/whaleal-jinmu-message-sender/img4-5.png" />
+<strong>图例4-5</strong> POST 请求设置</p>
 <h5 id="java">Java 示例</h5>
-<div class="highlight"><pre><span></span><code>private static JSONObject send(String baseKey, String secret, String type, String from, String msg, String to) throws Exception {
-    String url = &quot;https://sms.jinmuinfo.com/send/json&quot;;
+<div class="highlight"><pre><span></span><code>public static void main(String[] args) throws Exception {
+    String baseKey = &quot;XXXXXX&quot;;
+    String secret = &quot;XXXX&quot;;
+    String type = &quot;unicode&quot;;
+    String from = &quot;jinmu&quot;;
+    String msg = &quot;发送演示&quot;;
+    String to = &quot;861XXXXXXXXXX&quot;;
+    JSONObject object = send(baseKey, secret, type, from, msg, to);
+    System.out.println(object.toJSONString());
+}
+
+private static JSONObject send(String baseKey, String secret, String type, String from, String msg, String to) throws Exception {
+    String url = &quot;https://sms.jinmuinfo.com/send/v2/check&quot;;
     Connection connection = Jsoup.connect(url).ignoreContentType(true);
     Map&lt;String, String&gt; data = new HashMap&lt;&gt;();
     data.put(&quot;baseKey&quot;, baseKey);
@@ -4791,17 +4741,9 @@ Body (raw JSON):
     data.put(&quot;from&quot;, from);
     data.put(&quot;msg&quot;, msg);
     data.put(&quot;to&quot;, to);
-
-    String jsonBody = JSON.toJSONString(jsonMap);
-
-    // Jsoup POST JSON
-    Connection connection = Jsoup.connect(url)
-            .ignoreContentType(true)           // 忽略返回类型
-            .header(&quot;Content-Type&quot;, &quot;application/json&quot;)  // 设置请求头
-            .requestBody(jsonBody)             // 设置请求体
-            .method(Connection.Method.POST);
-
-    String bodyStr = connection.execute().body();      // 执行请求
+    connection.data(data);
+    Document doc = connection.post();
+    String bodyStr = doc.body().ownText();
     return JSON.parseObject(bodyStr);
 }
 </code></pre></div>
@@ -5021,96 +4963,13 @@ private static JSONObject send(String baseKey, String type, String from, String 
     return JSON.parseObject(bodyStr);
 }
 </code></pre></div>
-<h2 id="api">应用发信API</h2>
-<h5 id="_11">接口说明</h5>
-<p>推荐使用POST请求。</p>
-<p>接口地址: https://sms.jinmuinfo.com/beta/send<br />
-请求方式: POST<br />
-接口描述: 应用发信接口</p>
-<h5 id="_12">请求参数</h5>
-<table>
-<thead>
-<tr>
-<th>参数名称</th>
-<th>参数说明</th>
-<th>请求类型</th>
-<th>是否必须</th>
-<th>数据类型</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>appKey</td>
-<td>加密后的 KEY，用于校验请求是否合法</td>
-<td>data</td>
-<td>true</td>
-<td>string</td>
-<td>在jmc平台应用管理中查看</td>
-</tr>
-<tr>
-<td>appSecret</td>
-<td>与 appKey 唯一对应的密钥</td>
-<td>data</td>
-<td>true</td>
-<td>string</td>
-<td>在jmc平台应用管理中查看</td>
-</tr>
-<tr>
-<td>from</td>
-<td>发送的 from 内容</td>
-<td>data</td>
-<td>true</td>
-<td>string</td>
-<td>XX 数字中心</td>
-</tr>
-<tr>
-<td>to</td>
-<td>接收用户的手机号码</td>
-<td>data</td>
-<td>true</td>
-<td>string</td>
-<td>86136XXXXXXXX</td>
-</tr>
-<tr>
-<td>type</td>
-<td>发信类型，默认参数为 text，非英文内容时设为 unicode</td>
-<td>data</td>
-<td>false</td>
-<td>string</td>
-<td>unicode/text</td>
-</tr>
-<tr>
-<td>content</td>
-<td>发信内容</td>
-<td>data</td>
-<td>true</td>
-<td>string</td>
-<td>发信内容</td>
-</tr>
-</tbody>
-</table>
-<p>应用发信请求设置:</p>
-<div class="highlight"><pre><span></span><code>curl --location &#39;https://sms.jinmuinfo.com/beta/send&#39; \
---header &#39;Content-Type: application/json&#39; \
---data &#39;{
-        &quot;appKey&quot; : &quot;{appKey}&quot;,
-        &quot;appSecret&quot; : &quot;{appSecret}&quot;,
-        &quot;from&quot; : &quot;{from}&quot;,
-        &quot;to&quot; : &quot;{to}&quot;,
-        &quot;type&quot; : &quot;{type}&quot;,
-        &quot;content&quot; : &quot;{content}&quot;
-}&#39;
-</code></pre></div>
-<p><img alt="image4-9" src="../../../images/whaleal-jinmu-message-sender/app-sender-api.png" /></p>
-<p><strong>图例4-9</strong> 应用发信</p>
 <h2 id="api-key">获取API Key所属账户的余额</h2>
-<h5 id="_13">接口说明</h5>
+<h5 id="_11">接口说明</h5>
 <p>通过接口获取API Key所属账户的余额</p>
 <p>接口地址: https://sms.jinmuinfo.com/getBalance<br />
 请求方式: GET<br />
 接口描述: 余额API接口  </p>
-<h5 id="_14">请求参数</h5>
+<h5 id="_12">请求参数</h5>
 <table>
 <thead>
 <tr>
@@ -5141,7 +5000,7 @@ private static JSONObject send(String baseKey, String type, String from, String 
 </tr>
 </tbody>
 </table>
-<h5 id="_15">响应状态</h5>
+<h5 id="_13">响应状态</h5>
 <table>
 <thead>
 <tr>
@@ -5173,7 +5032,7 @@ private static JSONObject send(String baseKey, String type, String from, String 
 </tr>
 </tbody>
 </table>
-<h5 id="_16">响应参数</h5>
+<h5 id="_14">响应参数</h5>
 <table>
 <thead>
 <tr>
@@ -5204,7 +5063,7 @@ private static JSONObject send(String baseKey, String type, String from, String 
 </tr>
 </tbody>
 </table>
-<h5 id="_17">响应示例</h5>
+<h5 id="_15">响应示例</h5>
 <p>成功示例：</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;msg&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;请求成功&quot;</span><span class="p">,</span>
@@ -5228,7 +5087,7 @@ private static JSONObject send(String baseKey, String type, String from, String 
 <span class="w">    </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
 <span class="p">}</span>
 </code></pre></div>
-<h2 id="_18">注意事项</h2>
+<h2 id="_16">注意事项</h2>
 <ul>
 <li>callback地址的协议要是http或https协议，暂时不支持其他协议。</li>
 <li>响应码为23，说明callback参数格式有误，请检查url是否有误。</li>
@@ -5303,7 +5162,7 @@ private static JSONObject send(String baseKey, String type, String from, String 
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      © 2024 | @whaleal
+      © 2025 | @whaleal
     </div>
   
   

@@ -1,24 +1,23 @@
 
-## API 接入方式（API发信）
+## 1. API 接入方式（API发信）
 
-##### 接口说明
+### 1.1 发信接口（新版）
 
-接口同时支持GET和POST，推荐使用POST请求。此接口会校验号码黑名单。
-
-接口地址: [https://sms.jinmuinfo.com/send/v2/check](https://sms.jinmuinfo.com/send/v2/check)  
-请求方式: GET/POST  
-接口描述: 短信API接口
+接口说明: 推荐使用新版 JSON 接口。此接口会校验号码黑名单。  
+接口地址: [https://sms.jinmuinfo.com/send/json](https://sms.jinmuinfo.com/send/json)  
+请求方式: POST（application/json）  
+接口描述: 短信API接口（新版）
 
 ##### 请求参数
 
-| 参数名称       | 参数说明                                       | 请求类型 | 是否必须 | 数据类型 | 说明                      |
-|----------------|------------------------------------------------|----------|----------|----------|---------------------------|
-| baseKey        | 加密后的 KEY，用于校验请求是否合法              | query    | true     | string   | 由锦木服务团队提供        |
-| secret         | 与 baseKey 唯一对应的密钥                        | query    | true     | string   | 由锦木服务团队提供        |
-| from           | 发送方内容                                      | query    | true     | string   | XX 数字中心               |
-| msg            | 发送的消息内容                                  | query    | true     | string   | 您的 XX 服务到期          |
-| to             | 接收用户的手机号码                              | query    | true     | string   | 86136XXXXXXXX            |
-| type           | 发信类型，默认参数为 text，非英文内容时设为 unicode | query    | false    | string   | unicode/text              |
+| 参数名称       | 参数说明                                       | 请求类型   | 是否必须 | 数据类型 | 说明                      |
+|----------------|------------------------------------------------|------------|----------|----------|---------------------------|
+| baseKey        | 加密后的 KEY，用于校验请求是否合法              | body(json) | true     | string   | 由锦木服务团队提供        |
+| secret         | 与 baseKey 唯一对应的密钥                        | body(json) | true     | string   | 由锦木服务团队提供        |
+| from           | 发送方内容                                      | body(json) | true     | string   | XX 数字中心               |
+| msg            | 发送的消息内容                                  | body(json) | true     | string   | 您的 XX 服务到期          |
+| to             | 接收用户的手机号码                              | body(json) | true     | string   | 86136XXXXXXXX            |
+| type           | 发信类型，默认参数为 text，非英文内容时设为 unicode | body(json) | false    | string   | unicode/text              |
 
 ##### 响应状态
 
@@ -35,6 +34,7 @@
 | code           | Status code      | int32      | integer     |
 | data           | Response data    | object     |             |
 | msg            | Response message | string     |             |  
+| messageId      | Message ID       | string     |             |  
 
 ##### 响应示例
 
@@ -43,7 +43,8 @@
 {
    "msg": "发送成功!",
    "code": 0,
-   "data": true
+   "data": true,
+   "messageId" : "xxxxx-xxxx-xxx-xxx-xxxxx"
 }
 ```
 
@@ -56,28 +57,6 @@
 }
 ```
 
-失败示例:
-```json
-{
-    "msg": "此手机号在黑名单中，无法发送",
-    "code": 3333,
-    "data": null
-}
-```
-
-失败示例:
-```json
-{
-    "msg": "此手机号在国家黑名单中，无法发送",
-    "code": 3333,
-    "data": {
-        "country_code": "86",
-        "country_prefix": "CN",
-        "country_name": "China (PRC)"
-    }
-}
-```
-
 ##### Postman 示例
 
 Header设置:
@@ -87,19 +66,9 @@ Content-Type: application/json
 ![image4-3](../../images/whaleal-jinmu-message-sender/img4-3.png)
 **图例4-3** Header 设置
 
-GET请求设置:
-```
-GET https://sms.jinmuinfo.com/send/v2/check?baseKey={baseKey}&secret={secret}&from={from}&msg={msg}&to={to}&type={type}
-```
-![image4-4](../../images/whaleal-jinmu-message-sender/img4-4.png)
-**图例4-4** GET 请求设置
-
-
-
-
 POST请求设置:
 ```
-POST https://sms.jinmuinfo.com/send/v2/check
+POST https://sms.jinmuinfo.com/send/json
 Body (raw JSON):
 {
     "baseKey": "{baseKey}",
@@ -113,6 +82,83 @@ Body (raw JSON):
 
 ![image4-5](../../images/whaleal-jinmu-message-sender/img4-5.png)
 **图例4-5** POST 请求设置
+
+##### Java 示例
+
+```
+public static void main(String[] args) throws Exception {
+    String baseKey = "XXXXXX";
+    String secret = "XXXX";
+    String type = "unicode";
+    String from = "jinmu";
+    String msg = "发送演示";
+    String to = "861XXXXXXXXXX";
+    JSONObject object = send(baseKey, secret, type, from, msg, to);
+    System.out.println(object.toJSONString());
+}
+
+private static JSONObject send(String baseKey, String secret, String type, String from, String msg, String to) throws Exception {
+    String url = "https://sms.jinmuinfo.com/send/json";
+    Connection connection = Jsoup.connect(url)
+            .ignoreContentType(true)
+            .header("Content-Type", "application/json");
+
+    JSONObject data = new JSONObject();
+    data.put("baseKey", baseKey);
+    data.put("secret", secret);
+    data.put("type", type);
+    data.put("from", from);
+    data.put("msg", msg);
+    data.put("to", to);
+
+    connection.requestBody(data.toJSONString());
+    Document doc = connection.post();
+
+    String bodyStr = doc.body().ownText();
+    return JSON.parseObject(bodyStr);
+  }
+```
+
+### 1.2 发信接口（旧版，Post Form）
+
+接口说明: 旧版接口使用 `postform` 方式提交参数（`application/x-www-form-urlencoded`）。  
+接口地址: [https://sms.jinmuinfo.com/send/v2/check](https://sms.jinmuinfo.com/send/v2/check)  
+请求方式: POST（Post Form）  
+接口描述: 短信API接口（旧版）
+
+Postman（Post Form）示例:
+```
+POST https://sms.jinmuinfo.com/send/v2/check
+Body (x-www-form-urlencoded):
+baseKey={baseKey}
+secret={secret}
+from={from}
+msg={msg}
+to={to}
+type={type}
+```
+
+失败示例（旧版）:
+```json
+{
+    "msg": "此手机号在黑名单中，无法发送",
+    "code": 3333,
+    "data": null
+}
+```
+
+失败示例（旧版）:
+```json
+{
+    "msg": "此手机号在国家黑名单中，无法发送",
+    "code": 3333,
+    "data": {
+        "country_code": "86",
+        "country_prefix": "CN",
+        "country_name": "China (PRC)"
+    }
+}
+```
 
 
 
@@ -151,7 +197,7 @@ private static JSONObject send(String baseKey, String secret, String type, Strin
 
 
 
-## API发信（指定webhook回调地址）
+### 1.3. API发信（指定webhook回调地址）
 
 ##### 接口说明
 
@@ -279,7 +325,7 @@ private static JSONObject send(String baseKey, String type, String from, String 
 
 
 
-## 获取API Key所属账户的余额
+## 2. 获取API Key所属账户的余额
 
 ##### 接口说明
 

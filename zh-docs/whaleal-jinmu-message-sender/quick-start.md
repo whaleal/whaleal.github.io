@@ -37,7 +37,7 @@ JMC对用户端接入流程进行了精简，用户仅需提供相关信息，�
 
 使用POST请求。此接口会校验号码黑名单。
 
-接口地址: [https://sms.jinmuinfo.com/send/v2/check](https://sms.jinmuinfo.com/send/v2/check)  
+接口地址: [https://sms.jinmuinfo.com/send/json](https://sms.jinmuinfo.com/send/json)  
 请求方式: POST  
 接口描述: 短信API接口
 
@@ -59,7 +59,8 @@ JMC对用户端接入流程进行了精简，用户仅需提供相关信息，�
 {
    "msg": "发送成功!",
    "code": 0,
-   "data": true
+   "data": true,
+   "messageId" : "xxxxx-xxxx-xxx-xxx-xxxxx"
 }
 ```
 
@@ -109,6 +110,7 @@ JMC支持全球国家发信，具体国家发信要求，请联系锦木人员�
 **账户充值流程** 
 
 JMC暂不支持平台自助充值，需用户通过汇款/转账形式进行，具体方式可咨询所对接的锦木销售。
+
 ![image4-2](../images/whaleal-jinmu-message-sender/img4-2.png)
 
 

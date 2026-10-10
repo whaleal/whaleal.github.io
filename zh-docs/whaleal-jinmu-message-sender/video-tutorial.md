@@ -5,7 +5,7 @@
 ## 操作视频
 
 <video controls width="100%">
-  <source src="/videos/quick-start.mp4" type="video/mp4">
+  <source src="../../videos/quick-start.mp4" type="video/mp4">
   您的浏览器不支持播放此视频。
 </video>
 

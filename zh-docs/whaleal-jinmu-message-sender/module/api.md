@@ -80,7 +80,7 @@ Body (raw JSON):
 }
 ```
 
-![image4-5](../../images/whaleal-jinmu-message-sender/img4-5.png)
+![image4-5](../../images/whaleal-jinmu-message-sender/api-post.png)
 **图例4-5** POST 请求设置
 
 ##### Java 示例
@@ -138,7 +138,10 @@ to={to}
 type={type}
 ```
 
+![image4-5](../../images/whaleal-jinmu-message-sender/image.png)
+
 失败示例（旧版）:
+
 ```json
 {
     "msg": "此手机号在黑名单中，无法发送",
@@ -165,7 +168,6 @@ type={type}
 ##### Java 示例
 
 ```
-
 public static void main(String[] args) throws Exception {
     String baseKey = "XXXXXX";
     String secret = "XXXX";
@@ -180,7 +182,7 @@ public static void main(String[] args) throws Exception {
 private static JSONObject send(String baseKey, String secret, String type, String from, String msg, String to) throws Exception {
     String url = "https://sms.jinmuinfo.com/send/v2/check";
     Connection connection = Jsoup.connect(url).ignoreContentType(true);
-    Map<String, String> data = new HashMap<>();
+    Map data = new HashMap<>();
     data.put("baseKey", baseKey);
     data.put("secret", secret);
     data.put("type", type);

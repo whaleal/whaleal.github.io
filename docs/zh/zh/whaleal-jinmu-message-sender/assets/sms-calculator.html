@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>短信长度与分段计算</title>
+<style>
+:root{color-scheme:light dark;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#263247;background:transparent}
+*{box-sizing:border-box}body{margin:0;padding:2px} .tool{border:1px solid #d9dfed;border-radius:14px;padding:20px;background:#fff;box-shadow:0 2px 9px #172b4d0b}
+h1{font-size:19px;line-height:1.35;margin:0 0 5px;color:#222d40}.intro{font-size:14px;color:#657189;margin:0 0 16px}label{display:block;font-weight:650;font-size:14px;margin-bottom:7px}textarea{display:block;width:100%;min-height:122px;resize:vertical;padding:12px;border:1px solid #bbc6d9;border-radius:9px;font:inherit;font-size:15px;line-height:1.55;background:#fff;color:#172033}textarea:focus{outline:2px solid #6758d9;outline-offset:1px}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0}.stat{border-radius:9px;background:#f4f5fb;padding:11px}.stat span{display:block;font-size:12px;color:#667289}.stat strong{display:block;font-size:18px;margin-top:3px;overflow-wrap:anywhere}.summary{font-size:13px;color:#59667a;margin:0 0 12px}.segments{display:grid;gap:8px}.part{border:1px solid #e3e7f0;border-radius:8px;padding:10px;font-size:13px}.part b{font-size:12px;color:#5d52bd}.part pre{margin:6px 0 0;white-space:pre-wrap;overflow-wrap:anywhere;font:inherit}.note{font-size:12px;line-height:1.6;color:#69758a;margin:14px 0 0}.warning{color:#a44d12;font-size:13px;margin:0 0 12px}.warning:empty{display:none}@media(max-width:450px){.tool{padding:14px}.stats{gap:6px}.stat{padding:8px}.stat strong{font-size:15px}}
+@media(prefers-color-scheme:dark){:root{color:#e8eaf3}.tool{background:#252936;border-color:#454a5c}h1{color:#f0f0f5}.intro,.summary,.note,.stat span{color:#afb7cb}textarea{background:#191d28;border-color:#5b6276;color:#f1f2f8}.stat{background:#323748}.part{border-color:#474d60}.part b{color:#c0b8ff}.warning{color:#ffc487}}
+</style>
+</head>
+<body>
+<div class="tool">
+<h1>短信长度与分段计算</h1>
+<p class="intro">输入短信内容，查看建议类型和预计发送段数。</p>
+<label for="message">短信内容</label>
+<textarea id="message" placeholder="例如：您的验证码是 123456，5 分钟内有效。"></textarea>
+<div class="stats" aria-live="polite"><div class="stat"><span>建议类型</span><strong id="kind">—</strong></div><div class="stat"><span>总字符数</span><strong id="units">0</strong></div><div class="stat"><span>预计段数</span><strong id="total">0 段</strong></div></div>
+<p class="summary" id="summary"></p><p class="warning" id="warning"></p>
+<div class="segments" id="segments"></div>
+</div>
+<script>
+(() => {
+  'use strict';
+  const basic = new Set(Array.from('@£$¥èéùìòÇ\nØø\rÅåΔ_ΦΓΛΩΠΨΣΘΞÆæßÉ !"#¤%&\'()*+,-./0123456789:;<=>?¡ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÑÜ§¿abcdefghijklmnopqrstuvwxyzäöñüà'));
+  const extended = new Set(Array.from('\f^{}\\[~]|€'));
+  const message = document.getElementById('message');
+  const kind = document.getElementById('kind');
+  const units = document.getElementById('units');
+  const total = document.getElementById('total');
+  const summary = document.getElementById('summary');
+  const warning = document.getElementById('warning');
+  const segments = document.getElementById('segments');
+  const characterSegmenter = typeof Intl.Segmenter === 'function' ? new Intl.Segmenter('zh', { granularity: 'grapheme' }) : null;
+  const visibleLength = text => characterSegmenter ? Array.from(characterSegmenter.segment(text)).length : Array.from(text).length;
+  function calculate(value) {
+    const chars = Array.from(value);
+    const unicode = chars.some(ch => !basic.has(ch) && !extended.has(ch));
+    const weight = ch => unicode ? ch.length : (extended.has(ch) ? 2 : 1);
+    const count = chars.reduce((sum,ch) => sum + weight(ch), 0);
+    const single = unicode ? 70 : 160;
+    const limit = count <= single ? single : (unicode ? 67 : 153);
+    const parts = [];
+    let current = '', used = 0;
+    for (const ch of chars) {
+      const size = weight(ch);
+      if (used + size > limit) { parts.push({text:current,units:used}); current = ''; used = 0; }
+      current += ch; used += size;
+    }
+    if (current) parts.push({text:current,units:used});
+    return {unicode,count,limit,parts,hasSupplementary:chars.some(ch => ch.length > 1)};
+  }
+  function render() {
+    const value = message.value;
+    const result = calculate(value);
+    kind.textContent = value ? (result.unicode ? 'unicode' : 'text') : '—';
+    units.textContent = String(visibleLength(value));
+    total.textContent = `${result.parts.length} 段`;
+    summary.textContent = value ? '分段按短信编码规则计算，实际分段可能因通道而不同。' : '输入内容后将自动计算。';
+    warning.textContent = result.hasSupplementary ? '内容含有特殊字符，部分通道可能不支持，请先发送测试短信。' : '';
+    segments.replaceChildren();
+    result.parts.forEach((part,index) => {
+      const row = document.createElement('div'); row.className = 'part';
+      const title = document.createElement('b'); title.textContent = `第 ${index + 1} 段`;
+      const content = document.createElement('pre'); content.textContent = part.text;
+      row.append(title,content); segments.append(row);
+    });
+  }
+  // Keep all results visible when the calculator is embedded in the docs.
+  function fitFrame() {
+    try {
+      const frame = window.frameElement;
+      if (frame) frame.style.height = `${Math.ceil(document.querySelector('.tool').getBoundingClientRect().height + 8)}px`;
+    } catch (_) {
+      // A separately hosted parent may block access to the embedding frame.
+    }
+  }
+  message.addEventListener('input', () => {
+    render();
+    window.requestAnimationFrame(fitFrame);
+  });
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(fitFrame).observe(document.querySelector('.tool'));
+  } else {
+    window.addEventListener('resize', fitFrame);
+  }
+  render();
+  window.requestAnimationFrame(fitFrame);
+})();
+</script>
+</body>
+</html>

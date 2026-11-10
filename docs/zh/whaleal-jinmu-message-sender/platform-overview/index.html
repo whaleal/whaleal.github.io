@@ -16,7 +16,7 @@
         <link rel="prev" href="../../document-data-transfer/use-case/mongodb-version/">
       
       
-        <link rel="next" href="../platform-usage/">
+        <link rel="next" href="../quick-start-platform/">
       
       
       <link rel="icon" href="../../images/logo.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>平台概述 - Whaleal docs</title>
+        <title>产品介绍 - Whaleal docs</title>
       
     
     
@@ -49,6 +49,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../assets/sender-id-filter.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -112,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              平台概述
+              产品介绍
             
           </span>
         </div>
@@ -2760,6 +2762,8 @@
       
         
       
+        
+      
     
     
       
@@ -2814,7 +2818,7 @@
           
   
   <span class="md-ellipsis">
-    平台概述
+    产品介绍
   </span>
   
 
@@ -2825,7 +2829,7 @@
         
   
   <span class="md-ellipsis">
-    平台概述
+    产品介绍
   </span>
   
 
@@ -2849,11 +2853,11 @@
         <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1 业务办理流程
+      1. 业务办理流程
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1 业务办理流程">
+    <nav class="md-nav" aria-label="1. 业务办理流程">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2891,18 +2895,198 @@
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      2 名词解释
+      2. 短信基础概念
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="2. 短信基础概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 短信类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-sender-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 短信签名、模板和 Sender ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-basekey" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 锦木 baseKey
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 长短信
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 入站短信与送达回执
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 调用率、发送率和送达率
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#3-jmc" class="md-nav__link">
     <span class="md-ellipsis">
-      3 JMC功能模块及描述
+      3. JMC 功能模块
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 发信流程
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 发信流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 提交与查询
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 发送速率
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 各国和地区发信规则
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 各国和地区发信规则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 查看所有国家和地区的规则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 中国大陆
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 中国香港
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 中国台湾
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.5 中国澳门
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.6 美国
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.7 菲律宾
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.8 韩国
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2921,12 +3105,127 @@
   
   
   
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    快速开始
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            快速开始
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start-platform/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    平台发信快速开始
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start-api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API 发信快速开始
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../platform-usage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    平台操作指南
+    平台使用指南
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../video-tutorial/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    平台操作视频教程
   </span>
   
 
@@ -2947,7 +3246,7 @@
         
   
   <span class="md-ellipsis">
-    API发信
+    API 开发文档
   </span>
   
 
@@ -2968,7 +3267,7 @@
         
   
   <span class="md-ellipsis">
-    SenderID 申请材料
+    国家及地区规则
   </span>
   
 
@@ -2990,27 +3289,6 @@
   
   <span class="md-ellipsis">
     号码购买
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../module/information/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    基础概念介绍
   </span>
   
 
@@ -4082,11 +4360,11 @@
         <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1 业务办理流程
+      1. 业务办理流程
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1 业务办理流程">
+    <nav class="md-nav" aria-label="1. 业务办理流程">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -4124,18 +4402,198 @@
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      2 名词解释
+      2. 短信基础概念
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="2. 短信基础概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 短信类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-sender-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 短信签名、模板和 Sender ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-basekey" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 锦木 baseKey
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 长短信
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 入站短信与送达回执
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 调用率、发送率和送达率
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#3-jmc" class="md-nav__link">
     <span class="md-ellipsis">
-      3 JMC功能模块及描述
+      3. JMC 功能模块
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 发信流程
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 发信流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 提交与查询
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 发送速率
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 各国和地区发信规则
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 各国和地区发信规则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 查看所有国家和地区的规则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 中国大陆
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 中国香港
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 中国台湾
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.5 中国澳门
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.6 美国
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.7 菲律宾
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.8 韩国
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -4157,31 +4615,158 @@
   
 
 
-<h1 id="_1">平台概述</h1>
+<h1 id="_1">产品介绍</h1>
 <p>锦木通信平台（以下称“JMC”）是由上海锦木信息技术有限公司（以下简称“锦木信息”）结合众多全球化业务客户需求和锦木信息多年一线服务经验研发的通信服务 SaaS 平台。</p>
 <p>JMC 目前已全面支持国内外短信服务业务，该业务对接锦木信息核心合作伙伴 Vonage（Nexmo 及 TokBox 现已成为 Vonage 的旗下公司）全球云通讯信息渠道，可达到“国内短信验证秒级触达，99% 到达率；国际/港澳台短信覆盖全球 200+ 国家/地区”的标准，快速稳定可靠。后续逐步开放社交媒体、语音和视频等业务支持。</p>
-<p>以下内容均特指 JMC 的短信服务操作指南。</p>
-<p>JMC 短信服务业务支持营销类、交易类两种类型短信。其中营销类短信不仅支持平台发信，简便快捷，也支持 API 发信；交易类短信仅支持 API 发信。</p>
+<p>JMC 支持从中国境内向港澳台及其他境外手机号码发送短信，也支持从境外向境外手机号码发送短信。</p>
 <p>JMC 平台支持单用户亿条短信并发，分钟级千万条日志导出。</p>
-<h2 id="1">1 业务办理流程</h2>
+<h2 id="1">1. 业务办理流程</h2>
 <h3 id="11">1.1 首次接入</h3>
 <p>用户向锦木通信服务团队提供相关接入信息，后续审核、申请及维护工作由服务团队负责。接入流程如下图所示。</p>
 <p><img alt="首次接入流程" src="../../images/whaleal-jinmu-message-sender/platform-usage/img4-1.png" /></p>
 <h3 id="12">1.2 新增发信国家或地区</h3>
-<p>不同国家或地区的政策要求有所差异，部分目的地须提前申请，相关要求记录在“接入信息表—表 2”中。计划新增发信国家或地区时，请提前联系锦木通信服务团队确认，避免影响任务正常发送。</p>
+<p>不同国家或地区的政策要求有所差异，部分目的地须提前申请，相关要求记录在“接入信息表—表 2”中。计划新增发信国家或地区时，请提前联系锦木通信服务团队确认，避免影响任务正常发送。发信前可先查看<a href="#5">各国和地区发信规则</a>。</p>
 <h3 id="13">1.3 账户充值</h3>
 <p>JMC 暂不支持平台自助充值，用户须通过汇款或转账充值。具体方式请咨询对接的锦木销售人员，流程如下图所示。</p>
 <p><img alt="账户充值流程" src="../../images/whaleal-jinmu-message-sender/platform-usage/img4-2.png" /></p>
-<h2 id="2">2 名词解释</h2>
-<p><strong>短信服务</strong>：锦木通信平台提供的通信业务服务，覆盖全球 200 多个国家或地区。支持从中国境内向港澳台及其他境外手机号码发送短信，也支持在境外向境外手机号码发送短信。</p>
-<p><strong>From</strong>：发信方号码。不同国家或地区要求不同，锦木通信服务团队可协助开通。</p>
-<p><strong>Sender ID</strong>：部分国家允许将 From 数字号码替换为字母型 Sender ID，须提前申请。美国发信须申请，但实际发送仍使用数字 From。锦木通信服务团队可协助申请和设置；具体适用要求请联系服务团队确认。</p>
-<p><strong>短信签名</strong>：位于短信正文前、包含在 <code>【】</code> 中的署名，用于标识公司或业务，例如 <code>【Jinmu】</code>。不同国家或地区要求不同，由锦木通信服务团队协助申请和设置。</p>
-<p><strong>短信模板</strong>：具体发送的短信正文内容。</p>
-<p><strong>长短信</strong>：短信长度超过相应字符限制后，会拆分为多条发送并计费。部分国家的接收端会将拆分短信合并为一条展示，部分国家则展示为多条。</p>
-<p><strong>营销类短信</strong>：含有营销推广意图的短信，常见于促销、会员活动、会员关怀、新品上线提醒和活动通知等场景。</p>
-<p><strong>交易类短信</strong>：包括验证码短信和通知类短信，例如注册登录验证、支付确认、身份核实、付款回执、物流通知和状态提醒。</p>
-<h2 id="3-jmc">3 JMC功能模块及描述</h2>
+<h2 id="2">2. 短信基础概念</h2>
+<h3 id="21">2.1 短信类型</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">常见用途</th>
+<th style="text-align: left;">发送方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">营销类短信</td>
+<td style="text-align: left;">促销、会员活动、新品提醒等</td>
+<td style="text-align: left;">网页平台或 API</td>
+</tr>
+<tr>
+<td style="text-align: left;">交易类短信</td>
+<td style="text-align: left;">验证码、支付确认、物流通知、状态提醒等</td>
+<td style="text-align: left;">API</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-sender-id">2.2 短信签名、模板和 Sender ID</h3>
+<p>假设收件人的手机界面顶部显示 <code>Jinmu</code>，短信内容为 <code>【示例品牌】您的验证码是 123456。</code>。</p>
+<p><img alt="短信界面示意图，标出 Sender ID 和短信签名" src="../assets/sms-terms-example.svg" /></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">名词</th>
+<th style="text-align: left;">含义</th>
+<th style="text-align: left;">示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>from</code></td>
+<td style="text-align: left;">API 请求中填写的发件人标识，可使用账户允许的数字号码或字母型标识</td>
+<td style="text-align: left;"><code>Jinmu</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Sender ID</td>
+<td style="text-align: left;">收件人看到的发件人标识，通常显示在短信界面顶部</td>
+<td style="text-align: left;"><code>Jinmu</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">短信签名</td>
+<td style="text-align: left;">短信正文中标识品牌或业务的文字</td>
+<td style="text-align: left;"><code>【示例品牌】</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">短信模板</td>
+<td style="text-align: left;">可重复使用的预设正文，可包含发送时替换的变量</td>
+<td style="text-align: left;"><code>【示例品牌】您的验证码是 {验证码}。</code></td>
+</tr>
+</tbody>
+</table>
+<p>Sender ID 支持的格式、长度、是否需要注册，以及收件端能否显示原标识，取决于目的地、运营商和发信通道。部分国家或地区也要求提前申请短信签名或模板，发信前请确认适用要求。</p>
+<h3 id="23-basekey">2.3 锦木 baseKey</h3>
+<p><code>baseKey</code> 是 JMC 提供的 API 访问凭据。请在服务端妥善保管，并按接口要求填写认证参数。详见 <a href="../api/">API 接入手册</a>。</p>
+<h3 id="24">2.4 长短信</h3>
+<p>短信正文超过单条容量时，JMC 会拆分成多段发送，并按发送段数计费。收件人的手机可能将多段合并显示，也可能逐段显示，具体取决于通道和终端。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><code>type</code></th>
+<th style="text-align: left;">适用内容</th>
+<th style="text-align: left;">单条容量</th>
+<th style="text-align: left;">长短信每段参考容量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>text</code></td>
+<td style="text-align: left;">内容全部在 GSM 字符集中</td>
+<td style="text-align: left;">160 个 GSM 单元</td>
+<td style="text-align: left;">153 个 GSM 单元</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>unicode</code></td>
+<td style="text-align: left;">含中文或其他 GSM 字符集外字符</td>
+<td style="text-align: left;">70 个计数单位</td>
+<td style="text-align: left;">67 个计数单位</td>
+</tr>
+</tbody>
+</table>
+<p>按表中的容量估算，正文只有 70 个常见汉字时发 1 段，增加到 71 个汉字时发 2 段。超过单条容量后，首段也按长短信容量计算。使用 <code>text</code> 时，<code>€</code> 等 GSM 扩展字符会占用两个 GSM 单元。</p>
+<p>请把签名、空格、标点和替换变量后的文字一起输入<a href="../api/#18">短信长度与分段计算工具</a>。实际段数和费用以平台记录为准。</p>
+<h3 id="25">2.5 入站短信与送达回执</h3>
+<p>如需接收入站短信或送达回执，请联系锦木通信服务团队配置 Webhook。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">推送内容</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">入站短信（Inbound）</td>
+<td style="text-align: left;">平台收到的短信，例如收件人主动回复的内容。</td>
+</tr>
+<tr>
+<td style="text-align: left;">送达回执</td>
+<td style="text-align: left;">通道返回的短信投递状态，例如已送达或投递失败。</td>
+</tr>
+</tbody>
+</table>
+<p>配置完成后，JMC 会通过 HTTP POST 将回调推送到指定地址，数据格式为 JSON。</p>
+<h3 id="26">2.6 调用率、发送率和送达率</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">指标</th>
+<th style="text-align: left;">统计阶段</th>
+<th style="text-align: left;">计算方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">调用率（API 调用成功率）</td>
+<td style="text-align: left;">客户端调用 JMC API</td>
+<td style="text-align: left;">成功请求数 ÷ 请求总数。根据 HTTP 状态和业务响应判断请求是否成功。</td>
+</tr>
+<tr>
+<td style="text-align: left;">发送率</td>
+<td style="text-align: left;">JMC 将短信提交给短信通道</td>
+<td style="text-align: left;">通道接收数 ÷ JMC 接收数。</td>
+</tr>
+<tr>
+<td style="text-align: left;">送达率</td>
+<td style="text-align: left;">通道投递短信并返回状态</td>
+<td style="text-align: left;">回执标记为送达的数量 ÷ 下发到通道的数量。</td>
+</tr>
+</tbody>
+</table>
+<p>比较两份报表时，请选择相同的时间范围。计算送达率时，两个数字要用同一种方式来数。例如，如果报表按短信段数统计，就用已送达的段数除以提交给短信通道的段数。报表是按短信条数、段数还是收信号码数来统计，以及没收到回执时怎么算，请查看报表说明。</p>
+<h2 id="3-jmc">3. JMC 功能模块</h2>
 <table>
     <tr>
         <th>功能模块</th>
@@ -4204,7 +4789,7 @@
     <tr>
         <td rowspan="2">任务管理</td>
         <td>国际</td>
-        <td>支持所有国家/地区的发信。</td>
+        <td>向已开通的国家或地区发送短信。</td>
     </tr>
     <tr>
         <td>任务统计</td>
@@ -4213,19 +4798,19 @@
     <tr>
         <td rowspan="4">模板管理</td>
         <td>国际</td>
-        <td>支持创建所有国家短信模板。</td>
+        <td>创建国际及港澳台短信模板。</td>
     </tr>
     <tr>
         <td>Webhook URL</td>
-        <td>配置发信Webhook接收地址,还能配置自定义验证请求头。</td>
+        <td>请先联系锦木通信服务团队配置 Webhook。开通后，可在此编辑回调地址和自定义验证请求头。</td>
     </tr>
     <tr>
-        <td>Webhook回执</td>
-        <td>为平台任务指定特殊的webhook回调地址。</td>
+        <td>Webhook 回执</td>
+        <td>为平台发信任务指定回调地址。</td>
     </tr>
     <tr>
-        <td>kye管理</td>
-        <td>管理账号中自己key的secret。</td>
+        <td>用户 Key</td>
+        <td>查看账户的 baseKey 和 secret。</td>
     </tr>
     <tr>
         <td rowspan="5">日志管理</td>
@@ -4237,12 +4822,12 @@
         <td>新版日志查询，包含使用应用发信的日志信息。</td>
     </tr>
     <tr>
-        <td>voice日志查询</td>
+        <td>语音日志查询</td>
         <td>查询语音的日志记录。</td>
     </tr>
     <tr>
-        <td>webhook日志查询</td>
-        <td>用户可以查询发信的outbound 与 inbound webhook日志。</td>
+        <td>Webhook 日志查询</td>
+        <td>查询送达回执和入站短信的 Webhook 日志。</td>
     </tr>
     <tr>
         <td>报告下载</td>
@@ -4270,9 +4855,75 @@
     </tr>
     <tr>
         <td>购买号码</td>
-        <td>能够选择不同国家的号码进行购买。</td>
+        <td>购买号码请联系锦木通信服务团队办理。</td>
     </tr>
 </table>
+
+<h2 id="4">4. 发信流程</h2>
+<h3 id="41">4.1 提交与查询</h3>
+<ol>
+<li><strong>提交发信。</strong> 在 JMC 网页平台创建发信任务，或通过 API 提交请求。</li>
+<li><strong>通道接收。</strong> JMC 将符合发送条件的短信提交给短信通道，由通道继续投递。</li>
+<li><strong>查询结果。</strong> 平台发信记录、单条短信和 API 发信记录都可在 <strong>日志管理 → <a href="../platform-usage/#51">日志查询</a></strong> 中查看。</li>
+</ol>
+<p>接口返回成功后，请查看短信日志或 Webhook 送达回执，确认短信是否送达。</p>
+<h3 id="42">4.2 发送速率</h3>
+<p>API 调用速率与通道发送速率分别衡量每秒请求数和每秒发送量。具体上限和计量单位取决于账户配置、发信通道及业务场景。如需确认或调整速率，请联系锦木通信服务团队。</p>
+<h2 id="5">5. 各国和地区发信规则</h2>
+<h3 id="51">5.1 查看所有国家和地区的规则</h3>
+<p><a href="../sender-id/">查看完整规则</a></p>
+<h3 id="52">5.2 中国大陆</h3>
+<ul>
+<li><strong>签名和模板。</strong> 发信前须报备简体中文签名和短信模板。正文使用简体中文，并把签名放在开头，如 <code>【示例品牌】 您的验证码是 123456</code>。自 2026 年 10 月 29 日起，已报备的签名和模板也须重新提交。修改已报备的正文时，需要重新报备。</li>
+<li><strong>收件人看到的发件人。</strong> 通过报备通道发送时，收件人通常会看到以 <code>1069</code> 开头的数字号码。</li>
+<li><strong>发送频率。</strong> 24 小时内向同一号码发送相同内容，通常最多约 3 条。发送不同内容，通常最多约 15 条。超过限制的短信可能被运营商拦截。</li>
+</ul>
+<h3 id="53">5.3 中国香港</h3>
+<p>运营商 45407（ChinaUnicomHK）和 45412（ChinaMobileHK）：
+默认不支持字母型 Sender ID 透传，需要申请。不申请的话，所有 Sender ID 会被替换成香港本地手机号去确保送达。</p>
+<p>运营商 CSL（45400）、Hutchison（45404）、SmarTone（45406）和 PCCW（45416）：
+默认支持 3-11 字符长度的字母型 Sender ID 透传，非字母型 Sender ID 会被替换成香港本地号码或“SMS”。</p>
+<h3 id="54">5.4 中国台湾</h3>
+<p>Sender ID 会被替换为台湾本地号码。如需使用字母型 Sender ID，可申请直连通道，费用可能不同。</p>
+<p>GSM-7 编码的短信中，<code>| ^ € { } [ ] ~ \</code> 这些字符会被替换成 <code>△</code>，<code>&lt;</code> 和 <code>&gt;</code> 可正常显示。</p>
+<p>填写收信号码时，使用地区代码 <code>886</code>，并去掉本地手机号开头的 <code>0</code>。</p>
+<p>营销短信含链接时，需提前报备，未报备的短信可能受限。正文不含链接时，可在通道限制范围内发送。</p>
+<h3 id="55">5.5 中国澳门</h3>
+<p>运营商 SmarTone（45500）、CTM（45501）和 Hutchison（45503）支持动态字母型 Sender ID，不需要申请；运营商 China Telecom 会被换成随机的香港号码。</p>
+<h3 id="56">5.6 美国</h3>
+<p>向美国发送短信时，使用已开通短信服务的数字号码。常见选择如下。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">发信号码类型</th>
+<th style="text-align: left;">发送前需要办理的事项</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">10DLC（十位本地号码）</td>
+<td style="text-align: left;">注册品牌（Brand）和短信使用场景（Campaign），通过审核后再发送。</td>
+</tr>
+<tr>
+<td style="text-align: left;">免费电话号码（Toll-Free）</td>
+<td style="text-align: left;">提交号码及短信用途，通过验证后再发送。</td>
+</tr>
+<tr>
+<td style="text-align: left;">专用短码（Dedicated Short Code）</td>
+<td style="text-align: left;">申请专用短码，并提交短信用途供审核。</td>
+</tr>
+</tbody>
+</table>
+<p>营销短信、验证码和业务通知都可根据用途选择合适的号码类型。发信前请向锦木通信服务团队确认可用号码、申请材料及审核时间。</p>
+<h3 id="57">5.7 菲律宾</h3>
+<p>需要注册 Sender ID。如果不注册 Sender ID 的话，会被转换成随机的通用 Sender ID（nxsms）或者号码，且低于注册了 Sender ID 的送达率。注册 Sender ID 需要客户签署授权书（在授权书上填写信息签字盖章，并扫描发给我们。涉及 2 个运营商：Smart 和 Globe）。</p>
+<h3 id="58">5.8 韩国</h3>
+<ul>
+<li><strong>Sender ID。</strong> 客户填写的字母型或数字型 Sender ID 都会被替换成数字长号码。</li>
+<li><strong>短信前缀。</strong> 通道会自动添加 <code>[Web 발신]</code>（来自网络）或 <code>[국제발신]</code>（来自境外），单条短信可容纳 140 个 GSM-7 基础字符或约 70 个常见韩文字，自动添加的前缀也占用这部分容量。</li>
+<li><strong>长短信。</strong> 默认通道可能将长短信拆成多条或截断，分段也可能乱序。如需以一条完整短信送达，请提前确认是否支持韩国长短信服务（LMS）。</li>
+<li><strong>营销短信。</strong> 短信开头应标明 <code>(광고)</code>（广告），末尾应提供 <code>수신거부</code>（退订）说明和退订号码。</li>
+</ul>
 
 
 
@@ -4319,13 +4970,13 @@
         
         
           
-          <a href="../platform-usage/" class="md-footer__link md-footer__link--next" aria-label="下一页: 平台操作指南">
+          <a href="../quick-start-platform/" class="md-footer__link md-footer__link--next" aria-label="下一页: 平台发信快速开始">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                平台操作指南
+                平台发信快速开始
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -4392,6 +5043,8 @@
     
     
       <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="../assets/sender-id-filter.js"></script>
       
     
   </body>

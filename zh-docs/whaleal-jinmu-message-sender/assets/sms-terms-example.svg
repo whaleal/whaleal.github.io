@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 230" role="img" aria-labelledby="title description">
+  <title id="title">短信界面示意图</title>
+  <desc id="description">界面顶部的 Jinmu 是 Sender ID，短信正文开头的【示例品牌】是短信签名。</desc>
+  <rect x="1" y="1" width="678" height="228" rx="18" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+  <g font-family="system-ui, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+    <rect x="27" y="23" width="403" height="184" rx="16" fill="#ffffff" stroke="#cbd5e1"/>
+    <path d="M43 23h371a16 16 0 0 1 16 16v46H27V39a16 16 0 0 1 16-16Z" fill="#eef2ff"/>
+    <path d="M27 85h403" stroke="#dbe4f0"/>
+    <text x="228" y="65" text-anchor="middle" font-size="25" font-weight="700" fill="#243b78">Jinmu</text>
+    <rect x="49" y="105" width="360" height="77" rx="13" fill="#f1f5f9"/>
+    <text x="65" y="152" font-size="18" fill="#172554"><tspan fill="#1d4ed8" font-weight="700">【示例品牌】</tspan><tspan>您的验证码是 123456。</tspan></text>
+    <g fill="none" stroke="#5272c5" stroke-width="2">
+      <path d="M270 57H470"/>
+      <path d="M110 161v29h338v-33h22"/>
+    </g>
+    <g fill="#5272c5">
+      <circle cx="270" cy="57" r="4"/>
+      <circle cx="110" cy="161" r="4"/>
+    </g>
+    <text x="483" y="62" font-size="19" font-weight="700" fill="#243b78">Sender ID</text>
+    <text x="483" y="84" font-size="15" fill="#475569">界面显示的发件人</text>
+    <text x="483" y="162" font-size="19" font-weight="700" fill="#243b78">短信签名</text>
+    <text x="483" y="184" font-size="15" fill="#475569">正文中的品牌标识</text>
+  </g>
+</svg>

@@ -1,0 +1,123 @@
+#sender-id-query[hidden],
+#sender-id-source[hidden],
+#sender-id-query [hidden] {
+  display: none !important;
+}
+
+#sender-id-query {
+  padding: 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 1rem;
+}
+
+#sender-id-query h2 {
+  margin: 0 0 .8rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.sender-id-query__search {
+  box-sizing: border-box;
+  width: 100%;
+  padding: .55rem .8rem;
+  border: 1px solid var(--md-default-fg-color--light);
+  border-radius: 2rem;
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font: inherit;
+}
+
+.sender-id-query__search:focus-visible,
+.sender-id-query__button:focus-visible {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+
+.sender-id-query__table-wrap {
+  margin-top: .6rem;
+  overflow-x: auto;
+}
+
+.sender-id-query__table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.sender-id-query__table th,
+.sender-id-query__table td {
+  padding: .45rem .4rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  overflow-wrap: anywhere;
+  vertical-align: top;
+}
+
+.sender-id-query__table thead th:first-child {
+  width: 26%;
+}
+
+.sender-id-query__table thead th:last-child {
+  width: 25%;
+}
+
+.sender-id-query__secondary {
+  display: block;
+  margin-top: .12rem;
+  color: var(--md-default-fg-color--light);
+  font-size: .72em;
+  font-weight: 400;
+}
+
+.sender-id-query__button {
+  padding: .14rem .35rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .35rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-typeset-a-color);
+  cursor: pointer;
+  font: inherit;
+  font-size: .78em;
+  white-space: nowrap;
+}
+
+.sender-id-query__button:disabled {
+  color: var(--md-default-fg-color--light);
+  cursor: default;
+}
+
+.sender-id-query__details {
+  background: var(--md-code-bg-color);
+}
+
+.sender-id-query__details dl {
+  margin: 0;
+}
+
+.sender-id-query__details dt {
+  margin-top: .35rem;
+  font-weight: 700;
+}
+
+.sender-id-query__details dd {
+  margin: 0 0 .35rem;
+}
+
+.sender-id-query__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .35rem;
+  margin-top: .65rem;
+}
+
+.sender-id-query__pager {
+  display: flex;
+  gap: .3rem;
+}
+
+#sender-id-query .sender-id-query__note {
+  margin: .55rem 0 0;
+  color: var(--md-default-fg-color--light);
+  font-size: .76em;
+}
